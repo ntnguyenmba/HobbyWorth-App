@@ -6,13 +6,19 @@ Native React Native app built with Expo development builds. It does not embed Ho
 
 Free: one live First Project, photos, cost + minutes + yield + price, sell-worthiness math.
 
-Lifetime IAP: history, compare, repeat, materials + packaging + fees, price scenarios, export.
+Lifetime IAP: history, compare, repeat, materials + packaging + fees, price scenarios, PDF/JSON export.
 
 No HobbyWorth account. Project data stays on-device.
 
 ## Store setup
 
 Create a non-consumable product named `hobbyworth_lifetime` in App Store Connect and Google Play Console. Set the storefront price around 7.99. The app reads the localized store price. Purchases use Apple StoreKit and Google Play Billing directly through `expo-iap`; there is no RevenueCat.
+
+## Artwork
+
+The native app uses the existing PNG artwork from `ntnguyenmba/HobbyWorth`. `npm install`, `npm run prepare-assets`, native run commands, and prebuild download the approved source PNGs into `assets/generated/`. The React Native UI loads those local files, and Expo packages them into the native build. Runtime screens do not fetch artwork from GitHub.
+
+The existing square `423E1857-AA50-41D4-8265-B88EB2F4F3CD.png` is used for the store/app icon source. `hero.PNG` is used for the splash artwork. The app uses the existing logo and hobby artwork for its native screens.
 
 ## Locales
 
