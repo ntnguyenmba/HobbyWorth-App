@@ -6,6 +6,6 @@
     "ios":{"supportsTablet":true,"bundleIdentifier":"com.everittventures.hobbyworth","buildNumber":"1","infoPlist":{"NSPhotoLibraryUsageDescription":"HobbyWorth uses photos you choose for your project record.","CFBundleAllowMixedLocalizations":true,"UISupportsDocumentBrowser":false,"UIRequiresFullScreen":false}},
     "android":{"package":"com.everittventures.hobbyworth","versionCode":1,"adaptiveIcon":{"foregroundImage":"./assets/generated/adaptive-icon.png","backgroundColor":"#FFFDF7"}},
     "plugins":[["expo-localization",{"supportedLocales":{"ios":["en","es","vi","fr","de","zh-Hans"],"android":["en","es","vi","fr","de","zh-Hans"]}}],["expo-image-picker",{"photosPermission":"HobbyWorth uses photos you choose for your project record."}],"expo-iap"],
-    "extra":{"iapProductId":"hobbyworth_lifetime"}
+    "extra":{"iosIapProductId":"com.everittventures.hobbyworth.lifetime","androidIapProductId":"hobbyworth_lifetime"}
   }
 }
