@@ -12,7 +12,7 @@ No HobbyWorth account. Project data stays on-device.
 
 ## Store setup
 
-Create a non-consumable product named `hobbyworth_lifetime` in App Store Connect and Google Play Console. Set the storefront price around 7.99. The app reads the localized store price. Purchases use Apple StoreKit and Google Play Billing directly through `expo-iap`; there is no RevenueCat.
+Create a non-consumable / one-time product with the exact product ID `com.everittventures.hobbyworth.lifetime` in App Store Connect and Google Play Console. Set the storefront price around 7.99. The app reads the localized store price. Purchases use Apple StoreKit and Google Play Billing directly through `expo-iap`; there is no RevenueCat.
 
 ## Artwork
 
