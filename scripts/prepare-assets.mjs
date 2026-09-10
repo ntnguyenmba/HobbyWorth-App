@@ -3,7 +3,7 @@ import {join} from 'node:path';
 
 const root='https://raw.githubusercontent.com/ntnguyenmba/HobbyWorth/main';
 const out='assets/generated';
-const files=['logo.PNG','hero.PNG','baking.PNG','cooking.PNG','drinks.PNG','painting.PNG','knitting.PNG','sewing.PNG','planting.PNG','handyman.PNG','photography.PNG','coding.PNG'];
+const files=['hero.PNG','baking.PNG','cooking.PNG','drinks.PNG','painting.PNG','knitting.PNG','sewing.PNG','planting.PNG','handyman.PNG','photography.PNG','coding.PNG'];
 const iconSource='423E1857-AA50-41D4-8265-B88EB2F4F3CD.png';
 
 await mkdir(out,{recursive:true});
@@ -20,6 +20,7 @@ async function download(source,target){
 }
 
 for(const file of files)await download(file,file);
+await download(iconSource,'logo.PNG');
 await download(iconSource,'icon.png');
 await download(iconSource,'adaptive-icon.png');
 await download('hero.PNG','splash.png');
