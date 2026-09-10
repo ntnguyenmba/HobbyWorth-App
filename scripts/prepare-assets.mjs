@@ -14,16 +14,17 @@ async function hasFile(path){
   try{return (await stat(path)).size>1000}catch{return false}
 }
 
-const needed=[...files,iconSource];
-const missing=[];
-for(const file of needed){
-  const target=file===iconSource?join(out,'icon.png'):join(out,file);
-  if(!(await hasFile(target)))missing.push(file);
+const sourceToTarget=new Map(files.map(file=>[file,file.replace(/\.PNG$/,'.png')]));
+sourceToTarget.set(iconSource,'icon.png');
+
+const needed=[];
+for(const [source,target] of sourceToTarget){
+  if(!(await hasFile(join(out,target))))needed.push(source);
 }
 
 let sourceDir=null;
 try{
-  if(missing.length){
+  if(needed.length){
     sourceDir=await mkdtemp(join(tmpdir(),'hobbyworth-assets-'));
     execFileSync('git',['clone','--depth','1','--branch','main',sourceRepo,sourceDir],{stdio:'inherit'});
   }
@@ -37,9 +38,8 @@ try{
     console.log(`Prepared ${target}`);
   }
 
-  for(const file of files)await prepare(file,file);
-  await prepare(iconSource,'logo.PNG');
-  await prepare(iconSource,'icon.png');
+  for(const [source,target] of sourceToTarget)await prepare(source,target);
+  await prepare(iconSource,'logo.png');
   await prepare(iconSource,'adaptive-icon.png');
   await prepare('hero.PNG','splash.png');
 }finally{
