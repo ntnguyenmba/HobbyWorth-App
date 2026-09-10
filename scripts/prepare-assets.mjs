@@ -6,7 +6,7 @@ import {execFileSync} from 'node:child_process';
 const out='assets/generated';
 const sourceRepo='https://github.com/ntnguyenmba/HobbyWorth.git';
 const files=['hero.PNG','baking.PNG','cooking.PNG','drinks.PNG','painting.PNG','knitting.PNG','sewing.PNG','planting.PNG','handyman.PNG','photography.PNG','coding.PNG'];
-const iconSource='423E1857-AA50-41D4-8265-B88EB2F4F3CD.png';
+const iconSource='play_store_512.png';
 
 async function assertAsset(path,label){
   const info=await stat(path);
