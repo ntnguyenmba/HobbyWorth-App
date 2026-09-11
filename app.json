@@ -5,7 +5,7 @@
     "locales":{"en":"./native-locales/en.json","es":"./native-locales/es.json","vi":"./native-locales/vi.json","fr":"./native-locales/fr.json","de":"./native-locales/de.json","zh-Hans":"./native-locales/zh-Hans.json"},
     "ios":{"supportsTablet":true,"bundleIdentifier":"com.everittventures.hobbyworth","buildNumber":"1","infoPlist":{"NSPhotoLibraryUsageDescription":"HobbyWorth uses photos you choose for your project record.","CFBundleAllowMixedLocalizations":true,"UISupportsDocumentBrowser":false,"UIRequiresFullScreen":false}},
     "android":{"package":"com.everittventures.hobbyworth","versionCode":1,"jsEngine":"jsc","adaptiveIcon":{"foregroundImage":"./assets/generated/adaptive-icon.png","backgroundColor":"#FFFDF7"}},
-    "plugins":[["expo-localization",{"supportedLocales":{"ios":["en","es","vi","fr","de","zh-Hans"],"android":["en","es","vi","fr","de","zh-Hans"]}}],["expo-image-picker",{"photosPermission":"HobbyWorth uses photos you choose for your project record."}],"expo-iap"],
-    "extra":{"iosIapProductId":"com.everittventures.hobbyworth.lifetime","androidIapProductId":"hobbyworth_lifetime"}
+    "plugins":[["expo-localization",{"supportedLocales":{"ios":["en","es","vi","fr","de","zh-Hans"],"android":["en","es","vi","fr","de","zh-Hans"]}}],["expo-image-picker",{"photosPermission":"HobbyWorth uses photos you choose for your project record."}],"expo-iap",["react-native-google-mobile-ads",{"androidAppId":"ca-app-pub-1237434632796366~3796731580","iosAppId":"ca-app-pub-3940256099942544~1458002511"}]],
+    "extra":{"iosIapProductId":"com.everittventures.hobbyworth.lifetime","androidIapProductId":"hobbyworth_lifetime","androidAdMobBannerUnitId":"ca-app-pub-1237434632796366/5299821847"}
   }
 }
