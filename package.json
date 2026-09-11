@@ -12,7 +12,8 @@
     "prebuild":"npm run prepare-assets && expo prebuild",
     "prebuild:clean":"npm run prepare-assets && expo prebuild --clean",
     "android:codegen":"cd android && ./gradlew generateCodegenArtifactsFromSchema",
-    "build:android:local":"npm run prepare-assets && expo prebuild --clean --platform android && npm run android:codegen && cd android && ./gradlew bundleRelease",
+    "android:signing":"node scripts/configure-android-signing.mjs",
+    "build:android:local":"npm run prepare-assets && expo prebuild --clean --platform android && npm run android:signing && npm run android:codegen && cd android && ./gradlew bundleRelease",
     "prepare:ios:local":"npm run prepare-assets && expo prebuild --clean --platform ios",
     "open:ios":"open ios/HobbyWorth.xcworkspace",
     "typecheck":"node scripts/check-locales.mjs && tsc --noEmit"
