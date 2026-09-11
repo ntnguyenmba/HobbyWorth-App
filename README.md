@@ -1,6 +1,6 @@
 # HobbyWorth App
 
-Native React Native app built with Expo development builds. It does not embed HobbyWorth.com and does not use Capacitor or a WebView.
+Native React Native app built with Expo native projects. It does not embed HobbyWorth.com and does not use Capacitor or a WebView.
 
 ## Product
 
@@ -16,29 +16,76 @@ Create a non-consumable / one-time product with the exact product ID `com.everit
 
 ## Artwork
 
-The native app uses the existing PNG artwork from `ntnguyenmba/HobbyWorth`. `npm install`, `npm run prepare-assets`, native run commands, and prebuild download the approved source PNGs into `assets/generated/`. The React Native UI loads those local files, and Expo packages them into the native build. Runtime screens do not fetch artwork from GitHub.
-
-The existing square `423E1857-AA50-41D4-8265-B88EB2F4F3CD.png` is used for the store/app icon source. `hero.PNG` is used for the splash artwork. The app uses the existing logo and hobby artwork for its native screens.
+The native app uses the existing PNG artwork from `ntnguyenmba/HobbyWorth`. The asset preparation script clones that repository and uses `play_store_512.png` as `logo.png`, `icon.png`, and `adaptive-icon.png`. `hero.PNG` is used for splash artwork. Runtime screens do not fetch artwork from GitHub.
 
 ## Locales
 
 Launch locales: `en`, `es`, `vi`, `fr`, `de`, `zh-Hans`. The language picker uses English, Español, Tiếng Việt, Français, Deutsch, 简体中文. Device language is used when supported; otherwise English.
 
-## Run
+## Local builds only
+
+HobbyWorth does not require EAS cloud builds. Build Android and iOS locally on a Mac. Expo remains the native framework, but no paid Expo build service is required.
+
+### First-time setup
+
+Install Node.js, Android Studio with the Android SDK, Xcode, CocoaPods, and Java 17. Then:
 
 ```bash
 npm install
-npx expo prebuild
-npm run ios
+npm run prepare-assets
+npm run typecheck
 ```
 
-For Android:
+### Android Google Play AAB
+
+Generate the native Android project and release bundle locally:
 
 ```bash
-npm run android
+npm run build:android:local
 ```
 
-IAP requires a native development build or store build, not Expo Go.
+The unsigned or locally configured release bundle is created at:
+
+```text
+android/app/build/outputs/bundle/release/app-release.aab
+```
+
+A Google Play production upload must be signed with the app's release/upload keystore. Keep keystore files and passwords outside Git and never commit them.
+
+The Android package is `com.everittventures.hobbyworth`. Increase `android.versionCode` in `app.json` for every Google Play update.
+
+### iOS App Store build
+
+Generate the native iOS project locally:
+
+```bash
+npm run prepare:ios:local
+cd ios
+pod install
+cd ..
+npm run open:ios
+```
+
+In Xcode select the HobbyWorth target, choose the Everitt Ventures Apple Developer team under Signing & Capabilities, select Any iOS Device (arm64), then use Product > Archive. In Organizer choose Distribute App > App Store Connect > Upload.
+
+The iOS bundle identifier is `com.everittventures.hobbyworth`. Increase `ios.buildNumber` in `app.json` for every App Store upload.
+
+### Native dependency changes
+
+When native dependencies or Expo plugins change, regenerate native projects before building:
+
+```bash
+npm run prebuild:clean
+cd ios && pod install && cd ..
+```
+
+Do not use Expo Go for IAP or AdMob testing. These features require a native build.
+
+## AdMob
+
+Android is configured with the HobbyWorth AdMob Android app ID and banner unit ID. Development builds use Google's test banner unit.
+
+Do not enable live iOS AdMob advertising until the real HobbyWorth iOS AdMob app ID and iOS banner unit ID replace the current Google sample/test configuration.
 
 ## URLs
 
