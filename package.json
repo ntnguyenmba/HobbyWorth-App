@@ -4,19 +4,18 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "postinstall": "node scripts/prepare-assets.mjs",
-    "prepare-assets": "node scripts/prepare-assets.mjs",
-    "start": "npm run prepare-assets && expo start --dev-client",
-    "ios": "npm run prepare-assets && expo run:ios",
-    "android": "npm run prepare-assets && expo run:android",
-    "prebuild": "npm run prepare-assets && expo prebuild",
-    "prebuild:clean": "npm run prepare-assets && expo prebuild --clean",
+    "start": "expo start --dev-client",
+    "ios": "expo run:ios",
+    "android": "expo run:android",
+    "prebuild": "expo prebuild",
+    "prebuild:clean": "expo prebuild --clean",
     "android:codegen": "cd android && ./gradlew generateCodegenArtifactsFromSchema",
     "android:signing": "node scripts/configure-android-signing.mjs",
-    "build:android:local": "npm run prepare-assets && expo prebuild --clean --platform android && npm run android:signing && npm run android:codegen && cd android && ./gradlew bundleRelease",
-    "prepare:ios:local": "npm run prepare-assets && expo prebuild --clean --platform ios",
+    "build:android:local": "expo prebuild --clean --platform android && npm run android:signing && npm run android:codegen && cd android && ./gradlew bundleRelease",
+    "prepare:ios:local": "expo prebuild --clean --platform ios",
     "open:ios": "open ios/HobbyWorth.xcworkspace",
-    "typecheck": "node scripts/check-locales.mjs && node scripts/check-math.mjs && tsc --noEmit"
+    "typecheck": "node scripts/check-locales.mjs && node scripts/check-config.mjs && npm test && tsc --noEmit",
+    "test": "node --import tsx --test src/math.test.ts src/quiz.test.ts"
   },
   "dependencies": {
     "@expo-google-fonts/nunito": "^0.4.2",
@@ -39,6 +38,8 @@
   "devDependencies": {
     "@types/react": "~19.1.10",
     "babel-preset-expo": "~55.0.0",
-    "typescript": "~5.9.2"
+    "typescript": "~5.9.2",
+    "@types/node": "^22.10.0",
+    "tsx": "^4.20.0"
   }
 }

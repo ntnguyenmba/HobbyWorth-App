@@ -16,7 +16,7 @@ Create a non-consumable / one-time product with the exact product ID `com.everit
 
 ## Artwork
 
-The native app uses the existing PNG artwork from `ntnguyenmba/HobbyWorth`. The asset preparation script clones that repository and uses `play_store_512.png` as `logo.png`, `icon.png`, and `adaptive-icon.png`. `hero.PNG` is used for splash artwork. Runtime screens do not fetch artwork from GitHub.
+The native app uses the checked-in `play_store_512.png` for its app icon and splash screen. Brand panels and hobby markers are drawn by the app, so installation never clones another repository and hobby rows never show unrelated repeated photos.
 
 ## Locales
 
@@ -32,7 +32,6 @@ Install Node.js, Android Studio with the Android SDK, Xcode, CocoaPods, and Java
 
 ```bash
 npm install
-npm run prepare-assets
 npm run typecheck
 ```
 
@@ -83,9 +82,11 @@ Do not use Expo Go for IAP or AdMob testing. These features require a native bui
 
 ## AdMob
 
-Android is configured with the HobbyWorth AdMob Android app ID and banner unit ID. Development builds use Google's test banner unit.
+Android is configured with the HobbyWorth AdMob Android app ID and banner unit ID. Development builds use Google's test banner unit. Ads are disabled on iOS until a real HobbyWorth iOS AdMob app ID is added, so Google's sample iOS ID is not shipped.
 
-Do not enable live iOS AdMob advertising until the real HobbyWorth iOS AdMob app ID and iOS banner unit ID replace the current Google sample/test configuration.
+## Validation
+
+`npm run typecheck` checks locale parity, store IDs, Hermes configuration, the asset pipeline, TypeScript, calculator behavior, and quiz result behavior.
 
 ## URLs
 

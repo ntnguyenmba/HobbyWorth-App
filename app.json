@@ -6,10 +6,9 @@
     "version": "1.0.0",
     "orientation": "default",
     "userInterfaceStyle": "light",
-    "icon": "./assets/generated/icon.png",
-    "assetBundlePatterns": ["assets/generated/*"],
+    "icon": "./play_store_512.png",
     "splash": {
-      "image": "./assets/generated/logo.png",
+      "image": "./play_store_512.png",
       "resizeMode": "contain",
       "backgroundColor": "#FFFDF7"
     },
@@ -36,18 +35,47 @@
       "package": "com.everittventures.hobbyworth",
       "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/generated/adaptive-icon.png",
+        "foregroundImage": "./play_store_512.png",
         "backgroundColor": "#FFFDF7"
       }
     },
     "plugins": [
-      ["expo-localization", {"supportedLocales": {"ios": ["en", "es", "vi", "fr", "de", "zh-Hans"], "android": ["en", "es", "vi", "fr", "de", "zh-Hans"]}}],
-      ["expo-image-picker", {"photosPermission": "HobbyWorth uses photos you choose for your project record."}],
+      [
+        "expo-localization",
+        {
+          "supportedLocales": {
+            "ios": [
+              "en",
+              "es",
+              "vi",
+              "fr",
+              "de",
+              "zh-Hans"
+            ],
+            "android": [
+              "en",
+              "es",
+              "vi",
+              "fr",
+              "de",
+              "zh-Hans"
+            ]
+          }
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "HobbyWorth uses photos you choose for your project record."
+        }
+      ],
       "expo-iap",
-      ["react-native-google-mobile-ads", {
-        "androidAppId": "ca-app-pub-1237434632796366~3796731580",
-        "iosAppId": "ca-app-pub-3940256099942544~1458002511"
-      }]
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-1237434632796366~3796731580"
+        }
+      ]
     ],
     "extra": {
       "iosIapProductId": "com.everittventures.hobbyworth.lifetime",
