@@ -73,7 +73,7 @@
       [
         "react-native-google-mobile-ads",
         {
-          "androidAppId": "ca-app-pub-1237434632796366~3796731580",
+          "androidAppId": "ca-app-pub-8647405301136182~1647088699",
           "iosAppId": "ca-app-pub-8647405301136182~4273252030"
         }
       ]
@@ -81,7 +81,7 @@
     "extra": {
       "iosIapProductId": "com.everittventures.hobbyworth.lifetime",
       "androidIapProductId": "com.everittventures.hobbyworth.lifetime",
-      "androidAdMobBannerUnitId": "ca-app-pub-1237434632796366/5299821847",
+      "androidAdMobBannerUnitId": "ca-app-pub-8647405301136182/4451189318",
       "iosAdMobBannerUnitId": "ca-app-pub-8647405301136182/2656918030"
     }
   }
