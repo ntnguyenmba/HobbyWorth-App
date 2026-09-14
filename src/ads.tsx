@@ -3,7 +3,7 @@ import {Platform,View} from 'react-native';
 import Constants from 'expo-constants';
 import {BannerAd,BannerAdSize,TestIds} from 'react-native-google-mobile-ads';
 
-const ANDROID_BANNER_ID='ca-app-pub-1237434632796366/5299821847';
+const ANDROID_BANNER_ID='ca-app-pub-8647405301136182/4451189318';
 
 export function HobbyWorthBanner(){
   if(Platform.OS!=='android')return null;
