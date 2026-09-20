@@ -16,6 +16,27 @@ const CURRENT_PRODUCT = 'com.everittventures.hobbyworth.lifetime';
 const LEGACY_ANDROID_PRODUCT = 'hobbyworth_lifetime';
 const PRODUCT = Platform.OS === 'android' ? Constants.expoConfig?.extra?.androidIapProductId || CURRENT_PRODUCT : Constants.expoConfig?.extra?.iosIapProductId || CURRENT_PRODUCT;
 const acceptedProducts = new Set([CURRENT_PRODUCT, LEGACY_ANDROID_PRODUCT, PRODUCT].filter(Boolean));
+const PURCHASE_VERIFY_URL = Constants.expoConfig?.extra?.purchaseVerifyUrl || 'https://hobbyworth.everittventures.com/api/mobile/google/verify';
+
+function androidPurchaseToken(purchase: any): string | null {
+  return purchase?.purchaseToken || purchase?.token || purchase?.purchaseTokenAndroid || null;
+}
+
+async function verifyAndroidPurchase(purchase: any): Promise<boolean> {
+  if (Platform.OS !== 'android') return true;
+  const purchaseToken = androidPurchaseToken(purchase);
+  if (!purchaseToken) return false;
+  const response = await fetch(PURCHASE_VERIFY_URL, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      productId: purchase.productId,
+      purchaseToken,
+      packageName: 'com.everittventures.hobbyworth'
+    })
+  });
+  return response.ok;
+}
 const initial = (): State => ({project: null, history: [], premium: false, locale: deviceLocale(), symbol: ''});
 
 function Main() {
@@ -32,6 +53,11 @@ function Main() {
   const iap = useIAP({
     onPurchaseSuccess: async (purchase) => {
       if (!acceptedProducts.has(purchase.productId)) return;
+      const verified = await verifyAndroidPurchase(purchase).catch(() => false);
+      if (!verified) {
+        Alert.alert(tr(st.locale, 'ui.purchaseError'));
+        return;
+      }
       try { await iapRef.current.finishTransaction({purchase, isConsumable: false}); } catch {}
       setSt((current) => ({...current, premium: true}));
       setPayOpen(false);
@@ -49,7 +75,21 @@ function Main() {
     iap.getAvailablePurchases();
   }, [iap.connected]);
   useEffect(() => {
-    if (iap.availablePurchases.some((purchase: any) => acceptedProducts.has(purchase.productId))) setSt((current) => ({...current, premium: true}));
+    const sync = async () => {
+      const purchases = iap.availablePurchases.filter((purchase: any) => acceptedProducts.has(purchase.productId));
+      if (!purchases.length) return;
+      if (Platform.OS !== 'android') {
+        setSt((current) => ({...current, premium: true}));
+        return;
+      }
+      for (const purchase of purchases) {
+        if (await verifyAndroidPurchase(purchase).catch(() => false)) {
+          setSt((current) => ({...current, premium: true}));
+          return;
+        }
+      }
+    };
+    sync();
   }, [iap.availablePurchases]);
 
   if (!fonts || !ready) return <View style={s.root} />;
