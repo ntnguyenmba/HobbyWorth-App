@@ -15,7 +15,7 @@ import {Home, Quiz, Pick, First, Calculator, History, Compare, Settings, blank, 
 const CURRENT_PRODUCT = 'com.everittventures.hobbyworth.lifetime';
 const LEGACY_ANDROID_PRODUCT = 'hobbyworth_lifetime';
 const PRODUCT = Platform.OS === 'android' ? Constants.expoConfig?.extra?.androidIapProductId || CURRENT_PRODUCT : Constants.expoConfig?.extra?.iosIapProductId || CURRENT_PRODUCT;
-const acceptedProducts = new Set([CURRENT_PRODUCT, LEGACY_ANDROID_PRODUCT]);
+const acceptedProducts = new Set([CURRENT_PRODUCT, LEGACY_ANDROID_PRODUCT, PRODUCT].filter(Boolean));
 const initial = (): State => ({project: null, history: [], premium: false, locale: deviceLocale(), symbol: ''});
 
 function Main() {
@@ -100,7 +100,26 @@ function Main() {
     } catch { Alert.alert(tr(l, 'ui.notFound')); }
   };
   const product = (iap.products as any[]).find((item) => item.id === PRODUCT || item.productId === PRODUCT);
-  const buy = () => iap.requestPurchase({request: {apple: {sku: PRODUCT}, google: {skus: [PRODUCT]}}, type: 'in-app'});
+  const buy = async () => {
+    if (!iap.connected) {
+      Alert.alert(tr(l, 'ui.purchaseError'));
+      return;
+    }
+    const loaded = (iap.products as any[]).some((item) => item.id === PRODUCT || item.productId === PRODUCT);
+    if (!loaded) {
+      try {
+        await iap.fetchProducts({skus: [PRODUCT], type: 'in-app'});
+      } catch {
+        Alert.alert(tr(l, 'ui.purchaseError'));
+        return;
+      }
+    }
+    try {
+      await iap.requestPurchase({request: {apple: {sku: PRODUCT}, google: {skus: [PRODUCT]}}, type: 'in-app'});
+    } catch {
+      Alert.alert(tr(l, 'ui.purchaseError'));
+    }
+  };
 
   return (
     <SafeAreaView style={s.root}>
