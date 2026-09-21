@@ -12,19 +12,18 @@ import {
 import * as Picker from 'expo-image-picker';
 import hobbiesJSON from './data/hobbies.json';
 
-const WEBSITE_ART = 'https://raw.githubusercontent.com/ntnguyenmba/HobbyWorth/main';
 const visualByHobby: Record<string, any> = {
-  baking: {uri: `${WEBSITE_ART}/baking.PNG`},
-  cooking: {uri: `${WEBSITE_ART}/cooking.PNG`},
-  photography: {uri: `${WEBSITE_ART}/photography.PNG`},
-  painting: {uri: `${WEBSITE_ART}/painting.PNG`},
-  hiking: {uri: `${WEBSITE_ART}/hiking.PNG`},
-  knitting: {uri: `${WEBSITE_ART}/knitting.PNG`},
-  sewing: {uri: `${WEBSITE_ART}/sewing.PNG`},
-  writing: {uri: `${WEBSITE_ART}/writing.PNG`},
-  coding: {uri: `${WEBSITE_ART}/coding.PNG`}
+  baking: require('../assets/hobbies/baking.png'),
+  cooking: require('../assets/hobbies/cooking.png'),
+  photography: require('../assets/hobbies/photography.png'),
+  painting: require('../assets/hobbies/painting.png'),
+  hiking: require('../assets/hobbies/hiking.png'),
+  knitting: require('../assets/hobbies/knitting.png'),
+  sewing: require('../assets/hobbies/sewing.png'),
+  writing: require('../assets/hobbies/writing.png'),
+  coding: require('../assets/hobbies/coding.png')
 };
-const fallbackVisual = {uri: `${WEBSITE_ART}/hero.PNG`};
+const fallbackVisual = require('../assets/hobbies/hero.png');
 const hobbyVisual = (id: string) => visualByHobby[id] || fallbackVisual;
 import {firstProject, hobbyName, localeName, locales, tr} from './i18n';
 import {calc, scenarioCalc} from './math';
