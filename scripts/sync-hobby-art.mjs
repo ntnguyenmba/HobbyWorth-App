@@ -1,6 +1,9 @@
-import { mkdir, writeFile, stat } from 'node:fs/promises';
+import { mkdtemp, mkdir, copyFile, stat, rm } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { execFileSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
 
-const SOURCE = 'https://raw.githubusercontent.com/ntnguyenmba/HobbyWorth/main';
 const files = [
   'hero.PNG',
   'baking.PNG',
@@ -14,22 +17,34 @@ const files = [
   'coding.PNG',
 ];
 
-await mkdir(new URL('../assets/hobbies/', import.meta.url), { recursive: true });
+const outDir = fileURLToPath(new URL('../assets/hobbies/', import.meta.url));
+await mkdir(outDir, { recursive: true });
 
-for (const sourceName of files) {
-  const targetName = sourceName.replace(/\.PNG$/i, '.png');
-  const targetUrl = new URL(`../assets/hobbies/${targetName}`, import.meta.url);
-  const response = await fetch(`${SOURCE}/${sourceName}`);
-  if (!response.ok) {
-    throw new Error(`Could not download ${sourceName}: HTTP ${response.status}`);
+const temp = await mkdtemp(join(tmpdir(), 'hobbyworth-art-'));
+const sourceDir = join(temp, 'HobbyWorth');
+
+try {
+  execFileSync('git', [
+    'clone',
+    '--depth',
+    '1',
+    'https://github.com/ntnguyenmba/HobbyWorth.git',
+    sourceDir,
+  ], { stdio: 'inherit' });
+
+  for (const sourceName of files) {
+    const targetName = sourceName.replace(/\.PNG$/i, '.png');
+    const sourcePath = join(sourceDir, sourceName);
+    const targetPath = join(outDir, targetName);
+    await copyFile(sourcePath, targetPath);
+    const info = await stat(targetPath);
+    if (info.size < 10000) {
+      throw new Error(`${targetName} is unexpectedly small (${info.size} bytes)`);
+    }
+    console.log(`${targetName}: ${info.size} bytes`);
   }
-  const bytes = new Uint8Array(await response.arrayBuffer());
-  if (bytes.length < 10000) {
-    throw new Error(`${sourceName} downloaded as an unexpectedly small file (${bytes.length} bytes)`);
-  }
-  await writeFile(targetUrl, bytes);
-  const info = await stat(targetUrl);
-  console.log(`${targetName}: ${info.size} bytes`);
+
+  console.log('HobbyWorth artwork synced locally for offline use.');
+} finally {
+  await rm(temp, { recursive: true, force: true });
 }
-
-console.log('HobbyWorth artwork synced locally for offline use.');
