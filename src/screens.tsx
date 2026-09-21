@@ -11,6 +11,20 @@ import {
 } from 'react-native';
 import * as Picker from 'expo-image-picker';
 import hobbiesJSON from './data/hobbies.json';
+
+const visualByHobby: Record<string, any> = {
+  baking: require('../assets/hobbies/baking.png'),
+  cooking: require('../assets/hobbies/cooking.png'),
+  photography: require('../assets/hobbies/photography.png'),
+  painting: require('../assets/hobbies/painting.png'),
+  hiking: require('../assets/hobbies/hiking.png'),
+  knitting: require('../assets/hobbies/knitting.png'),
+  sewing: require('../assets/hobbies/sewing.png'),
+  writing: require('../assets/hobbies/writing.png'),
+  coding: require('../assets/hobbies/coding.png')
+};
+const fallbackVisual = require('../assets/hobbies/hero.png');
+const hobbyVisual = (id: string) => visualByHobby[id] || fallbackVisual;
 import {firstProject, hobbyName, localeName, locales, tr} from './i18n';
 import {calc, scenarioCalc} from './math';
 import {Fun, Goal, QuizAnswers, Spend, Time, rankHobbies} from './quiz';
@@ -44,7 +58,7 @@ function Page({children}: {children: React.ReactNode}) {
   return (
     <ScrollView
       keyboardShouldPersistTaps="handled"
-      contentContainerStyle={[s.page, {paddingHorizontal: type.pagePad, paddingTop: type.gap, paddingBottom: 96}]}
+      contentContainerStyle={[s.page, {paddingHorizontal: type.pagePad, paddingTop: type.gap, paddingBottom: 80}]}
     >
       <View style={[s.pageInner, {maxWidth: type.max, gap: type.gap}]}>{children}</View>
     </ScrollView>
@@ -112,8 +126,8 @@ export function Home({st, setProject, go}: {st: State; setProject: (project: Pro
     return (
       <Page>
         <View accessibilityLabel={tr(l, 'ui.heroA11y')} style={s.homeHero}>
-          <View style={s.heroCircleLarge} />
-          <View style={s.heroCircleSmall} />
+          <Image source={fallbackVisual} resizeMode="cover" style={s.visualHero} />
+          <View style={s.visualOverlay} />
           <Text style={s.heroWord}>HobbyWorth</Text>
         </View>
         <HeroHeading>{tr(l, 'ui.tagline')}</HeroHeading>
@@ -173,7 +187,7 @@ export function Pick({st, choose}: {st: State; choose: (hobby: Hobby) => void}) 
           onPress={() => choose(hobby)}
           style={({pressed}) => [s.hobby, pressed && s.outlinePressed]}
         >
-          <View style={s.hobbyMark}><Text style={s.hobbyMarkText}>{hobbyName(hobby.id, st.locale).slice(0, 1)}</Text></View>
+          <Image source={hobbyVisual(hobby.id)} resizeMode="cover" style={s.visualCompact} />
           <Text style={[s.h3, {flex: 1}]}>{hobbyName(hobby.id, st.locale)}</Text>
           <Text accessible={false} style={s.arrow}>›</Text>
         </Pressable>
@@ -242,7 +256,7 @@ export function First({st, setProject, go}: {st: State; setProject: (project: Pr
   const done = project.steps.map((_, index) => p.steps[index] || false);
   return (
     <Page>
-      <View style={s.projectHero}><Text style={s.projectHeroText}>{name}</Text></View>
+      <View style={s.projectHero}><Image source={hobbyVisual(p.hobbyId)} resizeMode="cover" style={s.visualHero} /><View style={s.visualOverlay} /><Text style={s.projectHeroText}>{name}</Text></View>
       <Text style={s.kicker}>{tr(l, 'ui.first')}</Text>
       <Heading>{name}</Heading>
       <View style={s.pink}><Text style={s.kicker}>{tr(l, 'ui.make')}</Text><Heading level={2}>{project.first}</Heading></View>
