@@ -180,6 +180,12 @@ function Main() {
       <Modal visible={payOpen} transparent animationType="slide" onRequestClose={() => setPayOpen(false)}><View style={s.shade}><View style={s.pay}>
         <Text accessibilityRole="header" style={s.h1}>{tr(l, 'ui.lifetime')}</Text>
         <Text style={s.body}>{tr(l, 'ui.lifetimeBody')}</Text>
+        <View style={s.payBenefits}>
+          <Text style={s.body}>✓ {tr(l, 'ui.unlockProjects')}</Text>
+          <Text style={s.body}>✓ {tr(l, 'ui.unlockCompare')}</Text>
+          <Text style={s.body}>✓ {tr(l, 'ui.unlockScenarios')}</Text>
+          <Text style={s.body}>✓ {tr(l, 'ui.unlockExport')}</Text>
+        </View>
         <Pressable accessibilityRole="button" onPress={buy} style={({pressed}) => [s.btn, pressed && s.btnPressed]}><Text style={s.btnText}>{`${tr(l, 'ui.buy')}${product?.displayPrice ? ` · ${product.displayPrice}` : ''}`}</Text></Pressable>
         <Pressable accessibilityRole="button" onPress={restore} style={s.linkHit}><Text style={s.link}>{tr(l, 'ui.restore')}</Text></Pressable>
         <Pressable accessibilityRole="button" onPress={() => setPayOpen(false)} style={s.linkHit}><Text style={s.link}>{tr(l, 'ui.cancel')}</Text></Pressable>
