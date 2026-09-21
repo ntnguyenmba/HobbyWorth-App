@@ -1,4 +1,4 @@
-import {readFile} from 'node:fs/promises';
+import {readFile, stat} from 'node:fs/promises';
 
 const app = JSON.parse(await readFile(new URL('../app.json', import.meta.url), 'utf8'));
 const pkg = JSON.parse(await readFile(new URL('../package.json', import.meta.url), 'utf8'));
@@ -13,3 +13,8 @@ if (!pkg.dependencies?.['expo-iap']) throw new Error('expo-iap is required for n
 if (Object.values(pkg.scripts || {}).some((value) => String(value).includes('prepare-assets'))) throw new Error('Install and build scripts may not clone artwork.');
 
 console.log('store IDs, Google Play Billing, Hermes, AdMob, and asset configuration passed');
+
+for (const name of ['hero','baking','cooking','photography','painting','hiking','knitting','sewing','writing','coding']) {
+  const info = await stat(new URL(`../assets/hobbies/${name}.png`, import.meta.url));
+  if (info.size < 10000) throw new Error(`assets/hobbies/${name}.png is missing or empty. Run npm run sync:artwork.`);
+}
