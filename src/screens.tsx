@@ -12,18 +12,19 @@ import {
 import * as Picker from 'expo-image-picker';
 import hobbiesJSON from './data/hobbies.json';
 
+const WEBSITE_ART = 'https://raw.githubusercontent.com/ntnguyenmba/HobbyWorth/main';
 const visualByHobby: Record<string, any> = {
-  baking: require('../assets/hobbies/baking.png'),
-  cooking: require('../assets/hobbies/cooking.png'),
-  photography: require('../assets/hobbies/photography.png'),
-  painting: require('../assets/hobbies/painting.png'),
-  hiking: require('../assets/hobbies/hiking.png'),
-  knitting: require('../assets/hobbies/knitting.png'),
-  sewing: require('../assets/hobbies/sewing.png'),
-  writing: require('../assets/hobbies/writing.png'),
-  coding: require('../assets/hobbies/coding.png')
+  baking: {uri: `${WEBSITE_ART}/baking.PNG`},
+  cooking: {uri: `${WEBSITE_ART}/cooking.PNG`},
+  photography: {uri: `${WEBSITE_ART}/photography.PNG`},
+  painting: {uri: `${WEBSITE_ART}/painting.PNG`},
+  hiking: {uri: `${WEBSITE_ART}/hiking.PNG`},
+  knitting: {uri: `${WEBSITE_ART}/knitting.PNG`},
+  sewing: {uri: `${WEBSITE_ART}/sewing.PNG`},
+  writing: {uri: `${WEBSITE_ART}/writing.PNG`},
+  coding: {uri: `${WEBSITE_ART}/coding.PNG`}
 };
-const fallbackVisual = require('../assets/hobbies/hero.png');
+const fallbackVisual = {uri: `${WEBSITE_ART}/hero.PNG`};
 const hobbyVisual = (id: string) => visualByHobby[id] || fallbackVisual;
 import {firstProject, hobbyName, localeName, locales, tr} from './i18n';
 import {calc, scenarioCalc} from './math';
@@ -348,7 +349,16 @@ export function Calculator({st, setProject, finish, pay}: {st: State; setProject
           </View>
         </>
       ) : (
-        <View style={s.pale}><Heading level={3}>{tr(l, 'ui.lifetime')}</Heading><Text style={s.body}>{tr(l, 'ui.lifetimeBody')}</Text><Button text={tr(l, 'ui.buy')} onPress={pay} /></View>
+        <View style={s.pale}>
+          <Text style={s.kicker}>{tr(l, 'ui.unlockKicker')}</Text>
+          <Heading level={3}>{tr(l, 'ui.lifetime')}</Heading>
+          <Text style={s.body}>{tr(l, 'ui.lifetimeBody')}</Text>
+          <Text style={s.body}>✓ {tr(l, 'ui.unlockProjects')}</Text>
+          <Text style={s.body}>✓ {tr(l, 'ui.unlockCompare')}</Text>
+          <Text style={s.body}>✓ {tr(l, 'ui.unlockScenarios')}</Text>
+          <Text style={s.body}>✓ {tr(l, 'ui.unlockExport')}</Text>
+          <Button text={tr(l, 'ui.buy')} onPress={pay} />
+        </View>
       )}
       <TextInput accessibilityLabel={tr(l, 'ui.notePlaceholder')} multiline onChangeText={(note) => setProject({...p, note})} placeholder={tr(l, 'ui.notePlaceholder')} placeholderTextColor={C.muted} style={s.note} value={p.note} />
       <Button text={tr(l, 'ui.finish')} onPress={finish} />
