@@ -16,7 +16,7 @@ const CURRENT_PRODUCT = 'com.everittventures.hobbyworth.lifetime';
 const LEGACY_ANDROID_PRODUCT = 'hobbyworth_lifetime';
 const PRODUCT = Platform.OS === 'android' ? Constants.expoConfig?.extra?.androidIapProductId || CURRENT_PRODUCT : Constants.expoConfig?.extra?.iosIapProductId || CURRENT_PRODUCT;
 const acceptedProducts = new Set([CURRENT_PRODUCT, LEGACY_ANDROID_PRODUCT, PRODUCT].filter(Boolean));
-const PURCHASE_VERIFY_URL = Constants.expoConfig?.extra?.purchaseVerifyUrl || 'https://hobbyworth.everittventures.com/api/mobile/google/verify';
+const PURCHASE_VERIFY_URL = Constants.expoConfig?.extra?.purchaseVerifyUrl || 'https://app.everittventures.com/api/mobile/google/verify';
 
 function androidPurchaseToken(purchase: any): string | null {
   return purchase?.purchaseToken || purchase?.token || purchase?.purchaseTokenAndroid || null;
