@@ -35,9 +35,9 @@
     "export": "Xuất",
     "exportPdf": "Xuất PDF",
     "exportJson": "Xuất JSON",
-    "lifetime": "Giữ các dự án (mua một lần)",
-    "lifetimeBody": "Dự án này vẫn ở trên điện thoại. Mở khóa một lần nếu bạn muốn giữ các dự án đã hoàn thành và bắt đầu dự án khác.",
-    "buy": "Giữ các dự án của tôi",
+    "lifetime": "Lưu mọi dự án. Biết điều gì hiệu quả.",
+    "lifetimeBody": "Mở khóa HobbyWorth một lần để tiếp tục học từ mỗi dự án. Không có thuê bao.",
+    "buy": "Mở khóa HobbyWorth",
     "restore": "Khôi phục mua hàng",
     "settings": "Cài đặt",
     "language": "Ngôn ngữ",
@@ -95,7 +95,12 @@
     "batchDisclaimer": "Một số sở thích có thể bù chi phí hoặc bán được. Màn hình này chỉ dùng các con số bạn nhập. Đây không phải tư vấn thu nhập.",
     "notePlaceholder": "Ghi chú cho dự án này",
     "heroA11y": "Hình minh họa HobbyWorth",
-    "numbersLine": "Kết quả chỉ dùng các số liệu bạn nhập."
+    "numbersLine": "Kết quả chỉ dùng các số liệu bạn nhập.",
+    "unlockKicker": "Mở khóa toàn bộ công cụ HobbyWorth",
+    "unlockProjects": "Lưu không giới hạn các dự án đã hoàn thành",
+    "unlockCompare": "So sánh dự án để xem lựa chọn nào phù hợp hơn với bạn",
+    "unlockScenarios": "Thử phân tích chi phí và các mức giá khác nhau",
+    "unlockExport": "Xuất lịch sử dự án và bản sao lưu"
   },
   "project": {
     "first": "một dự án {hobby} đầu tiên",
