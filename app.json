@@ -83,7 +83,7 @@
       "androidIapProductId": "com.everittventures.hobbyworth.lifetime",
       "androidAdMobBannerUnitId": "ca-app-pub-8647405301136182/4451189318",
       "iosAdMobBannerUnitId": "ca-app-pub-8647405301136182/2656918030",
-      "purchaseVerifyUrl": "https://hobbyworth.everittventures.com/api/mobile/google/verify"
+      "purchaseVerifyUrl": "https://app.everittventures.com/api/mobile/google/verify"
     }
   }
 }
