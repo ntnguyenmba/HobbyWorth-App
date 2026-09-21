@@ -35,9 +35,9 @@
     "export": "导出",
     "exportPdf": "导出 PDF",
     "exportJson": "导出 JSON",
-    "lifetime": "保留你的项目（一次购买）",
-    "lifetimeBody": "这个项目会留在手机上。如果你想保留已完成的项目并开始下一个，只需解锁一次。",
-    "buy": "保留我的项目",
+    "lifetime": "保存每个项目，了解什么更适合你。",
+    "lifetimeBody": "一次解锁 HobbyWorth，继续从每个项目中学习。无需订阅。",
+    "buy": "解锁 HobbyWorth",
     "restore": "恢复购买",
     "settings": "设置",
     "language": "语言",
@@ -95,7 +95,12 @@
     "batchDisclaimer": "有些爱好可以覆盖成本或用于销售。本页面只使用你输入的数字，不构成收入建议。",
     "notePlaceholder": "这个项目的备注",
     "heroA11y": "HobbyWorth 插图",
-    "numbersLine": "结果仅使用你输入的数字。"
+    "numbersLine": "结果仅使用你输入的数字。",
+    "unlockKicker": "解锁完整的 HobbyWorth 工具",
+    "unlockProjects": "无限保存已完成的项目",
+    "unlockCompare": "比较项目，看看哪一种更适合你",
+    "unlockScenarios": "尝试详细成本拆分和不同定价方案",
+    "unlockExport": "导出项目历史和备份"
   },
   "project": {
     "first": "一个 {hobby} 入门项目",
