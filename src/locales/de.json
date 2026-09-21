@@ -35,9 +35,9 @@
     "export": "Exportieren",
     "exportPdf": "PDF exportieren",
     "exportJson": "JSON exportieren",
-    "lifetime": "Projekte behalten (einmalig)",
-    "lifetimeBody": "Dieses Projekt bleibt auf dem Handy. Schalte einmal frei, wenn du abgeschlossene Projekte behalten und ein weiteres starten möchtest.",
-    "buy": "Meine Projekte behalten",
+    "lifetime": "Jedes Projekt behalten. Lernen, was funktioniert.",
+    "lifetimeBody": "Schalte HobbyWorth einmal frei und lerne aus jedem Projekt weiter. Kein Abo.",
+    "buy": "HobbyWorth freischalten",
     "restore": "Kauf wiederherstellen",
     "settings": "Einstellungen",
     "language": "Sprache",
@@ -95,7 +95,12 @@
     "batchDisclaimer": "Manche Hobbys können ihre Kosten decken oder verkauft werden. Dieser Bildschirm verwendet nur deine eingegebenen Zahlen. Das ist keine Einkommensberatung.",
     "notePlaceholder": "Notizen zu diesem Projekt",
     "heroA11y": "HobbyWorth-Illustration",
-    "numbersLine": "Die Ergebnisse verwenden nur deine eingegebenen Zahlen."
+    "numbersLine": "Die Ergebnisse verwenden nur deine eingegebenen Zahlen.",
+    "unlockKicker": "Alle HobbyWorth-Werkzeuge freischalten",
+    "unlockProjects": "Unbegrenzt abgeschlossene Projekte behalten",
+    "unlockCompare": "Projekte vergleichen und sehen, was besser zu dir passt",
+    "unlockScenarios": "Detaillierte Kosten und Preisszenarien ausprobieren",
+    "unlockExport": "Projektverlauf und Sicherungen exportieren"
   },
   "project": {
     "first": "ein erstes {hobby}-Projekt",
