@@ -35,9 +35,9 @@
     "export": "Export",
     "exportPdf": "Export PDF",
     "exportJson": "Export JSON",
-    "lifetime": "Keep your projects (one-time)",
-    "lifetimeBody": "This project stays on the phone. Unlock once if you want to keep finished projects and start another.",
-    "buy": "Keep my projects",
+    "lifetime": "Keep every project. Learn what works.",
+    "lifetimeBody": "Unlock HobbyWorth once to keep building on what you learn from every project. No subscription.",
+    "buy": "Unlock HobbyWorth",
     "restore": "Restore purchase",
     "settings": "Settings",
     "language": "Language",
@@ -95,7 +95,12 @@
     "batchDisclaimer": "Informational tool only. Results are estimates based on the numbers you enter. No sales or income are guaranteed. Not financial, legal, tax, or business advice.",
     "notePlaceholder": "Notes for this project",
     "heroA11y": "HobbyWorth artwork",
-    "numbersLine": "Results use only the numbers you enter."
+    "numbersLine": "Results use only the numbers you enter.",
+    "unlockKicker": "Unlock the full HobbyWorth toolkit",
+    "unlockProjects": "Keep unlimited finished projects",
+    "unlockCompare": "Compare projects and see which works better for you",
+    "unlockScenarios": "Try detailed cost splits and price scenarios",
+    "unlockExport": "Export your project history and backups"
   },
   "project": {
     "first": "one finished {hobby} project",
