@@ -123,7 +123,8 @@
     "categoryHome": "Gia đình",
     "categoryDigital": "Kỹ thuật số",
     "categoryPhoto": "Ảnh và video",
-    "categoryResale": "Bán lại"
+    "categoryResale": "Bán lại",
+    "purchasing": "Đang mua…"
   },
   "project": {
     "first": "một dự án {hobby} đầu tiên",
