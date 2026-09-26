@@ -11,6 +11,7 @@ import {Hobby, Project, State} from './src/types';
 import {s} from './src/styles';
 import {useColors} from './src/theme';
 import {exportProjectBackup, exportProjectPdf} from './src/export';
+import {HobbyWorthBanner} from './src/ads';
 import {Home, Quiz, Pick, First, Calculator, History, Compare, Settings, blank, Screen} from './src/screens';
 
 const CURRENT_PRODUCT = 'com.everittventures.hobbyworth.lifetime';
@@ -52,6 +53,8 @@ function Main() {
   const screen = stack[stack.length - 1];
   const l = st.locale;
   const go = (next: Screen) => setStack((current) => current[current.length - 1] === next ? current : [...current, next]);
+  const goRoot = (next: Screen) => setStack(next === 'home' ? ['home'] : ['home', next]);
+  const goHistory = () => st.premium ? goRoot('history') : setPayOpen(true);
   const back = () => setStack((current) => current.length > 1 ? current.slice(0, -1) : ['home']);
   const iap = useIAP({
     onPurchaseSuccess: async (purchase) => {
@@ -173,25 +176,49 @@ function Main() {
       <StatusBar style={colors === undefined ? 'auto' : 'auto'} />
       <View style={s.header}><View style={s.headerInner}>
         <Text accessibilityRole="header" style={s.wordmark}>HobbyWorth</Text>
-        <Pressable accessibilityLabel={tr(l, 'ui.settings')} accessibilityRole="button" onPress={() => go('settings')} style={({pressed}) => [s.settingsBtn, pressed && s.outlinePressed]}><Text style={s.settingsBtnText}>{tr(l, 'ui.settings')}</Text></Pressable>
+        <Pressable
+          accessibilityLabel={st.premium ? tr(l, 'ui.settings') : tr(l, 'ui.buy')}
+          accessibilityRole="button"
+          onPress={() => st.premium ? goRoot('settings') : setPayOpen(true)}
+          style={({pressed}) => [s.settingsBtn, pressed && s.outlinePressed]}
+        ><Text style={s.settingsBtnText}>{st.premium ? tr(l, 'ui.settings') : tr(l, 'ui.unlockShort')}</Text></Pressable>
       </View></View>
-      {screen === 'home' && <Home st={st} setProject={setProject} go={go} />}
-      {screen === 'quiz' && <Quiz st={st} choose={choose} />}
-      {screen === 'pick' && <Pick st={st} choose={choose} />}
-      {screen === 'first' && st.project && <First st={st} setProject={setProject} go={go} />}
-      {screen === 'calc' && st.project && <Calculator st={st} setProject={setProject} finish={finish} pay={() => setPayOpen(true)} />}
-      {screen === 'history' && <History st={st} repeat={repeat} exportPdf={(project) => exportProjectPdf(project, l, st.symbol)} exportBackup={(project) => exportProjectBackup(project, l)} />}
-      {screen === 'compare' && <Compare st={st} />}
-      {screen === 'settings' && <Settings st={st} setSt={setSt} restore={restore} pay={() => setPayOpen(true)} />}
-      {screen !== 'home' ? <View style={s.back}><Pressable accessibilityRole="button" onPress={back} style={s.linkHit}><Text style={s.link}>{tr(l, 'ui.back')}</Text></Pressable></View> : null}
+      <View style={s.content}>
+        {screen === 'home' && <Home st={st} setProject={setProject} go={go} pay={() => setPayOpen(true)} />}
+        {screen === 'quiz' && <Quiz st={st} choose={choose} />}
+        {screen === 'pick' && <Pick st={st} choose={choose} />}
+        {screen === 'first' && st.project && <First st={st} setProject={setProject} go={go} />}
+        {screen === 'calc' && st.project && <Calculator st={st} setProject={setProject} finish={finish} pay={() => setPayOpen(true)} />}
+        {screen === 'history' && <History st={st} repeat={repeat} exportPdf={(project) => exportProjectPdf(project, l, st.symbol)} exportBackup={(project) => exportProjectBackup(project, l)} />}
+        {screen === 'compare' && <Compare st={st} />}
+        {screen === 'settings' && <Settings st={st} setSt={setSt} restore={restore} pay={() => setPayOpen(true)} />}
+      </View>
+      {screen !== 'home' && !['pick','history','settings'].includes(screen) ? <View style={s.back}><Pressable accessibilityRole="button" onPress={back} style={s.linkHit}><Text style={s.link}>{tr(l, 'ui.back')}</Text></Pressable></View> : null}
+      {!st.premium ? <HobbyWorthBanner /> : null}
+      <View accessibilityRole="tablist" style={s.bottomNav}>
+        <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'home'}} onPress={() => goRoot('home')} style={s.bottomTab}>
+          <Text style={[s.bottomTabText, screen === 'home' && s.bottomTabTextOn]}>{tr(l, 'ui.navHome')}</Text>
+        </Pressable>
+        <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'pick'}} onPress={() => goRoot('pick')} style={s.bottomTab}>
+          <Text style={[s.bottomTabText, screen === 'pick' && s.bottomTabTextOn]}>{tr(l, 'ui.navExplore')}</Text>
+        </Pressable>
+        <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'history'}} onPress={goHistory} style={s.bottomTab}>
+          <Text style={[s.bottomTabText, screen === 'history' && s.bottomTabTextOn]}>{tr(l, 'ui.navHistory')}</Text>
+        </Pressable>
+        <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'settings'}} onPress={() => goRoot('settings')} style={s.bottomTab}>
+          <Text style={[s.bottomTabText, screen === 'settings' && s.bottomTabTextOn]}>{tr(l, 'ui.navSettings')}</Text>
+        </Pressable>
+      </View>
       <Modal visible={payOpen} transparent animationType="slide" onRequestClose={() => setPayOpen(false)}><View style={s.shade}><View style={s.pay}>
         <Text accessibilityRole="header" style={s.h1}>{tr(l, 'ui.lifetime')}</Text>
         <Text style={s.body}>{tr(l, 'ui.lifetimeBody')}</Text>
+        <Text style={s.helper}>{tr(l, 'ui.oneTime')}</Text>
         <View style={s.payBenefits}>
           <Text style={s.body}>✓ {tr(l, 'ui.unlockProjects')}</Text>
           <Text style={s.body}>✓ {tr(l, 'ui.unlockCompare')}</Text>
           <Text style={s.body}>✓ {tr(l, 'ui.unlockScenarios')}</Text>
           <Text style={s.body}>✓ {tr(l, 'ui.unlockExport')}</Text>
+          <Text style={s.body}>✓ {tr(l, 'ui.unlockNoAds')}</Text>
         </View>
         <Pressable accessibilityRole="button" onPress={buy} disabled={purchasing} accessibilityState={{disabled: purchasing, busy: purchasing}} style={({pressed}) => [s.btn, purchasing && {opacity: 0.6}, pressed && !purchasing && s.btnPressed]}><Text style={s.btnText}>{purchasing ? tr(l, 'ui.purchasing') : `${tr(l, 'ui.buy')}${product?.displayPrice ? ` · ${product.displayPrice}` : ''}`}</Text></Pressable>
         <Pressable accessibilityRole="button" onPress={restore} style={s.linkHit}><Text style={s.link}>{tr(l, 'ui.restore')}</Text></Pressable>
