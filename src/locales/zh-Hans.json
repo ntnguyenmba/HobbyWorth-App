@@ -123,7 +123,8 @@
     "categoryHome": "家居",
     "categoryDigital": "数字创作",
     "categoryPhoto": "照片和视频",
-    "categoryResale": "转售"
+    "categoryResale": "转售",
+    "purchasing": "正在购买…"
   },
   "project": {
     "first": "一个 {hobby} 入门项目",
