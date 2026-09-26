@@ -1,19 +1,45 @@
-import {useWindowDimensions} from 'react-native';
+import {useColorScheme, useWindowDimensions} from 'react-native';
 
-export const C = {
-  coral: '#FF5548',
-  teal: '#49A7BE',
-  cream: '#FFFDF7',
-  sky: '#83D5F1',
-  ink: '#243238',
-  muted: '#3E5158',
-  pale: '#EDF9FC',
-  pink: '#FFF0EC',
+export const lightColors = {
+  action: '#FF5548',
+  actionPressed: '#E0483D',
+  surface: '#FFFDF7',
+  surfaceStrong: '#FFFFFF',
+  surfaceSoft: '#EDF9FC',
+  surfaceWarm: '#FFF0EC',
+  text: '#243238',
+  textMuted: '#3E5158',
+  accent: '#1F5F70',
+  accentLine: '#49A7BE',
+  accentSoft: '#83D5F1',
   line: '#D6CFC4',
-  white: '#FFFFFF',
-  coralPressed: '#E0483D',
-  tealInk: '#1F5F70'
+  focus: '#1F5F70',
+  danger: '#A43F38'
 };
+
+export const darkColors = {
+  action: '#FF7B70',
+  actionPressed: '#FF958D',
+  surface: '#152126',
+  surfaceStrong: '#1B2A30',
+  surfaceSoft: '#1E343C',
+  surfaceWarm: '#342622',
+  text: '#F7F4EC',
+  textMuted: '#C9D1D4',
+  accent: '#9ED9E8',
+  accentLine: '#69B8CB',
+  accentSoft: '#2B5963',
+  line: '#405158',
+  focus: '#B7E8F2',
+  danger: '#FF9B92'
+};
+
+export const C = lightColors;
+
+export function useColors() {
+  const scheme = useColorScheme();
+  return scheme === 'dark' ? darkColors : lightColors;
+}
 
 export function useType() {
   const {width} = useWindowDimensions();
@@ -28,9 +54,9 @@ export function useType() {
     h3: tablet ? 20 : 18,
     body: 17,
     button: 17,
-    small: 13,
+    small: 14,
     pagePad: tablet ? 28 : 18,
     max: tablet ? 720 : 560,
-    gap: tablet ? 14 : 12
+    gap: tablet ? 16 : 14
   };
 }
