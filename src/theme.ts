@@ -34,7 +34,20 @@ export const darkColors = {
   danger: '#FF9B92'
 };
 
-export const C = lightColors;
+export const C = {
+  coral: lightColors.action,
+  coralPressed: lightColors.actionPressed,
+  cream: lightColors.surface,
+  white: lightColors.surfaceStrong,
+  pale: lightColors.surfaceSoft,
+  pink: lightColors.surfaceWarm,
+  ink: lightColors.text,
+  muted: lightColors.textMuted,
+  tealInk: lightColors.accent,
+  teal: lightColors.accentLine,
+  sky: lightColors.accentSoft,
+  line: lightColors.line
+};
 
 export function useColors() {
   const scheme = useColorScheme();
