@@ -19,7 +19,7 @@ export function HobbyWorthBanner() {
   }
 
   return (
-    <View
+    <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants"
       style={{
         alignItems: 'center',
         justifyContent: 'center',
