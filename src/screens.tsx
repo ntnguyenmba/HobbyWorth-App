@@ -29,7 +29,7 @@ import {firstProject, hobbyName, localeName, locales, tr} from './i18n';
 import {calc, scenarioCalc} from './math';
 import {Fun, Goal, QuizAnswers, Spend, Time, rankHobbies} from './quiz';
 import {clearAll, keepPhoto} from './storage';
-import {C, useType} from './theme';
+import {C, useColors, useType} from './theme';
 import {s} from './styles';
 import {Hobby, LocaleCode, Project, State} from './types';
 
@@ -55,10 +55,12 @@ export const money = (value: number, symbol: string) =>
 
 function Page({children}: {children: React.ReactNode}) {
   const type = useType();
+  const colors = useColors();
   return (
     <ScrollView
       keyboardShouldPersistTaps="handled"
-      contentContainerStyle={[s.page, {paddingHorizontal: type.pagePad, paddingTop: type.gap, paddingBottom: 80}]}
+      contentContainerStyle={[s.page, {backgroundColor: colors.surface, paddingHorizontal: type.pagePad, paddingTop: type.gap, paddingBottom: 96}]}
+      showsVerticalScrollIndicator={false}
     >
       <View style={[s.pageInner, {maxWidth: type.max, gap: type.gap}]}>{children}</View>
     </ScrollView>
@@ -76,12 +78,14 @@ function HeroHeading({children}: {children: React.ReactNode}) {
   return <Text accessibilityRole="header" style={[s.h1, {fontSize: type.hero, lineHeight: type.hero + 7}]}>{children}</Text>;
 }
 
-function Button({text, onPress, outline = false}: {text: string; onPress: () => void; outline?: boolean}) {
+function Button({text, onPress, outline = false, disabled = false}: {text: string; onPress: () => void; outline?: boolean; disabled?: boolean}) {
   return (
     <Pressable
       accessibilityRole="button"
+      accessibilityState={{disabled}}
+      disabled={disabled}
       onPress={onPress}
-      style={({pressed}) => [s.btn, outline && s.outline, pressed && (outline ? s.outlinePressed : s.btnPressed)]}
+      style={({pressed}) => [s.btn, outline && s.outline, disabled && {opacity: 0.5}, pressed && !disabled && (outline ? s.outlinePressed : s.btnPressed)]}
     >
       <Text style={[s.btnText, outline && s.outlineText]}>{text}</Text>
     </Pressable>
@@ -125,7 +129,7 @@ export function Home({st, setProject, go}: {st: State; setProject: (project: Pro
   if (!st.project) {
     return (
       <Page>
-        <View accessibilityLabel={tr(l, 'ui.heroA11y')} style={s.homeHero}>
+        <View accessible={false} importantForAccessibility="no-hide-descendants" style={s.homeHero}>
           <Image source={fallbackVisual} resizeMode="cover" style={s.visualHero} />
           <View style={s.visualOverlay} />
           <Text style={s.heroWord}>HobbyWorth</Text>
@@ -242,7 +246,7 @@ export function Quiz({st, choose}: {st: State; choose: (hobby: Hobby) => void}) 
           <Text style={[s.h3, selected === option.value && s.choiceOnText]}>{tr(l, `ui.${option.label}`)}</Text>
         </Pressable>
       ))}
-      <Button text={tr(l, 'ui.next')} onPress={() => { if (selected) setStep((current) => current + 1); }} />
+      <Button text={tr(l, 'ui.next')} disabled={!selected} onPress={() => { if (selected) setStep((current) => current + 1); }} />
       {step > 0 ? <LinkButton text={tr(l, 'ui.back')} onPress={() => setStep((current) => current - 1)} /> : null}
     </Page>
   );
