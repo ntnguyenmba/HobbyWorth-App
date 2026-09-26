@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {Alert, Modal, Platform, Pressable, Text, View} from 'react-native';
+import {AccessibilityInfo, Alert, Modal, Platform, Pressable, Text, View} from 'react-native';
 import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import {StatusBar} from 'expo-status-bar';
 import {useFonts, Nunito_400Regular, Nunito_700Bold, Nunito_800ExtraBold} from '@expo-google-fonts/nunito';
@@ -9,6 +9,7 @@ import {deviceLocale, tr} from './src/i18n';
 import {deletePhotos, load, save} from './src/storage';
 import {Hobby, Project, State} from './src/types';
 import {s} from './src/styles';
+import {useColors} from './src/theme';
 import {exportProjectBackup, exportProjectPdf} from './src/export';
 import {Home, Quiz, Pick, First, Calculator, History, Compare, Settings, blank, Screen} from './src/screens';
 
@@ -45,6 +46,8 @@ function Main() {
   const [ready, setReady] = useState(false);
   const [stack, setStack] = useState<Screen[]>(['home']);
   const [payOpen, setPayOpen] = useState(false);
+  const [purchasing, setPurchasing] = useState(false);
+  const colors = useColors();
   const iapRef = useRef<any>(null);
   const screen = stack[stack.length - 1];
   const l = st.locale;
@@ -60,9 +63,11 @@ function Main() {
       }
       try { await iapRef.current.finishTransaction({purchase, isConsumable: false}); } catch {}
       setSt((current) => ({...current, premium: true}));
+      setPurchasing(false);
       setPayOpen(false);
+      AccessibilityInfo.announceForAccessibility(tr(st.locale, 'ui.purchaseComplete'));
     },
-    onPurchaseError: () => Alert.alert(tr(st.locale, 'ui.purchaseError'))
+    onPurchaseError: () => { setPurchasing(false); Alert.alert(tr(st.locale, 'ui.purchaseError')); }
   });
   iapRef.current = iap;
 
@@ -155,15 +160,17 @@ function Main() {
       }
     }
     try {
+      setPurchasing(true);
       await iap.requestPurchase({request: {apple: {sku: PRODUCT}, google: {skus: [PRODUCT]}}, type: 'in-app'});
     } catch {
+      setPurchasing(false);
       Alert.alert(tr(l, 'ui.purchaseError'));
     }
   };
 
   return (
-    <SafeAreaView style={s.root}>
-      <StatusBar style="dark" />
+    <SafeAreaView style={[s.root, {backgroundColor: colors.surface}]}>
+      <StatusBar style={colors === undefined ? 'auto' : 'auto'} />
       <View style={s.header}><View style={s.headerInner}>
         <Text accessibilityRole="header" style={s.wordmark}>HobbyWorth</Text>
         <Pressable accessibilityLabel={tr(l, 'ui.settings')} accessibilityRole="button" onPress={() => go('settings')} style={({pressed}) => [s.settingsBtn, pressed && s.outlinePressed]}><Text style={s.settingsBtnText}>{tr(l, 'ui.settings')}</Text></Pressable>
@@ -186,7 +193,7 @@ function Main() {
           <Text style={s.body}>✓ {tr(l, 'ui.unlockScenarios')}</Text>
           <Text style={s.body}>✓ {tr(l, 'ui.unlockExport')}</Text>
         </View>
-        <Pressable accessibilityRole="button" onPress={buy} style={({pressed}) => [s.btn, pressed && s.btnPressed]}><Text style={s.btnText}>{`${tr(l, 'ui.buy')}${product?.displayPrice ? ` · ${product.displayPrice}` : ''}`}</Text></Pressable>
+        <Pressable accessibilityRole="button" onPress={buy} disabled={purchasing} accessibilityState={{disabled: purchasing, busy: purchasing}} style={({pressed}) => [s.btn, purchasing && {opacity: 0.6}, pressed && !purchasing && s.btnPressed]}><Text style={s.btnText}>{purchasing ? tr(l, 'ui.purchasing') : `${tr(l, 'ui.buy')}${product?.displayPrice ? ` · ${product.displayPrice}` : ''}`}</Text></Pressable>
         <Pressable accessibilityRole="button" onPress={restore} style={s.linkHit}><Text style={s.link}>{tr(l, 'ui.restore')}</Text></Pressable>
         <Pressable accessibilityRole="button" onPress={() => setPayOpen(false)} style={s.linkHit}><Text style={s.link}>{tr(l, 'ui.cancel')}</Text></Pressable>
       </View></View></Modal>
