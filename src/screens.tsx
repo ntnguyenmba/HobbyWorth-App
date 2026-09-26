@@ -124,7 +124,7 @@ function Metric({label, value}: {label: string; value: string}) {
   return <View style={s.metric}><Text style={s.small}>{label}</Text><Text style={s.metricValue}>{value}</Text></View>;
 }
 
-export function Home({st, setProject, go}: {st: State; setProject: (project: Project) => void; go: (screen: Screen) => void}) {
+export function Home({st, setProject, go, pay}: {st: State; setProject: (project: Project) => void; go: (screen: Screen) => void; pay: () => void}) {
   const l = st.locale;
   if (!st.project) {
     return (
@@ -137,8 +137,14 @@ export function Home({st, setProject, go}: {st: State; setProject: (project: Pro
         <HeroHeading>{tr(l, 'ui.tagline')}</HeroHeading>
         <View style={s.card}>
           <Button text={tr(l, 'ui.quiz')} onPress={() => go('quiz')} />
-          <Button text={tr(l, 'ui.skip')} outline onPress={() => go('pick')} />
+          <LinkButton text={tr(l, 'ui.skip')} onPress={() => go('pick')} />
         </View>
+        {!st.premium ? <View style={s.pale}>
+          <Text style={s.kicker}>{tr(l, 'ui.unlockKicker')}</Text>
+          <Heading level={3}>{tr(l, 'ui.lifetime')}</Heading>
+          <Text style={s.body}>{tr(l, 'ui.unlockHomeBody')}</Text>
+          <Button text={tr(l, 'ui.unlockShort')} onPress={pay} />
+        </View> : null}
         <Text style={s.helper}>{tr(l, 'ui.numbersLine')}</Text>
       </Page>
     );
@@ -180,22 +186,60 @@ export function Home({st, setProject, go}: {st: State; setProject: (project: Pro
 }
 
 export function Pick({st, choose}: {st: State; choose: (hobby: Hobby) => void}) {
+  const l = st.locale;
+  const [query, setQuery] = useState('');
+  const [category, setCategory] = useState('all');
+  const categories = ['all', 'food', 'craft', 'art', 'home', 'digital', 'photo', 'resale'];
+  const categoryLabel: Record<string, string> = {
+    all: 'categoryAll', food: 'categoryFood', craft: 'categoryCraft', art: 'categoryArt',
+    home: 'categoryHome', digital: 'categoryDigital', photo: 'categoryPhoto', resale: 'categoryResale'
+  };
+  const filtered = useMemo(() => {
+    const needle = query.trim().toLocaleLowerCase();
+    return hobbies.filter((hobby) => {
+      const categoryMatch = category === 'all' || hobby.category === category;
+      const nameMatch = !needle || hobbyName(hobby.id, l).toLocaleLowerCase().includes(needle);
+      return categoryMatch && nameMatch;
+    });
+  }, [query, category, l]);
+
   return (
     <Page>
-      <Heading>{tr(st.locale, 'ui.pick')}</Heading>
-      {hobbies.map((hobby) => (
+      <Heading>{tr(l, 'ui.pick')}</Heading>
+      <TextInput
+        accessibilityLabel={tr(l, 'ui.searchHobbies')}
+        onChangeText={setQuery}
+        placeholder={tr(l, 'ui.searchHobbies')}
+        placeholderTextColor={C.muted}
+        style={s.searchInput}
+        value={query}
+      />
+      <View style={s.chipWrap}>
+        {categories.map((item) => {
+          const on = category === item;
+          return <Pressable
+            accessibilityRole="radio"
+            accessibilityState={{checked: on}}
+            key={item}
+            onPress={() => setCategory(item)}
+            style={[s.chip, on && s.chipOn]}
+          ><Text style={[s.chipText, on && s.chipOnText]}>{tr(l, `ui.${categoryLabel[item]}`)}</Text></Pressable>;
+        })}
+      </View>
+      <Text style={s.helper}>{tr(l, 'ui.resultCount', {n: filtered.length})}</Text>
+      {filtered.length ? filtered.map((hobby) => (
         <Pressable
-          accessibilityLabel={hobbyName(hobby.id, st.locale)}
+          accessibilityLabel={hobbyName(hobby.id, l)}
           accessibilityRole="button"
           key={hobby.id}
           onPress={() => choose(hobby)}
           style={({pressed}) => [s.hobby, pressed && s.outlinePressed]}
         >
           <Image source={hobbyVisual(hobby.id)} resizeMode="cover" style={s.visualCompact} />
-          <Text style={[s.h3, {flex: 1}]}>{hobbyName(hobby.id, st.locale)}</Text>
+          <Text style={[s.h3, {flex: 1}]}>{hobbyName(hobby.id, l)}</Text>
           <Text accessible={false} style={s.arrow}>›</Text>
         </Pressable>
-      ))}
+      )) : <View style={s.card}><Heading level={3}>{tr(l, 'ui.noHobbyResults')}</Heading><Text style={s.body}>{tr(l, 'ui.tryAnotherSearch')}</Text></View>}
     </Page>
   );
 }
@@ -267,7 +311,6 @@ export function First({st, setProject, go}: {st: State; setProject: (project: Pr
       <View style={s.card}>
         <Heading level={3}>{tr(l, 'ui.need')}</Heading>
         {project.need.map((item) => <Text key={item} style={s.body}>• {item}</Text>)}
-        <LinkButton text={tr(l, 'ui.fullKit')} onPress={() => Linking.openURL(SITE)} />
       </View>
       <View style={s.card}>
         <Heading level={3}>{tr(l, 'ui.steps')}</Heading>
@@ -315,9 +358,12 @@ export function Calculator({st, setProject, finish, pay}: {st: State; setProject
         <Field label={tr(l, 'ui.yield')} value={p.numbers.yield} onChange={(value) => setNumber('yield', value)} />
         <Field label={tr(l, 'ui.price')} value={p.numbers.price} onChange={(value) => setNumber('price', value)} symbol={st.symbol} />
       </View>
-      <View style={s.verdict}><Text style={s.verdictText}>{verdict}</Text></View>
+      <View style={s.verdict}>
+        <Text style={s.small}>{tr(l, 'ui.left')}</Text>
+        <Text style={s.resultValue}>{money(result.leftover, st.symbol)}</Text>
+        <Text style={s.verdictText}>{verdict}</Text>
+      </View>
       <View style={s.grid}>
-        <Metric label={tr(l, 'ui.left')} value={money(result.leftover, st.symbol)} />
         <Metric label={tr(l, 'ui.unit')} value={money(result.perUnit, st.symbol)} />
         <Metric label={tr(l, 'ui.hour')} value={money(result.perHour, st.symbol)} />
         <Metric label={tr(l, 'ui.breakEven')} value={String(result.breakEven)} />
@@ -360,6 +406,7 @@ export function Calculator({st, setProject, finish, pay}: {st: State; setProject
           <Text style={s.body}>✓ {tr(l, 'ui.unlockCompare')}</Text>
           <Text style={s.body}>✓ {tr(l, 'ui.unlockScenarios')}</Text>
           <Text style={s.body}>✓ {tr(l, 'ui.unlockExport')}</Text>
+          <Text style={s.body}>✓ {tr(l, 'ui.unlockNoAds')}</Text>
           <Button text={tr(l, 'ui.buy')} onPress={pay} />
         </View>
       )}
@@ -422,7 +469,7 @@ export function Settings({st, setSt, restore, pay}: {st: State; setSt: React.Dis
         <View style={s.chipWrap}>{symbols.map((symbol) => <Pressable accessibilityRole="radio" accessibilityState={{checked: st.symbol === symbol}} key={symbol || 'none'} onPress={() => setSt((current) => ({...current, symbol}))} style={[s.chip, st.symbol === symbol && s.chipOn]}><Text style={[s.chipText, st.symbol === symbol && s.chipOnText]}>{symbol || tr(l, 'ui.none')}</Text></Pressable>)}</View>
       </View>
       <View style={s.pale}><Text style={s.body}>{tr(l, 'ui.local')}</Text><Text style={s.body}>{tr(l, 'ui.noAccount')}</Text></View>
-      {!st.premium ? <Button text={tr(l, 'ui.buy')} onPress={pay} /> : null}
+      {!st.premium ? <View style={s.pale}><Text style={s.kicker}>{tr(l, 'ui.unlockKicker')}</Text><Heading level={3}>{tr(l, 'ui.lifetime')}</Heading><Text style={s.body}>{tr(l, 'ui.settingsUpgradeBody')}</Text><Button text={tr(l, 'ui.buy')} onPress={pay} /></View> : <View style={s.pale}><Text style={s.kicker}>{tr(l, 'ui.lifetimeActive')}</Text><Text style={s.body}>{tr(l, 'ui.noAdsActive')}</Text></View>}
       <View style={s.card}>
         <LinkButton text={tr(l, 'ui.restore')} onPress={restore} />
         <LinkButton text={tr(l, 'ui.support')} onPress={() => Linking.openURL(`${SITE}/support`)} />
