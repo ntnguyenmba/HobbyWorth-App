@@ -65,7 +65,7 @@ function Main() {
       setSt((current) => ({...current, premium: true}));
       setPurchasing(false);
       setPayOpen(false);
-      AccessibilityInfo.announceForAccessibility(tr(st.locale, 'ui.purchaseComplete'));
+      AccessibilityInfo.announceForAccessibility(tr(st.locale, 'ui.restored'));
     },
     onPurchaseError: () => { setPurchasing(false); Alert.alert(tr(st.locale, 'ui.purchaseError')); }
   });
