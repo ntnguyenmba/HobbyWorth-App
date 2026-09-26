@@ -3,6 +3,7 @@ import {C} from './theme';
 
 export const s = StyleSheet.create({
   root: {flex: 1, backgroundColor: C.cream},
+  content: {flex: 1},
   page: {flexGrow: 1, backgroundColor: C.cream, alignItems: 'center'},
   pageInner: {width: '100%', alignSelf: 'center'},
   header: {backgroundColor: C.cream, borderBottomWidth: 1, borderBottomColor: C.line},
@@ -21,14 +22,15 @@ export const s = StyleSheet.create({
   pale: {backgroundColor: C.pale, borderRadius: 16, padding: 16, gap: 10, borderWidth: 1, borderColor: '#C7E8F2'},
   pink: {backgroundColor: C.pink, borderRadius: 16, padding: 16, gap: 8, borderWidth: 1, borderColor: '#F3D0C8'},
   verdict: {backgroundColor: C.white, borderRadius: 16, paddingVertical: 16, paddingHorizontal: 16, borderWidth: 2, borderColor: C.coral},
-  verdictText: {color: C.coral, fontFamily: 'Nunito_800ExtraBold', fontSize: 26, lineHeight: 32},
+  verdictText: {color: C.coral, fontFamily: 'Nunito_800ExtraBold', fontSize: 21, lineHeight: 28},
+  resultValue: {color: C.ink, fontFamily: 'Nunito_800ExtraBold', fontSize: 38, lineHeight: 46, letterSpacing: -0.8},
   btn: {backgroundColor: C.coral, borderRadius: 14, minHeight: 56, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 16},
   btnPressed: {backgroundColor: C.coralPressed},
   btnText: {color: C.white, fontFamily: 'Nunito_700Bold', fontSize: 17},
   outline: {backgroundColor: C.white, borderWidth: 1.5, borderColor: C.teal},
   outlinePressed: {backgroundColor: C.pale},
   outlineText: {color: C.tealInk},
-  linkHit: {minHeight: 44, justifyContent: 'center', alignSelf: 'flex-start'},
+  linkHit: {minHeight: 48, justifyContent: 'center', alignSelf: 'flex-start'},
   link: {color: C.tealInk, fontFamily: 'Nunito_700Bold', fontSize: 16, textDecorationLine: 'underline'},
   field: {flexGrow: 1, flexBasis: '46%', minWidth: 140, gap: 6},
   inputRow: {flexDirection: 'row', alignItems: 'center', backgroundColor: C.white, borderWidth: 1, borderColor: C.line, borderRadius: 12, paddingHorizontal: 10, minHeight: 56},
@@ -64,6 +66,7 @@ export const s = StyleSheet.create({
   photoRow: {flexDirection: 'row', flexWrap: 'wrap', gap: 8},
   photo: {width: 72, height: 72, borderRadius: 10, backgroundColor: C.pale},
   scenario: {gap: 8, paddingTop: 6},
+  searchInput: {minHeight: 56, backgroundColor: C.white, borderWidth: 1, borderColor: C.line, borderRadius: 14, paddingHorizontal: 16, color: C.ink, fontFamily: 'Nunito_400Regular', fontSize: 17},
   note: {minHeight: 96, backgroundColor: C.white, borderWidth: 1, borderColor: C.line, borderRadius: 12, padding: 12, color: C.ink, fontFamily: 'Nunito_400Regular', fontSize: 16, textAlignVertical: 'top'},
   back: {paddingHorizontal: 18, paddingVertical: 10, borderTopWidth: 1, borderTopColor: C.line, backgroundColor: C.cream},
   shade: {flex: 1, backgroundColor: 'rgba(36,50,56,0.45)', justifyContent: 'flex-end'},
@@ -80,5 +83,9 @@ export const s = StyleSheet.create({
   visual: {width: '100%', height: 140, borderRadius: 16, backgroundColor: C.pale},
   visualCompact: {width: 64, height: 64, borderRadius: 14, backgroundColor: C.pale},
   visualHero: {position: 'absolute', left: 0, top: 0, right: 0, bottom: 0, width: '100%', height: '100%'},
-  visualOverlay: {position: 'absolute', left: 0, right: 0, bottom: 0, height: 72, backgroundColor: 'rgba(255,253,247,0.82)'}
+  visualOverlay: {position: 'absolute', left: 0, right: 0, bottom: 0, height: 72, backgroundColor: 'rgba(255,253,247,0.82)'},
+  bottomNav: {flexDirection: 'row', backgroundColor: C.white, borderTopWidth: 1, borderTopColor: C.line, paddingHorizontal: 8, paddingTop: 6, paddingBottom: 6},
+  bottomTab: {flex: 1, minHeight: 50, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 4, borderRadius: 12},
+  bottomTabText: {color: C.muted, fontFamily: 'Nunito_700Bold', fontSize: 13, textAlign: 'center'},
+  bottomTabTextOn: {color: C.tealInk}
 });
