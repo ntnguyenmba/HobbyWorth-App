@@ -123,7 +123,8 @@
     "categoryHome": "Hogar",
     "categoryDigital": "Digital",
     "categoryPhoto": "Foto y video",
-    "categoryResale": "Reventa"
+    "categoryResale": "Reventa",
+    "purchasing": "Comprando…"
   },
   "project": {
     "first": "un primer proyecto de {hobby}",
