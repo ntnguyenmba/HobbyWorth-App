@@ -135,7 +135,10 @@
     "guideMonthBody": "升级设备前，至少重复完成第一个项目两次。记录花费、每次所需时间以及真正使用到的物品。",
     "guideFit": "适合你吗？",
     "guideFitBody": "把成本、时间和难度放在一起考虑。选择符合每周时间安排和实际空间的爱好。",
-    "guidePlan": "打开第一个项目"
+    "guidePlan": "打开第一个项目",
+    "privacyChoices": "广告隐私选项",
+    "privacyChoicesUnavailable": "你当前所在地区不需要广告隐私选项。",
+    "privacyChoicesError": "无法打开广告隐私选项。"
   },
   "project": {
     "first": "一个 {hobby} 入门项目",

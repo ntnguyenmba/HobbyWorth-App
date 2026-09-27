@@ -11,7 +11,7 @@ import {Hobby, Project, State} from './src/types';
 import {s} from './src/styles';
 import {useColors} from './src/theme';
 import {exportProjectBackup, exportProjectPdf} from './src/export';
-import {HobbyWorthBanner} from './src/ads';
+import {HobbyWorthBanner, prepareMobileAds, showPrivacyChoices} from './src/ads';
 import {Home, Quiz, Pick, First, Calculator, History, Compare, Settings, blank, Screen} from './src/screens';
 
 const CURRENT_PRODUCT = 'com.everittventures.hobbyworth.lifetime';
@@ -48,6 +48,7 @@ function Main() {
   const [stack, setStack] = useState<Screen[]>(['home']);
   const [payOpen, setPayOpen] = useState(false);
   const [purchasing, setPurchasing] = useState(false);
+  const [adsReady, setAdsReady] = useState(false);
   const colors = useColors();
   const iapRef = useRef<any>(null);
   const screen = stack[stack.length - 1];
@@ -76,6 +77,20 @@ function Main() {
 
   useEffect(() => { load(initial()).then((value) => { setSt(value); setReady(true); }); }, []);
   useEffect(() => { if (ready) save(st); }, [st, ready]);
+  useEffect(() => {
+    let active = true;
+    if (!ready || st.premium) {
+      setAdsReady(false);
+      return () => { active = false; };
+    }
+    prepareMobileAds()
+      .then((allowed) => { if (active) setAdsReady(allowed); })
+      .catch((error) => {
+        if (__DEV__) console.warn('Ads initialization failed:', error);
+        if (active) setAdsReady(false);
+      });
+    return () => { active = false; };
+  }, [ready, st.premium]);
   useEffect(() => {
     if (!iap.connected) return;
     const skus = Platform.OS === 'android' ? [PRODUCT, LEGACY_ANDROID_PRODUCT] : [PRODUCT];
@@ -147,6 +162,14 @@ function Main() {
       }, 250);
     } catch { Alert.alert(tr(l, 'ui.notFound')); }
   };
+  const managePrivacy = async () => {
+    try {
+      const shown = await showPrivacyChoices();
+      if (!shown) Alert.alert(tr(l, 'ui.privacyChoicesUnavailable'));
+    } catch {
+      Alert.alert(tr(l, 'ui.privacyChoicesError'));
+    }
+  };
   const product = (iap.products as any[]).find((item) => item.id === PRODUCT || item.productId === PRODUCT);
   const buy = async () => {
     if (!iap.connected) {
@@ -191,10 +214,10 @@ function Main() {
         {screen === 'calc' && st.project && <Calculator st={st} setProject={setProject} finish={finish} pay={() => setPayOpen(true)} />}
         {screen === 'history' && <History st={st} repeat={repeat} exportPdf={(project) => exportProjectPdf(project, l, st.symbol)} exportBackup={(project) => exportProjectBackup(project, l)} />}
         {screen === 'compare' && <Compare st={st} />}
-        {screen === 'settings' && <Settings st={st} setSt={setSt} restore={restore} pay={() => setPayOpen(true)} />}
+        {screen === 'settings' && <Settings st={st} setSt={setSt} restore={restore} pay={() => setPayOpen(true)} managePrivacy={managePrivacy} />}
       </View>
       {screen !== 'home' && !['pick','history','settings'].includes(screen) ? <View style={s.back}><Pressable accessibilityRole="button" onPress={back} style={s.linkHit}><Text style={s.link}>{tr(l, 'ui.back')}</Text></Pressable></View> : null}
-      {!st.premium ? <HobbyWorthBanner /> : null}
+      {!st.premium ? <HobbyWorthBanner enabled={adsReady} /> : null}
       <View accessibilityRole="tablist" style={s.bottomNav}>
         <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'home'}} onPress={() => goRoot('home')} style={s.bottomTab}>
           <Text style={[s.bottomTabText, screen === 'home' && s.bottomTabTextOn]}>{tr(l, 'ui.navHome')}</Text>

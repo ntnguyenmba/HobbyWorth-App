@@ -135,7 +135,10 @@
     "guideMonthBody": "Wiederhole das erste Projekt mindestens zweimal, bevor du Ausrüstung aufrüstest. Notiere Ausgaben, Dauer jedes Versuchs und was du wirklich benutzt.",
     "guideFit": "Passt das zu dir?",
     "guideFitBody": "Betrachte Kosten, Zeit und Schwierigkeit zusammen. Wähle etwas, das zu deinem Wochenplan und deinem tatsächlichen Platz passt.",
-    "guidePlan": "Erstes Projekt öffnen"
+    "guidePlan": "Erstes Projekt öffnen",
+    "privacyChoices": "Datenschutzoptionen für Werbung",
+    "privacyChoicesUnavailable": "Datenschutzoptionen für Werbung sind in deiner aktuellen Region nicht erforderlich.",
+    "privacyChoicesError": "Die Datenschutzoptionen für Werbung konnten nicht geöffnet werden."
   },
   "project": {
     "first": "ein erstes {hobby}-Projekt",

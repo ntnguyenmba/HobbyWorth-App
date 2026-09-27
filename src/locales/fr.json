@@ -135,7 +135,10 @@
     "guideMonthBody": "Répétez le premier projet au moins deux fois avant d'améliorer votre équipement. Notez vos dépenses, le temps de chaque essai et ce que vous utilisez vraiment.",
     "guideFit": "Est-ce fait pour vous ?",
     "guideFitBody": "Considérez ensemble le coût, le temps et la difficulté. Choisissez une activité adaptée à votre emploi du temps et à l'espace dont vous disposez.",
-    "guidePlan": "Ouvrir le premier projet"
+    "guidePlan": "Ouvrir le premier projet",
+    "privacyChoices": "Choix de confidentialité des publicités",
+    "privacyChoicesUnavailable": "Les choix de confidentialité des publicités ne sont pas requis dans votre région actuelle.",
+    "privacyChoicesError": "Impossible d’ouvrir les choix de confidentialité des publicités."
   },
   "project": {
     "first": "un premier projet de {hobby}",

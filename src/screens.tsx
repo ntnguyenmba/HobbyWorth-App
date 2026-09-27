@@ -469,7 +469,7 @@ export function Compare({st}: {st: State}) {
   );
 }
 
-export function Settings({st, setSt, restore, pay}: {st: State; setSt: React.Dispatch<React.SetStateAction<State>>; restore: () => void; pay: () => void}) {
+export function Settings({st, setSt, restore, pay, managePrivacy}: {st: State; setSt: React.Dispatch<React.SetStateAction<State>>; restore: () => void; pay: () => void; managePrivacy: () => void}) {
   const l = st.locale;
   const symbols = ['', '$', '€', '£', '₫', '¥', '₹', '₩'];
   return (
@@ -489,6 +489,7 @@ export function Settings({st, setSt, restore, pay}: {st: State; setSt: React.Dis
         <LinkButton text={tr(l, 'ui.restore')} onPress={restore} />
         <LinkButton text={tr(l, 'ui.support')} onPress={() => Linking.openURL(`${SITE}/support`)} />
         <LinkButton text={tr(l, 'ui.privacy')} onPress={() => Linking.openURL(`${SITE}/privacy`)} />
+        {!st.premium ? <LinkButton text={tr(l, 'ui.privacyChoices')} onPress={managePrivacy} /> : null}
         <LinkButton text={tr(l, 'ui.terms')} onPress={() => Linking.openURL(`${SITE}/terms`)} />
         <LinkButton text={tr(l, 'ui.deleteData')} onPress={() => Alert.alert(tr(l, 'ui.deleteTitle'), tr(l, 'ui.deleteBody'), [{text: tr(l, 'ui.cancel'), style: 'cancel'}, {text: tr(l, 'ui.delete'), style: 'destructive', onPress: async () => { await clearAll(); setSt((current) => ({...current, project: null, history: []})); }}])} />
       </View>

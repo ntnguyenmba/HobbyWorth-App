@@ -135,7 +135,10 @@
     "guideMonthBody": "Repeat the first project at least twice before upgrading equipment. Track what you spend, how long each attempt takes and what you actually use.",
     "guideFit": "Is this a fit?",
     "guideFitBody": "Use cost, time and difficulty together. Pick something that fits both your weekly schedule and the space you actually have.",
-    "guidePlan": "Open first project"
+    "guidePlan": "Open first project",
+    "privacyChoices": "Ad privacy choices",
+    "privacyChoicesUnavailable": "Ad privacy choices are not required for your current region.",
+    "privacyChoicesError": "Ad privacy choices could not be opened."
   },
   "project": {
     "first": "one finished {hobby} project",

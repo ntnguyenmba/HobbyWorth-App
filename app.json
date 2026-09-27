@@ -29,6 +29,16 @@
         "CFBundleAllowMixedLocalizations": true,
         "UISupportsDocumentBrowser": false,
         "UIRequiresFullScreen": false
+      },
+      "privacyManifests": {
+        "NSPrivacyAccessedAPITypes": [
+          {
+            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryUserDefaults",
+            "NSPrivacyAccessedAPITypeReasons": [
+              "CA92.1"
+            ]
+          }
+        ]
       }
     },
     "android": {
@@ -43,6 +53,20 @@
       ]
     },
     "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "privacyManifestAggregationEnabled": true
+          }
+        }
+      ],
+      [
+        "expo-tracking-transparency",
+        {
+          "userTrackingPermission": "HobbyWorth uses the advertising identifier only when you allow it, so ads can be measured and, where permitted, personalized."
+        }
+      ],
       [
         "expo-localization",
         {
@@ -77,7 +101,9 @@
         "react-native-google-mobile-ads",
         {
           "androidAppId": "ca-app-pub-8647405301136182~1647088699",
-          "iosAppId": "ca-app-pub-8647405301136182~4273252030"
+          "iosAppId": "ca-app-pub-8647405301136182~4273252030",
+          "userTrackingUsageDescription": "HobbyWorth uses the advertising identifier only when you allow it, so ads can be measured and, where permitted, personalized.",
+          "delayAppMeasurementInit": true
         }
       ]
     ],

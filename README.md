@@ -82,11 +82,17 @@ Do not use Expo Go for IAP or AdMob testing. These features require a native bui
 
 ## AdMob
 
-Android is configured with the HobbyWorth AdMob Android app ID and banner unit ID. Development builds use Google's test banner unit. Ads are disabled on iOS until a real HobbyWorth iOS AdMob app ID is added, so Google's sample iOS ID is not shipped.
+Android and iOS are configured with the production HobbyWorth AdMob app IDs and banner unit IDs. Development builds use Google's test banner unit. Production ads are not requested until Google UMP has refreshed consent status and reports that ads may be requested. On iOS, ATT is requested only when the current consent state permits that request. Paid lifetime users do not load ads.
+
+## Privacy and consent
+
+Google UMP consent is refreshed before ads are requested. Settings includes an Ad privacy choices action for free users. iOS includes ATT usage text and privacy-manifest aggregation.
+
+In AdMob, publish the GDPR/EEA privacy message and iOS IDFA message under Privacy & messaging before store release.
 
 ## Validation
 
-`npm run typecheck` checks locale parity, store IDs, Hermes configuration, the asset pipeline, TypeScript, calculator behavior, and quiz result behavior.
+`npm run typecheck` checks locale parity, store IDs, Hermes configuration, the asset pipeline, TypeScript, calculator behavior, and quiz result behavior. Store release still requires local native builds plus real-device purchase, restore, consent, and ad tests.
 
 ## URLs
 

@@ -135,7 +135,10 @@
     "guideMonthBody": "Repite el primer proyecto al menos dos veces antes de mejorar el equipo. Registra lo que gastas, cuánto tarda cada intento y qué utilizas de verdad.",
     "guideFit": "¿Es para ti?",
     "guideFitBody": "Considera juntos el costo, el tiempo y la dificultad. Elige algo que encaje con tu horario semanal y el espacio que realmente tienes.",
-    "guidePlan": "Abrir primer proyecto"
+    "guidePlan": "Abrir primer proyecto",
+    "privacyChoices": "Opciones de privacidad de anuncios",
+    "privacyChoicesUnavailable": "Las opciones de privacidad de anuncios no son necesarias en tu región actual.",
+    "privacyChoicesError": "No se pudieron abrir las opciones de privacidad de anuncios."
   },
   "project": {
     "first": "un primer proyecto de {hobby}",
