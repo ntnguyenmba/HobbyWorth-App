@@ -124,7 +124,18 @@
     "categoryDigital": "Kỹ thuật số",
     "categoryPhoto": "Ảnh và video",
     "categoryResale": "Bán lại",
-    "purchasing": "Đang mua…"
+    "purchasing": "Đang mua…",
+    "guide": "Hướng dẫn sở thích",
+    "guideCost": "Mức khởi đầu",
+    "guideTime": "Thời gian mỗi tuần",
+    "guideDifficulty": "Độ khó",
+    "guideBefore": "Trước khi mua",
+    "guideBeforeBody": "Hãy bắt đầu bằng dự án đầu tiên, dùng hoặc mượn những gì bạn đã có, rồi chỉ mua thứ thực sự giải quyết một hạn chế.",
+    "guideMonth": "Tháng đầu tiên",
+    "guideMonthBody": "Lặp lại dự án đầu tiên ít nhất hai lần trước khi nâng cấp thiết bị. Ghi lại số tiền đã chi, thời gian cho mỗi lần và những gì bạn thực sự dùng.",
+    "guideFit": "Có phù hợp với bạn không?",
+    "guideFitBody": "Hãy xem chi phí, thời gian và độ khó cùng nhau. Chọn thứ phù hợp với lịch hằng tuần và không gian bạn thực sự có.",
+    "guidePlan": "Mở dự án đầu tiên"
   },
   "project": {
     "first": "một dự án {hobby} đầu tiên",
