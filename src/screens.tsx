@@ -25,7 +25,7 @@ const visualByHobby: Record<string, any> = {
 };
 const fallbackVisual = require('../assets/hobbies/hero.png');
 const hobbyVisual = (id: string) => visualByHobby[id] || fallbackVisual;
-import {firstProject, hobbyName, localeName, locales, tr} from './i18n';
+import {firstProject, hobbyGuide, hobbyName, localeName, locales, tr} from './i18n';
 import {calc, scenarioCalc} from './math';
 import {Fun, Goal, QuizAnswers, Spend, Time, rankHobbies} from './quiz';
 import {clearAll, keepPhoto} from './storage';
@@ -301,6 +301,7 @@ export function First({st, setProject, go}: {st: State; setProject: (project: Pr
   const l = st.locale;
   const name = hobbyName(p.hobbyId, l);
   const project = firstProject(l, p.hobbyId);
+  const guide = hobbyGuide(l, p.hobbyId);
   const done = project.steps.map((_, index) => p.steps[index] || false);
   return (
     <Page>
@@ -309,11 +310,12 @@ export function First({st, setProject, go}: {st: State; setProject: (project: Pr
       <Heading>{name}</Heading>
       <View style={s.card}>
         <Heading level={3}>{tr(l, 'ui.guideBefore')}</Heading>
-        <Text style={s.body}>{tr(l, 'ui.guideBeforeBody')}</Text>
+        <Text style={s.body}>{guide?.goodToKnow || tr(l, 'ui.guideBeforeBody')}</Text>
       </View>
       <View style={s.pale}>
         <Heading level={3}>{tr(l, 'ui.guideMonth')}</Heading>
-        <Text style={s.body}>{tr(l, 'ui.guideMonthBody')}</Text>
+        <Text style={s.body}>{guide?.firstMove || tr(l, 'ui.guideMonthBody')}</Text>
+        {guide?.firstWeek?.map((item, index) => <Text key={index} style={s.body}>{index + 1}. {item}</Text>)}
       </View>
       <View style={s.card}>
         <Heading level={3}>{tr(l, 'ui.guideFit')}</Heading>
