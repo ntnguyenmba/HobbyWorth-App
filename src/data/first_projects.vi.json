@@ -1,54 +1,1350 @@
 {
-"baking":{"first":"một mẻ của một món bánh","need":["công thức","lò nướng","khay hoặc khuôn","cân hoặc cốc đong"],"steps":["Chọn một món duy nhất","Ghi những gì bạn đã có","Làm một mẻ","Ghi chi phí, phút và số lượng","Nhập mức giá bạn sẽ hỏi"]},
-"cake-decorating":{"first":"một chiếc bánh trang trí đơn giản","need":["bánh trơn hoặc bánh giả","kem phủ","bay phết","đế xoay hoặc đĩa"],"steps":["Chọn một kiểu hoàn thiện","Chỉ lấy những dụng cụ đó","Trang trí một chiếc bánh","Ghi chi phí, phút và một chiếc bánh","Nhập mức giá bạn sẽ hỏi"]},
-"cooking":{"first":"một món có thể chia phần cho người khác","need":["công thức","dao","chảo hoặc nồi","nguyên liệu cho một bữa"],"steps":["Chọn một món","Nấu hoàn chỉnh một lần","Đếm số phần","Ghi chi phí, phút và số phần","Nhập giá cho mỗi phần"]},
-"bread-making":{"first":"một ổ bánh mì","need":["bột mì","men hoặc men cái","tô","khuôn hoặc nồi"],"steps":["Chọn một kiểu bánh","Trộn và nướng một ổ","Tính ổ bánh là một đơn vị","Ghi chi phí và phút","Nhập mức giá bạn sẽ hỏi"]},
-"candy-making":{"first":"một mẻ nhỏ của một loại kẹo","need":["đường hoặc chocolate","tô hoặc nhiệt kế","khuôn hoặc khay","túi hoặc giấy gói"],"steps":["Chọn một loại kẹo","Làm một mẻ nhỏ","Đếm số viên","Ghi chi phí và phút","Nhập giá mỗi viên hoặc gói"]},
-"coffee-making":{"first":"năm ly cùng một công thức đồ uống","need":["cà phê","máy pha hoặc ấm","ly","máy xay hoặc cà phê xay sẵn"],"steps":["Chốt một công thức","Pha năm ly giống nhau","Bấm giờ phần làm việc thực tế","Ghi chi phí, phút và năm ly","Nhập giá mỗi ly"]},
-"smoothie-and-juice-making":{"first":"bốn phần của một loại đồ uống","need":["máy xay hoặc máy ép","trái cây hoặc rau","ly hoặc chai"],"steps":["Chọn một công thức","Làm bốn phần","Đếm số phần","Ghi chi phí và phút","Nhập giá mỗi phần"]},
-"candle-making":{"first":"bốn hũ nến cùng một mùi","need":["sáp","bấc","hũ","hương liệu","ca rót"],"steps":["Rót bốn cây nến giống nhau","Để nến đông","Đếm số hũ hoàn thành","Ghi chi phí và phút làm việc","Nhập giá mỗi cây nến"]},
-"soap-making":{"first":"một khuôn xà phòng nhỏ để cắt","need":["phôi xà phòng hoặc dầu","khuôn","hương nếu dùng","dao cắt"],"steps":["Làm một khuôn nhỏ","Cắt thành bánh","Đếm số bánh","Ghi chi phí và phút làm việc","Nhập giá mỗi bánh"]},
-"perfume-making":{"first":"ba chai nhỏ cùng một công thức","need":["nền cồn hoặc dầu","nguyên liệu mùi hương","chai nhỏ","ống nhỏ giọt"],"steps":["Viết một công thức","Rót ba chai giống nhau","Đếm số chai","Ghi chi phí và phút","Nhập giá mỗi chai"]},
-"skincare-making":{"first":"một mẻ nhỏ của một sản phẩm","need":["nguyên liệu nền","hộp hoặc chai","cân","tô trộn"],"steps":["Chọn một sản phẩm","Làm một mẻ nhỏ","Chiết vào hộp và đếm","Ghi chi phí và phút","Nhập giá mỗi hộp"]},
-"jewelry-making":{"first":"ba món cùng một thiết kế trang sức","need":["phụ kiện nối","hạt hoặc dây","kìm"],"steps":["Chọn một thiết kế","Làm ba món giống nhau","Đếm số món hoàn thành","Ghi chi phí và phút","Nhập giá mỗi món"]},
-"bracelet-making":{"first":"năm vòng tay cùng một thiết kế","need":["dây hoặc xích","hạt","khóa"],"steps":["Chọn một thiết kế","Làm năm vòng giống nhau","Đếm số vòng hoàn thành","Ghi chi phí và phút","Nhập giá mỗi vòng"]},
-"crochet":{"first":"một món móc len nhỏ hoàn thành","need":["len","kim móc","kim khâu len"],"steps":["Chọn một món nhỏ","Hoàn thành một món","Tính là một đơn vị","Ghi chi phí len và phút","Nhập mức giá bạn sẽ hỏi"]},
-"knitting":{"first":"một món đan len nhỏ hoàn thành","need":["len","kim đan"],"steps":["Chọn một món nhỏ","Hoàn thành một món","Tính là một đơn vị","Ghi chi phí len và phút","Nhập mức giá bạn sẽ hỏi"]},
-"sewing":{"first":"một món may đơn giản hoặc một bộ giống nhau","need":["vải","chỉ","máy may hoặc kim","kéo"],"steps":["Chọn một thiết kế đơn giản","Cắt và may","Đếm số món hoàn thành","Ghi chi phí và phút","Nhập giá mỗi món hoặc bộ"]},
-"embroidery":{"first":"một khung thêu hoàn thành","need":["vải","khung thêu","chỉ thêu","kim"],"steps":["Chọn một mẫu nhỏ","Hoàn thành một khung","Tính là một đơn vị","Ghi chi phí và phút","Nhập mức giá bạn sẽ hỏi"]},
-"quilting":{"first":"một miếng quilt nhỏ hoặc mặt gối","need":["vải","bông lót","vải mặt sau","chỉ"],"steps":["Chọn một món nhỏ","Hoàn thành món chần vải","Tính là một đơn vị","Ghi chi phí và phút","Nhập mức giá bạn sẽ hỏi"]},
-"macrame":{"first":"một món macramé nhỏ","need":["dây","thanh hoặc vòng","kéo"],"steps":["Chọn một mẫu nhỏ","Hoàn thành một món","Tính là một đơn vị","Ghi chi phí dây và phút","Nhập mức giá bạn sẽ hỏi"]},
-"cricut-crafting":{"first":"một thiết kế trên một món trống","need":["máy Cricut","vinyl hoặc HTV","một món trống","dụng cụ chuyển"],"steps":["Chọn một thiết kế","Cắt thiết kế","Dán lên một món trống","Ghi chi phí và phút","Nhập mức giá bạn sẽ hỏi"]},
-"vinyl-crafting":{"first":"một món vinyl hoàn thành","need":["vinyl","một món trống","băng chuyển hoặc máy ép"],"steps":["Chọn một thiết kế","Cắt và dán","Hoàn thành một món","Ghi chi phí và phút","Nhập mức giá bạn sẽ hỏi"]},
-"sticker-making":{"first":"một tờ nhãn dán","need":["giấy sticker","máy in","máy cắt hoặc kéo"],"steps":["Chuẩn bị một tờ sticker","In tờ đó","Cắt và đếm sticker","Ghi chi phí và phút","Nhập giá mỗi sticker hoặc mỗi tờ"]},
-"resin-art":{"first":"một mẻ từ một khuôn resin","need":["resin","khuôn","găng tay","cốc trộn"],"steps":["Chọn một khuôn","Đổ một mẻ","Tháo khuôn và đếm món","Ghi chi phí và phút làm việc","Nhập giá mỗi món"]},
-"polymer-clay":{"first":"bốn món cùng một thiết kế đất sét","need":["đất sét polymer","dao cắt","khay chịu nhiệt"],"steps":["Chọn một thiết kế","Làm bốn món giống nhau","Nướng và hoàn thiện","Ghi chi phí và phút","Nhập giá mỗi món hoặc bộ"]},
-"pottery":{"first":"một món gốm nhỏ tạo bằng tay","need":["đất sét","dụng cụ cơ bản","mặt làm việc","chỗ phơi khô"],"steps":["Chọn một hình nhỏ","Làm một món","Tính là một đơn vị","Ghi chi phí đất và phút làm việc","Nhập giá cho món hoàn thành"]},
-"ceramics":{"first":"một món gốm nung sẵn được hoàn thiện","need":["phôi gốm","màu hoặc men","cọ","lớp phủ nếu dùng"],"steps":["Chọn một món phôi","Sơn hoặc tráng men","Hoàn thành một món","Ghi chi phí và phút","Nhập mức giá bạn sẽ hỏi"]},
-"painting":{"first":"một bức tranh nhỏ hoàn thành","need":["màu","cọ","bề mặt vẽ"],"steps":["Chọn một bức nhỏ","Hoàn thành bức tranh","Tính là một đơn vị","Ghi chi phí vật liệu và phút","Nhập mức giá bạn sẽ hỏi"]},
-"watercolor":{"first":"một bức màu nước hoàn thành","need":["giấy màu nước","màu","cọ"],"steps":["Chọn một chủ đề nhỏ","Hoàn thành một bức","Tính là một đơn vị","Ghi chi phí vật liệu và phút","Nhập mức giá bạn sẽ hỏi"]},
-"drawing-and-sketching":{"first":"một bản vẽ hoàn thành","need":["giấy","bút chì hoặc bút mực","tẩy"],"steps":["Chọn một chủ đề","Hoàn thành một bản vẽ","Tính là một đơn vị","Ghi chi phí giấy và phút","Nhập giá cho bản gốc hoặc bản in"]},
-"digital-illustration":{"first":"một minh họa kỹ thuật số hoàn thành","need":["máy tính bảng hoặc máy tính","ứng dụng vẽ","công cụ xuất file"],"steps":["Chọn một chủ đề","Hoàn thành một minh họa","Xuất một file cuối","Ghi phút và chi phí tài nguyên nếu có","Nhập mức giá bạn sẽ hỏi"]},
-"calligraphy":{"first":"năm tấm thiệp thư pháp giống nhau","need":["bút","mực","năm tấm thiệp"],"steps":["Chọn một câu ngắn","Viết năm tấm đạt yêu cầu","Đếm năm tấm thiệp","Ghi chi phí và phút","Nhập giá mỗi tấm hoặc bộ"]},
-"hand-lettering":{"first":"một tác phẩm chữ tay hoàn thành","need":["giấy","bút brush","bút chì"],"steps":["Chọn một câu ngắn","Hoàn thành một tác phẩm","Tính là một đơn vị","Ghi chi phí vật liệu và phút","Nhập mức giá bạn sẽ hỏi"]},
-"indoor-plants":{"first":"ba chậu cây trong nhà được trình bày đẹp","need":["ba cây","ba chậu","đất"],"steps":["Trồng ba cây theo cùng cách","Làm sạch và chỉnh chậu","Đếm ba chậu hoàn thành","Ghi chi phí và phút","Nhập giá mỗi chậu"]},
-"herb-gardening":{"first":"ba chậu thảo mộc đã trồng","need":["hạt hoặc cây giống thảo mộc","ba chậu","đất","nhãn"],"steps":["Trồng ba chậu","Gắn nhãn","Đếm ba chậu","Ghi chi phí và phút","Nhập giá mỗi chậu"]},
-"flower-arranging":{"first":"một bình hoa hoàn thành","need":["hoa","bình","kéo cắt cành","nước"],"steps":["Chọn một kiểu cắm","Cắm một bình","Tính là một đơn vị","Ghi chi phí hoa và phút","Nhập mức giá bạn sẽ hỏi"]},
-"woodworking":{"first":"một món gỗ nhỏ","need":["gỗ","cưa hoặc miếng cắt sẵn","giấy nhám","lớp hoàn thiện"],"steps":["Chọn một món nhỏ","Làm và hoàn thiện món đó","Tính là một đơn vị","Ghi chi phí vật liệu và phút","Nhập mức giá bạn sẽ hỏi"]},
-"furniture-flipping":{"first":"một món nội thất nhỏ được tân trang để bán lại","need":["món nội thất nhỏ","chất làm sạch","sơn hoặc màu nhuộm","giấy nhám"],"steps":["Chọn một món nhỏ","Làm sạch, chà và hoàn thiện","Tính là một đơn vị","Ghi giá mua, vật liệu và phút","Nhập giá bán lại"]},
-"furniture-restoration":{"first":"một món nội thất nhỏ được phục chế","need":["món nội thất nhỏ","keo hoặc chất trám","lớp hoàn thiện","giấy nhám"],"steps":["Chọn một chỗ cần sửa","Sửa và hoàn thiện lại","Tính là một đơn vị","Ghi chi phí và phút","Nhập mức giá bạn sẽ hỏi"]},
-"pet-accessories-and-crafts":{"first":"ba phụ kiện thú cưng giống nhau","need":["vải hoặc dây đai","chỉ","phụ kiện kim loại nếu cần","kéo"],"steps":["Chọn một phụ kiện đơn giản","Làm ba món giống nhau","Đếm số món hoàn thành","Ghi chi phí và phút","Nhập giá mỗi món"]},
-"photography":{"first":"một bộ 10 ảnh về một chủ thể","need":["điện thoại hoặc máy ảnh","một chủ thể","ánh sáng sẵn có"],"steps":["Chụp một chủ thể","Chọn mười ảnh tốt","Tính cả bộ là một đơn vị","Ghi phút và chi phí đạo cụ nếu có","Nhập giá cho bộ ảnh"]},
-"product-photography":{"first":"một bộ tám ảnh sản phẩm","need":["điện thoại hoặc máy ảnh","một sản phẩm","bề mặt trơn","ánh sáng sẵn có"],"steps":["Chụp một sản phẩm","Chọn tám góc hữu ích","Tính cả bộ là một đơn vị","Ghi phút và chi phí đạo cụ","Nhập giá cho bộ ảnh"]},
-"food-photography":{"first":"một bộ sáu ảnh món ăn","need":["điện thoại hoặc máy ảnh","một món ăn","đĩa hoặc bề mặt","ánh sáng sẵn có"],"steps":["Chụp một món ăn","Chọn sáu ảnh tốt","Tính cả bộ là một đơn vị","Ghi phút và chi phí món ăn","Nhập giá cho bộ ảnh"]},
-"videography":{"first":"một clip hoàn thành dài 30–60 giây","need":["điện thoại hoặc máy ảnh","giá đỡ ổn định","ứng dụng chỉnh sửa"],"steps":["Quay một clip ngắn","Cắt thành bản hoàn chỉnh","Tính là một video","Ghi phút và chi phí đạo cụ nếu có","Nhập mức giá bạn sẽ hỏi"]},
-"video-editing":{"first":"một video ngắn đã chỉnh sửa xong","need":["video gốc","ứng dụng chỉnh sửa","điện thoại hoặc máy tính"],"steps":["Chọn một đoạn video ngắn","Chỉnh sửa và xuất file","Tính là một lần chỉnh sửa","Ghi phút và chi phí tài nguyên nếu có","Nhập mức giá bạn sẽ hỏi"]},
-"graphic-design":{"first":"một poster hoặc dấu hiệu đơn giản hoàn thành","need":["máy tính hoặc máy tính bảng","ứng dụng thiết kế","công cụ xuất file"],"steps":["Chọn một yêu cầu thiết kế nhỏ","Hoàn thành một thiết kế","Xuất một file cuối","Ghi phút và chi phí tài nguyên nếu có","Nhập mức giá bạn sẽ hỏi"]},
-"web-design":{"first":"một bố cục trang đơn hoàn thành","need":["máy tính","công cụ thiết kế hoặc code","mục tiêu cho một trang"],"steps":["Chọn một mục tiêu trang","Hoàn thành bố cục một trang","Tính là một trang","Ghi phút và chi phí tài nguyên nếu có","Nhập giá cho trang đó"]},
-"3d-printing":{"first":"một bản in 3D hoàn thành","need":["máy in 3D","sợi in","một file mẫu"],"steps":["Chọn một mẫu nhỏ","In một vật thể","Tính bản in hoàn thành là một đơn vị","Ghi chi phí sợi và phút làm việc","Nhập mức giá bạn sẽ hỏi"]},
-"content-creation":{"first":"ba bài đăng về một chủ đề","need":["điện thoại hoặc máy tính","một chủ đề","ứng dụng chỉnh sửa nếu cần"],"steps":["Chọn một chủ đề","Làm ba bài hoàn chỉnh","Tính gói ba bài là một đơn vị","Ghi phút và chi phí tài nguyên nếu có","Nhập giá cho gói đó"]},
-"scrapbooking":{"first":"một trang đôi scrapbook hoàn thành","need":["album hoặc giấy","ảnh","keo dán","đồ trang trí"],"steps":["Chọn một bộ ảnh","Hoàn thành một trang đôi","Tính là một đơn vị","Ghi chi phí vật liệu và phút","Nhập giá làm theo đơn"]},
-"thrifting-and-reselling":{"first":"ba món bán lại đã làm sạch và chụp ảnh","need":["ba món đồ","điện thoại","đồ làm sạch","túi hoặc chỗ cất"],"steps":["Làm sạch ba món","Chụp ảnh chúng","Tính ba tin đăng là ba đơn vị","Ghi tổng chi phí và phút","Nhập mức giá bán điển hình"]},
-"vintage-collecting":{"first":"ba món vintage đã được ghi lại","need":["ba món đồ","điện thoại","ghi chú"],"steps":["Chụp ba món","Ghi giá bạn đã trả cho từng món","Đếm ba món","Ghi tổng chi phí và phút","Nhập mức giá bán lại điển hình"]},
-"sneaker-collecting-and-reselling":{"first":"một đôi giày đã làm sạch và chụp ảnh","need":["một đôi giày","chất làm sạch","điện thoại","hộp hoặc túi"],"steps":["Làm sạch một đôi","Chụp ảnh","Tính là một đơn vị","Ghi giá mua và phút","Nhập mức giá bán"]}
+  "baking": {
+    "first": "một mẻ của một món bánh",
+    "need": [
+      "công thức",
+      "lò nướng",
+      "khay hoặc khuôn",
+      "cân hoặc cốc đong"
+    ],
+    "steps": [
+      "Chọn một món duy nhất",
+      "Ghi những gì bạn đã có",
+      "Làm một mẻ",
+      "Ghi chi phí, phút và số lượng",
+      "Nhập mức giá bạn sẽ hỏi"
+    ]
+  },
+  "cake-decorating": {
+    "first": "một chiếc bánh trang trí đơn giản",
+    "need": [
+      "bánh trơn hoặc bánh giả",
+      "kem phủ",
+      "bay phết",
+      "đế xoay hoặc đĩa"
+    ],
+    "steps": [
+      "Chọn một kiểu hoàn thiện",
+      "Chỉ lấy những dụng cụ đó",
+      "Trang trí một chiếc bánh",
+      "Ghi chi phí, phút và một chiếc bánh",
+      "Nhập mức giá bạn sẽ hỏi"
+    ]
+  },
+  "cooking": {
+    "first": "một món có thể chia phần cho người khác",
+    "need": [
+      "công thức",
+      "dao",
+      "chảo hoặc nồi",
+      "nguyên liệu cho một bữa"
+    ],
+    "steps": [
+      "Chọn một món",
+      "Nấu hoàn chỉnh một lần",
+      "Đếm số phần",
+      "Ghi chi phí, phút và số phần",
+      "Nhập giá cho mỗi phần"
+    ]
+  },
+  "bread-making": {
+    "first": "một ổ bánh mì",
+    "need": [
+      "bột mì",
+      "men hoặc men cái",
+      "tô",
+      "khuôn hoặc nồi"
+    ],
+    "steps": [
+      "Chọn một kiểu bánh",
+      "Trộn và nướng một ổ",
+      "Tính ổ bánh là một đơn vị",
+      "Ghi chi phí và phút",
+      "Nhập mức giá bạn sẽ hỏi"
+    ]
+  },
+  "candy-making": {
+    "first": "một mẻ nhỏ của một loại kẹo",
+    "need": [
+      "đường hoặc chocolate",
+      "tô hoặc nhiệt kế",
+      "khuôn hoặc khay",
+      "túi hoặc giấy gói"
+    ],
+    "steps": [
+      "Chọn một loại kẹo",
+      "Làm một mẻ nhỏ",
+      "Đếm số viên",
+      "Ghi chi phí và phút",
+      "Nhập giá mỗi viên hoặc gói"
+    ]
+  },
+  "coffee-making": {
+    "first": "năm ly cùng một công thức đồ uống",
+    "need": [
+      "cà phê",
+      "máy pha hoặc ấm",
+      "ly",
+      "máy xay hoặc cà phê xay sẵn"
+    ],
+    "steps": [
+      "Chốt một công thức",
+      "Pha năm ly giống nhau",
+      "Bấm giờ phần làm việc thực tế",
+      "Ghi chi phí, phút và năm ly",
+      "Nhập giá mỗi ly"
+    ]
+  },
+  "smoothie-and-juice-making": {
+    "first": "bốn phần của một loại đồ uống",
+    "need": [
+      "máy xay hoặc máy ép",
+      "trái cây hoặc rau",
+      "ly hoặc chai"
+    ],
+    "steps": [
+      "Chọn một công thức",
+      "Làm bốn phần",
+      "Đếm số phần",
+      "Ghi chi phí và phút",
+      "Nhập giá mỗi phần"
+    ]
+  },
+  "candle-making": {
+    "first": "bốn hũ nến cùng một mùi",
+    "need": [
+      "sáp",
+      "bấc",
+      "hũ",
+      "hương liệu",
+      "ca rót"
+    ],
+    "steps": [
+      "Rót bốn cây nến giống nhau",
+      "Để nến đông",
+      "Đếm số hũ hoàn thành",
+      "Ghi chi phí và phút làm việc",
+      "Nhập giá mỗi cây nến"
+    ]
+  },
+  "soap-making": {
+    "first": "một khuôn xà phòng nhỏ để cắt",
+    "need": [
+      "phôi xà phòng hoặc dầu",
+      "khuôn",
+      "hương nếu dùng",
+      "dao cắt"
+    ],
+    "steps": [
+      "Làm một khuôn nhỏ",
+      "Cắt thành bánh",
+      "Đếm số bánh",
+      "Ghi chi phí và phút làm việc",
+      "Nhập giá mỗi bánh"
+    ]
+  },
+  "perfume-making": {
+    "first": "ba chai nhỏ cùng một công thức",
+    "need": [
+      "nền cồn hoặc dầu",
+      "nguyên liệu mùi hương",
+      "chai nhỏ",
+      "ống nhỏ giọt"
+    ],
+    "steps": [
+      "Viết một công thức",
+      "Rót ba chai giống nhau",
+      "Đếm số chai",
+      "Ghi chi phí và phút",
+      "Nhập giá mỗi chai"
+    ]
+  },
+  "skincare-making": {
+    "first": "một mẻ nhỏ của một sản phẩm",
+    "need": [
+      "nguyên liệu nền",
+      "hộp hoặc chai",
+      "cân",
+      "tô trộn"
+    ],
+    "steps": [
+      "Chọn một sản phẩm",
+      "Làm một mẻ nhỏ",
+      "Chiết vào hộp và đếm",
+      "Ghi chi phí và phút",
+      "Nhập giá mỗi hộp"
+    ]
+  },
+  "jewelry-making": {
+    "first": "ba món cùng một thiết kế trang sức",
+    "need": [
+      "phụ kiện nối",
+      "hạt hoặc dây",
+      "kìm"
+    ],
+    "steps": [
+      "Chọn một thiết kế",
+      "Làm ba món giống nhau",
+      "Đếm số món hoàn thành",
+      "Ghi chi phí và phút",
+      "Nhập giá mỗi món"
+    ]
+  },
+  "bracelet-making": {
+    "first": "năm vòng tay cùng một thiết kế",
+    "need": [
+      "dây hoặc xích",
+      "hạt",
+      "khóa"
+    ],
+    "steps": [
+      "Chọn một thiết kế",
+      "Làm năm vòng giống nhau",
+      "Đếm số vòng hoàn thành",
+      "Ghi chi phí và phút",
+      "Nhập giá mỗi vòng"
+    ]
+  },
+  "crochet": {
+    "first": "một món móc len nhỏ hoàn thành",
+    "need": [
+      "len",
+      "kim móc",
+      "kim khâu len"
+    ],
+    "steps": [
+      "Chọn một món nhỏ",
+      "Hoàn thành một món",
+      "Tính là một đơn vị",
+      "Ghi chi phí len và phút",
+      "Nhập mức giá bạn sẽ hỏi"
+    ]
+  },
+  "knitting": {
+    "first": "một món đan len nhỏ hoàn thành",
+    "need": [
+      "len",
+      "kim đan"
+    ],
+    "steps": [
+      "Chọn một món nhỏ",
+      "Hoàn thành một món",
+      "Tính là một đơn vị",
+      "Ghi chi phí len và phút",
+      "Nhập mức giá bạn sẽ hỏi"
+    ]
+  },
+  "sewing": {
+    "first": "một món may đơn giản hoặc một bộ giống nhau",
+    "need": [
+      "vải",
+      "chỉ",
+      "máy may hoặc kim",
+      "kéo"
+    ],
+    "steps": [
+      "Chọn một thiết kế đơn giản",
+      "Cắt và may",
+      "Đếm số món hoàn thành",
+      "Ghi chi phí và phút",
+      "Nhập giá mỗi món hoặc bộ"
+    ]
+  },
+  "embroidery": {
+    "first": "một khung thêu hoàn thành",
+    "need": [
+      "vải",
+      "khung thêu",
+      "chỉ thêu",
+      "kim"
+    ],
+    "steps": [
+      "Chọn một mẫu nhỏ",
+      "Hoàn thành một khung",
+      "Tính là một đơn vị",
+      "Ghi chi phí và phút",
+      "Nhập mức giá bạn sẽ hỏi"
+    ]
+  },
+  "quilting": {
+    "first": "một miếng quilt nhỏ hoặc mặt gối",
+    "need": [
+      "vải",
+      "bông lót",
+      "vải mặt sau",
+      "chỉ"
+    ],
+    "steps": [
+      "Chọn một món nhỏ",
+      "Hoàn thành món chần vải",
+      "Tính là một đơn vị",
+      "Ghi chi phí và phút",
+      "Nhập mức giá bạn sẽ hỏi"
+    ]
+  },
+  "macrame": {
+    "first": "một món macramé nhỏ",
+    "need": [
+      "dây",
+      "thanh hoặc vòng",
+      "kéo"
+    ],
+    "steps": [
+      "Chọn một mẫu nhỏ",
+      "Hoàn thành một món",
+      "Tính là một đơn vị",
+      "Ghi chi phí dây và phút",
+      "Nhập mức giá bạn sẽ hỏi"
+    ]
+  },
+  "cricut-crafting": {
+    "first": "một thiết kế trên một món trống",
+    "need": [
+      "máy Cricut",
+      "vinyl hoặc HTV",
+      "một món trống",
+      "dụng cụ chuyển"
+    ],
+    "steps": [
+      "Chọn một thiết kế",
+      "Cắt thiết kế",
+      "Dán lên một món trống",
+      "Ghi chi phí và phút",
+      "Nhập mức giá bạn sẽ hỏi"
+    ]
+  },
+  "vinyl-crafting": {
+    "first": "một món vinyl hoàn thành",
+    "need": [
+      "vinyl",
+      "một món trống",
+      "băng chuyển hoặc máy ép"
+    ],
+    "steps": [
+      "Chọn một thiết kế",
+      "Cắt và dán",
+      "Hoàn thành một món",
+      "Ghi chi phí và phút",
+      "Nhập mức giá bạn sẽ hỏi"
+    ]
+  },
+  "sticker-making": {
+    "first": "một tờ nhãn dán",
+    "need": [
+      "giấy sticker",
+      "máy in",
+      "máy cắt hoặc kéo"
+    ],
+    "steps": [
+      "Chuẩn bị một tờ sticker",
+      "In tờ đó",
+      "Cắt và đếm sticker",
+      "Ghi chi phí và phút",
+      "Nhập giá mỗi sticker hoặc mỗi tờ"
+    ]
+  },
+  "resin-art": {
+    "first": "một mẻ từ một khuôn resin",
+    "need": [
+      "resin",
+      "khuôn",
+      "găng tay",
+      "cốc trộn"
+    ],
+    "steps": [
+      "Chọn một khuôn",
+      "Đổ một mẻ",
+      "Tháo khuôn và đếm món",
+      "Ghi chi phí và phút làm việc",
+      "Nhập giá mỗi món"
+    ]
+  },
+  "polymer-clay": {
+    "first": "bốn món cùng một thiết kế đất sét",
+    "need": [
+      "đất sét polymer",
+      "dao cắt",
+      "khay chịu nhiệt"
+    ],
+    "steps": [
+      "Chọn một thiết kế",
+      "Làm bốn món giống nhau",
+      "Nướng và hoàn thiện",
+      "Ghi chi phí và phút",
+      "Nhập giá mỗi món hoặc bộ"
+    ]
+  },
+  "pottery": {
+    "first": "một món gốm nhỏ tạo bằng tay",
+    "need": [
+      "đất sét",
+      "dụng cụ cơ bản",
+      "mặt làm việc",
+      "chỗ phơi khô"
+    ],
+    "steps": [
+      "Chọn một hình nhỏ",
+      "Làm một món",
+      "Tính là một đơn vị",
+      "Ghi chi phí đất và phút làm việc",
+      "Nhập giá cho món hoàn thành"
+    ]
+  },
+  "ceramics": {
+    "first": "một món gốm nung sẵn được hoàn thiện",
+    "need": [
+      "phôi gốm",
+      "màu hoặc men",
+      "cọ",
+      "lớp phủ nếu dùng"
+    ],
+    "steps": [
+      "Chọn một món phôi",
+      "Sơn hoặc tráng men",
+      "Hoàn thành một món",
+      "Ghi chi phí và phút",
+      "Nhập mức giá bạn sẽ hỏi"
+    ]
+  },
+  "painting": {
+    "first": "một bức tranh nhỏ hoàn thành",
+    "need": [
+      "màu",
+      "cọ",
+      "bề mặt vẽ"
+    ],
+    "steps": [
+      "Chọn một bức nhỏ",
+      "Hoàn thành bức tranh",
+      "Tính là một đơn vị",
+      "Ghi chi phí vật liệu và phút",
+      "Nhập mức giá bạn sẽ hỏi"
+    ]
+  },
+  "watercolor": {
+    "first": "một bức màu nước hoàn thành",
+    "need": [
+      "giấy màu nước",
+      "màu",
+      "cọ"
+    ],
+    "steps": [
+      "Chọn một chủ đề nhỏ",
+      "Hoàn thành một bức",
+      "Tính là một đơn vị",
+      "Ghi chi phí vật liệu và phút",
+      "Nhập mức giá bạn sẽ hỏi"
+    ]
+  },
+  "drawing-and-sketching": {
+    "first": "một bản vẽ hoàn thành",
+    "need": [
+      "giấy",
+      "bút chì hoặc bút mực",
+      "tẩy"
+    ],
+    "steps": [
+      "Chọn một chủ đề",
+      "Hoàn thành một bản vẽ",
+      "Tính là một đơn vị",
+      "Ghi chi phí giấy và phút",
+      "Nhập giá cho bản gốc hoặc bản in"
+    ]
+  },
+  "digital-illustration": {
+    "first": "một minh họa kỹ thuật số hoàn thành",
+    "need": [
+      "máy tính bảng hoặc máy tính",
+      "ứng dụng vẽ",
+      "công cụ xuất file"
+    ],
+    "steps": [
+      "Chọn một chủ đề",
+      "Hoàn thành một minh họa",
+      "Xuất một file cuối",
+      "Ghi phút và chi phí tài nguyên nếu có",
+      "Nhập mức giá bạn sẽ hỏi"
+    ]
+  },
+  "calligraphy": {
+    "first": "năm tấm thiệp thư pháp giống nhau",
+    "need": [
+      "bút",
+      "mực",
+      "năm tấm thiệp"
+    ],
+    "steps": [
+      "Chọn một câu ngắn",
+      "Viết năm tấm đạt yêu cầu",
+      "Đếm năm tấm thiệp",
+      "Ghi chi phí và phút",
+      "Nhập giá mỗi tấm hoặc bộ"
+    ]
+  },
+  "hand-lettering": {
+    "first": "một tác phẩm chữ tay hoàn thành",
+    "need": [
+      "giấy",
+      "bút brush",
+      "bút chì"
+    ],
+    "steps": [
+      "Chọn một câu ngắn",
+      "Hoàn thành một tác phẩm",
+      "Tính là một đơn vị",
+      "Ghi chi phí vật liệu và phút",
+      "Nhập mức giá bạn sẽ hỏi"
+    ]
+  },
+  "indoor-plants": {
+    "first": "ba chậu cây trong nhà được trình bày đẹp",
+    "need": [
+      "ba cây",
+      "ba chậu",
+      "đất"
+    ],
+    "steps": [
+      "Trồng ba cây theo cùng cách",
+      "Làm sạch và chỉnh chậu",
+      "Đếm ba chậu hoàn thành",
+      "Ghi chi phí và phút",
+      "Nhập giá mỗi chậu"
+    ]
+  },
+  "herb-gardening": {
+    "first": "ba chậu thảo mộc đã trồng",
+    "need": [
+      "hạt hoặc cây giống thảo mộc",
+      "ba chậu",
+      "đất",
+      "nhãn"
+    ],
+    "steps": [
+      "Trồng ba chậu",
+      "Gắn nhãn",
+      "Đếm ba chậu",
+      "Ghi chi phí và phút",
+      "Nhập giá mỗi chậu"
+    ]
+  },
+  "flower-arranging": {
+    "first": "một bình hoa hoàn thành",
+    "need": [
+      "hoa",
+      "bình",
+      "kéo cắt cành",
+      "nước"
+    ],
+    "steps": [
+      "Chọn một kiểu cắm",
+      "Cắm một bình",
+      "Tính là một đơn vị",
+      "Ghi chi phí hoa và phút",
+      "Nhập mức giá bạn sẽ hỏi"
+    ]
+  },
+  "woodworking": {
+    "first": "một món gỗ nhỏ",
+    "need": [
+      "gỗ",
+      "cưa hoặc miếng cắt sẵn",
+      "giấy nhám",
+      "lớp hoàn thiện"
+    ],
+    "steps": [
+      "Chọn một món nhỏ",
+      "Làm và hoàn thiện món đó",
+      "Tính là một đơn vị",
+      "Ghi chi phí vật liệu và phút",
+      "Nhập mức giá bạn sẽ hỏi"
+    ]
+  },
+  "furniture-flipping": {
+    "first": "một món nội thất nhỏ được tân trang để bán lại",
+    "need": [
+      "món nội thất nhỏ",
+      "chất làm sạch",
+      "sơn hoặc màu nhuộm",
+      "giấy nhám"
+    ],
+    "steps": [
+      "Chọn một món nhỏ",
+      "Làm sạch, chà và hoàn thiện",
+      "Tính là một đơn vị",
+      "Ghi giá mua, vật liệu và phút",
+      "Nhập giá bán lại"
+    ]
+  },
+  "furniture-restoration": {
+    "first": "một món nội thất nhỏ được phục chế",
+    "need": [
+      "món nội thất nhỏ",
+      "keo hoặc chất trám",
+      "lớp hoàn thiện",
+      "giấy nhám"
+    ],
+    "steps": [
+      "Chọn một chỗ cần sửa",
+      "Sửa và hoàn thiện lại",
+      "Tính là một đơn vị",
+      "Ghi chi phí và phút",
+      "Nhập mức giá bạn sẽ hỏi"
+    ]
+  },
+  "pet-accessories-and-crafts": {
+    "first": "ba phụ kiện thú cưng giống nhau",
+    "need": [
+      "vải hoặc dây đai",
+      "chỉ",
+      "phụ kiện kim loại nếu cần",
+      "kéo"
+    ],
+    "steps": [
+      "Chọn một phụ kiện đơn giản",
+      "Làm ba món giống nhau",
+      "Đếm số món hoàn thành",
+      "Ghi chi phí và phút",
+      "Nhập giá mỗi món"
+    ]
+  },
+  "photography": {
+    "first": "một bộ 10 ảnh về một chủ thể",
+    "need": [
+      "điện thoại hoặc máy ảnh",
+      "một chủ thể",
+      "ánh sáng sẵn có"
+    ],
+    "steps": [
+      "Chụp một chủ thể",
+      "Chọn mười ảnh tốt",
+      "Tính cả bộ là một đơn vị",
+      "Ghi phút và chi phí đạo cụ nếu có",
+      "Nhập giá cho bộ ảnh"
+    ]
+  },
+  "product-photography": {
+    "first": "một bộ tám ảnh sản phẩm",
+    "need": [
+      "điện thoại hoặc máy ảnh",
+      "một sản phẩm",
+      "bề mặt trơn",
+      "ánh sáng sẵn có"
+    ],
+    "steps": [
+      "Chụp một sản phẩm",
+      "Chọn tám góc hữu ích",
+      "Tính cả bộ là một đơn vị",
+      "Ghi phút và chi phí đạo cụ",
+      "Nhập giá cho bộ ảnh"
+    ]
+  },
+  "food-photography": {
+    "first": "một bộ sáu ảnh món ăn",
+    "need": [
+      "điện thoại hoặc máy ảnh",
+      "một món ăn",
+      "đĩa hoặc bề mặt",
+      "ánh sáng sẵn có"
+    ],
+    "steps": [
+      "Chụp một món ăn",
+      "Chọn sáu ảnh tốt",
+      "Tính cả bộ là một đơn vị",
+      "Ghi phút và chi phí món ăn",
+      "Nhập giá cho bộ ảnh"
+    ]
+  },
+  "videography": {
+    "first": "một clip hoàn thành dài 30–60 giây",
+    "need": [
+      "điện thoại hoặc máy ảnh",
+      "giá đỡ ổn định",
+      "ứng dụng chỉnh sửa"
+    ],
+    "steps": [
+      "Quay một clip ngắn",
+      "Cắt thành bản hoàn chỉnh",
+      "Tính là một video",
+      "Ghi phút và chi phí đạo cụ nếu có",
+      "Nhập mức giá bạn sẽ hỏi"
+    ]
+  },
+  "video-editing": {
+    "first": "một video ngắn đã chỉnh sửa xong",
+    "need": [
+      "video gốc",
+      "ứng dụng chỉnh sửa",
+      "điện thoại hoặc máy tính"
+    ],
+    "steps": [
+      "Chọn một đoạn video ngắn",
+      "Chỉnh sửa và xuất file",
+      "Tính là một lần chỉnh sửa",
+      "Ghi phút và chi phí tài nguyên nếu có",
+      "Nhập mức giá bạn sẽ hỏi"
+    ]
+  },
+  "graphic-design": {
+    "first": "một poster hoặc dấu hiệu đơn giản hoàn thành",
+    "need": [
+      "máy tính hoặc máy tính bảng",
+      "ứng dụng thiết kế",
+      "công cụ xuất file"
+    ],
+    "steps": [
+      "Chọn một yêu cầu thiết kế nhỏ",
+      "Hoàn thành một thiết kế",
+      "Xuất một file cuối",
+      "Ghi phút và chi phí tài nguyên nếu có",
+      "Nhập mức giá bạn sẽ hỏi"
+    ]
+  },
+  "web-design": {
+    "first": "một bố cục trang đơn hoàn thành",
+    "need": [
+      "máy tính",
+      "công cụ thiết kế hoặc code",
+      "mục tiêu cho một trang"
+    ],
+    "steps": [
+      "Chọn một mục tiêu trang",
+      "Hoàn thành bố cục một trang",
+      "Tính là một trang",
+      "Ghi phút và chi phí tài nguyên nếu có",
+      "Nhập giá cho trang đó"
+    ]
+  },
+  "3d-printing": {
+    "first": "một bản in 3D hoàn thành",
+    "need": [
+      "máy in 3D",
+      "sợi in",
+      "một file mẫu"
+    ],
+    "steps": [
+      "Chọn một mẫu nhỏ",
+      "In một vật thể",
+      "Tính bản in hoàn thành là một đơn vị",
+      "Ghi chi phí sợi và phút làm việc",
+      "Nhập mức giá bạn sẽ hỏi"
+    ]
+  },
+  "content-creation": {
+    "first": "ba bài đăng về một chủ đề",
+    "need": [
+      "điện thoại hoặc máy tính",
+      "một chủ đề",
+      "ứng dụng chỉnh sửa nếu cần"
+    ],
+    "steps": [
+      "Chọn một chủ đề",
+      "Làm ba bài hoàn chỉnh",
+      "Tính gói ba bài là một đơn vị",
+      "Ghi phút và chi phí tài nguyên nếu có",
+      "Nhập giá cho gói đó"
+    ]
+  },
+  "scrapbooking": {
+    "first": "một trang đôi scrapbook hoàn thành",
+    "need": [
+      "album hoặc giấy",
+      "ảnh",
+      "keo dán",
+      "đồ trang trí"
+    ],
+    "steps": [
+      "Chọn một bộ ảnh",
+      "Hoàn thành một trang đôi",
+      "Tính là một đơn vị",
+      "Ghi chi phí vật liệu và phút",
+      "Nhập giá làm theo đơn"
+    ]
+  },
+  "thrifting-and-reselling": {
+    "first": "ba món bán lại đã làm sạch và chụp ảnh",
+    "need": [
+      "ba món đồ",
+      "điện thoại",
+      "đồ làm sạch",
+      "túi hoặc chỗ cất"
+    ],
+    "steps": [
+      "Làm sạch ba món",
+      "Chụp ảnh chúng",
+      "Tính ba tin đăng là ba đơn vị",
+      "Ghi tổng chi phí và phút",
+      "Nhập mức giá bán điển hình"
+    ]
+  },
+  "vintage-collecting": {
+    "first": "ba món vintage đã được ghi lại",
+    "need": [
+      "ba món đồ",
+      "điện thoại",
+      "ghi chú"
+    ],
+    "steps": [
+      "Chụp ba món",
+      "Ghi giá bạn đã trả cho từng món",
+      "Đếm ba món",
+      "Ghi tổng chi phí và phút",
+      "Nhập mức giá bán lại điển hình"
+    ]
+  },
+  "sneaker-collecting-and-reselling": {
+    "first": "một đôi giày đã làm sạch và chụp ảnh",
+    "need": [
+      "một đôi giày",
+      "chất làm sạch",
+      "điện thoại",
+      "hộp hoặc túi"
+    ],
+    "steps": [
+      "Làm sạch một đôi",
+      "Chụp ảnh",
+      "Tính là một đơn vị",
+      "Ghi giá mua và phút",
+      "Nhập mức giá bán"
+    ]
+  },
+  "gardening": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "home-decorating": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "handyman-skills": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "home-cleaning": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "blogging": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "creative-writing": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "journaling": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "coding": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "ai-assisted-copywriting": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "ai-video-repurposing": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "ai-voiceover-and-dubbing": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "ai-product-photography": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "ai-presentation-design": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "ai-resume-and-portfolio-help": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "ai-email-marketing": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "ai-blog-to-social-repurposing": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "ai-ecommerce-listing-help": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "ai-chatbot-setup": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "no-code-automation": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "ai-workflow-consulting": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "ai-data-cleanup": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "ai-web-analytics": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "ai-research-assistance": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "ai-tutoring-materials": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "ai-travel-itinerary-service": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "ai-interior-design-concepts": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "ai-podcast-clipping": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "ai-short-form-video-editing": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "pet-photography": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "dog-training": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "tutoring-and-teaching": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "taekwondo": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "hiking": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "fishing": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "birdwatching": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  },
+  "guitar": {
+    "first": "một dự án đầu tiên hoàn chỉnh",
+    "need": [
+      "dụng cụ hoặc vật liệu tối thiểu cho sở thích này",
+      "một bài thực hành nhỏ",
+      "nơi ghi lại chi phí và thời gian"
+    ],
+    "steps": [
+      "Chọn một việc nhỏ cho người mới bắt đầu",
+      "Chỉ dùng bộ dụng cụ tối thiểu",
+      "Hoàn thành một phiên bản",
+      "Ghi lại số tiền và thời gian đã dùng",
+      "Quyết định điều cần thay đổi trước khi mua thêm"
+    ]
+  }
 }
