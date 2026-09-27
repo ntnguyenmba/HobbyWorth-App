@@ -1,54 +1,1350 @@
 {
-"baking":{"first":"one batch of one baked item","need":["recipe","oven","pan or tray","scale or measuring cups"],"steps":["Choose one item only","List what you already have","Make the batch","Write cost, minutes, and how many","Enter a price you would ask"]},
-"cake-decorating":{"first":"one simply decorated cake","need":["plain cake or dummy","icing","spatula","turntable or plate"],"steps":["Pick one finish","Gather only those tools","Decorate one cake","Write cost, minutes, and one cake","Enter a price you would ask"]},
-"cooking":{"first":"one dish you could portion for someone else","need":["recipe","knife","pan","ingredients for one meal"],"steps":["Choose one dish","Cook it once all the way through","Count the portions","Write cost, minutes, and portions","Enter a price per portion"]},
-"bread-making":{"first":"one loaf","need":["flour","yeast or starter","bowl","loaf pan or pot"],"steps":["Pick one loaf style","Mix and bake one loaf","Count the finished loaf as one unit","Write cost and minutes","Enter a price you would ask"]},
-"candy-making":{"first":"one small batch of one candy","need":["sugar or chocolate","bowl or thermometer","mold or pan","bags or wrappers"],"steps":["Pick one candy","Make one small batch","Count the pieces","Write cost and minutes","Enter a price per piece or pack"]},
-"coffee-making":{"first":"five cups of one drink recipe","need":["coffee","maker or kettle","cups","grinder or ready-ground coffee"],"steps":["Lock one drink recipe","Make five cups the same way","Time the active work","Write cost, minutes, and five drinks","Enter a price per drink"]},
-"smoothie-and-juice-making":{"first":"four servings of one drink","need":["blender or juicer","fruit or vegetables","cups or bottles"],"steps":["Pick one recipe","Make four servings","Count the servings","Write cost and minutes","Enter a price per serving"]},
-"candle-making":{"first":"four jars of one candle scent","need":["wax","wicks","jars","fragrance","pouring pot"],"steps":["Pour four matching candles","Let them set","Count the finished jars","Write cost and active minutes","Enter a price per candle"]},
-"soap-making":{"first":"one small loaf of soap","need":["soap base or oils","mold","scent if used","cutter"],"steps":["Make one small loaf","Slice it","Count the bars","Write cost and active minutes","Enter a price per bar"]},
-"perfume-making":{"first":"three small bottles of one formula","need":["alcohol or oil base","scent materials","small bottles","droppers"],"steps":["Write one formula","Fill three bottles the same way","Count the bottles","Write cost and minutes","Enter a price per bottle"]},
-"skincare-making":{"first":"one small batch of one product","need":["base ingredients","containers","scale","mixing bowl"],"steps":["Choose one product","Make one small batch","Fill and count the containers","Write cost and minutes","Enter a price per container"]},
-"jewelry-making":{"first":"three pieces of one jewelry design","need":["findings","beads or wire","pliers"],"steps":["Pick one design","Make three matching pieces","Count the finished pieces","Write cost and minutes","Enter a price per piece"]},
-"bracelet-making":{"first":"five bracelets of one design","need":["cord or chain","beads","clasps"],"steps":["Pick one design","Make five matching bracelets","Count the finished bracelets","Write cost and minutes","Enter a price per bracelet"]},
-"crochet":{"first":"one small finished crochet item","need":["yarn","hook","needle"],"steps":["Pick one small item","Finish one item","Count it as one unit","Write yarn cost and minutes","Enter a price you would ask"]},
-"knitting":{"first":"one small finished knitted item","need":["yarn","needles"],"steps":["Pick one small item","Finish one item","Count it as one unit","Write yarn cost and minutes","Enter a price you would ask"]},
-"sewing":{"first":"one simple sewn item or matching set","need":["fabric","thread","machine or needle","scissors"],"steps":["Pick one simple design","Cut and sew it","Count the finished pieces","Write cost and minutes","Enter a price per item or set"]},
-"embroidery":{"first":"one finished hoop","need":["fabric","hoop","floss","needle"],"steps":["Pick one small design","Finish one hoop","Count it as one unit","Write cost and minutes","Enter a price you would ask"]},
-"quilting":{"first":"one mini quilt or pillow top","need":["fabric","batting","backing","thread"],"steps":["Pick one small piece","Finish the quilted piece","Count it as one unit","Write cost and minutes","Enter a price you would ask"]},
-"macrame":{"first":"one small macramé piece","need":["cord","dowel or ring","scissors"],"steps":["Pick one small design","Finish one piece","Count it as one unit","Write cord cost and minutes","Enter a price you would ask"]},
-"cricut-crafting":{"first":"one design on one blank","need":["Cricut access","vinyl or HTV","one blank","transfer tools"],"steps":["Pick one design","Cut the design","Apply it to one blank","Write cost and minutes","Enter a price you would ask"]},
-"vinyl-crafting":{"first":"one finished vinyl item","need":["vinyl","one blank","transfer tape or press"],"steps":["Pick one design","Cut and apply it","Finish one item","Write cost and minutes","Enter a price you would ask"]},
-"sticker-making":{"first":"one sheet of stickers","need":["sticker paper","printer","cutter or scissors"],"steps":["Prepare one sticker sheet","Print it","Cut and count the stickers","Write cost and minutes","Enter a price per sticker or sheet"]},
-"resin-art":{"first":"one mold run of one resin item","need":["resin","mold","gloves","mixing cups"],"steps":["Pick one mold","Pour one run","Demold and count the pieces","Write cost and active minutes","Enter a price per piece"]},
-"polymer-clay":{"first":"four pieces of one clay design","need":["polymer clay","blade","bake-safe tray"],"steps":["Pick one design","Make four matching pieces","Bake and finish them","Write cost and minutes","Enter a price per piece or set"]},
-"pottery":{"first":"one small pinch or slab piece","need":["clay","basic tools","work surface","place to dry"],"steps":["Pick one small form","Make one piece","Count it as one unit","Write clay cost and active minutes","Enter a price for the finished piece"]},
-"ceramics":{"first":"one finished bisque piece","need":["bisque item","paint or glaze","brushes","sealer if used"],"steps":["Pick one bisque item","Paint or glaze it","Finish one piece","Write cost and minutes","Enter a price you would ask"]},
-"painting":{"first":"one small finished painting","need":["paint","brush","surface"],"steps":["Choose one small piece","Finish the painting","Count it as one unit","Write supply cost and minutes","Enter a price you would ask"]},
-"watercolor":{"first":"one finished watercolor painting","need":["watercolor paper","paints","brush"],"steps":["Choose one small subject","Finish one painting","Count it as one unit","Write supply cost and minutes","Enter a price you would ask"]},
-"drawing-and-sketching":{"first":"one finished drawing","need":["paper","pencils or pens","eraser"],"steps":["Choose one subject","Finish one drawing","Count it as one unit","Write paper cost and minutes","Enter a price for the original or print"]},
-"digital-illustration":{"first":"one finished digital illustration","need":["tablet or computer","drawing app","file export"],"steps":["Choose one subject","Finish one illustration","Export one final file","Write minutes and any asset cost","Enter a price you would ask"]},
-"calligraphy":{"first":"five matching calligraphy cards","need":["pen","ink","five cards"],"steps":["Choose one short phrase","Write five keepers","Count the five cards","Write cost and minutes","Enter a price per card or set"]},
-"hand-lettering":{"first":"one finished lettering piece","need":["paper","brush pens","pencil"],"steps":["Choose one short phrase","Finish one piece","Count it as one unit","Write supply cost and minutes","Enter a price you would ask"]},
-"indoor-plants":{"first":"three styled potted plants","need":["three plants","three pots","soil"],"steps":["Pot three plants the same way","Clean and style the pots","Count the three finished pots","Write cost and minutes","Enter a price per pot"]},
-"herb-gardening":{"first":"three planted herb pots","need":["herb starts or seeds","three pots","soil","labels"],"steps":["Plant three herb pots","Label them","Count the three pots","Write cost and minutes","Enter a price per pot"]},
-"flower-arranging":{"first":"one finished flower arrangement","need":["stems","vessel","shears","water"],"steps":["Choose one arrangement style","Build one arrangement","Count it as one unit","Write stem cost and minutes","Enter a price you would ask"]},
-"woodworking":{"first":"one small wood object","need":["wood","saw or ready-cut pieces","sandpaper","finish"],"steps":["Pick one small object","Build and finish it","Count it as one unit","Write material cost and minutes","Enter a price you would ask"]},
-"furniture-flipping":{"first":"one small flipped furniture piece","need":["small furniture piece","cleaner","paint or stain","sandpaper"],"steps":["Choose one small piece","Clean, sand, and finish it","Count it as one unit","Write purchase and supply cost plus minutes","Enter a resale price"]},
-"furniture-restoration":{"first":"one restored small furniture piece","need":["small furniture piece","glue or filler","finish","sandpaper"],"steps":["Choose one repair to complete","Repair and refinish the piece","Count it as one unit","Write cost and minutes","Enter a price you would ask"]},
-"pet-accessories-and-crafts":{"first":"three matching pet accessories","need":["fabric or webbing","thread","hardware if needed","scissors"],"steps":["Pick one simple accessory","Make three matching pieces","Count the finished pieces","Write cost and minutes","Enter a price per piece"]},
-"photography":{"first":"one 10-photo set on one subject","need":["phone or camera","one subject","available light"],"steps":["Photograph one subject","Choose ten keepers","Count the set as one unit","Write minutes and any prop cost","Enter a price for the set"]},
-"product-photography":{"first":"one eight-photo product set","need":["phone or camera","one product","plain surface","available light"],"steps":["Photograph one product","Choose eight useful angles","Count the set as one unit","Write minutes and prop cost","Enter a price for the set"]},
-"food-photography":{"first":"one six-photo food set","need":["phone or camera","one dish","plate or surface","available light"],"steps":["Photograph one dish","Choose six keepers","Count the set as one unit","Write minutes and food cost","Enter a price for the set"]},
-"videography":{"first":"one 30–60 second finished clip","need":["phone or camera","stable support","editing app"],"steps":["Shoot one short clip","Trim it to a finished version","Count it as one video","Write minutes and any prop cost","Enter a price you would ask"]},
-"video-editing":{"first":"one finished short video edit","need":["footage","editing app","phone or computer"],"steps":["Choose one short piece of footage","Edit and export it","Count it as one edit","Write minutes and any asset cost","Enter a price you would ask"]},
-"graphic-design":{"first":"one finished poster or simple mark","need":["computer or tablet","design app","file export"],"steps":["Choose one small design brief","Finish one design","Export one final file","Write minutes and any asset cost","Enter a price you would ask"]},
-"web-design":{"first":"one finished single-page layout","need":["computer","design or code tool","one page brief"],"steps":["Choose one page goal","Finish one page layout","Count it as one page","Write minutes and any asset cost","Enter a price for that page"]},
-"3d-printing":{"first":"one completed 3D print","need":["printer access","filament","one model file"],"steps":["Choose one small model","Print one object","Count the finished print as one unit","Write filament cost and active minutes","Enter a price you would ask"]},
-"content-creation":{"first":"three posts on one topic","need":["phone or computer","one topic","editing app if needed"],"steps":["Choose one topic","Create three finished posts","Count the three-post pack as one unit","Write minutes and any asset cost","Enter a price for the pack"]},
-"scrapbooking":{"first":"one finished double-page spread","need":["album or paper","photos","adhesive","decorations"],"steps":["Choose one set of photos","Finish one double-page spread","Count it as one unit","Write material cost and minutes","Enter a commissioned price"]},
-"thrifting-and-reselling":{"first":"three cleaned and photographed resale items","need":["three items","phone","cleaning supplies","bags or storage"],"steps":["Clean three items","Photograph them","Count the three listings as three units","Write total cost and minutes","Enter a typical asking price"]},
-"vintage-collecting":{"first":"three documented vintage pieces","need":["three pieces","phone","notes"],"steps":["Photograph three pieces","Write what you paid for each","Count the three pieces","Write total cost and minutes","Enter a typical resale price"]},
-"sneaker-collecting-and-reselling":{"first":"one cleaned and photographed sneaker pair","need":["one pair","cleaner","phone","storage box or bag"],"steps":["Clean one pair","Photograph it","Count it as one unit","Write purchase cost and minutes","Enter an asking price"]}
+  "baking": {
+    "first": "one batch of one baked item",
+    "need": [
+      "recipe",
+      "oven",
+      "pan or tray",
+      "scale or measuring cups"
+    ],
+    "steps": [
+      "Choose one item only",
+      "List what you already have",
+      "Make the batch",
+      "Write cost, minutes, and how many",
+      "Enter a price you would ask"
+    ]
+  },
+  "cake-decorating": {
+    "first": "one simply decorated cake",
+    "need": [
+      "plain cake or dummy",
+      "icing",
+      "spatula",
+      "turntable or plate"
+    ],
+    "steps": [
+      "Pick one finish",
+      "Gather only those tools",
+      "Decorate one cake",
+      "Write cost, minutes, and one cake",
+      "Enter a price you would ask"
+    ]
+  },
+  "cooking": {
+    "first": "one dish you could portion for someone else",
+    "need": [
+      "recipe",
+      "knife",
+      "pan",
+      "ingredients for one meal"
+    ],
+    "steps": [
+      "Choose one dish",
+      "Cook it once all the way through",
+      "Count the portions",
+      "Write cost, minutes, and portions",
+      "Enter a price per portion"
+    ]
+  },
+  "bread-making": {
+    "first": "one loaf",
+    "need": [
+      "flour",
+      "yeast or starter",
+      "bowl",
+      "loaf pan or pot"
+    ],
+    "steps": [
+      "Pick one loaf style",
+      "Mix and bake one loaf",
+      "Count the finished loaf as one unit",
+      "Write cost and minutes",
+      "Enter a price you would ask"
+    ]
+  },
+  "candy-making": {
+    "first": "one small batch of one candy",
+    "need": [
+      "sugar or chocolate",
+      "bowl or thermometer",
+      "mold or pan",
+      "bags or wrappers"
+    ],
+    "steps": [
+      "Pick one candy",
+      "Make one small batch",
+      "Count the pieces",
+      "Write cost and minutes",
+      "Enter a price per piece or pack"
+    ]
+  },
+  "coffee-making": {
+    "first": "five cups of one drink recipe",
+    "need": [
+      "coffee",
+      "maker or kettle",
+      "cups",
+      "grinder or ready-ground coffee"
+    ],
+    "steps": [
+      "Lock one drink recipe",
+      "Make five cups the same way",
+      "Time the active work",
+      "Write cost, minutes, and five drinks",
+      "Enter a price per drink"
+    ]
+  },
+  "smoothie-and-juice-making": {
+    "first": "four servings of one drink",
+    "need": [
+      "blender or juicer",
+      "fruit or vegetables",
+      "cups or bottles"
+    ],
+    "steps": [
+      "Pick one recipe",
+      "Make four servings",
+      "Count the servings",
+      "Write cost and minutes",
+      "Enter a price per serving"
+    ]
+  },
+  "candle-making": {
+    "first": "four jars of one candle scent",
+    "need": [
+      "wax",
+      "wicks",
+      "jars",
+      "fragrance",
+      "pouring pot"
+    ],
+    "steps": [
+      "Pour four matching candles",
+      "Let them set",
+      "Count the finished jars",
+      "Write cost and active minutes",
+      "Enter a price per candle"
+    ]
+  },
+  "soap-making": {
+    "first": "one small loaf of soap",
+    "need": [
+      "soap base or oils",
+      "mold",
+      "scent if used",
+      "cutter"
+    ],
+    "steps": [
+      "Make one small loaf",
+      "Slice it",
+      "Count the bars",
+      "Write cost and active minutes",
+      "Enter a price per bar"
+    ]
+  },
+  "perfume-making": {
+    "first": "three small bottles of one formula",
+    "need": [
+      "alcohol or oil base",
+      "scent materials",
+      "small bottles",
+      "droppers"
+    ],
+    "steps": [
+      "Write one formula",
+      "Fill three bottles the same way",
+      "Count the bottles",
+      "Write cost and minutes",
+      "Enter a price per bottle"
+    ]
+  },
+  "skincare-making": {
+    "first": "one small batch of one product",
+    "need": [
+      "base ingredients",
+      "containers",
+      "scale",
+      "mixing bowl"
+    ],
+    "steps": [
+      "Choose one product",
+      "Make one small batch",
+      "Fill and count the containers",
+      "Write cost and minutes",
+      "Enter a price per container"
+    ]
+  },
+  "jewelry-making": {
+    "first": "three pieces of one jewelry design",
+    "need": [
+      "findings",
+      "beads or wire",
+      "pliers"
+    ],
+    "steps": [
+      "Pick one design",
+      "Make three matching pieces",
+      "Count the finished pieces",
+      "Write cost and minutes",
+      "Enter a price per piece"
+    ]
+  },
+  "bracelet-making": {
+    "first": "five bracelets of one design",
+    "need": [
+      "cord or chain",
+      "beads",
+      "clasps"
+    ],
+    "steps": [
+      "Pick one design",
+      "Make five matching bracelets",
+      "Count the finished bracelets",
+      "Write cost and minutes",
+      "Enter a price per bracelet"
+    ]
+  },
+  "crochet": {
+    "first": "one small finished crochet item",
+    "need": [
+      "yarn",
+      "hook",
+      "needle"
+    ],
+    "steps": [
+      "Pick one small item",
+      "Finish one item",
+      "Count it as one unit",
+      "Write yarn cost and minutes",
+      "Enter a price you would ask"
+    ]
+  },
+  "knitting": {
+    "first": "one small finished knitted item",
+    "need": [
+      "yarn",
+      "needles"
+    ],
+    "steps": [
+      "Pick one small item",
+      "Finish one item",
+      "Count it as one unit",
+      "Write yarn cost and minutes",
+      "Enter a price you would ask"
+    ]
+  },
+  "sewing": {
+    "first": "one simple sewn item or matching set",
+    "need": [
+      "fabric",
+      "thread",
+      "machine or needle",
+      "scissors"
+    ],
+    "steps": [
+      "Pick one simple design",
+      "Cut and sew it",
+      "Count the finished pieces",
+      "Write cost and minutes",
+      "Enter a price per item or set"
+    ]
+  },
+  "embroidery": {
+    "first": "one finished hoop",
+    "need": [
+      "fabric",
+      "hoop",
+      "floss",
+      "needle"
+    ],
+    "steps": [
+      "Pick one small design",
+      "Finish one hoop",
+      "Count it as one unit",
+      "Write cost and minutes",
+      "Enter a price you would ask"
+    ]
+  },
+  "quilting": {
+    "first": "one mini quilt or pillow top",
+    "need": [
+      "fabric",
+      "batting",
+      "backing",
+      "thread"
+    ],
+    "steps": [
+      "Pick one small piece",
+      "Finish the quilted piece",
+      "Count it as one unit",
+      "Write cost and minutes",
+      "Enter a price you would ask"
+    ]
+  },
+  "macrame": {
+    "first": "one small macramé piece",
+    "need": [
+      "cord",
+      "dowel or ring",
+      "scissors"
+    ],
+    "steps": [
+      "Pick one small design",
+      "Finish one piece",
+      "Count it as one unit",
+      "Write cord cost and minutes",
+      "Enter a price you would ask"
+    ]
+  },
+  "cricut-crafting": {
+    "first": "one design on one blank",
+    "need": [
+      "Cricut access",
+      "vinyl or HTV",
+      "one blank",
+      "transfer tools"
+    ],
+    "steps": [
+      "Pick one design",
+      "Cut the design",
+      "Apply it to one blank",
+      "Write cost and minutes",
+      "Enter a price you would ask"
+    ]
+  },
+  "vinyl-crafting": {
+    "first": "one finished vinyl item",
+    "need": [
+      "vinyl",
+      "one blank",
+      "transfer tape or press"
+    ],
+    "steps": [
+      "Pick one design",
+      "Cut and apply it",
+      "Finish one item",
+      "Write cost and minutes",
+      "Enter a price you would ask"
+    ]
+  },
+  "sticker-making": {
+    "first": "one sheet of stickers",
+    "need": [
+      "sticker paper",
+      "printer",
+      "cutter or scissors"
+    ],
+    "steps": [
+      "Prepare one sticker sheet",
+      "Print it",
+      "Cut and count the stickers",
+      "Write cost and minutes",
+      "Enter a price per sticker or sheet"
+    ]
+  },
+  "resin-art": {
+    "first": "one mold run of one resin item",
+    "need": [
+      "resin",
+      "mold",
+      "gloves",
+      "mixing cups"
+    ],
+    "steps": [
+      "Pick one mold",
+      "Pour one run",
+      "Demold and count the pieces",
+      "Write cost and active minutes",
+      "Enter a price per piece"
+    ]
+  },
+  "polymer-clay": {
+    "first": "four pieces of one clay design",
+    "need": [
+      "polymer clay",
+      "blade",
+      "bake-safe tray"
+    ],
+    "steps": [
+      "Pick one design",
+      "Make four matching pieces",
+      "Bake and finish them",
+      "Write cost and minutes",
+      "Enter a price per piece or set"
+    ]
+  },
+  "pottery": {
+    "first": "one small pinch or slab piece",
+    "need": [
+      "clay",
+      "basic tools",
+      "work surface",
+      "place to dry"
+    ],
+    "steps": [
+      "Pick one small form",
+      "Make one piece",
+      "Count it as one unit",
+      "Write clay cost and active minutes",
+      "Enter a price for the finished piece"
+    ]
+  },
+  "ceramics": {
+    "first": "one finished bisque piece",
+    "need": [
+      "bisque item",
+      "paint or glaze",
+      "brushes",
+      "sealer if used"
+    ],
+    "steps": [
+      "Pick one bisque item",
+      "Paint or glaze it",
+      "Finish one piece",
+      "Write cost and minutes",
+      "Enter a price you would ask"
+    ]
+  },
+  "painting": {
+    "first": "one small finished painting",
+    "need": [
+      "paint",
+      "brush",
+      "surface"
+    ],
+    "steps": [
+      "Choose one small piece",
+      "Finish the painting",
+      "Count it as one unit",
+      "Write supply cost and minutes",
+      "Enter a price you would ask"
+    ]
+  },
+  "watercolor": {
+    "first": "one finished watercolor painting",
+    "need": [
+      "watercolor paper",
+      "paints",
+      "brush"
+    ],
+    "steps": [
+      "Choose one small subject",
+      "Finish one painting",
+      "Count it as one unit",
+      "Write supply cost and minutes",
+      "Enter a price you would ask"
+    ]
+  },
+  "drawing-and-sketching": {
+    "first": "one finished drawing",
+    "need": [
+      "paper",
+      "pencils or pens",
+      "eraser"
+    ],
+    "steps": [
+      "Choose one subject",
+      "Finish one drawing",
+      "Count it as one unit",
+      "Write paper cost and minutes",
+      "Enter a price for the original or print"
+    ]
+  },
+  "digital-illustration": {
+    "first": "one finished digital illustration",
+    "need": [
+      "tablet or computer",
+      "drawing app",
+      "file export"
+    ],
+    "steps": [
+      "Choose one subject",
+      "Finish one illustration",
+      "Export one final file",
+      "Write minutes and any asset cost",
+      "Enter a price you would ask"
+    ]
+  },
+  "calligraphy": {
+    "first": "five matching calligraphy cards",
+    "need": [
+      "pen",
+      "ink",
+      "five cards"
+    ],
+    "steps": [
+      "Choose one short phrase",
+      "Write five keepers",
+      "Count the five cards",
+      "Write cost and minutes",
+      "Enter a price per card or set"
+    ]
+  },
+  "hand-lettering": {
+    "first": "one finished lettering piece",
+    "need": [
+      "paper",
+      "brush pens",
+      "pencil"
+    ],
+    "steps": [
+      "Choose one short phrase",
+      "Finish one piece",
+      "Count it as one unit",
+      "Write supply cost and minutes",
+      "Enter a price you would ask"
+    ]
+  },
+  "indoor-plants": {
+    "first": "three styled potted plants",
+    "need": [
+      "three plants",
+      "three pots",
+      "soil"
+    ],
+    "steps": [
+      "Pot three plants the same way",
+      "Clean and style the pots",
+      "Count the three finished pots",
+      "Write cost and minutes",
+      "Enter a price per pot"
+    ]
+  },
+  "herb-gardening": {
+    "first": "three planted herb pots",
+    "need": [
+      "herb starts or seeds",
+      "three pots",
+      "soil",
+      "labels"
+    ],
+    "steps": [
+      "Plant three herb pots",
+      "Label them",
+      "Count the three pots",
+      "Write cost and minutes",
+      "Enter a price per pot"
+    ]
+  },
+  "flower-arranging": {
+    "first": "one finished flower arrangement",
+    "need": [
+      "stems",
+      "vessel",
+      "shears",
+      "water"
+    ],
+    "steps": [
+      "Choose one arrangement style",
+      "Build one arrangement",
+      "Count it as one unit",
+      "Write stem cost and minutes",
+      "Enter a price you would ask"
+    ]
+  },
+  "woodworking": {
+    "first": "one small wood object",
+    "need": [
+      "wood",
+      "saw or ready-cut pieces",
+      "sandpaper",
+      "finish"
+    ],
+    "steps": [
+      "Pick one small object",
+      "Build and finish it",
+      "Count it as one unit",
+      "Write material cost and minutes",
+      "Enter a price you would ask"
+    ]
+  },
+  "furniture-flipping": {
+    "first": "one small flipped furniture piece",
+    "need": [
+      "small furniture piece",
+      "cleaner",
+      "paint or stain",
+      "sandpaper"
+    ],
+    "steps": [
+      "Choose one small piece",
+      "Clean, sand, and finish it",
+      "Count it as one unit",
+      "Write purchase and supply cost plus minutes",
+      "Enter a resale price"
+    ]
+  },
+  "furniture-restoration": {
+    "first": "one restored small furniture piece",
+    "need": [
+      "small furniture piece",
+      "glue or filler",
+      "finish",
+      "sandpaper"
+    ],
+    "steps": [
+      "Choose one repair to complete",
+      "Repair and refinish the piece",
+      "Count it as one unit",
+      "Write cost and minutes",
+      "Enter a price you would ask"
+    ]
+  },
+  "pet-accessories-and-crafts": {
+    "first": "three matching pet accessories",
+    "need": [
+      "fabric or webbing",
+      "thread",
+      "hardware if needed",
+      "scissors"
+    ],
+    "steps": [
+      "Pick one simple accessory",
+      "Make three matching pieces",
+      "Count the finished pieces",
+      "Write cost and minutes",
+      "Enter a price per piece"
+    ]
+  },
+  "photography": {
+    "first": "one 10-photo set on one subject",
+    "need": [
+      "phone or camera",
+      "one subject",
+      "available light"
+    ],
+    "steps": [
+      "Photograph one subject",
+      "Choose ten keepers",
+      "Count the set as one unit",
+      "Write minutes and any prop cost",
+      "Enter a price for the set"
+    ]
+  },
+  "product-photography": {
+    "first": "one eight-photo product set",
+    "need": [
+      "phone or camera",
+      "one product",
+      "plain surface",
+      "available light"
+    ],
+    "steps": [
+      "Photograph one product",
+      "Choose eight useful angles",
+      "Count the set as one unit",
+      "Write minutes and prop cost",
+      "Enter a price for the set"
+    ]
+  },
+  "food-photography": {
+    "first": "one six-photo food set",
+    "need": [
+      "phone or camera",
+      "one dish",
+      "plate or surface",
+      "available light"
+    ],
+    "steps": [
+      "Photograph one dish",
+      "Choose six keepers",
+      "Count the set as one unit",
+      "Write minutes and food cost",
+      "Enter a price for the set"
+    ]
+  },
+  "videography": {
+    "first": "one 30–60 second finished clip",
+    "need": [
+      "phone or camera",
+      "stable support",
+      "editing app"
+    ],
+    "steps": [
+      "Shoot one short clip",
+      "Trim it to a finished version",
+      "Count it as one video",
+      "Write minutes and any prop cost",
+      "Enter a price you would ask"
+    ]
+  },
+  "video-editing": {
+    "first": "one finished short video edit",
+    "need": [
+      "footage",
+      "editing app",
+      "phone or computer"
+    ],
+    "steps": [
+      "Choose one short piece of footage",
+      "Edit and export it",
+      "Count it as one edit",
+      "Write minutes and any asset cost",
+      "Enter a price you would ask"
+    ]
+  },
+  "graphic-design": {
+    "first": "one finished poster or simple mark",
+    "need": [
+      "computer or tablet",
+      "design app",
+      "file export"
+    ],
+    "steps": [
+      "Choose one small design brief",
+      "Finish one design",
+      "Export one final file",
+      "Write minutes and any asset cost",
+      "Enter a price you would ask"
+    ]
+  },
+  "web-design": {
+    "first": "one finished single-page layout",
+    "need": [
+      "computer",
+      "design or code tool",
+      "one page brief"
+    ],
+    "steps": [
+      "Choose one page goal",
+      "Finish one page layout",
+      "Count it as one page",
+      "Write minutes and any asset cost",
+      "Enter a price for that page"
+    ]
+  },
+  "3d-printing": {
+    "first": "one completed 3D print",
+    "need": [
+      "printer access",
+      "filament",
+      "one model file"
+    ],
+    "steps": [
+      "Choose one small model",
+      "Print one object",
+      "Count the finished print as one unit",
+      "Write filament cost and active minutes",
+      "Enter a price you would ask"
+    ]
+  },
+  "content-creation": {
+    "first": "three posts on one topic",
+    "need": [
+      "phone or computer",
+      "one topic",
+      "editing app if needed"
+    ],
+    "steps": [
+      "Choose one topic",
+      "Create three finished posts",
+      "Count the three-post pack as one unit",
+      "Write minutes and any asset cost",
+      "Enter a price for the pack"
+    ]
+  },
+  "scrapbooking": {
+    "first": "one finished double-page spread",
+    "need": [
+      "album or paper",
+      "photos",
+      "adhesive",
+      "decorations"
+    ],
+    "steps": [
+      "Choose one set of photos",
+      "Finish one double-page spread",
+      "Count it as one unit",
+      "Write material cost and minutes",
+      "Enter a commissioned price"
+    ]
+  },
+  "thrifting-and-reselling": {
+    "first": "three cleaned and photographed resale items",
+    "need": [
+      "three items",
+      "phone",
+      "cleaning supplies",
+      "bags or storage"
+    ],
+    "steps": [
+      "Clean three items",
+      "Photograph them",
+      "Count the three listings as three units",
+      "Write total cost and minutes",
+      "Enter a typical asking price"
+    ]
+  },
+  "vintage-collecting": {
+    "first": "three documented vintage pieces",
+    "need": [
+      "three pieces",
+      "phone",
+      "notes"
+    ],
+    "steps": [
+      "Photograph three pieces",
+      "Write what you paid for each",
+      "Count the three pieces",
+      "Write total cost and minutes",
+      "Enter a typical resale price"
+    ]
+  },
+  "sneaker-collecting-and-reselling": {
+    "first": "one cleaned and photographed sneaker pair",
+    "need": [
+      "one pair",
+      "cleaner",
+      "phone",
+      "storage box or bag"
+    ],
+    "steps": [
+      "Clean one pair",
+      "Photograph it",
+      "Count it as one unit",
+      "Write purchase cost and minutes",
+      "Enter an asking price"
+    ]
+  },
+  "gardening": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "home-decorating": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "handyman-skills": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "home-cleaning": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "blogging": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "creative-writing": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "journaling": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "coding": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "ai-assisted-copywriting": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "ai-video-repurposing": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "ai-voiceover-and-dubbing": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "ai-product-photography": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "ai-presentation-design": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "ai-resume-and-portfolio-help": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "ai-email-marketing": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "ai-blog-to-social-repurposing": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "ai-ecommerce-listing-help": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "ai-chatbot-setup": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "no-code-automation": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "ai-workflow-consulting": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "ai-data-cleanup": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "ai-web-analytics": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "ai-research-assistance": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "ai-tutoring-materials": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "ai-travel-itinerary-service": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "ai-interior-design-concepts": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "ai-podcast-clipping": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "ai-short-form-video-editing": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "pet-photography": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "dog-training": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "tutoring-and-teaching": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "taekwondo": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "hiking": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "fishing": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "birdwatching": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  },
+  "guitar": {
+    "first": "one finished beginner project",
+    "need": [
+      "the minimum tools or materials for this hobby",
+      "a small practice task",
+      "a place to record cost and time"
+    ],
+    "steps": [
+      "Choose one small beginner task",
+      "Use only the minimum setup",
+      "Finish one complete version",
+      "Write what you spent and how long it took",
+      "Decide what you would change before buying more"
+    ]
+  }
 }
