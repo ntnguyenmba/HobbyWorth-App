@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "languages": {
     "en": {
       "baking": {
@@ -1613,6 +1613,446 @@
         ],
         "goodToKnow": "Consistent short practice sessions are usually more useful than occasional long sessions.",
         "incomeNote": "Paid lessons or performances make more sense after you can demonstrate dependable skill and preparation."
+      },
+      "ai-assisted-copywriting": {
+        "ideas": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "firstMove": "Create one copy sample from a tightly defined brief and review every output yourself before sharing it.",
+        "firstWeek": [
+          "Choose one narrow use case",
+          "Create one sample from your own or permitted material",
+          "Check facts, rights and accuracy",
+          "Revise the output yourself",
+          "Save the finished sample and note the time used"
+        ],
+        "opportunityTypes": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "goodToKnow": "Treat AI output as a draft. Check facts, permissions, privacy and platform rules before using or delivering it.",
+        "incomeNote": "Start with one narrow deliverable you can review confidently instead of promising broad automation."
+      },
+      "ai-video-repurposing": {
+        "ideas": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "firstMove": "Create one short clip from a tightly defined brief and review every output yourself before sharing it.",
+        "firstWeek": [
+          "Choose one narrow use case",
+          "Create one sample from your own or permitted material",
+          "Check facts, rights and accuracy",
+          "Revise the output yourself",
+          "Save the finished sample and note the time used"
+        ],
+        "opportunityTypes": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "goodToKnow": "Treat AI output as a draft. Check facts, permissions, privacy and platform rules before using or delivering it.",
+        "incomeNote": "Start with one narrow deliverable you can review confidently instead of promising broad automation."
+      },
+      "ai-voiceover-and-dubbing": {
+        "ideas": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "firstMove": "Create one voiceover sample from a tightly defined brief and review every output yourself before sharing it.",
+        "firstWeek": [
+          "Choose one narrow use case",
+          "Create one sample from your own or permitted material",
+          "Check facts, rights and accuracy",
+          "Revise the output yourself",
+          "Save the finished sample and note the time used"
+        ],
+        "opportunityTypes": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "goodToKnow": "Treat AI output as a draft. Check facts, permissions, privacy and platform rules before using or delivering it.",
+        "incomeNote": "Start with one narrow deliverable you can review confidently instead of promising broad automation."
+      },
+      "ai-product-photography": {
+        "ideas": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "firstMove": "Create one product image set from a tightly defined brief and review every output yourself before sharing it.",
+        "firstWeek": [
+          "Choose one narrow use case",
+          "Create one sample from your own or permitted material",
+          "Check facts, rights and accuracy",
+          "Revise the output yourself",
+          "Save the finished sample and note the time used"
+        ],
+        "opportunityTypes": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "goodToKnow": "Treat AI output as a draft. Check facts, permissions, privacy and platform rules before using or delivering it.",
+        "incomeNote": "Start with one narrow deliverable you can review confidently instead of promising broad automation."
+      },
+      "ai-presentation-design": {
+        "ideas": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "firstMove": "Create one five-slide deck from a tightly defined brief and review every output yourself before sharing it.",
+        "firstWeek": [
+          "Choose one narrow use case",
+          "Create one sample from your own or permitted material",
+          "Check facts, rights and accuracy",
+          "Revise the output yourself",
+          "Save the finished sample and note the time used"
+        ],
+        "opportunityTypes": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "goodToKnow": "Treat AI output as a draft. Check facts, permissions, privacy and platform rules before using or delivering it.",
+        "incomeNote": "Start with one narrow deliverable you can review confidently instead of promising broad automation."
+      },
+      "ai-resume-and-portfolio-help": {
+        "ideas": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "firstMove": "Create one resume sample from a tightly defined brief and review every output yourself before sharing it.",
+        "firstWeek": [
+          "Choose one narrow use case",
+          "Create one sample from your own or permitted material",
+          "Check facts, rights and accuracy",
+          "Revise the output yourself",
+          "Save the finished sample and note the time used"
+        ],
+        "opportunityTypes": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "goodToKnow": "Treat AI output as a draft. Check facts, permissions, privacy and platform rules before using or delivering it.",
+        "incomeNote": "Start with one narrow deliverable you can review confidently instead of promising broad automation."
+      },
+      "ai-email-marketing": {
+        "ideas": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "firstMove": "Create one three-email sequence from a tightly defined brief and review every output yourself before sharing it.",
+        "firstWeek": [
+          "Choose one narrow use case",
+          "Create one sample from your own or permitted material",
+          "Check facts, rights and accuracy",
+          "Revise the output yourself",
+          "Save the finished sample and note the time used"
+        ],
+        "opportunityTypes": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "goodToKnow": "Treat AI output as a draft. Check facts, permissions, privacy and platform rules before using or delivering it.",
+        "incomeNote": "Start with one narrow deliverable you can review confidently instead of promising broad automation."
+      },
+      "ai-blog-to-social-repurposing": {
+        "ideas": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "firstMove": "Create one social post set from a tightly defined brief and review every output yourself before sharing it.",
+        "firstWeek": [
+          "Choose one narrow use case",
+          "Create one sample from your own or permitted material",
+          "Check facts, rights and accuracy",
+          "Revise the output yourself",
+          "Save the finished sample and note the time used"
+        ],
+        "opportunityTypes": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "goodToKnow": "Treat AI output as a draft. Check facts, permissions, privacy and platform rules before using or delivering it.",
+        "incomeNote": "Start with one narrow deliverable you can review confidently instead of promising broad automation."
+      },
+      "ai-ecommerce-listing-help": {
+        "ideas": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "firstMove": "Create one product listing from a tightly defined brief and review every output yourself before sharing it.",
+        "firstWeek": [
+          "Choose one narrow use case",
+          "Create one sample from your own or permitted material",
+          "Check facts, rights and accuracy",
+          "Revise the output yourself",
+          "Save the finished sample and note the time used"
+        ],
+        "opportunityTypes": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "goodToKnow": "Treat AI output as a draft. Check facts, permissions, privacy and platform rules before using or delivering it.",
+        "incomeNote": "Start with one narrow deliverable you can review confidently instead of promising broad automation."
+      },
+      "ai-chatbot-setup": {
+        "ideas": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "firstMove": "Create one FAQ chatbot demo from a tightly defined brief and review every output yourself before sharing it.",
+        "firstWeek": [
+          "Choose one narrow use case",
+          "Create one sample from your own or permitted material",
+          "Check facts, rights and accuracy",
+          "Revise the output yourself",
+          "Save the finished sample and note the time used"
+        ],
+        "opportunityTypes": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "goodToKnow": "Treat AI output as a draft. Check facts, permissions, privacy and platform rules before using or delivering it.",
+        "incomeNote": "Start with one narrow deliverable you can review confidently instead of promising broad automation."
+      },
+      "no-code-automation": {
+        "ideas": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "firstMove": "Create one one workflow from a tightly defined brief and review every output yourself before sharing it.",
+        "firstWeek": [
+          "Choose one narrow use case",
+          "Create one sample from your own or permitted material",
+          "Check facts, rights and accuracy",
+          "Revise the output yourself",
+          "Save the finished sample and note the time used"
+        ],
+        "opportunityTypes": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "goodToKnow": "Treat AI output as a draft. Check facts, permissions, privacy and platform rules before using or delivering it.",
+        "incomeNote": "Start with one narrow deliverable you can review confidently instead of promising broad automation."
+      },
+      "ai-workflow-consulting": {
+        "ideas": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "firstMove": "Create one workflow audit from a tightly defined brief and review every output yourself before sharing it.",
+        "firstWeek": [
+          "Choose one narrow use case",
+          "Create one sample from your own or permitted material",
+          "Check facts, rights and accuracy",
+          "Revise the output yourself",
+          "Save the finished sample and note the time used"
+        ],
+        "opportunityTypes": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "goodToKnow": "Treat AI output as a draft. Check facts, permissions, privacy and platform rules before using or delivering it.",
+        "incomeNote": "Start with one narrow deliverable you can review confidently instead of promising broad automation."
+      },
+      "ai-data-cleanup": {
+        "ideas": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "firstMove": "Create one cleaned dataset from a tightly defined brief and review every output yourself before sharing it.",
+        "firstWeek": [
+          "Choose one narrow use case",
+          "Create one sample from your own or permitted material",
+          "Check facts, rights and accuracy",
+          "Revise the output yourself",
+          "Save the finished sample and note the time used"
+        ],
+        "opportunityTypes": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "goodToKnow": "Treat AI output as a draft. Check facts, permissions, privacy and platform rules before using or delivering it.",
+        "incomeNote": "Start with one narrow deliverable you can review confidently instead of promising broad automation."
+      },
+      "ai-web-analytics": {
+        "ideas": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "firstMove": "Create one analytics review from a tightly defined brief and review every output yourself before sharing it.",
+        "firstWeek": [
+          "Choose one narrow use case",
+          "Create one sample from your own or permitted material",
+          "Check facts, rights and accuracy",
+          "Revise the output yourself",
+          "Save the finished sample and note the time used"
+        ],
+        "opportunityTypes": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "goodToKnow": "Treat AI output as a draft. Check facts, permissions, privacy and platform rules before using or delivering it.",
+        "incomeNote": "Start with one narrow deliverable you can review confidently instead of promising broad automation."
+      },
+      "ai-research-assistance": {
+        "ideas": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "firstMove": "Create one research brief from a tightly defined brief and review every output yourself before sharing it.",
+        "firstWeek": [
+          "Choose one narrow use case",
+          "Create one sample from your own or permitted material",
+          "Check facts, rights and accuracy",
+          "Revise the output yourself",
+          "Save the finished sample and note the time used"
+        ],
+        "opportunityTypes": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "goodToKnow": "Treat AI output as a draft. Check facts, permissions, privacy and platform rules before using or delivering it.",
+        "incomeNote": "Start with one narrow deliverable you can review confidently instead of promising broad automation."
+      },
+      "ai-tutoring-materials": {
+        "ideas": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "firstMove": "Create one lesson pack from a tightly defined brief and review every output yourself before sharing it.",
+        "firstWeek": [
+          "Choose one narrow use case",
+          "Create one sample from your own or permitted material",
+          "Check facts, rights and accuracy",
+          "Revise the output yourself",
+          "Save the finished sample and note the time used"
+        ],
+        "opportunityTypes": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "goodToKnow": "Treat AI output as a draft. Check facts, permissions, privacy and platform rules before using or delivering it.",
+        "incomeNote": "Start with one narrow deliverable you can review confidently instead of promising broad automation."
+      },
+      "ai-travel-itinerary-service": {
+        "ideas": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "firstMove": "Create one three-day itinerary from a tightly defined brief and review every output yourself before sharing it.",
+        "firstWeek": [
+          "Choose one narrow use case",
+          "Create one sample from your own or permitted material",
+          "Check facts, rights and accuracy",
+          "Revise the output yourself",
+          "Save the finished sample and note the time used"
+        ],
+        "opportunityTypes": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "goodToKnow": "Treat AI output as a draft. Check facts, permissions, privacy and platform rules before using or delivering it.",
+        "incomeNote": "Start with one narrow deliverable you can review confidently instead of promising broad automation."
+      },
+      "ai-interior-design-concepts": {
+        "ideas": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "firstMove": "Create one room concept from a tightly defined brief and review every output yourself before sharing it.",
+        "firstWeek": [
+          "Choose one narrow use case",
+          "Create one sample from your own or permitted material",
+          "Check facts, rights and accuracy",
+          "Revise the output yourself",
+          "Save the finished sample and note the time used"
+        ],
+        "opportunityTypes": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "goodToKnow": "Treat AI output as a draft. Check facts, permissions, privacy and platform rules before using or delivering it.",
+        "incomeNote": "Start with one narrow deliverable you can review confidently instead of promising broad automation."
+      },
+      "ai-podcast-clipping": {
+        "ideas": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "firstMove": "Create one podcast clip from a tightly defined brief and review every output yourself before sharing it.",
+        "firstWeek": [
+          "Choose one narrow use case",
+          "Create one sample from your own or permitted material",
+          "Check facts, rights and accuracy",
+          "Revise the output yourself",
+          "Save the finished sample and note the time used"
+        ],
+        "opportunityTypes": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "goodToKnow": "Treat AI output as a draft. Check facts, permissions, privacy and platform rules before using or delivering it.",
+        "incomeNote": "Start with one narrow deliverable you can review confidently instead of promising broad automation."
+      },
+      "ai-short-form-video-editing": {
+        "ideas": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "firstMove": "Create one short video from a tightly defined brief and review every output yourself before sharing it.",
+        "firstWeek": [
+          "Choose one narrow use case",
+          "Create one sample from your own or permitted material",
+          "Check facts, rights and accuracy",
+          "Revise the output yourself",
+          "Save the finished sample and note the time used"
+        ],
+        "opportunityTypes": [
+          "Portfolio samples",
+          "Freelance projects",
+          "Small-business services"
+        ],
+        "goodToKnow": "Treat AI output as a draft. Check facts, permissions, privacy and platform rules before using or delivering it.",
+        "incomeNote": "Start with one narrow deliverable you can review confidently instead of promising broad automation."
       }
     },
     "es": {
@@ -3227,6 +3667,446 @@
         ],
         "goodToKnow": "Las prácticas cortas y constantes suelen servir más que las sesiones largas de vez en cuando.",
         "incomeNote": "Las clases o actuaciones de pago tienen más sentido cuando ya puedes mostrar habilidad y preparación fiables."
+      },
+      "ai-assisted-copywriting": {
+        "ideas": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "firstMove": "Crea una muestra de copy sample a partir de un encargo bien definido y revisa personalmente cada resultado antes de compartirlo.",
+        "firstWeek": [
+          "Elige un caso de uso concreto",
+          "Crea una muestra con material propio o autorizado",
+          "Comprueba datos, derechos y precisión",
+          "Revisa personalmente el resultado",
+          "Guarda la muestra final y anota el tiempo utilizado"
+        ],
+        "opportunityTypes": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "goodToKnow": "Trata el resultado de IA como un borrador. Comprueba datos, permisos, privacidad y reglas de la plataforma antes de usarlo o entregarlo.",
+        "incomeNote": "Empieza con un entregable concreto que puedas revisar con confianza en lugar de prometer una automatización amplia."
+      },
+      "ai-video-repurposing": {
+        "ideas": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "firstMove": "Crea una muestra de short clip a partir de un encargo bien definido y revisa personalmente cada resultado antes de compartirlo.",
+        "firstWeek": [
+          "Elige un caso de uso concreto",
+          "Crea una muestra con material propio o autorizado",
+          "Comprueba datos, derechos y precisión",
+          "Revisa personalmente el resultado",
+          "Guarda la muestra final y anota el tiempo utilizado"
+        ],
+        "opportunityTypes": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "goodToKnow": "Trata el resultado de IA como un borrador. Comprueba datos, permisos, privacidad y reglas de la plataforma antes de usarlo o entregarlo.",
+        "incomeNote": "Empieza con un entregable concreto que puedas revisar con confianza en lugar de prometer una automatización amplia."
+      },
+      "ai-voiceover-and-dubbing": {
+        "ideas": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "firstMove": "Crea una muestra de voiceover sample a partir de un encargo bien definido y revisa personalmente cada resultado antes de compartirlo.",
+        "firstWeek": [
+          "Elige un caso de uso concreto",
+          "Crea una muestra con material propio o autorizado",
+          "Comprueba datos, derechos y precisión",
+          "Revisa personalmente el resultado",
+          "Guarda la muestra final y anota el tiempo utilizado"
+        ],
+        "opportunityTypes": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "goodToKnow": "Trata el resultado de IA como un borrador. Comprueba datos, permisos, privacidad y reglas de la plataforma antes de usarlo o entregarlo.",
+        "incomeNote": "Empieza con un entregable concreto que puedas revisar con confianza en lugar de prometer una automatización amplia."
+      },
+      "ai-product-photography": {
+        "ideas": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "firstMove": "Crea una muestra de product image set a partir de un encargo bien definido y revisa personalmente cada resultado antes de compartirlo.",
+        "firstWeek": [
+          "Elige un caso de uso concreto",
+          "Crea una muestra con material propio o autorizado",
+          "Comprueba datos, derechos y precisión",
+          "Revisa personalmente el resultado",
+          "Guarda la muestra final y anota el tiempo utilizado"
+        ],
+        "opportunityTypes": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "goodToKnow": "Trata el resultado de IA como un borrador. Comprueba datos, permisos, privacidad y reglas de la plataforma antes de usarlo o entregarlo.",
+        "incomeNote": "Empieza con un entregable concreto que puedas revisar con confianza en lugar de prometer una automatización amplia."
+      },
+      "ai-presentation-design": {
+        "ideas": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "firstMove": "Crea una muestra de five-slide deck a partir de un encargo bien definido y revisa personalmente cada resultado antes de compartirlo.",
+        "firstWeek": [
+          "Elige un caso de uso concreto",
+          "Crea una muestra con material propio o autorizado",
+          "Comprueba datos, derechos y precisión",
+          "Revisa personalmente el resultado",
+          "Guarda la muestra final y anota el tiempo utilizado"
+        ],
+        "opportunityTypes": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "goodToKnow": "Trata el resultado de IA como un borrador. Comprueba datos, permisos, privacidad y reglas de la plataforma antes de usarlo o entregarlo.",
+        "incomeNote": "Empieza con un entregable concreto que puedas revisar con confianza en lugar de prometer una automatización amplia."
+      },
+      "ai-resume-and-portfolio-help": {
+        "ideas": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "firstMove": "Crea una muestra de resume sample a partir de un encargo bien definido y revisa personalmente cada resultado antes de compartirlo.",
+        "firstWeek": [
+          "Elige un caso de uso concreto",
+          "Crea una muestra con material propio o autorizado",
+          "Comprueba datos, derechos y precisión",
+          "Revisa personalmente el resultado",
+          "Guarda la muestra final y anota el tiempo utilizado"
+        ],
+        "opportunityTypes": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "goodToKnow": "Trata el resultado de IA como un borrador. Comprueba datos, permisos, privacidad y reglas de la plataforma antes de usarlo o entregarlo.",
+        "incomeNote": "Empieza con un entregable concreto que puedas revisar con confianza en lugar de prometer una automatización amplia."
+      },
+      "ai-email-marketing": {
+        "ideas": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "firstMove": "Crea una muestra de three-email sequence a partir de un encargo bien definido y revisa personalmente cada resultado antes de compartirlo.",
+        "firstWeek": [
+          "Elige un caso de uso concreto",
+          "Crea una muestra con material propio o autorizado",
+          "Comprueba datos, derechos y precisión",
+          "Revisa personalmente el resultado",
+          "Guarda la muestra final y anota el tiempo utilizado"
+        ],
+        "opportunityTypes": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "goodToKnow": "Trata el resultado de IA como un borrador. Comprueba datos, permisos, privacidad y reglas de la plataforma antes de usarlo o entregarlo.",
+        "incomeNote": "Empieza con un entregable concreto que puedas revisar con confianza en lugar de prometer una automatización amplia."
+      },
+      "ai-blog-to-social-repurposing": {
+        "ideas": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "firstMove": "Crea una muestra de social post set a partir de un encargo bien definido y revisa personalmente cada resultado antes de compartirlo.",
+        "firstWeek": [
+          "Elige un caso de uso concreto",
+          "Crea una muestra con material propio o autorizado",
+          "Comprueba datos, derechos y precisión",
+          "Revisa personalmente el resultado",
+          "Guarda la muestra final y anota el tiempo utilizado"
+        ],
+        "opportunityTypes": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "goodToKnow": "Trata el resultado de IA como un borrador. Comprueba datos, permisos, privacidad y reglas de la plataforma antes de usarlo o entregarlo.",
+        "incomeNote": "Empieza con un entregable concreto que puedas revisar con confianza en lugar de prometer una automatización amplia."
+      },
+      "ai-ecommerce-listing-help": {
+        "ideas": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "firstMove": "Crea una muestra de product listing a partir de un encargo bien definido y revisa personalmente cada resultado antes de compartirlo.",
+        "firstWeek": [
+          "Elige un caso de uso concreto",
+          "Crea una muestra con material propio o autorizado",
+          "Comprueba datos, derechos y precisión",
+          "Revisa personalmente el resultado",
+          "Guarda la muestra final y anota el tiempo utilizado"
+        ],
+        "opportunityTypes": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "goodToKnow": "Trata el resultado de IA como un borrador. Comprueba datos, permisos, privacidad y reglas de la plataforma antes de usarlo o entregarlo.",
+        "incomeNote": "Empieza con un entregable concreto que puedas revisar con confianza en lugar de prometer una automatización amplia."
+      },
+      "ai-chatbot-setup": {
+        "ideas": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "firstMove": "Crea una muestra de FAQ chatbot demo a partir de un encargo bien definido y revisa personalmente cada resultado antes de compartirlo.",
+        "firstWeek": [
+          "Elige un caso de uso concreto",
+          "Crea una muestra con material propio o autorizado",
+          "Comprueba datos, derechos y precisión",
+          "Revisa personalmente el resultado",
+          "Guarda la muestra final y anota el tiempo utilizado"
+        ],
+        "opportunityTypes": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "goodToKnow": "Trata el resultado de IA como un borrador. Comprueba datos, permisos, privacidad y reglas de la plataforma antes de usarlo o entregarlo.",
+        "incomeNote": "Empieza con un entregable concreto que puedas revisar con confianza en lugar de prometer una automatización amplia."
+      },
+      "no-code-automation": {
+        "ideas": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "firstMove": "Crea una muestra de one workflow a partir de un encargo bien definido y revisa personalmente cada resultado antes de compartirlo.",
+        "firstWeek": [
+          "Elige un caso de uso concreto",
+          "Crea una muestra con material propio o autorizado",
+          "Comprueba datos, derechos y precisión",
+          "Revisa personalmente el resultado",
+          "Guarda la muestra final y anota el tiempo utilizado"
+        ],
+        "opportunityTypes": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "goodToKnow": "Trata el resultado de IA como un borrador. Comprueba datos, permisos, privacidad y reglas de la plataforma antes de usarlo o entregarlo.",
+        "incomeNote": "Empieza con un entregable concreto que puedas revisar con confianza en lugar de prometer una automatización amplia."
+      },
+      "ai-workflow-consulting": {
+        "ideas": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "firstMove": "Crea una muestra de workflow audit a partir de un encargo bien definido y revisa personalmente cada resultado antes de compartirlo.",
+        "firstWeek": [
+          "Elige un caso de uso concreto",
+          "Crea una muestra con material propio o autorizado",
+          "Comprueba datos, derechos y precisión",
+          "Revisa personalmente el resultado",
+          "Guarda la muestra final y anota el tiempo utilizado"
+        ],
+        "opportunityTypes": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "goodToKnow": "Trata el resultado de IA como un borrador. Comprueba datos, permisos, privacidad y reglas de la plataforma antes de usarlo o entregarlo.",
+        "incomeNote": "Empieza con un entregable concreto que puedas revisar con confianza en lugar de prometer una automatización amplia."
+      },
+      "ai-data-cleanup": {
+        "ideas": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "firstMove": "Crea una muestra de cleaned dataset a partir de un encargo bien definido y revisa personalmente cada resultado antes de compartirlo.",
+        "firstWeek": [
+          "Elige un caso de uso concreto",
+          "Crea una muestra con material propio o autorizado",
+          "Comprueba datos, derechos y precisión",
+          "Revisa personalmente el resultado",
+          "Guarda la muestra final y anota el tiempo utilizado"
+        ],
+        "opportunityTypes": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "goodToKnow": "Trata el resultado de IA como un borrador. Comprueba datos, permisos, privacidad y reglas de la plataforma antes de usarlo o entregarlo.",
+        "incomeNote": "Empieza con un entregable concreto que puedas revisar con confianza en lugar de prometer una automatización amplia."
+      },
+      "ai-web-analytics": {
+        "ideas": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "firstMove": "Crea una muestra de analytics review a partir de un encargo bien definido y revisa personalmente cada resultado antes de compartirlo.",
+        "firstWeek": [
+          "Elige un caso de uso concreto",
+          "Crea una muestra con material propio o autorizado",
+          "Comprueba datos, derechos y precisión",
+          "Revisa personalmente el resultado",
+          "Guarda la muestra final y anota el tiempo utilizado"
+        ],
+        "opportunityTypes": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "goodToKnow": "Trata el resultado de IA como un borrador. Comprueba datos, permisos, privacidad y reglas de la plataforma antes de usarlo o entregarlo.",
+        "incomeNote": "Empieza con un entregable concreto que puedas revisar con confianza en lugar de prometer una automatización amplia."
+      },
+      "ai-research-assistance": {
+        "ideas": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "firstMove": "Crea una muestra de research brief a partir de un encargo bien definido y revisa personalmente cada resultado antes de compartirlo.",
+        "firstWeek": [
+          "Elige un caso de uso concreto",
+          "Crea una muestra con material propio o autorizado",
+          "Comprueba datos, derechos y precisión",
+          "Revisa personalmente el resultado",
+          "Guarda la muestra final y anota el tiempo utilizado"
+        ],
+        "opportunityTypes": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "goodToKnow": "Trata el resultado de IA como un borrador. Comprueba datos, permisos, privacidad y reglas de la plataforma antes de usarlo o entregarlo.",
+        "incomeNote": "Empieza con un entregable concreto que puedas revisar con confianza en lugar de prometer una automatización amplia."
+      },
+      "ai-tutoring-materials": {
+        "ideas": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "firstMove": "Crea una muestra de lesson pack a partir de un encargo bien definido y revisa personalmente cada resultado antes de compartirlo.",
+        "firstWeek": [
+          "Elige un caso de uso concreto",
+          "Crea una muestra con material propio o autorizado",
+          "Comprueba datos, derechos y precisión",
+          "Revisa personalmente el resultado",
+          "Guarda la muestra final y anota el tiempo utilizado"
+        ],
+        "opportunityTypes": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "goodToKnow": "Trata el resultado de IA como un borrador. Comprueba datos, permisos, privacidad y reglas de la plataforma antes de usarlo o entregarlo.",
+        "incomeNote": "Empieza con un entregable concreto que puedas revisar con confianza en lugar de prometer una automatización amplia."
+      },
+      "ai-travel-itinerary-service": {
+        "ideas": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "firstMove": "Crea una muestra de three-day itinerary a partir de un encargo bien definido y revisa personalmente cada resultado antes de compartirlo.",
+        "firstWeek": [
+          "Elige un caso de uso concreto",
+          "Crea una muestra con material propio o autorizado",
+          "Comprueba datos, derechos y precisión",
+          "Revisa personalmente el resultado",
+          "Guarda la muestra final y anota el tiempo utilizado"
+        ],
+        "opportunityTypes": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "goodToKnow": "Trata el resultado de IA como un borrador. Comprueba datos, permisos, privacidad y reglas de la plataforma antes de usarlo o entregarlo.",
+        "incomeNote": "Empieza con un entregable concreto que puedas revisar con confianza en lugar de prometer una automatización amplia."
+      },
+      "ai-interior-design-concepts": {
+        "ideas": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "firstMove": "Crea una muestra de room concept a partir de un encargo bien definido y revisa personalmente cada resultado antes de compartirlo.",
+        "firstWeek": [
+          "Elige un caso de uso concreto",
+          "Crea una muestra con material propio o autorizado",
+          "Comprueba datos, derechos y precisión",
+          "Revisa personalmente el resultado",
+          "Guarda la muestra final y anota el tiempo utilizado"
+        ],
+        "opportunityTypes": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "goodToKnow": "Trata el resultado de IA como un borrador. Comprueba datos, permisos, privacidad y reglas de la plataforma antes de usarlo o entregarlo.",
+        "incomeNote": "Empieza con un entregable concreto que puedas revisar con confianza en lugar de prometer una automatización amplia."
+      },
+      "ai-podcast-clipping": {
+        "ideas": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "firstMove": "Crea una muestra de podcast clip a partir de un encargo bien definido y revisa personalmente cada resultado antes de compartirlo.",
+        "firstWeek": [
+          "Elige un caso de uso concreto",
+          "Crea una muestra con material propio o autorizado",
+          "Comprueba datos, derechos y precisión",
+          "Revisa personalmente el resultado",
+          "Guarda la muestra final y anota el tiempo utilizado"
+        ],
+        "opportunityTypes": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "goodToKnow": "Trata el resultado de IA como un borrador. Comprueba datos, permisos, privacidad y reglas de la plataforma antes de usarlo o entregarlo.",
+        "incomeNote": "Empieza con un entregable concreto que puedas revisar con confianza en lugar de prometer una automatización amplia."
+      },
+      "ai-short-form-video-editing": {
+        "ideas": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "firstMove": "Crea una muestra de short video a partir de un encargo bien definido y revisa personalmente cada resultado antes de compartirlo.",
+        "firstWeek": [
+          "Elige un caso de uso concreto",
+          "Crea una muestra con material propio o autorizado",
+          "Comprueba datos, derechos y precisión",
+          "Revisa personalmente el resultado",
+          "Guarda la muestra final y anota el tiempo utilizado"
+        ],
+        "opportunityTypes": [
+          "Muestras de portafolio",
+          "Proyectos freelance",
+          "Servicios para pequeños negocios"
+        ],
+        "goodToKnow": "Trata el resultado de IA como un borrador. Comprueba datos, permisos, privacidad y reglas de la plataforma antes de usarlo o entregarlo.",
+        "incomeNote": "Empieza con un entregable concreto que puedas revisar con confianza en lugar de prometer una automatización amplia."
       }
     },
     "vi": {
@@ -4841,6 +5721,446 @@
         ],
         "goodToKnow": "Các buổi luyện ngắn đều đặn thường hữu ích hơn những buổi dài thỉnh thoảng.",
         "incomeNote": "Dạy có thù lao hoặc biểu diễn trả phí hợp lý hơn khi bạn đã thể hiện kỹ năng và sự chuẩn bị đáng tin."
+      },
+      "ai-assisted-copywriting": {
+        "ideas": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "firstMove": "Tạo một mẫu copy sample từ yêu cầu có phạm vi rõ ràng và tự kiểm tra mọi đầu ra trước khi chia sẻ.",
+        "firstWeek": [
+          "Chọn một trường hợp sử dụng cụ thể",
+          "Tạo một mẫu từ tài liệu của bạn hoặc được phép sử dụng",
+          "Kiểm tra dữ kiện, quyền sử dụng và độ chính xác",
+          "Tự chỉnh sửa đầu ra",
+          "Lưu mẫu hoàn chỉnh và ghi lại thời gian đã dùng"
+        ],
+        "opportunityTypes": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "goodToKnow": "Hãy coi đầu ra AI là bản nháp. Kiểm tra dữ kiện, quyền sử dụng, quyền riêng tư và quy định nền tảng trước khi dùng hoặc giao cho người khác.",
+        "incomeNote": "Bắt đầu với một sản phẩm bàn giao cụ thể mà bạn có thể tự kiểm tra thay vì hứa hẹn tự động hóa quá rộng."
+      },
+      "ai-video-repurposing": {
+        "ideas": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "firstMove": "Tạo một mẫu short clip từ yêu cầu có phạm vi rõ ràng và tự kiểm tra mọi đầu ra trước khi chia sẻ.",
+        "firstWeek": [
+          "Chọn một trường hợp sử dụng cụ thể",
+          "Tạo một mẫu từ tài liệu của bạn hoặc được phép sử dụng",
+          "Kiểm tra dữ kiện, quyền sử dụng và độ chính xác",
+          "Tự chỉnh sửa đầu ra",
+          "Lưu mẫu hoàn chỉnh và ghi lại thời gian đã dùng"
+        ],
+        "opportunityTypes": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "goodToKnow": "Hãy coi đầu ra AI là bản nháp. Kiểm tra dữ kiện, quyền sử dụng, quyền riêng tư và quy định nền tảng trước khi dùng hoặc giao cho người khác.",
+        "incomeNote": "Bắt đầu với một sản phẩm bàn giao cụ thể mà bạn có thể tự kiểm tra thay vì hứa hẹn tự động hóa quá rộng."
+      },
+      "ai-voiceover-and-dubbing": {
+        "ideas": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "firstMove": "Tạo một mẫu voiceover sample từ yêu cầu có phạm vi rõ ràng và tự kiểm tra mọi đầu ra trước khi chia sẻ.",
+        "firstWeek": [
+          "Chọn một trường hợp sử dụng cụ thể",
+          "Tạo một mẫu từ tài liệu của bạn hoặc được phép sử dụng",
+          "Kiểm tra dữ kiện, quyền sử dụng và độ chính xác",
+          "Tự chỉnh sửa đầu ra",
+          "Lưu mẫu hoàn chỉnh và ghi lại thời gian đã dùng"
+        ],
+        "opportunityTypes": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "goodToKnow": "Hãy coi đầu ra AI là bản nháp. Kiểm tra dữ kiện, quyền sử dụng, quyền riêng tư và quy định nền tảng trước khi dùng hoặc giao cho người khác.",
+        "incomeNote": "Bắt đầu với một sản phẩm bàn giao cụ thể mà bạn có thể tự kiểm tra thay vì hứa hẹn tự động hóa quá rộng."
+      },
+      "ai-product-photography": {
+        "ideas": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "firstMove": "Tạo một mẫu product image set từ yêu cầu có phạm vi rõ ràng và tự kiểm tra mọi đầu ra trước khi chia sẻ.",
+        "firstWeek": [
+          "Chọn một trường hợp sử dụng cụ thể",
+          "Tạo một mẫu từ tài liệu của bạn hoặc được phép sử dụng",
+          "Kiểm tra dữ kiện, quyền sử dụng và độ chính xác",
+          "Tự chỉnh sửa đầu ra",
+          "Lưu mẫu hoàn chỉnh và ghi lại thời gian đã dùng"
+        ],
+        "opportunityTypes": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "goodToKnow": "Hãy coi đầu ra AI là bản nháp. Kiểm tra dữ kiện, quyền sử dụng, quyền riêng tư và quy định nền tảng trước khi dùng hoặc giao cho người khác.",
+        "incomeNote": "Bắt đầu với một sản phẩm bàn giao cụ thể mà bạn có thể tự kiểm tra thay vì hứa hẹn tự động hóa quá rộng."
+      },
+      "ai-presentation-design": {
+        "ideas": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "firstMove": "Tạo một mẫu five-slide deck từ yêu cầu có phạm vi rõ ràng và tự kiểm tra mọi đầu ra trước khi chia sẻ.",
+        "firstWeek": [
+          "Chọn một trường hợp sử dụng cụ thể",
+          "Tạo một mẫu từ tài liệu của bạn hoặc được phép sử dụng",
+          "Kiểm tra dữ kiện, quyền sử dụng và độ chính xác",
+          "Tự chỉnh sửa đầu ra",
+          "Lưu mẫu hoàn chỉnh và ghi lại thời gian đã dùng"
+        ],
+        "opportunityTypes": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "goodToKnow": "Hãy coi đầu ra AI là bản nháp. Kiểm tra dữ kiện, quyền sử dụng, quyền riêng tư và quy định nền tảng trước khi dùng hoặc giao cho người khác.",
+        "incomeNote": "Bắt đầu với một sản phẩm bàn giao cụ thể mà bạn có thể tự kiểm tra thay vì hứa hẹn tự động hóa quá rộng."
+      },
+      "ai-resume-and-portfolio-help": {
+        "ideas": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "firstMove": "Tạo một mẫu resume sample từ yêu cầu có phạm vi rõ ràng và tự kiểm tra mọi đầu ra trước khi chia sẻ.",
+        "firstWeek": [
+          "Chọn một trường hợp sử dụng cụ thể",
+          "Tạo một mẫu từ tài liệu của bạn hoặc được phép sử dụng",
+          "Kiểm tra dữ kiện, quyền sử dụng và độ chính xác",
+          "Tự chỉnh sửa đầu ra",
+          "Lưu mẫu hoàn chỉnh và ghi lại thời gian đã dùng"
+        ],
+        "opportunityTypes": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "goodToKnow": "Hãy coi đầu ra AI là bản nháp. Kiểm tra dữ kiện, quyền sử dụng, quyền riêng tư và quy định nền tảng trước khi dùng hoặc giao cho người khác.",
+        "incomeNote": "Bắt đầu với một sản phẩm bàn giao cụ thể mà bạn có thể tự kiểm tra thay vì hứa hẹn tự động hóa quá rộng."
+      },
+      "ai-email-marketing": {
+        "ideas": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "firstMove": "Tạo một mẫu three-email sequence từ yêu cầu có phạm vi rõ ràng và tự kiểm tra mọi đầu ra trước khi chia sẻ.",
+        "firstWeek": [
+          "Chọn một trường hợp sử dụng cụ thể",
+          "Tạo một mẫu từ tài liệu của bạn hoặc được phép sử dụng",
+          "Kiểm tra dữ kiện, quyền sử dụng và độ chính xác",
+          "Tự chỉnh sửa đầu ra",
+          "Lưu mẫu hoàn chỉnh và ghi lại thời gian đã dùng"
+        ],
+        "opportunityTypes": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "goodToKnow": "Hãy coi đầu ra AI là bản nháp. Kiểm tra dữ kiện, quyền sử dụng, quyền riêng tư và quy định nền tảng trước khi dùng hoặc giao cho người khác.",
+        "incomeNote": "Bắt đầu với một sản phẩm bàn giao cụ thể mà bạn có thể tự kiểm tra thay vì hứa hẹn tự động hóa quá rộng."
+      },
+      "ai-blog-to-social-repurposing": {
+        "ideas": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "firstMove": "Tạo một mẫu social post set từ yêu cầu có phạm vi rõ ràng và tự kiểm tra mọi đầu ra trước khi chia sẻ.",
+        "firstWeek": [
+          "Chọn một trường hợp sử dụng cụ thể",
+          "Tạo một mẫu từ tài liệu của bạn hoặc được phép sử dụng",
+          "Kiểm tra dữ kiện, quyền sử dụng và độ chính xác",
+          "Tự chỉnh sửa đầu ra",
+          "Lưu mẫu hoàn chỉnh và ghi lại thời gian đã dùng"
+        ],
+        "opportunityTypes": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "goodToKnow": "Hãy coi đầu ra AI là bản nháp. Kiểm tra dữ kiện, quyền sử dụng, quyền riêng tư và quy định nền tảng trước khi dùng hoặc giao cho người khác.",
+        "incomeNote": "Bắt đầu với một sản phẩm bàn giao cụ thể mà bạn có thể tự kiểm tra thay vì hứa hẹn tự động hóa quá rộng."
+      },
+      "ai-ecommerce-listing-help": {
+        "ideas": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "firstMove": "Tạo một mẫu product listing từ yêu cầu có phạm vi rõ ràng và tự kiểm tra mọi đầu ra trước khi chia sẻ.",
+        "firstWeek": [
+          "Chọn một trường hợp sử dụng cụ thể",
+          "Tạo một mẫu từ tài liệu của bạn hoặc được phép sử dụng",
+          "Kiểm tra dữ kiện, quyền sử dụng và độ chính xác",
+          "Tự chỉnh sửa đầu ra",
+          "Lưu mẫu hoàn chỉnh và ghi lại thời gian đã dùng"
+        ],
+        "opportunityTypes": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "goodToKnow": "Hãy coi đầu ra AI là bản nháp. Kiểm tra dữ kiện, quyền sử dụng, quyền riêng tư và quy định nền tảng trước khi dùng hoặc giao cho người khác.",
+        "incomeNote": "Bắt đầu với một sản phẩm bàn giao cụ thể mà bạn có thể tự kiểm tra thay vì hứa hẹn tự động hóa quá rộng."
+      },
+      "ai-chatbot-setup": {
+        "ideas": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "firstMove": "Tạo một mẫu FAQ chatbot demo từ yêu cầu có phạm vi rõ ràng và tự kiểm tra mọi đầu ra trước khi chia sẻ.",
+        "firstWeek": [
+          "Chọn một trường hợp sử dụng cụ thể",
+          "Tạo một mẫu từ tài liệu của bạn hoặc được phép sử dụng",
+          "Kiểm tra dữ kiện, quyền sử dụng và độ chính xác",
+          "Tự chỉnh sửa đầu ra",
+          "Lưu mẫu hoàn chỉnh và ghi lại thời gian đã dùng"
+        ],
+        "opportunityTypes": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "goodToKnow": "Hãy coi đầu ra AI là bản nháp. Kiểm tra dữ kiện, quyền sử dụng, quyền riêng tư và quy định nền tảng trước khi dùng hoặc giao cho người khác.",
+        "incomeNote": "Bắt đầu với một sản phẩm bàn giao cụ thể mà bạn có thể tự kiểm tra thay vì hứa hẹn tự động hóa quá rộng."
+      },
+      "no-code-automation": {
+        "ideas": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "firstMove": "Tạo một mẫu one workflow từ yêu cầu có phạm vi rõ ràng và tự kiểm tra mọi đầu ra trước khi chia sẻ.",
+        "firstWeek": [
+          "Chọn một trường hợp sử dụng cụ thể",
+          "Tạo một mẫu từ tài liệu của bạn hoặc được phép sử dụng",
+          "Kiểm tra dữ kiện, quyền sử dụng và độ chính xác",
+          "Tự chỉnh sửa đầu ra",
+          "Lưu mẫu hoàn chỉnh và ghi lại thời gian đã dùng"
+        ],
+        "opportunityTypes": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "goodToKnow": "Hãy coi đầu ra AI là bản nháp. Kiểm tra dữ kiện, quyền sử dụng, quyền riêng tư và quy định nền tảng trước khi dùng hoặc giao cho người khác.",
+        "incomeNote": "Bắt đầu với một sản phẩm bàn giao cụ thể mà bạn có thể tự kiểm tra thay vì hứa hẹn tự động hóa quá rộng."
+      },
+      "ai-workflow-consulting": {
+        "ideas": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "firstMove": "Tạo một mẫu workflow audit từ yêu cầu có phạm vi rõ ràng và tự kiểm tra mọi đầu ra trước khi chia sẻ.",
+        "firstWeek": [
+          "Chọn một trường hợp sử dụng cụ thể",
+          "Tạo một mẫu từ tài liệu của bạn hoặc được phép sử dụng",
+          "Kiểm tra dữ kiện, quyền sử dụng và độ chính xác",
+          "Tự chỉnh sửa đầu ra",
+          "Lưu mẫu hoàn chỉnh và ghi lại thời gian đã dùng"
+        ],
+        "opportunityTypes": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "goodToKnow": "Hãy coi đầu ra AI là bản nháp. Kiểm tra dữ kiện, quyền sử dụng, quyền riêng tư và quy định nền tảng trước khi dùng hoặc giao cho người khác.",
+        "incomeNote": "Bắt đầu với một sản phẩm bàn giao cụ thể mà bạn có thể tự kiểm tra thay vì hứa hẹn tự động hóa quá rộng."
+      },
+      "ai-data-cleanup": {
+        "ideas": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "firstMove": "Tạo một mẫu cleaned dataset từ yêu cầu có phạm vi rõ ràng và tự kiểm tra mọi đầu ra trước khi chia sẻ.",
+        "firstWeek": [
+          "Chọn một trường hợp sử dụng cụ thể",
+          "Tạo một mẫu từ tài liệu của bạn hoặc được phép sử dụng",
+          "Kiểm tra dữ kiện, quyền sử dụng và độ chính xác",
+          "Tự chỉnh sửa đầu ra",
+          "Lưu mẫu hoàn chỉnh và ghi lại thời gian đã dùng"
+        ],
+        "opportunityTypes": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "goodToKnow": "Hãy coi đầu ra AI là bản nháp. Kiểm tra dữ kiện, quyền sử dụng, quyền riêng tư và quy định nền tảng trước khi dùng hoặc giao cho người khác.",
+        "incomeNote": "Bắt đầu với một sản phẩm bàn giao cụ thể mà bạn có thể tự kiểm tra thay vì hứa hẹn tự động hóa quá rộng."
+      },
+      "ai-web-analytics": {
+        "ideas": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "firstMove": "Tạo một mẫu analytics review từ yêu cầu có phạm vi rõ ràng và tự kiểm tra mọi đầu ra trước khi chia sẻ.",
+        "firstWeek": [
+          "Chọn một trường hợp sử dụng cụ thể",
+          "Tạo một mẫu từ tài liệu của bạn hoặc được phép sử dụng",
+          "Kiểm tra dữ kiện, quyền sử dụng và độ chính xác",
+          "Tự chỉnh sửa đầu ra",
+          "Lưu mẫu hoàn chỉnh và ghi lại thời gian đã dùng"
+        ],
+        "opportunityTypes": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "goodToKnow": "Hãy coi đầu ra AI là bản nháp. Kiểm tra dữ kiện, quyền sử dụng, quyền riêng tư và quy định nền tảng trước khi dùng hoặc giao cho người khác.",
+        "incomeNote": "Bắt đầu với một sản phẩm bàn giao cụ thể mà bạn có thể tự kiểm tra thay vì hứa hẹn tự động hóa quá rộng."
+      },
+      "ai-research-assistance": {
+        "ideas": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "firstMove": "Tạo một mẫu research brief từ yêu cầu có phạm vi rõ ràng và tự kiểm tra mọi đầu ra trước khi chia sẻ.",
+        "firstWeek": [
+          "Chọn một trường hợp sử dụng cụ thể",
+          "Tạo một mẫu từ tài liệu của bạn hoặc được phép sử dụng",
+          "Kiểm tra dữ kiện, quyền sử dụng và độ chính xác",
+          "Tự chỉnh sửa đầu ra",
+          "Lưu mẫu hoàn chỉnh và ghi lại thời gian đã dùng"
+        ],
+        "opportunityTypes": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "goodToKnow": "Hãy coi đầu ra AI là bản nháp. Kiểm tra dữ kiện, quyền sử dụng, quyền riêng tư và quy định nền tảng trước khi dùng hoặc giao cho người khác.",
+        "incomeNote": "Bắt đầu với một sản phẩm bàn giao cụ thể mà bạn có thể tự kiểm tra thay vì hứa hẹn tự động hóa quá rộng."
+      },
+      "ai-tutoring-materials": {
+        "ideas": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "firstMove": "Tạo một mẫu lesson pack từ yêu cầu có phạm vi rõ ràng và tự kiểm tra mọi đầu ra trước khi chia sẻ.",
+        "firstWeek": [
+          "Chọn một trường hợp sử dụng cụ thể",
+          "Tạo một mẫu từ tài liệu của bạn hoặc được phép sử dụng",
+          "Kiểm tra dữ kiện, quyền sử dụng và độ chính xác",
+          "Tự chỉnh sửa đầu ra",
+          "Lưu mẫu hoàn chỉnh và ghi lại thời gian đã dùng"
+        ],
+        "opportunityTypes": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "goodToKnow": "Hãy coi đầu ra AI là bản nháp. Kiểm tra dữ kiện, quyền sử dụng, quyền riêng tư và quy định nền tảng trước khi dùng hoặc giao cho người khác.",
+        "incomeNote": "Bắt đầu với một sản phẩm bàn giao cụ thể mà bạn có thể tự kiểm tra thay vì hứa hẹn tự động hóa quá rộng."
+      },
+      "ai-travel-itinerary-service": {
+        "ideas": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "firstMove": "Tạo một mẫu three-day itinerary từ yêu cầu có phạm vi rõ ràng và tự kiểm tra mọi đầu ra trước khi chia sẻ.",
+        "firstWeek": [
+          "Chọn một trường hợp sử dụng cụ thể",
+          "Tạo một mẫu từ tài liệu của bạn hoặc được phép sử dụng",
+          "Kiểm tra dữ kiện, quyền sử dụng và độ chính xác",
+          "Tự chỉnh sửa đầu ra",
+          "Lưu mẫu hoàn chỉnh và ghi lại thời gian đã dùng"
+        ],
+        "opportunityTypes": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "goodToKnow": "Hãy coi đầu ra AI là bản nháp. Kiểm tra dữ kiện, quyền sử dụng, quyền riêng tư và quy định nền tảng trước khi dùng hoặc giao cho người khác.",
+        "incomeNote": "Bắt đầu với một sản phẩm bàn giao cụ thể mà bạn có thể tự kiểm tra thay vì hứa hẹn tự động hóa quá rộng."
+      },
+      "ai-interior-design-concepts": {
+        "ideas": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "firstMove": "Tạo một mẫu room concept từ yêu cầu có phạm vi rõ ràng và tự kiểm tra mọi đầu ra trước khi chia sẻ.",
+        "firstWeek": [
+          "Chọn một trường hợp sử dụng cụ thể",
+          "Tạo một mẫu từ tài liệu của bạn hoặc được phép sử dụng",
+          "Kiểm tra dữ kiện, quyền sử dụng và độ chính xác",
+          "Tự chỉnh sửa đầu ra",
+          "Lưu mẫu hoàn chỉnh và ghi lại thời gian đã dùng"
+        ],
+        "opportunityTypes": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "goodToKnow": "Hãy coi đầu ra AI là bản nháp. Kiểm tra dữ kiện, quyền sử dụng, quyền riêng tư và quy định nền tảng trước khi dùng hoặc giao cho người khác.",
+        "incomeNote": "Bắt đầu với một sản phẩm bàn giao cụ thể mà bạn có thể tự kiểm tra thay vì hứa hẹn tự động hóa quá rộng."
+      },
+      "ai-podcast-clipping": {
+        "ideas": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "firstMove": "Tạo một mẫu podcast clip từ yêu cầu có phạm vi rõ ràng và tự kiểm tra mọi đầu ra trước khi chia sẻ.",
+        "firstWeek": [
+          "Chọn một trường hợp sử dụng cụ thể",
+          "Tạo một mẫu từ tài liệu của bạn hoặc được phép sử dụng",
+          "Kiểm tra dữ kiện, quyền sử dụng và độ chính xác",
+          "Tự chỉnh sửa đầu ra",
+          "Lưu mẫu hoàn chỉnh và ghi lại thời gian đã dùng"
+        ],
+        "opportunityTypes": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "goodToKnow": "Hãy coi đầu ra AI là bản nháp. Kiểm tra dữ kiện, quyền sử dụng, quyền riêng tư và quy định nền tảng trước khi dùng hoặc giao cho người khác.",
+        "incomeNote": "Bắt đầu với một sản phẩm bàn giao cụ thể mà bạn có thể tự kiểm tra thay vì hứa hẹn tự động hóa quá rộng."
+      },
+      "ai-short-form-video-editing": {
+        "ideas": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "firstMove": "Tạo một mẫu short video từ yêu cầu có phạm vi rõ ràng và tự kiểm tra mọi đầu ra trước khi chia sẻ.",
+        "firstWeek": [
+          "Chọn một trường hợp sử dụng cụ thể",
+          "Tạo một mẫu từ tài liệu của bạn hoặc được phép sử dụng",
+          "Kiểm tra dữ kiện, quyền sử dụng và độ chính xác",
+          "Tự chỉnh sửa đầu ra",
+          "Lưu mẫu hoàn chỉnh và ghi lại thời gian đã dùng"
+        ],
+        "opportunityTypes": [
+          "Mẫu portfolio",
+          "Dự án tự do",
+          "Dịch vụ cho doanh nghiệp nhỏ"
+        ],
+        "goodToKnow": "Hãy coi đầu ra AI là bản nháp. Kiểm tra dữ kiện, quyền sử dụng, quyền riêng tư và quy định nền tảng trước khi dùng hoặc giao cho người khác.",
+        "incomeNote": "Bắt đầu với một sản phẩm bàn giao cụ thể mà bạn có thể tự kiểm tra thay vì hứa hẹn tự động hóa quá rộng."
       }
     },
     "de": {
@@ -6455,6 +7775,446 @@
         ],
         "goodToKnow": "Regelmäßige kurze Übungseinheiten nützen meist mehr als gelegentliche lange Sessions.",
         "incomeNote": "Bezahlter Unterricht oder Auftritte sind sinnvoller, wenn du zuverlässiges Können und Vorbereitung zeigen kannst."
+      },
+      "ai-assisted-copywriting": {
+        "ideas": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "firstMove": "Erstelle ein copy sample nach einem klar abgegrenzten Briefing und prüfe jedes Ergebnis selbst, bevor du es weitergibst.",
+        "firstWeek": [
+          "Wähle einen klaren Anwendungsfall",
+          "Erstelle ein Beispiel mit eigenem oder erlaubtem Material",
+          "Prüfe Fakten, Rechte und Genauigkeit",
+          "Überarbeite das Ergebnis selbst",
+          "Speichere das fertige Beispiel und notiere die benötigte Zeit"
+        ],
+        "opportunityTypes": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "goodToKnow": "Behandle KI-Ausgaben als Entwurf. Prüfe Fakten, Berechtigungen, Datenschutz und Plattformregeln vor Nutzung oder Übergabe.",
+        "incomeNote": "Beginne mit einem eng umrissenen Ergebnis, das du sicher selbst prüfen kannst, statt umfassende Automatisierung zu versprechen."
+      },
+      "ai-video-repurposing": {
+        "ideas": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "firstMove": "Erstelle ein short clip nach einem klar abgegrenzten Briefing und prüfe jedes Ergebnis selbst, bevor du es weitergibst.",
+        "firstWeek": [
+          "Wähle einen klaren Anwendungsfall",
+          "Erstelle ein Beispiel mit eigenem oder erlaubtem Material",
+          "Prüfe Fakten, Rechte und Genauigkeit",
+          "Überarbeite das Ergebnis selbst",
+          "Speichere das fertige Beispiel und notiere die benötigte Zeit"
+        ],
+        "opportunityTypes": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "goodToKnow": "Behandle KI-Ausgaben als Entwurf. Prüfe Fakten, Berechtigungen, Datenschutz und Plattformregeln vor Nutzung oder Übergabe.",
+        "incomeNote": "Beginne mit einem eng umrissenen Ergebnis, das du sicher selbst prüfen kannst, statt umfassende Automatisierung zu versprechen."
+      },
+      "ai-voiceover-and-dubbing": {
+        "ideas": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "firstMove": "Erstelle ein voiceover sample nach einem klar abgegrenzten Briefing und prüfe jedes Ergebnis selbst, bevor du es weitergibst.",
+        "firstWeek": [
+          "Wähle einen klaren Anwendungsfall",
+          "Erstelle ein Beispiel mit eigenem oder erlaubtem Material",
+          "Prüfe Fakten, Rechte und Genauigkeit",
+          "Überarbeite das Ergebnis selbst",
+          "Speichere das fertige Beispiel und notiere die benötigte Zeit"
+        ],
+        "opportunityTypes": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "goodToKnow": "Behandle KI-Ausgaben als Entwurf. Prüfe Fakten, Berechtigungen, Datenschutz und Plattformregeln vor Nutzung oder Übergabe.",
+        "incomeNote": "Beginne mit einem eng umrissenen Ergebnis, das du sicher selbst prüfen kannst, statt umfassende Automatisierung zu versprechen."
+      },
+      "ai-product-photography": {
+        "ideas": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "firstMove": "Erstelle ein product image set nach einem klar abgegrenzten Briefing und prüfe jedes Ergebnis selbst, bevor du es weitergibst.",
+        "firstWeek": [
+          "Wähle einen klaren Anwendungsfall",
+          "Erstelle ein Beispiel mit eigenem oder erlaubtem Material",
+          "Prüfe Fakten, Rechte und Genauigkeit",
+          "Überarbeite das Ergebnis selbst",
+          "Speichere das fertige Beispiel und notiere die benötigte Zeit"
+        ],
+        "opportunityTypes": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "goodToKnow": "Behandle KI-Ausgaben als Entwurf. Prüfe Fakten, Berechtigungen, Datenschutz und Plattformregeln vor Nutzung oder Übergabe.",
+        "incomeNote": "Beginne mit einem eng umrissenen Ergebnis, das du sicher selbst prüfen kannst, statt umfassende Automatisierung zu versprechen."
+      },
+      "ai-presentation-design": {
+        "ideas": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "firstMove": "Erstelle ein five-slide deck nach einem klar abgegrenzten Briefing und prüfe jedes Ergebnis selbst, bevor du es weitergibst.",
+        "firstWeek": [
+          "Wähle einen klaren Anwendungsfall",
+          "Erstelle ein Beispiel mit eigenem oder erlaubtem Material",
+          "Prüfe Fakten, Rechte und Genauigkeit",
+          "Überarbeite das Ergebnis selbst",
+          "Speichere das fertige Beispiel und notiere die benötigte Zeit"
+        ],
+        "opportunityTypes": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "goodToKnow": "Behandle KI-Ausgaben als Entwurf. Prüfe Fakten, Berechtigungen, Datenschutz und Plattformregeln vor Nutzung oder Übergabe.",
+        "incomeNote": "Beginne mit einem eng umrissenen Ergebnis, das du sicher selbst prüfen kannst, statt umfassende Automatisierung zu versprechen."
+      },
+      "ai-resume-and-portfolio-help": {
+        "ideas": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "firstMove": "Erstelle ein resume sample nach einem klar abgegrenzten Briefing und prüfe jedes Ergebnis selbst, bevor du es weitergibst.",
+        "firstWeek": [
+          "Wähle einen klaren Anwendungsfall",
+          "Erstelle ein Beispiel mit eigenem oder erlaubtem Material",
+          "Prüfe Fakten, Rechte und Genauigkeit",
+          "Überarbeite das Ergebnis selbst",
+          "Speichere das fertige Beispiel und notiere die benötigte Zeit"
+        ],
+        "opportunityTypes": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "goodToKnow": "Behandle KI-Ausgaben als Entwurf. Prüfe Fakten, Berechtigungen, Datenschutz und Plattformregeln vor Nutzung oder Übergabe.",
+        "incomeNote": "Beginne mit einem eng umrissenen Ergebnis, das du sicher selbst prüfen kannst, statt umfassende Automatisierung zu versprechen."
+      },
+      "ai-email-marketing": {
+        "ideas": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "firstMove": "Erstelle ein three-email sequence nach einem klar abgegrenzten Briefing und prüfe jedes Ergebnis selbst, bevor du es weitergibst.",
+        "firstWeek": [
+          "Wähle einen klaren Anwendungsfall",
+          "Erstelle ein Beispiel mit eigenem oder erlaubtem Material",
+          "Prüfe Fakten, Rechte und Genauigkeit",
+          "Überarbeite das Ergebnis selbst",
+          "Speichere das fertige Beispiel und notiere die benötigte Zeit"
+        ],
+        "opportunityTypes": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "goodToKnow": "Behandle KI-Ausgaben als Entwurf. Prüfe Fakten, Berechtigungen, Datenschutz und Plattformregeln vor Nutzung oder Übergabe.",
+        "incomeNote": "Beginne mit einem eng umrissenen Ergebnis, das du sicher selbst prüfen kannst, statt umfassende Automatisierung zu versprechen."
+      },
+      "ai-blog-to-social-repurposing": {
+        "ideas": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "firstMove": "Erstelle ein social post set nach einem klar abgegrenzten Briefing und prüfe jedes Ergebnis selbst, bevor du es weitergibst.",
+        "firstWeek": [
+          "Wähle einen klaren Anwendungsfall",
+          "Erstelle ein Beispiel mit eigenem oder erlaubtem Material",
+          "Prüfe Fakten, Rechte und Genauigkeit",
+          "Überarbeite das Ergebnis selbst",
+          "Speichere das fertige Beispiel und notiere die benötigte Zeit"
+        ],
+        "opportunityTypes": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "goodToKnow": "Behandle KI-Ausgaben als Entwurf. Prüfe Fakten, Berechtigungen, Datenschutz und Plattformregeln vor Nutzung oder Übergabe.",
+        "incomeNote": "Beginne mit einem eng umrissenen Ergebnis, das du sicher selbst prüfen kannst, statt umfassende Automatisierung zu versprechen."
+      },
+      "ai-ecommerce-listing-help": {
+        "ideas": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "firstMove": "Erstelle ein product listing nach einem klar abgegrenzten Briefing und prüfe jedes Ergebnis selbst, bevor du es weitergibst.",
+        "firstWeek": [
+          "Wähle einen klaren Anwendungsfall",
+          "Erstelle ein Beispiel mit eigenem oder erlaubtem Material",
+          "Prüfe Fakten, Rechte und Genauigkeit",
+          "Überarbeite das Ergebnis selbst",
+          "Speichere das fertige Beispiel und notiere die benötigte Zeit"
+        ],
+        "opportunityTypes": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "goodToKnow": "Behandle KI-Ausgaben als Entwurf. Prüfe Fakten, Berechtigungen, Datenschutz und Plattformregeln vor Nutzung oder Übergabe.",
+        "incomeNote": "Beginne mit einem eng umrissenen Ergebnis, das du sicher selbst prüfen kannst, statt umfassende Automatisierung zu versprechen."
+      },
+      "ai-chatbot-setup": {
+        "ideas": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "firstMove": "Erstelle ein FAQ chatbot demo nach einem klar abgegrenzten Briefing und prüfe jedes Ergebnis selbst, bevor du es weitergibst.",
+        "firstWeek": [
+          "Wähle einen klaren Anwendungsfall",
+          "Erstelle ein Beispiel mit eigenem oder erlaubtem Material",
+          "Prüfe Fakten, Rechte und Genauigkeit",
+          "Überarbeite das Ergebnis selbst",
+          "Speichere das fertige Beispiel und notiere die benötigte Zeit"
+        ],
+        "opportunityTypes": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "goodToKnow": "Behandle KI-Ausgaben als Entwurf. Prüfe Fakten, Berechtigungen, Datenschutz und Plattformregeln vor Nutzung oder Übergabe.",
+        "incomeNote": "Beginne mit einem eng umrissenen Ergebnis, das du sicher selbst prüfen kannst, statt umfassende Automatisierung zu versprechen."
+      },
+      "no-code-automation": {
+        "ideas": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "firstMove": "Erstelle ein one workflow nach einem klar abgegrenzten Briefing und prüfe jedes Ergebnis selbst, bevor du es weitergibst.",
+        "firstWeek": [
+          "Wähle einen klaren Anwendungsfall",
+          "Erstelle ein Beispiel mit eigenem oder erlaubtem Material",
+          "Prüfe Fakten, Rechte und Genauigkeit",
+          "Überarbeite das Ergebnis selbst",
+          "Speichere das fertige Beispiel und notiere die benötigte Zeit"
+        ],
+        "opportunityTypes": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "goodToKnow": "Behandle KI-Ausgaben als Entwurf. Prüfe Fakten, Berechtigungen, Datenschutz und Plattformregeln vor Nutzung oder Übergabe.",
+        "incomeNote": "Beginne mit einem eng umrissenen Ergebnis, das du sicher selbst prüfen kannst, statt umfassende Automatisierung zu versprechen."
+      },
+      "ai-workflow-consulting": {
+        "ideas": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "firstMove": "Erstelle ein workflow audit nach einem klar abgegrenzten Briefing und prüfe jedes Ergebnis selbst, bevor du es weitergibst.",
+        "firstWeek": [
+          "Wähle einen klaren Anwendungsfall",
+          "Erstelle ein Beispiel mit eigenem oder erlaubtem Material",
+          "Prüfe Fakten, Rechte und Genauigkeit",
+          "Überarbeite das Ergebnis selbst",
+          "Speichere das fertige Beispiel und notiere die benötigte Zeit"
+        ],
+        "opportunityTypes": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "goodToKnow": "Behandle KI-Ausgaben als Entwurf. Prüfe Fakten, Berechtigungen, Datenschutz und Plattformregeln vor Nutzung oder Übergabe.",
+        "incomeNote": "Beginne mit einem eng umrissenen Ergebnis, das du sicher selbst prüfen kannst, statt umfassende Automatisierung zu versprechen."
+      },
+      "ai-data-cleanup": {
+        "ideas": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "firstMove": "Erstelle ein cleaned dataset nach einem klar abgegrenzten Briefing und prüfe jedes Ergebnis selbst, bevor du es weitergibst.",
+        "firstWeek": [
+          "Wähle einen klaren Anwendungsfall",
+          "Erstelle ein Beispiel mit eigenem oder erlaubtem Material",
+          "Prüfe Fakten, Rechte und Genauigkeit",
+          "Überarbeite das Ergebnis selbst",
+          "Speichere das fertige Beispiel und notiere die benötigte Zeit"
+        ],
+        "opportunityTypes": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "goodToKnow": "Behandle KI-Ausgaben als Entwurf. Prüfe Fakten, Berechtigungen, Datenschutz und Plattformregeln vor Nutzung oder Übergabe.",
+        "incomeNote": "Beginne mit einem eng umrissenen Ergebnis, das du sicher selbst prüfen kannst, statt umfassende Automatisierung zu versprechen."
+      },
+      "ai-web-analytics": {
+        "ideas": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "firstMove": "Erstelle ein analytics review nach einem klar abgegrenzten Briefing und prüfe jedes Ergebnis selbst, bevor du es weitergibst.",
+        "firstWeek": [
+          "Wähle einen klaren Anwendungsfall",
+          "Erstelle ein Beispiel mit eigenem oder erlaubtem Material",
+          "Prüfe Fakten, Rechte und Genauigkeit",
+          "Überarbeite das Ergebnis selbst",
+          "Speichere das fertige Beispiel und notiere die benötigte Zeit"
+        ],
+        "opportunityTypes": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "goodToKnow": "Behandle KI-Ausgaben als Entwurf. Prüfe Fakten, Berechtigungen, Datenschutz und Plattformregeln vor Nutzung oder Übergabe.",
+        "incomeNote": "Beginne mit einem eng umrissenen Ergebnis, das du sicher selbst prüfen kannst, statt umfassende Automatisierung zu versprechen."
+      },
+      "ai-research-assistance": {
+        "ideas": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "firstMove": "Erstelle ein research brief nach einem klar abgegrenzten Briefing und prüfe jedes Ergebnis selbst, bevor du es weitergibst.",
+        "firstWeek": [
+          "Wähle einen klaren Anwendungsfall",
+          "Erstelle ein Beispiel mit eigenem oder erlaubtem Material",
+          "Prüfe Fakten, Rechte und Genauigkeit",
+          "Überarbeite das Ergebnis selbst",
+          "Speichere das fertige Beispiel und notiere die benötigte Zeit"
+        ],
+        "opportunityTypes": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "goodToKnow": "Behandle KI-Ausgaben als Entwurf. Prüfe Fakten, Berechtigungen, Datenschutz und Plattformregeln vor Nutzung oder Übergabe.",
+        "incomeNote": "Beginne mit einem eng umrissenen Ergebnis, das du sicher selbst prüfen kannst, statt umfassende Automatisierung zu versprechen."
+      },
+      "ai-tutoring-materials": {
+        "ideas": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "firstMove": "Erstelle ein lesson pack nach einem klar abgegrenzten Briefing und prüfe jedes Ergebnis selbst, bevor du es weitergibst.",
+        "firstWeek": [
+          "Wähle einen klaren Anwendungsfall",
+          "Erstelle ein Beispiel mit eigenem oder erlaubtem Material",
+          "Prüfe Fakten, Rechte und Genauigkeit",
+          "Überarbeite das Ergebnis selbst",
+          "Speichere das fertige Beispiel und notiere die benötigte Zeit"
+        ],
+        "opportunityTypes": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "goodToKnow": "Behandle KI-Ausgaben als Entwurf. Prüfe Fakten, Berechtigungen, Datenschutz und Plattformregeln vor Nutzung oder Übergabe.",
+        "incomeNote": "Beginne mit einem eng umrissenen Ergebnis, das du sicher selbst prüfen kannst, statt umfassende Automatisierung zu versprechen."
+      },
+      "ai-travel-itinerary-service": {
+        "ideas": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "firstMove": "Erstelle ein three-day itinerary nach einem klar abgegrenzten Briefing und prüfe jedes Ergebnis selbst, bevor du es weitergibst.",
+        "firstWeek": [
+          "Wähle einen klaren Anwendungsfall",
+          "Erstelle ein Beispiel mit eigenem oder erlaubtem Material",
+          "Prüfe Fakten, Rechte und Genauigkeit",
+          "Überarbeite das Ergebnis selbst",
+          "Speichere das fertige Beispiel und notiere die benötigte Zeit"
+        ],
+        "opportunityTypes": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "goodToKnow": "Behandle KI-Ausgaben als Entwurf. Prüfe Fakten, Berechtigungen, Datenschutz und Plattformregeln vor Nutzung oder Übergabe.",
+        "incomeNote": "Beginne mit einem eng umrissenen Ergebnis, das du sicher selbst prüfen kannst, statt umfassende Automatisierung zu versprechen."
+      },
+      "ai-interior-design-concepts": {
+        "ideas": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "firstMove": "Erstelle ein room concept nach einem klar abgegrenzten Briefing und prüfe jedes Ergebnis selbst, bevor du es weitergibst.",
+        "firstWeek": [
+          "Wähle einen klaren Anwendungsfall",
+          "Erstelle ein Beispiel mit eigenem oder erlaubtem Material",
+          "Prüfe Fakten, Rechte und Genauigkeit",
+          "Überarbeite das Ergebnis selbst",
+          "Speichere das fertige Beispiel und notiere die benötigte Zeit"
+        ],
+        "opportunityTypes": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "goodToKnow": "Behandle KI-Ausgaben als Entwurf. Prüfe Fakten, Berechtigungen, Datenschutz und Plattformregeln vor Nutzung oder Übergabe.",
+        "incomeNote": "Beginne mit einem eng umrissenen Ergebnis, das du sicher selbst prüfen kannst, statt umfassende Automatisierung zu versprechen."
+      },
+      "ai-podcast-clipping": {
+        "ideas": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "firstMove": "Erstelle ein podcast clip nach einem klar abgegrenzten Briefing und prüfe jedes Ergebnis selbst, bevor du es weitergibst.",
+        "firstWeek": [
+          "Wähle einen klaren Anwendungsfall",
+          "Erstelle ein Beispiel mit eigenem oder erlaubtem Material",
+          "Prüfe Fakten, Rechte und Genauigkeit",
+          "Überarbeite das Ergebnis selbst",
+          "Speichere das fertige Beispiel und notiere die benötigte Zeit"
+        ],
+        "opportunityTypes": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "goodToKnow": "Behandle KI-Ausgaben als Entwurf. Prüfe Fakten, Berechtigungen, Datenschutz und Plattformregeln vor Nutzung oder Übergabe.",
+        "incomeNote": "Beginne mit einem eng umrissenen Ergebnis, das du sicher selbst prüfen kannst, statt umfassende Automatisierung zu versprechen."
+      },
+      "ai-short-form-video-editing": {
+        "ideas": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "firstMove": "Erstelle ein short video nach einem klar abgegrenzten Briefing und prüfe jedes Ergebnis selbst, bevor du es weitergibst.",
+        "firstWeek": [
+          "Wähle einen klaren Anwendungsfall",
+          "Erstelle ein Beispiel mit eigenem oder erlaubtem Material",
+          "Prüfe Fakten, Rechte und Genauigkeit",
+          "Überarbeite das Ergebnis selbst",
+          "Speichere das fertige Beispiel und notiere die benötigte Zeit"
+        ],
+        "opportunityTypes": [
+          "Portfolio-Beispiele",
+          "Freelance-Projekte",
+          "Dienstleistungen für kleine Unternehmen"
+        ],
+        "goodToKnow": "Behandle KI-Ausgaben als Entwurf. Prüfe Fakten, Berechtigungen, Datenschutz und Plattformregeln vor Nutzung oder Übergabe.",
+        "incomeNote": "Beginne mit einem eng umrissenen Ergebnis, das du sicher selbst prüfen kannst, statt umfassende Automatisierung zu versprechen."
       }
     },
     "fr": {
@@ -8069,6 +9829,446 @@
         ],
         "goodToKnow": "De courtes séances régulières sont généralement plus utiles que de longues séances occasionnelles.",
         "incomeNote": "Les cours ou concerts payants ont plus de sens une fois que vous pouvez montrer une compétence et une préparation fiables."
+      },
+      "ai-assisted-copywriting": {
+        "ideas": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "firstMove": "Créez un exemple de copy sample à partir d'un brief bien défini et vérifiez vous-même chaque résultat avant de le partager.",
+        "firstWeek": [
+          "Choisissez un cas d'usage précis",
+          "Créez un exemple avec du contenu personnel ou autorisé",
+          "Vérifiez les faits, les droits et l'exactitude",
+          "Révisez vous-même le résultat",
+          "Conservez l'exemple final et notez le temps utilisé"
+        ],
+        "opportunityTypes": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "goodToKnow": "Considérez les résultats de l'IA comme un brouillon. Vérifiez les faits, les autorisations, la confidentialité et les règles des plateformes avant utilisation ou livraison.",
+        "incomeNote": "Commencez par un livrable précis que vous pouvez vérifier vous-même plutôt que de promettre une automatisation générale."
+      },
+      "ai-video-repurposing": {
+        "ideas": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "firstMove": "Créez un exemple de short clip à partir d'un brief bien défini et vérifiez vous-même chaque résultat avant de le partager.",
+        "firstWeek": [
+          "Choisissez un cas d'usage précis",
+          "Créez un exemple avec du contenu personnel ou autorisé",
+          "Vérifiez les faits, les droits et l'exactitude",
+          "Révisez vous-même le résultat",
+          "Conservez l'exemple final et notez le temps utilisé"
+        ],
+        "opportunityTypes": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "goodToKnow": "Considérez les résultats de l'IA comme un brouillon. Vérifiez les faits, les autorisations, la confidentialité et les règles des plateformes avant utilisation ou livraison.",
+        "incomeNote": "Commencez par un livrable précis que vous pouvez vérifier vous-même plutôt que de promettre une automatisation générale."
+      },
+      "ai-voiceover-and-dubbing": {
+        "ideas": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "firstMove": "Créez un exemple de voiceover sample à partir d'un brief bien défini et vérifiez vous-même chaque résultat avant de le partager.",
+        "firstWeek": [
+          "Choisissez un cas d'usage précis",
+          "Créez un exemple avec du contenu personnel ou autorisé",
+          "Vérifiez les faits, les droits et l'exactitude",
+          "Révisez vous-même le résultat",
+          "Conservez l'exemple final et notez le temps utilisé"
+        ],
+        "opportunityTypes": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "goodToKnow": "Considérez les résultats de l'IA comme un brouillon. Vérifiez les faits, les autorisations, la confidentialité et les règles des plateformes avant utilisation ou livraison.",
+        "incomeNote": "Commencez par un livrable précis que vous pouvez vérifier vous-même plutôt que de promettre une automatisation générale."
+      },
+      "ai-product-photography": {
+        "ideas": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "firstMove": "Créez un exemple de product image set à partir d'un brief bien défini et vérifiez vous-même chaque résultat avant de le partager.",
+        "firstWeek": [
+          "Choisissez un cas d'usage précis",
+          "Créez un exemple avec du contenu personnel ou autorisé",
+          "Vérifiez les faits, les droits et l'exactitude",
+          "Révisez vous-même le résultat",
+          "Conservez l'exemple final et notez le temps utilisé"
+        ],
+        "opportunityTypes": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "goodToKnow": "Considérez les résultats de l'IA comme un brouillon. Vérifiez les faits, les autorisations, la confidentialité et les règles des plateformes avant utilisation ou livraison.",
+        "incomeNote": "Commencez par un livrable précis que vous pouvez vérifier vous-même plutôt que de promettre une automatisation générale."
+      },
+      "ai-presentation-design": {
+        "ideas": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "firstMove": "Créez un exemple de five-slide deck à partir d'un brief bien défini et vérifiez vous-même chaque résultat avant de le partager.",
+        "firstWeek": [
+          "Choisissez un cas d'usage précis",
+          "Créez un exemple avec du contenu personnel ou autorisé",
+          "Vérifiez les faits, les droits et l'exactitude",
+          "Révisez vous-même le résultat",
+          "Conservez l'exemple final et notez le temps utilisé"
+        ],
+        "opportunityTypes": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "goodToKnow": "Considérez les résultats de l'IA comme un brouillon. Vérifiez les faits, les autorisations, la confidentialité et les règles des plateformes avant utilisation ou livraison.",
+        "incomeNote": "Commencez par un livrable précis que vous pouvez vérifier vous-même plutôt que de promettre une automatisation générale."
+      },
+      "ai-resume-and-portfolio-help": {
+        "ideas": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "firstMove": "Créez un exemple de resume sample à partir d'un brief bien défini et vérifiez vous-même chaque résultat avant de le partager.",
+        "firstWeek": [
+          "Choisissez un cas d'usage précis",
+          "Créez un exemple avec du contenu personnel ou autorisé",
+          "Vérifiez les faits, les droits et l'exactitude",
+          "Révisez vous-même le résultat",
+          "Conservez l'exemple final et notez le temps utilisé"
+        ],
+        "opportunityTypes": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "goodToKnow": "Considérez les résultats de l'IA comme un brouillon. Vérifiez les faits, les autorisations, la confidentialité et les règles des plateformes avant utilisation ou livraison.",
+        "incomeNote": "Commencez par un livrable précis que vous pouvez vérifier vous-même plutôt que de promettre une automatisation générale."
+      },
+      "ai-email-marketing": {
+        "ideas": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "firstMove": "Créez un exemple de three-email sequence à partir d'un brief bien défini et vérifiez vous-même chaque résultat avant de le partager.",
+        "firstWeek": [
+          "Choisissez un cas d'usage précis",
+          "Créez un exemple avec du contenu personnel ou autorisé",
+          "Vérifiez les faits, les droits et l'exactitude",
+          "Révisez vous-même le résultat",
+          "Conservez l'exemple final et notez le temps utilisé"
+        ],
+        "opportunityTypes": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "goodToKnow": "Considérez les résultats de l'IA comme un brouillon. Vérifiez les faits, les autorisations, la confidentialité et les règles des plateformes avant utilisation ou livraison.",
+        "incomeNote": "Commencez par un livrable précis que vous pouvez vérifier vous-même plutôt que de promettre une automatisation générale."
+      },
+      "ai-blog-to-social-repurposing": {
+        "ideas": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "firstMove": "Créez un exemple de social post set à partir d'un brief bien défini et vérifiez vous-même chaque résultat avant de le partager.",
+        "firstWeek": [
+          "Choisissez un cas d'usage précis",
+          "Créez un exemple avec du contenu personnel ou autorisé",
+          "Vérifiez les faits, les droits et l'exactitude",
+          "Révisez vous-même le résultat",
+          "Conservez l'exemple final et notez le temps utilisé"
+        ],
+        "opportunityTypes": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "goodToKnow": "Considérez les résultats de l'IA comme un brouillon. Vérifiez les faits, les autorisations, la confidentialité et les règles des plateformes avant utilisation ou livraison.",
+        "incomeNote": "Commencez par un livrable précis que vous pouvez vérifier vous-même plutôt que de promettre une automatisation générale."
+      },
+      "ai-ecommerce-listing-help": {
+        "ideas": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "firstMove": "Créez un exemple de product listing à partir d'un brief bien défini et vérifiez vous-même chaque résultat avant de le partager.",
+        "firstWeek": [
+          "Choisissez un cas d'usage précis",
+          "Créez un exemple avec du contenu personnel ou autorisé",
+          "Vérifiez les faits, les droits et l'exactitude",
+          "Révisez vous-même le résultat",
+          "Conservez l'exemple final et notez le temps utilisé"
+        ],
+        "opportunityTypes": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "goodToKnow": "Considérez les résultats de l'IA comme un brouillon. Vérifiez les faits, les autorisations, la confidentialité et les règles des plateformes avant utilisation ou livraison.",
+        "incomeNote": "Commencez par un livrable précis que vous pouvez vérifier vous-même plutôt que de promettre une automatisation générale."
+      },
+      "ai-chatbot-setup": {
+        "ideas": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "firstMove": "Créez un exemple de FAQ chatbot demo à partir d'un brief bien défini et vérifiez vous-même chaque résultat avant de le partager.",
+        "firstWeek": [
+          "Choisissez un cas d'usage précis",
+          "Créez un exemple avec du contenu personnel ou autorisé",
+          "Vérifiez les faits, les droits et l'exactitude",
+          "Révisez vous-même le résultat",
+          "Conservez l'exemple final et notez le temps utilisé"
+        ],
+        "opportunityTypes": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "goodToKnow": "Considérez les résultats de l'IA comme un brouillon. Vérifiez les faits, les autorisations, la confidentialité et les règles des plateformes avant utilisation ou livraison.",
+        "incomeNote": "Commencez par un livrable précis que vous pouvez vérifier vous-même plutôt que de promettre une automatisation générale."
+      },
+      "no-code-automation": {
+        "ideas": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "firstMove": "Créez un exemple de one workflow à partir d'un brief bien défini et vérifiez vous-même chaque résultat avant de le partager.",
+        "firstWeek": [
+          "Choisissez un cas d'usage précis",
+          "Créez un exemple avec du contenu personnel ou autorisé",
+          "Vérifiez les faits, les droits et l'exactitude",
+          "Révisez vous-même le résultat",
+          "Conservez l'exemple final et notez le temps utilisé"
+        ],
+        "opportunityTypes": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "goodToKnow": "Considérez les résultats de l'IA comme un brouillon. Vérifiez les faits, les autorisations, la confidentialité et les règles des plateformes avant utilisation ou livraison.",
+        "incomeNote": "Commencez par un livrable précis que vous pouvez vérifier vous-même plutôt que de promettre une automatisation générale."
+      },
+      "ai-workflow-consulting": {
+        "ideas": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "firstMove": "Créez un exemple de workflow audit à partir d'un brief bien défini et vérifiez vous-même chaque résultat avant de le partager.",
+        "firstWeek": [
+          "Choisissez un cas d'usage précis",
+          "Créez un exemple avec du contenu personnel ou autorisé",
+          "Vérifiez les faits, les droits et l'exactitude",
+          "Révisez vous-même le résultat",
+          "Conservez l'exemple final et notez le temps utilisé"
+        ],
+        "opportunityTypes": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "goodToKnow": "Considérez les résultats de l'IA comme un brouillon. Vérifiez les faits, les autorisations, la confidentialité et les règles des plateformes avant utilisation ou livraison.",
+        "incomeNote": "Commencez par un livrable précis que vous pouvez vérifier vous-même plutôt que de promettre une automatisation générale."
+      },
+      "ai-data-cleanup": {
+        "ideas": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "firstMove": "Créez un exemple de cleaned dataset à partir d'un brief bien défini et vérifiez vous-même chaque résultat avant de le partager.",
+        "firstWeek": [
+          "Choisissez un cas d'usage précis",
+          "Créez un exemple avec du contenu personnel ou autorisé",
+          "Vérifiez les faits, les droits et l'exactitude",
+          "Révisez vous-même le résultat",
+          "Conservez l'exemple final et notez le temps utilisé"
+        ],
+        "opportunityTypes": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "goodToKnow": "Considérez les résultats de l'IA comme un brouillon. Vérifiez les faits, les autorisations, la confidentialité et les règles des plateformes avant utilisation ou livraison.",
+        "incomeNote": "Commencez par un livrable précis que vous pouvez vérifier vous-même plutôt que de promettre une automatisation générale."
+      },
+      "ai-web-analytics": {
+        "ideas": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "firstMove": "Créez un exemple de analytics review à partir d'un brief bien défini et vérifiez vous-même chaque résultat avant de le partager.",
+        "firstWeek": [
+          "Choisissez un cas d'usage précis",
+          "Créez un exemple avec du contenu personnel ou autorisé",
+          "Vérifiez les faits, les droits et l'exactitude",
+          "Révisez vous-même le résultat",
+          "Conservez l'exemple final et notez le temps utilisé"
+        ],
+        "opportunityTypes": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "goodToKnow": "Considérez les résultats de l'IA comme un brouillon. Vérifiez les faits, les autorisations, la confidentialité et les règles des plateformes avant utilisation ou livraison.",
+        "incomeNote": "Commencez par un livrable précis que vous pouvez vérifier vous-même plutôt que de promettre une automatisation générale."
+      },
+      "ai-research-assistance": {
+        "ideas": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "firstMove": "Créez un exemple de research brief à partir d'un brief bien défini et vérifiez vous-même chaque résultat avant de le partager.",
+        "firstWeek": [
+          "Choisissez un cas d'usage précis",
+          "Créez un exemple avec du contenu personnel ou autorisé",
+          "Vérifiez les faits, les droits et l'exactitude",
+          "Révisez vous-même le résultat",
+          "Conservez l'exemple final et notez le temps utilisé"
+        ],
+        "opportunityTypes": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "goodToKnow": "Considérez les résultats de l'IA comme un brouillon. Vérifiez les faits, les autorisations, la confidentialité et les règles des plateformes avant utilisation ou livraison.",
+        "incomeNote": "Commencez par un livrable précis que vous pouvez vérifier vous-même plutôt que de promettre une automatisation générale."
+      },
+      "ai-tutoring-materials": {
+        "ideas": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "firstMove": "Créez un exemple de lesson pack à partir d'un brief bien défini et vérifiez vous-même chaque résultat avant de le partager.",
+        "firstWeek": [
+          "Choisissez un cas d'usage précis",
+          "Créez un exemple avec du contenu personnel ou autorisé",
+          "Vérifiez les faits, les droits et l'exactitude",
+          "Révisez vous-même le résultat",
+          "Conservez l'exemple final et notez le temps utilisé"
+        ],
+        "opportunityTypes": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "goodToKnow": "Considérez les résultats de l'IA comme un brouillon. Vérifiez les faits, les autorisations, la confidentialité et les règles des plateformes avant utilisation ou livraison.",
+        "incomeNote": "Commencez par un livrable précis que vous pouvez vérifier vous-même plutôt que de promettre une automatisation générale."
+      },
+      "ai-travel-itinerary-service": {
+        "ideas": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "firstMove": "Créez un exemple de three-day itinerary à partir d'un brief bien défini et vérifiez vous-même chaque résultat avant de le partager.",
+        "firstWeek": [
+          "Choisissez un cas d'usage précis",
+          "Créez un exemple avec du contenu personnel ou autorisé",
+          "Vérifiez les faits, les droits et l'exactitude",
+          "Révisez vous-même le résultat",
+          "Conservez l'exemple final et notez le temps utilisé"
+        ],
+        "opportunityTypes": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "goodToKnow": "Considérez les résultats de l'IA comme un brouillon. Vérifiez les faits, les autorisations, la confidentialité et les règles des plateformes avant utilisation ou livraison.",
+        "incomeNote": "Commencez par un livrable précis que vous pouvez vérifier vous-même plutôt que de promettre une automatisation générale."
+      },
+      "ai-interior-design-concepts": {
+        "ideas": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "firstMove": "Créez un exemple de room concept à partir d'un brief bien défini et vérifiez vous-même chaque résultat avant de le partager.",
+        "firstWeek": [
+          "Choisissez un cas d'usage précis",
+          "Créez un exemple avec du contenu personnel ou autorisé",
+          "Vérifiez les faits, les droits et l'exactitude",
+          "Révisez vous-même le résultat",
+          "Conservez l'exemple final et notez le temps utilisé"
+        ],
+        "opportunityTypes": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "goodToKnow": "Considérez les résultats de l'IA comme un brouillon. Vérifiez les faits, les autorisations, la confidentialité et les règles des plateformes avant utilisation ou livraison.",
+        "incomeNote": "Commencez par un livrable précis que vous pouvez vérifier vous-même plutôt que de promettre une automatisation générale."
+      },
+      "ai-podcast-clipping": {
+        "ideas": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "firstMove": "Créez un exemple de podcast clip à partir d'un brief bien défini et vérifiez vous-même chaque résultat avant de le partager.",
+        "firstWeek": [
+          "Choisissez un cas d'usage précis",
+          "Créez un exemple avec du contenu personnel ou autorisé",
+          "Vérifiez les faits, les droits et l'exactitude",
+          "Révisez vous-même le résultat",
+          "Conservez l'exemple final et notez le temps utilisé"
+        ],
+        "opportunityTypes": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "goodToKnow": "Considérez les résultats de l'IA comme un brouillon. Vérifiez les faits, les autorisations, la confidentialité et les règles des plateformes avant utilisation ou livraison.",
+        "incomeNote": "Commencez par un livrable précis que vous pouvez vérifier vous-même plutôt que de promettre une automatisation générale."
+      },
+      "ai-short-form-video-editing": {
+        "ideas": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "firstMove": "Créez un exemple de short video à partir d'un brief bien défini et vérifiez vous-même chaque résultat avant de le partager.",
+        "firstWeek": [
+          "Choisissez un cas d'usage précis",
+          "Créez un exemple avec du contenu personnel ou autorisé",
+          "Vérifiez les faits, les droits et l'exactitude",
+          "Révisez vous-même le résultat",
+          "Conservez l'exemple final et notez le temps utilisé"
+        ],
+        "opportunityTypes": [
+          "Exemples de portfolio",
+          "Projets freelance",
+          "Services aux petites entreprises"
+        ],
+        "goodToKnow": "Considérez les résultats de l'IA comme un brouillon. Vérifiez les faits, les autorisations, la confidentialité et les règles des plateformes avant utilisation ou livraison.",
+        "incomeNote": "Commencez par un livrable précis que vous pouvez vérifier vous-même plutôt que de promettre une automatisation générale."
       }
     },
     "zh": {
@@ -9683,6 +11883,446 @@
         ],
         "goodToKnow": "持续的短练习，通常比偶尔练很久更有效。",
         "incomeNote": "能稳定展示技巧和准备之后，再去收费教课或演出更合适。"
+      },
+      "ai-assisted-copywriting": {
+        "ideas": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "firstMove": "根据范围明确的需求制作一个copy sample，并在分享前亲自检查所有输出。",
+        "firstWeek": [
+          "选择一个具体用途",
+          "使用自有或获准使用的材料制作样例",
+          "核对事实、权利和准确性",
+          "亲自修改输出",
+          "保存最终样例并记录所用时间"
+        ],
+        "opportunityTypes": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "goodToKnow": "把 AI 输出视为草稿。使用或交付前检查事实、授权、隐私和平台规则。",
+        "incomeNote": "先提供一个你能够可靠审核的具体交付物，而不是承诺大范围自动化。"
+      },
+      "ai-video-repurposing": {
+        "ideas": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "firstMove": "根据范围明确的需求制作一个short clip，并在分享前亲自检查所有输出。",
+        "firstWeek": [
+          "选择一个具体用途",
+          "使用自有或获准使用的材料制作样例",
+          "核对事实、权利和准确性",
+          "亲自修改输出",
+          "保存最终样例并记录所用时间"
+        ],
+        "opportunityTypes": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "goodToKnow": "把 AI 输出视为草稿。使用或交付前检查事实、授权、隐私和平台规则。",
+        "incomeNote": "先提供一个你能够可靠审核的具体交付物，而不是承诺大范围自动化。"
+      },
+      "ai-voiceover-and-dubbing": {
+        "ideas": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "firstMove": "根据范围明确的需求制作一个voiceover sample，并在分享前亲自检查所有输出。",
+        "firstWeek": [
+          "选择一个具体用途",
+          "使用自有或获准使用的材料制作样例",
+          "核对事实、权利和准确性",
+          "亲自修改输出",
+          "保存最终样例并记录所用时间"
+        ],
+        "opportunityTypes": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "goodToKnow": "把 AI 输出视为草稿。使用或交付前检查事实、授权、隐私和平台规则。",
+        "incomeNote": "先提供一个你能够可靠审核的具体交付物，而不是承诺大范围自动化。"
+      },
+      "ai-product-photography": {
+        "ideas": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "firstMove": "根据范围明确的需求制作一个product image set，并在分享前亲自检查所有输出。",
+        "firstWeek": [
+          "选择一个具体用途",
+          "使用自有或获准使用的材料制作样例",
+          "核对事实、权利和准确性",
+          "亲自修改输出",
+          "保存最终样例并记录所用时间"
+        ],
+        "opportunityTypes": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "goodToKnow": "把 AI 输出视为草稿。使用或交付前检查事实、授权、隐私和平台规则。",
+        "incomeNote": "先提供一个你能够可靠审核的具体交付物，而不是承诺大范围自动化。"
+      },
+      "ai-presentation-design": {
+        "ideas": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "firstMove": "根据范围明确的需求制作一个five-slide deck，并在分享前亲自检查所有输出。",
+        "firstWeek": [
+          "选择一个具体用途",
+          "使用自有或获准使用的材料制作样例",
+          "核对事实、权利和准确性",
+          "亲自修改输出",
+          "保存最终样例并记录所用时间"
+        ],
+        "opportunityTypes": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "goodToKnow": "把 AI 输出视为草稿。使用或交付前检查事实、授权、隐私和平台规则。",
+        "incomeNote": "先提供一个你能够可靠审核的具体交付物，而不是承诺大范围自动化。"
+      },
+      "ai-resume-and-portfolio-help": {
+        "ideas": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "firstMove": "根据范围明确的需求制作一个resume sample，并在分享前亲自检查所有输出。",
+        "firstWeek": [
+          "选择一个具体用途",
+          "使用自有或获准使用的材料制作样例",
+          "核对事实、权利和准确性",
+          "亲自修改输出",
+          "保存最终样例并记录所用时间"
+        ],
+        "opportunityTypes": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "goodToKnow": "把 AI 输出视为草稿。使用或交付前检查事实、授权、隐私和平台规则。",
+        "incomeNote": "先提供一个你能够可靠审核的具体交付物，而不是承诺大范围自动化。"
+      },
+      "ai-email-marketing": {
+        "ideas": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "firstMove": "根据范围明确的需求制作一个three-email sequence，并在分享前亲自检查所有输出。",
+        "firstWeek": [
+          "选择一个具体用途",
+          "使用自有或获准使用的材料制作样例",
+          "核对事实、权利和准确性",
+          "亲自修改输出",
+          "保存最终样例并记录所用时间"
+        ],
+        "opportunityTypes": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "goodToKnow": "把 AI 输出视为草稿。使用或交付前检查事实、授权、隐私和平台规则。",
+        "incomeNote": "先提供一个你能够可靠审核的具体交付物，而不是承诺大范围自动化。"
+      },
+      "ai-blog-to-social-repurposing": {
+        "ideas": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "firstMove": "根据范围明确的需求制作一个social post set，并在分享前亲自检查所有输出。",
+        "firstWeek": [
+          "选择一个具体用途",
+          "使用自有或获准使用的材料制作样例",
+          "核对事实、权利和准确性",
+          "亲自修改输出",
+          "保存最终样例并记录所用时间"
+        ],
+        "opportunityTypes": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "goodToKnow": "把 AI 输出视为草稿。使用或交付前检查事实、授权、隐私和平台规则。",
+        "incomeNote": "先提供一个你能够可靠审核的具体交付物，而不是承诺大范围自动化。"
+      },
+      "ai-ecommerce-listing-help": {
+        "ideas": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "firstMove": "根据范围明确的需求制作一个product listing，并在分享前亲自检查所有输出。",
+        "firstWeek": [
+          "选择一个具体用途",
+          "使用自有或获准使用的材料制作样例",
+          "核对事实、权利和准确性",
+          "亲自修改输出",
+          "保存最终样例并记录所用时间"
+        ],
+        "opportunityTypes": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "goodToKnow": "把 AI 输出视为草稿。使用或交付前检查事实、授权、隐私和平台规则。",
+        "incomeNote": "先提供一个你能够可靠审核的具体交付物，而不是承诺大范围自动化。"
+      },
+      "ai-chatbot-setup": {
+        "ideas": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "firstMove": "根据范围明确的需求制作一个FAQ chatbot demo，并在分享前亲自检查所有输出。",
+        "firstWeek": [
+          "选择一个具体用途",
+          "使用自有或获准使用的材料制作样例",
+          "核对事实、权利和准确性",
+          "亲自修改输出",
+          "保存最终样例并记录所用时间"
+        ],
+        "opportunityTypes": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "goodToKnow": "把 AI 输出视为草稿。使用或交付前检查事实、授权、隐私和平台规则。",
+        "incomeNote": "先提供一个你能够可靠审核的具体交付物，而不是承诺大范围自动化。"
+      },
+      "no-code-automation": {
+        "ideas": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "firstMove": "根据范围明确的需求制作一个one workflow，并在分享前亲自检查所有输出。",
+        "firstWeek": [
+          "选择一个具体用途",
+          "使用自有或获准使用的材料制作样例",
+          "核对事实、权利和准确性",
+          "亲自修改输出",
+          "保存最终样例并记录所用时间"
+        ],
+        "opportunityTypes": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "goodToKnow": "把 AI 输出视为草稿。使用或交付前检查事实、授权、隐私和平台规则。",
+        "incomeNote": "先提供一个你能够可靠审核的具体交付物，而不是承诺大范围自动化。"
+      },
+      "ai-workflow-consulting": {
+        "ideas": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "firstMove": "根据范围明确的需求制作一个workflow audit，并在分享前亲自检查所有输出。",
+        "firstWeek": [
+          "选择一个具体用途",
+          "使用自有或获准使用的材料制作样例",
+          "核对事实、权利和准确性",
+          "亲自修改输出",
+          "保存最终样例并记录所用时间"
+        ],
+        "opportunityTypes": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "goodToKnow": "把 AI 输出视为草稿。使用或交付前检查事实、授权、隐私和平台规则。",
+        "incomeNote": "先提供一个你能够可靠审核的具体交付物，而不是承诺大范围自动化。"
+      },
+      "ai-data-cleanup": {
+        "ideas": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "firstMove": "根据范围明确的需求制作一个cleaned dataset，并在分享前亲自检查所有输出。",
+        "firstWeek": [
+          "选择一个具体用途",
+          "使用自有或获准使用的材料制作样例",
+          "核对事实、权利和准确性",
+          "亲自修改输出",
+          "保存最终样例并记录所用时间"
+        ],
+        "opportunityTypes": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "goodToKnow": "把 AI 输出视为草稿。使用或交付前检查事实、授权、隐私和平台规则。",
+        "incomeNote": "先提供一个你能够可靠审核的具体交付物，而不是承诺大范围自动化。"
+      },
+      "ai-web-analytics": {
+        "ideas": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "firstMove": "根据范围明确的需求制作一个analytics review，并在分享前亲自检查所有输出。",
+        "firstWeek": [
+          "选择一个具体用途",
+          "使用自有或获准使用的材料制作样例",
+          "核对事实、权利和准确性",
+          "亲自修改输出",
+          "保存最终样例并记录所用时间"
+        ],
+        "opportunityTypes": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "goodToKnow": "把 AI 输出视为草稿。使用或交付前检查事实、授权、隐私和平台规则。",
+        "incomeNote": "先提供一个你能够可靠审核的具体交付物，而不是承诺大范围自动化。"
+      },
+      "ai-research-assistance": {
+        "ideas": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "firstMove": "根据范围明确的需求制作一个research brief，并在分享前亲自检查所有输出。",
+        "firstWeek": [
+          "选择一个具体用途",
+          "使用自有或获准使用的材料制作样例",
+          "核对事实、权利和准确性",
+          "亲自修改输出",
+          "保存最终样例并记录所用时间"
+        ],
+        "opportunityTypes": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "goodToKnow": "把 AI 输出视为草稿。使用或交付前检查事实、授权、隐私和平台规则。",
+        "incomeNote": "先提供一个你能够可靠审核的具体交付物，而不是承诺大范围自动化。"
+      },
+      "ai-tutoring-materials": {
+        "ideas": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "firstMove": "根据范围明确的需求制作一个lesson pack，并在分享前亲自检查所有输出。",
+        "firstWeek": [
+          "选择一个具体用途",
+          "使用自有或获准使用的材料制作样例",
+          "核对事实、权利和准确性",
+          "亲自修改输出",
+          "保存最终样例并记录所用时间"
+        ],
+        "opportunityTypes": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "goodToKnow": "把 AI 输出视为草稿。使用或交付前检查事实、授权、隐私和平台规则。",
+        "incomeNote": "先提供一个你能够可靠审核的具体交付物，而不是承诺大范围自动化。"
+      },
+      "ai-travel-itinerary-service": {
+        "ideas": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "firstMove": "根据范围明确的需求制作一个three-day itinerary，并在分享前亲自检查所有输出。",
+        "firstWeek": [
+          "选择一个具体用途",
+          "使用自有或获准使用的材料制作样例",
+          "核对事实、权利和准确性",
+          "亲自修改输出",
+          "保存最终样例并记录所用时间"
+        ],
+        "opportunityTypes": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "goodToKnow": "把 AI 输出视为草稿。使用或交付前检查事实、授权、隐私和平台规则。",
+        "incomeNote": "先提供一个你能够可靠审核的具体交付物，而不是承诺大范围自动化。"
+      },
+      "ai-interior-design-concepts": {
+        "ideas": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "firstMove": "根据范围明确的需求制作一个room concept，并在分享前亲自检查所有输出。",
+        "firstWeek": [
+          "选择一个具体用途",
+          "使用自有或获准使用的材料制作样例",
+          "核对事实、权利和准确性",
+          "亲自修改输出",
+          "保存最终样例并记录所用时间"
+        ],
+        "opportunityTypes": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "goodToKnow": "把 AI 输出视为草稿。使用或交付前检查事实、授权、隐私和平台规则。",
+        "incomeNote": "先提供一个你能够可靠审核的具体交付物，而不是承诺大范围自动化。"
+      },
+      "ai-podcast-clipping": {
+        "ideas": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "firstMove": "根据范围明确的需求制作一个podcast clip，并在分享前亲自检查所有输出。",
+        "firstWeek": [
+          "选择一个具体用途",
+          "使用自有或获准使用的材料制作样例",
+          "核对事实、权利和准确性",
+          "亲自修改输出",
+          "保存最终样例并记录所用时间"
+        ],
+        "opportunityTypes": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "goodToKnow": "把 AI 输出视为草稿。使用或交付前检查事实、授权、隐私和平台规则。",
+        "incomeNote": "先提供一个你能够可靠审核的具体交付物，而不是承诺大范围自动化。"
+      },
+      "ai-short-form-video-editing": {
+        "ideas": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "firstMove": "根据范围明确的需求制作一个short video，并在分享前亲自检查所有输出。",
+        "firstWeek": [
+          "选择一个具体用途",
+          "使用自有或获准使用的材料制作样例",
+          "核对事实、权利和准确性",
+          "亲自修改输出",
+          "保存最终样例并记录所用时间"
+        ],
+        "opportunityTypes": [
+          "作品集样例",
+          "自由职业项目",
+          "小型企业服务"
+        ],
+        "goodToKnow": "把 AI 输出视为草稿。使用或交付前检查事实、授权、隐私和平台规则。",
+        "incomeNote": "先提供一个你能够可靠审核的具体交付物，而不是承诺大范围自动化。"
       }
     }
   }
