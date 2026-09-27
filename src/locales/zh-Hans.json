@@ -124,7 +124,18 @@
     "categoryDigital": "数字创作",
     "categoryPhoto": "照片和视频",
     "categoryResale": "转售",
-    "purchasing": "正在购买…"
+    "purchasing": "正在购买…",
+    "guide": "爱好指南",
+    "guideCost": "入门起点",
+    "guideTime": "每周时间",
+    "guideDifficulty": "难度",
+    "guideBefore": "购买之前",
+    "guideBeforeBody": "先完成第一个项目，优先使用或借用已有物品，只购买真正能解决实际限制的东西。",
+    "guideMonth": "你的第一个月",
+    "guideMonthBody": "升级设备前，至少重复完成第一个项目两次。记录花费、每次所需时间以及真正使用到的物品。",
+    "guideFit": "适合你吗？",
+    "guideFitBody": "把成本、时间和难度放在一起考虑。选择符合每周时间安排和实际空间的爱好。",
+    "guidePlan": "打开第一个项目"
   },
   "project": {
     "first": "一个 {hobby} 入门项目",
