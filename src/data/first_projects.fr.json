@@ -1,54 +1,1350 @@
 {
-"baking":{"first":"une fournée d’un seul produit","need":["recette","four","moule ou plaque","balance ou tasses à mesurer"],"steps":["Choisissez un seul produit","Notez ce que vous avez déjà","Faites la fournée","Notez coût, minutes et quantité","Saisissez le prix que vous demanderiez"]},
-"cake-decorating":{"first":"un gâteau décoré simplement","need":["gâteau nature ou factice","glaçage","spatule","plateau tournant ou assiette"],"steps":["Choisissez une finition","Rassemblez uniquement ces outils","Décorez un gâteau","Notez coût, minutes et un gâteau","Saisissez le prix que vous demanderiez"]},
-"cooking":{"first":"un plat que vous pourriez servir en portions","need":["recette","couteau","poêle ou casserole","ingrédients pour un repas"],"steps":["Choisissez un plat","Préparez-le entièrement une fois","Comptez les portions","Notez coût, minutes et portions","Saisissez un prix par portion"]},
-"bread-making":{"first":"un pain","need":["farine","levure ou levain","bol","moule ou cocotte"],"steps":["Choisissez un type de pain","Préparez et cuisez un pain","Comptez-le comme une unité","Notez coût et minutes","Saisissez le prix que vous demanderiez"]},
-"candy-making":{"first":"une petite fournée d’une confiserie","need":["sucre ou chocolat","bol ou thermomètre","moule ou plaque","sachets ou emballages"],"steps":["Choisissez une confiserie","Faites une petite fournée","Comptez les pièces","Notez coût et minutes","Saisissez un prix par pièce ou sachet"]},
-"coffee-making":{"first":"cinq boissons avec la même recette","need":["café","cafetière ou bouilloire","tasses","moulin ou café moulu"],"steps":["Fixez une recette","Préparez cinq boissons identiques","Chronométrez le travail actif","Notez coût, minutes et cinq boissons","Saisissez un prix par boisson"]},
-"smoothie-and-juice-making":{"first":"quatre portions d’une boisson","need":["blender ou extracteur","fruits ou légumes","verres ou bouteilles"],"steps":["Choisissez une recette","Préparez quatre portions","Comptez les portions","Notez coût et minutes","Saisissez un prix par portion"]},
-"candle-making":{"first":"quatre bougies du même parfum","need":["cire","mèches","pots","parfum","pot de coulée"],"steps":["Coulez quatre bougies identiques","Laissez-les prendre","Comptez les pots finis","Notez coût et minutes actives","Saisissez un prix par bougie"]},
-"soap-making":{"first":"un petit pain de savon","need":["base de savon ou huiles","moule","parfum si utilisé","couteau"],"steps":["Faites un petit pain","Coupez-le","Comptez les savons","Notez coût et minutes actives","Saisissez un prix par savon"]},
-"perfume-making":{"first":"trois petits flacons d’une formule","need":["base alcool ou huile","matières parfumées","petits flacons","pipettes"],"steps":["Écrivez une formule","Remplissez trois flacons identiques","Comptez les flacons","Notez coût et minutes","Saisissez un prix par flacon"]},
-"skincare-making":{"first":"un petit lot d’un produit","need":["ingrédients de base","contenants","balance","bol"],"steps":["Choisissez un produit","Faites un petit lot","Remplissez et comptez les contenants","Notez coût et minutes","Saisissez un prix par contenant"]},
-"jewelry-making":{"first":"trois bijoux du même modèle","need":["apprêts","perles ou fil","pinces"],"steps":["Choisissez un modèle","Faites trois pièces identiques","Comptez les pièces finies","Notez coût et minutes","Saisissez un prix par pièce"]},
-"bracelet-making":{"first":"cinq bracelets du même modèle","need":["cordon ou chaîne","perles","fermoirs"],"steps":["Choisissez un modèle","Faites cinq bracelets identiques","Comptez-les","Notez coût et minutes","Saisissez un prix par bracelet"]},
-"crochet":{"first":"un petit article au crochet terminé","need":["fil","crochet","aiguille"],"steps":["Choisissez un petit article","Terminez-en un","Comptez-le comme une unité","Notez coût du fil et minutes","Saisissez le prix que vous demanderiez"]},
-"knitting":{"first":"un petit article tricoté terminé","need":["fil","aiguilles"],"steps":["Choisissez un petit article","Terminez-en un","Comptez-le comme une unité","Notez coût du fil et minutes","Saisissez le prix que vous demanderiez"]},
-"sewing":{"first":"un article cousu simple ou un petit ensemble","need":["tissu","fil","machine ou aiguille","ciseaux"],"steps":["Choisissez un modèle simple","Coupez et cousez","Comptez les pièces finies","Notez coût et minutes","Saisissez un prix par article ou ensemble"]},
-"embroidery":{"first":"un tambour brodé terminé","need":["tissu","tambour","fil à broder","aiguille"],"steps":["Choisissez un petit motif","Terminez un tambour","Comptez-le comme une unité","Notez coût et minutes","Saisissez le prix que vous demanderiez"]},
-"quilting":{"first":"un mini quilt ou dessus de coussin","need":["tissu","molleton","dos","fil"],"steps":["Choisissez une petite pièce","Terminez-la","Comptez-la comme une unité","Notez coût et minutes","Saisissez le prix que vous demanderiez"]},
-"macrame":{"first":"une petite pièce en macramé","need":["corde","tige ou anneau","ciseaux"],"steps":["Choisissez un petit modèle","Terminez une pièce","Comptez-la comme une unité","Notez coût de corde et minutes","Saisissez le prix que vous demanderiez"]},
-"cricut-crafting":{"first":"un motif sur un support vierge","need":["accès Cricut","vinyle ou HTV","un support vierge","outils de transfert"],"steps":["Choisissez un motif","Découpez-le","Appliquez-le sur le support","Notez coût et minutes","Saisissez le prix que vous demanderiez"]},
-"vinyl-crafting":{"first":"un article en vinyle terminé","need":["vinyle","un support vierge","ruban de transfert ou presse"],"steps":["Choisissez un motif","Découpez et appliquez-le","Terminez un article","Notez coût et minutes","Saisissez le prix que vous demanderiez"]},
-"sticker-making":{"first":"une planche d’autocollants","need":["papier autocollant","imprimante","machine de découpe ou ciseaux"],"steps":["Préparez une planche","Imprimez-la","Découpez et comptez","Notez coût et minutes","Saisissez un prix par autocollant ou planche"]},
-"resin-art":{"first":"une coulée d’un seul moule","need":["résine","moule","gants","gobelets de mélange"],"steps":["Choisissez un moule","Faites une coulée","Démoulez et comptez","Notez coût et minutes actives","Saisissez un prix par pièce"]},
-"polymer-clay":{"first":"quatre pièces du même modèle","need":["argile polymère","lame","plaque allant au four"],"steps":["Choisissez un modèle","Faites quatre pièces identiques","Cuisez et finissez-les","Notez coût et minutes","Saisissez un prix par pièce ou ensemble"]},
-"pottery":{"first":"une petite pièce pincée ou en plaque","need":["argile","outils de base","surface de travail","endroit pour sécher"],"steps":["Choisissez une petite forme","Faites une pièce","Comptez-la comme une unité","Notez coût d’argile et minutes actives","Saisissez un prix pour la pièce finie"]},
-"ceramics":{"first":"une pièce biscuitée terminée","need":["pièce biscuitée","peinture ou émail","pinceaux","vernis si utilisé"],"steps":["Choisissez une pièce","Peignez ou émaillez-la","Terminez une pièce","Notez coût et minutes","Saisissez le prix que vous demanderiez"]},
-"painting":{"first":"une petite peinture terminée","need":["peinture","pinceau","support"],"steps":["Choisissez une petite pièce","Terminez la peinture","Comptez-la comme une unité","Notez coût des fournitures et minutes","Saisissez le prix que vous demanderiez"]},
-"watercolor":{"first":"une aquarelle terminée","need":["papier aquarelle","peintures","pinceau"],"steps":["Choisissez un petit sujet","Terminez une peinture","Comptez-la comme une unité","Notez coût des fournitures et minutes","Saisissez le prix que vous demanderiez"]},
-"drawing-and-sketching":{"first":"un dessin terminé","need":["papier","crayons ou stylos","gomme"],"steps":["Choisissez un sujet","Terminez un dessin","Comptez-le comme une unité","Notez coût du papier et minutes","Saisissez un prix pour l’original ou l’impression"]},
-"digital-illustration":{"first":"une illustration numérique terminée","need":["tablette ou ordinateur","application de dessin","export de fichier"],"steps":["Choisissez un sujet","Terminez une illustration","Exportez un fichier final","Notez minutes et coût d’actifs éventuel","Saisissez le prix que vous demanderiez"]},
-"calligraphy":{"first":"cinq cartes calligraphiées identiques","need":["stylo","encre","cinq cartes"],"steps":["Choisissez une courte phrase","Écrivez cinq cartes réussies","Comptez les cinq cartes","Notez coût et minutes","Saisissez un prix par carte ou ensemble"]},
-"hand-lettering":{"first":"une pièce de lettrage terminée","need":["papier","feutres pinceaux","crayon"],"steps":["Choisissez une courte phrase","Terminez une pièce","Comptez-la comme une unité","Notez coût et minutes","Saisissez le prix que vous demanderiez"]},
-"indoor-plants":{"first":"trois plantes en pot présentées proprement","need":["trois plantes","trois pots","terreau"],"steps":["Rempotez trois plantes de la même façon","Nettoyez et présentez les pots","Comptez trois pots finis","Notez coût et minutes","Saisissez un prix par pot"]},
-"herb-gardening":{"first":"trois pots d’herbes plantés","need":["plants ou graines","trois pots","terreau","étiquettes"],"steps":["Plantez trois pots","Étiquetez-les","Comptez trois pots","Notez coût et minutes","Saisissez un prix par pot"]},
-"flower-arranging":{"first":"un arrangement floral terminé","need":["tiges","vase","sécateur","eau"],"steps":["Choisissez un style","Composez un arrangement","Comptez-le comme une unité","Notez coût des fleurs et minutes","Saisissez le prix que vous demanderiez"]},
-"woodworking":{"first":"un petit objet en bois","need":["bois","scie ou pièces prédécoupées","papier abrasif","finition"],"steps":["Choisissez un petit objet","Construisez et finissez-le","Comptez-le comme une unité","Notez coût matière et minutes","Saisissez le prix que vous demanderiez"]},
-"furniture-flipping":{"first":"un petit meuble remis en état pour revente","need":["petit meuble","nettoyant","peinture ou teinture","papier abrasif"],"steps":["Choisissez une petite pièce","Nettoyez, poncez et finissez-la","Comptez-la comme une unité","Notez achat, fournitures et minutes","Saisissez un prix de revente"]},
-"furniture-restoration":{"first":"un petit meuble restauré","need":["petit meuble","colle ou mastic","finition","papier abrasif"],"steps":["Choisissez une réparation","Réparez et refaites la finition","Comptez-le comme une unité","Notez coût et minutes","Saisissez le prix que vous demanderiez"]},
-"pet-accessories-and-crafts":{"first":"trois accessoires pour animaux identiques","need":["tissu ou sangle","fil","quincaillerie si besoin","ciseaux"],"steps":["Choisissez un accessoire simple","Faites trois pièces identiques","Comptez les pièces finies","Notez coût et minutes","Saisissez un prix par pièce"]},
-"photography":{"first":"une série de 10 photos d’un sujet","need":["téléphone ou appareil","un sujet","lumière disponible"],"steps":["Photographiez un sujet","Choisissez dix images","Comptez la série comme une unité","Notez minutes et coût d’accessoires éventuel","Saisissez un prix pour la série"]},
-"product-photography":{"first":"une série de huit photos produit","need":["téléphone ou appareil","un produit","surface neutre","lumière disponible"],"steps":["Photographiez un produit","Choisissez huit angles utiles","Comptez la série comme une unité","Notez minutes et coût d’accessoires","Saisissez un prix pour la série"]},
-"food-photography":{"first":"une série de six photos culinaires","need":["téléphone ou appareil","un plat","assiette ou surface","lumière disponible"],"steps":["Photographiez un plat","Choisissez six images","Comptez la série comme une unité","Notez minutes et coût du plat","Saisissez un prix pour la série"]},
-"videography":{"first":"un clip terminé de 30 à 60 secondes","need":["téléphone ou caméra","support stable","application de montage"],"steps":["Filmez un court clip","Montez une version finale","Comptez-le comme une vidéo","Notez minutes et coût d’accessoires éventuel","Saisissez le prix que vous demanderiez"]},
-"video-editing":{"first":"un montage vidéo court terminé","need":["rushes","application de montage","téléphone ou ordinateur"],"steps":["Choisissez un court extrait","Montez et exportez-le","Comptez-le comme un montage","Notez minutes et coût d’actifs éventuel","Saisissez le prix que vous demanderiez"]},
-"graphic-design":{"first":"une affiche ou marque simple terminée","need":["ordinateur ou tablette","application de design","export de fichier"],"steps":["Choisissez un petit brief","Terminez un design","Exportez un fichier final","Notez minutes et coût d’actifs éventuel","Saisissez le prix que vous demanderiez"]},
-"web-design":{"first":"une mise en page d’une seule page","need":["ordinateur","outil de design ou code","brief d’une page"],"steps":["Choisissez l’objectif de la page","Terminez une mise en page","Comptez-la comme une page","Notez minutes et coût d’actifs éventuel","Saisissez un prix pour cette page"]},
-"3d-printing":{"first":"une impression 3D terminée","need":["accès à une imprimante","filament","un fichier modèle"],"steps":["Choisissez un petit modèle","Imprimez un objet","Comptez l’impression comme une unité","Notez coût de filament et minutes actives","Saisissez le prix que vous demanderiez"]},
-"content-creation":{"first":"trois publications sur un sujet","need":["téléphone ou ordinateur","un sujet","application de montage si besoin"],"steps":["Choisissez un sujet","Créez trois publications finies","Comptez le lot de trois comme une unité","Notez minutes et coût d’actifs éventuel","Saisissez un prix pour le lot"]},
-"scrapbooking":{"first":"une double page de scrapbooking terminée","need":["album ou papier","photos","adhésif","décorations"],"steps":["Choisissez un groupe de photos","Terminez une double page","Comptez-la comme une unité","Notez coût matière et minutes","Saisissez un prix de commande"]},
-"thrifting-and-reselling":{"first":"trois articles nettoyés et photographiés pour revente","need":["trois articles","téléphone","produits de nettoyage","sacs ou rangement"],"steps":["Nettoyez trois articles","Photographiez-les","Comptez trois annonces comme trois unités","Notez coût total et minutes","Saisissez un prix demandé typique"]},
-"vintage-collecting":{"first":"trois pièces vintage documentées","need":["trois pièces","téléphone","notes"],"steps":["Photographiez trois pièces","Notez le prix payé pour chacune","Comptez trois pièces","Notez coût total et minutes","Saisissez un prix de revente typique"]},
-"sneaker-collecting-and-reselling":{"first":"une paire de sneakers nettoyée et photographiée","need":["une paire","nettoyant","téléphone","boîte ou sac"],"steps":["Nettoyez une paire","Photographiez-la","Comptez-la comme une unité","Notez coût d’achat et minutes","Saisissez un prix demandé"]}
+  "baking": {
+    "first": "une fournée d’un seul produit",
+    "need": [
+      "recette",
+      "four",
+      "moule ou plaque",
+      "balance ou tasses à mesurer"
+    ],
+    "steps": [
+      "Choisissez un seul produit",
+      "Notez ce que vous avez déjà",
+      "Faites la fournée",
+      "Notez coût, minutes et quantité",
+      "Saisissez le prix que vous demanderiez"
+    ]
+  },
+  "cake-decorating": {
+    "first": "un gâteau décoré simplement",
+    "need": [
+      "gâteau nature ou factice",
+      "glaçage",
+      "spatule",
+      "plateau tournant ou assiette"
+    ],
+    "steps": [
+      "Choisissez une finition",
+      "Rassemblez uniquement ces outils",
+      "Décorez un gâteau",
+      "Notez coût, minutes et un gâteau",
+      "Saisissez le prix que vous demanderiez"
+    ]
+  },
+  "cooking": {
+    "first": "un plat que vous pourriez servir en portions",
+    "need": [
+      "recette",
+      "couteau",
+      "poêle ou casserole",
+      "ingrédients pour un repas"
+    ],
+    "steps": [
+      "Choisissez un plat",
+      "Préparez-le entièrement une fois",
+      "Comptez les portions",
+      "Notez coût, minutes et portions",
+      "Saisissez un prix par portion"
+    ]
+  },
+  "bread-making": {
+    "first": "un pain",
+    "need": [
+      "farine",
+      "levure ou levain",
+      "bol",
+      "moule ou cocotte"
+    ],
+    "steps": [
+      "Choisissez un type de pain",
+      "Préparez et cuisez un pain",
+      "Comptez-le comme une unité",
+      "Notez coût et minutes",
+      "Saisissez le prix que vous demanderiez"
+    ]
+  },
+  "candy-making": {
+    "first": "une petite fournée d’une confiserie",
+    "need": [
+      "sucre ou chocolat",
+      "bol ou thermomètre",
+      "moule ou plaque",
+      "sachets ou emballages"
+    ],
+    "steps": [
+      "Choisissez une confiserie",
+      "Faites une petite fournée",
+      "Comptez les pièces",
+      "Notez coût et minutes",
+      "Saisissez un prix par pièce ou sachet"
+    ]
+  },
+  "coffee-making": {
+    "first": "cinq boissons avec la même recette",
+    "need": [
+      "café",
+      "cafetière ou bouilloire",
+      "tasses",
+      "moulin ou café moulu"
+    ],
+    "steps": [
+      "Fixez une recette",
+      "Préparez cinq boissons identiques",
+      "Chronométrez le travail actif",
+      "Notez coût, minutes et cinq boissons",
+      "Saisissez un prix par boisson"
+    ]
+  },
+  "smoothie-and-juice-making": {
+    "first": "quatre portions d’une boisson",
+    "need": [
+      "blender ou extracteur",
+      "fruits ou légumes",
+      "verres ou bouteilles"
+    ],
+    "steps": [
+      "Choisissez une recette",
+      "Préparez quatre portions",
+      "Comptez les portions",
+      "Notez coût et minutes",
+      "Saisissez un prix par portion"
+    ]
+  },
+  "candle-making": {
+    "first": "quatre bougies du même parfum",
+    "need": [
+      "cire",
+      "mèches",
+      "pots",
+      "parfum",
+      "pot de coulée"
+    ],
+    "steps": [
+      "Coulez quatre bougies identiques",
+      "Laissez-les prendre",
+      "Comptez les pots finis",
+      "Notez coût et minutes actives",
+      "Saisissez un prix par bougie"
+    ]
+  },
+  "soap-making": {
+    "first": "un petit pain de savon",
+    "need": [
+      "base de savon ou huiles",
+      "moule",
+      "parfum si utilisé",
+      "couteau"
+    ],
+    "steps": [
+      "Faites un petit pain",
+      "Coupez-le",
+      "Comptez les savons",
+      "Notez coût et minutes actives",
+      "Saisissez un prix par savon"
+    ]
+  },
+  "perfume-making": {
+    "first": "trois petits flacons d’une formule",
+    "need": [
+      "base alcool ou huile",
+      "matières parfumées",
+      "petits flacons",
+      "pipettes"
+    ],
+    "steps": [
+      "Écrivez une formule",
+      "Remplissez trois flacons identiques",
+      "Comptez les flacons",
+      "Notez coût et minutes",
+      "Saisissez un prix par flacon"
+    ]
+  },
+  "skincare-making": {
+    "first": "un petit lot d’un produit",
+    "need": [
+      "ingrédients de base",
+      "contenants",
+      "balance",
+      "bol"
+    ],
+    "steps": [
+      "Choisissez un produit",
+      "Faites un petit lot",
+      "Remplissez et comptez les contenants",
+      "Notez coût et minutes",
+      "Saisissez un prix par contenant"
+    ]
+  },
+  "jewelry-making": {
+    "first": "trois bijoux du même modèle",
+    "need": [
+      "apprêts",
+      "perles ou fil",
+      "pinces"
+    ],
+    "steps": [
+      "Choisissez un modèle",
+      "Faites trois pièces identiques",
+      "Comptez les pièces finies",
+      "Notez coût et minutes",
+      "Saisissez un prix par pièce"
+    ]
+  },
+  "bracelet-making": {
+    "first": "cinq bracelets du même modèle",
+    "need": [
+      "cordon ou chaîne",
+      "perles",
+      "fermoirs"
+    ],
+    "steps": [
+      "Choisissez un modèle",
+      "Faites cinq bracelets identiques",
+      "Comptez-les",
+      "Notez coût et minutes",
+      "Saisissez un prix par bracelet"
+    ]
+  },
+  "crochet": {
+    "first": "un petit article au crochet terminé",
+    "need": [
+      "fil",
+      "crochet",
+      "aiguille"
+    ],
+    "steps": [
+      "Choisissez un petit article",
+      "Terminez-en un",
+      "Comptez-le comme une unité",
+      "Notez coût du fil et minutes",
+      "Saisissez le prix que vous demanderiez"
+    ]
+  },
+  "knitting": {
+    "first": "un petit article tricoté terminé",
+    "need": [
+      "fil",
+      "aiguilles"
+    ],
+    "steps": [
+      "Choisissez un petit article",
+      "Terminez-en un",
+      "Comptez-le comme une unité",
+      "Notez coût du fil et minutes",
+      "Saisissez le prix que vous demanderiez"
+    ]
+  },
+  "sewing": {
+    "first": "un article cousu simple ou un petit ensemble",
+    "need": [
+      "tissu",
+      "fil",
+      "machine ou aiguille",
+      "ciseaux"
+    ],
+    "steps": [
+      "Choisissez un modèle simple",
+      "Coupez et cousez",
+      "Comptez les pièces finies",
+      "Notez coût et minutes",
+      "Saisissez un prix par article ou ensemble"
+    ]
+  },
+  "embroidery": {
+    "first": "un tambour brodé terminé",
+    "need": [
+      "tissu",
+      "tambour",
+      "fil à broder",
+      "aiguille"
+    ],
+    "steps": [
+      "Choisissez un petit motif",
+      "Terminez un tambour",
+      "Comptez-le comme une unité",
+      "Notez coût et minutes",
+      "Saisissez le prix que vous demanderiez"
+    ]
+  },
+  "quilting": {
+    "first": "un mini quilt ou dessus de coussin",
+    "need": [
+      "tissu",
+      "molleton",
+      "dos",
+      "fil"
+    ],
+    "steps": [
+      "Choisissez une petite pièce",
+      "Terminez-la",
+      "Comptez-la comme une unité",
+      "Notez coût et minutes",
+      "Saisissez le prix que vous demanderiez"
+    ]
+  },
+  "macrame": {
+    "first": "une petite pièce en macramé",
+    "need": [
+      "corde",
+      "tige ou anneau",
+      "ciseaux"
+    ],
+    "steps": [
+      "Choisissez un petit modèle",
+      "Terminez une pièce",
+      "Comptez-la comme une unité",
+      "Notez coût de corde et minutes",
+      "Saisissez le prix que vous demanderiez"
+    ]
+  },
+  "cricut-crafting": {
+    "first": "un motif sur un support vierge",
+    "need": [
+      "accès Cricut",
+      "vinyle ou HTV",
+      "un support vierge",
+      "outils de transfert"
+    ],
+    "steps": [
+      "Choisissez un motif",
+      "Découpez-le",
+      "Appliquez-le sur le support",
+      "Notez coût et minutes",
+      "Saisissez le prix que vous demanderiez"
+    ]
+  },
+  "vinyl-crafting": {
+    "first": "un article en vinyle terminé",
+    "need": [
+      "vinyle",
+      "un support vierge",
+      "ruban de transfert ou presse"
+    ],
+    "steps": [
+      "Choisissez un motif",
+      "Découpez et appliquez-le",
+      "Terminez un article",
+      "Notez coût et minutes",
+      "Saisissez le prix que vous demanderiez"
+    ]
+  },
+  "sticker-making": {
+    "first": "une planche d’autocollants",
+    "need": [
+      "papier autocollant",
+      "imprimante",
+      "machine de découpe ou ciseaux"
+    ],
+    "steps": [
+      "Préparez une planche",
+      "Imprimez-la",
+      "Découpez et comptez",
+      "Notez coût et minutes",
+      "Saisissez un prix par autocollant ou planche"
+    ]
+  },
+  "resin-art": {
+    "first": "une coulée d’un seul moule",
+    "need": [
+      "résine",
+      "moule",
+      "gants",
+      "gobelets de mélange"
+    ],
+    "steps": [
+      "Choisissez un moule",
+      "Faites une coulée",
+      "Démoulez et comptez",
+      "Notez coût et minutes actives",
+      "Saisissez un prix par pièce"
+    ]
+  },
+  "polymer-clay": {
+    "first": "quatre pièces du même modèle",
+    "need": [
+      "argile polymère",
+      "lame",
+      "plaque allant au four"
+    ],
+    "steps": [
+      "Choisissez un modèle",
+      "Faites quatre pièces identiques",
+      "Cuisez et finissez-les",
+      "Notez coût et minutes",
+      "Saisissez un prix par pièce ou ensemble"
+    ]
+  },
+  "pottery": {
+    "first": "une petite pièce pincée ou en plaque",
+    "need": [
+      "argile",
+      "outils de base",
+      "surface de travail",
+      "endroit pour sécher"
+    ],
+    "steps": [
+      "Choisissez une petite forme",
+      "Faites une pièce",
+      "Comptez-la comme une unité",
+      "Notez coût d’argile et minutes actives",
+      "Saisissez un prix pour la pièce finie"
+    ]
+  },
+  "ceramics": {
+    "first": "une pièce biscuitée terminée",
+    "need": [
+      "pièce biscuitée",
+      "peinture ou émail",
+      "pinceaux",
+      "vernis si utilisé"
+    ],
+    "steps": [
+      "Choisissez une pièce",
+      "Peignez ou émaillez-la",
+      "Terminez une pièce",
+      "Notez coût et minutes",
+      "Saisissez le prix que vous demanderiez"
+    ]
+  },
+  "painting": {
+    "first": "une petite peinture terminée",
+    "need": [
+      "peinture",
+      "pinceau",
+      "support"
+    ],
+    "steps": [
+      "Choisissez une petite pièce",
+      "Terminez la peinture",
+      "Comptez-la comme une unité",
+      "Notez coût des fournitures et minutes",
+      "Saisissez le prix que vous demanderiez"
+    ]
+  },
+  "watercolor": {
+    "first": "une aquarelle terminée",
+    "need": [
+      "papier aquarelle",
+      "peintures",
+      "pinceau"
+    ],
+    "steps": [
+      "Choisissez un petit sujet",
+      "Terminez une peinture",
+      "Comptez-la comme une unité",
+      "Notez coût des fournitures et minutes",
+      "Saisissez le prix que vous demanderiez"
+    ]
+  },
+  "drawing-and-sketching": {
+    "first": "un dessin terminé",
+    "need": [
+      "papier",
+      "crayons ou stylos",
+      "gomme"
+    ],
+    "steps": [
+      "Choisissez un sujet",
+      "Terminez un dessin",
+      "Comptez-le comme une unité",
+      "Notez coût du papier et minutes",
+      "Saisissez un prix pour l’original ou l’impression"
+    ]
+  },
+  "digital-illustration": {
+    "first": "une illustration numérique terminée",
+    "need": [
+      "tablette ou ordinateur",
+      "application de dessin",
+      "export de fichier"
+    ],
+    "steps": [
+      "Choisissez un sujet",
+      "Terminez une illustration",
+      "Exportez un fichier final",
+      "Notez minutes et coût d’actifs éventuel",
+      "Saisissez le prix que vous demanderiez"
+    ]
+  },
+  "calligraphy": {
+    "first": "cinq cartes calligraphiées identiques",
+    "need": [
+      "stylo",
+      "encre",
+      "cinq cartes"
+    ],
+    "steps": [
+      "Choisissez une courte phrase",
+      "Écrivez cinq cartes réussies",
+      "Comptez les cinq cartes",
+      "Notez coût et minutes",
+      "Saisissez un prix par carte ou ensemble"
+    ]
+  },
+  "hand-lettering": {
+    "first": "une pièce de lettrage terminée",
+    "need": [
+      "papier",
+      "feutres pinceaux",
+      "crayon"
+    ],
+    "steps": [
+      "Choisissez une courte phrase",
+      "Terminez une pièce",
+      "Comptez-la comme une unité",
+      "Notez coût et minutes",
+      "Saisissez le prix que vous demanderiez"
+    ]
+  },
+  "indoor-plants": {
+    "first": "trois plantes en pot présentées proprement",
+    "need": [
+      "trois plantes",
+      "trois pots",
+      "terreau"
+    ],
+    "steps": [
+      "Rempotez trois plantes de la même façon",
+      "Nettoyez et présentez les pots",
+      "Comptez trois pots finis",
+      "Notez coût et minutes",
+      "Saisissez un prix par pot"
+    ]
+  },
+  "herb-gardening": {
+    "first": "trois pots d’herbes plantés",
+    "need": [
+      "plants ou graines",
+      "trois pots",
+      "terreau",
+      "étiquettes"
+    ],
+    "steps": [
+      "Plantez trois pots",
+      "Étiquetez-les",
+      "Comptez trois pots",
+      "Notez coût et minutes",
+      "Saisissez un prix par pot"
+    ]
+  },
+  "flower-arranging": {
+    "first": "un arrangement floral terminé",
+    "need": [
+      "tiges",
+      "vase",
+      "sécateur",
+      "eau"
+    ],
+    "steps": [
+      "Choisissez un style",
+      "Composez un arrangement",
+      "Comptez-le comme une unité",
+      "Notez coût des fleurs et minutes",
+      "Saisissez le prix que vous demanderiez"
+    ]
+  },
+  "woodworking": {
+    "first": "un petit objet en bois",
+    "need": [
+      "bois",
+      "scie ou pièces prédécoupées",
+      "papier abrasif",
+      "finition"
+    ],
+    "steps": [
+      "Choisissez un petit objet",
+      "Construisez et finissez-le",
+      "Comptez-le comme une unité",
+      "Notez coût matière et minutes",
+      "Saisissez le prix que vous demanderiez"
+    ]
+  },
+  "furniture-flipping": {
+    "first": "un petit meuble remis en état pour revente",
+    "need": [
+      "petit meuble",
+      "nettoyant",
+      "peinture ou teinture",
+      "papier abrasif"
+    ],
+    "steps": [
+      "Choisissez une petite pièce",
+      "Nettoyez, poncez et finissez-la",
+      "Comptez-la comme une unité",
+      "Notez achat, fournitures et minutes",
+      "Saisissez un prix de revente"
+    ]
+  },
+  "furniture-restoration": {
+    "first": "un petit meuble restauré",
+    "need": [
+      "petit meuble",
+      "colle ou mastic",
+      "finition",
+      "papier abrasif"
+    ],
+    "steps": [
+      "Choisissez une réparation",
+      "Réparez et refaites la finition",
+      "Comptez-le comme une unité",
+      "Notez coût et minutes",
+      "Saisissez le prix que vous demanderiez"
+    ]
+  },
+  "pet-accessories-and-crafts": {
+    "first": "trois accessoires pour animaux identiques",
+    "need": [
+      "tissu ou sangle",
+      "fil",
+      "quincaillerie si besoin",
+      "ciseaux"
+    ],
+    "steps": [
+      "Choisissez un accessoire simple",
+      "Faites trois pièces identiques",
+      "Comptez les pièces finies",
+      "Notez coût et minutes",
+      "Saisissez un prix par pièce"
+    ]
+  },
+  "photography": {
+    "first": "une série de 10 photos d’un sujet",
+    "need": [
+      "téléphone ou appareil",
+      "un sujet",
+      "lumière disponible"
+    ],
+    "steps": [
+      "Photographiez un sujet",
+      "Choisissez dix images",
+      "Comptez la série comme une unité",
+      "Notez minutes et coût d’accessoires éventuel",
+      "Saisissez un prix pour la série"
+    ]
+  },
+  "product-photography": {
+    "first": "une série de huit photos produit",
+    "need": [
+      "téléphone ou appareil",
+      "un produit",
+      "surface neutre",
+      "lumière disponible"
+    ],
+    "steps": [
+      "Photographiez un produit",
+      "Choisissez huit angles utiles",
+      "Comptez la série comme une unité",
+      "Notez minutes et coût d’accessoires",
+      "Saisissez un prix pour la série"
+    ]
+  },
+  "food-photography": {
+    "first": "une série de six photos culinaires",
+    "need": [
+      "téléphone ou appareil",
+      "un plat",
+      "assiette ou surface",
+      "lumière disponible"
+    ],
+    "steps": [
+      "Photographiez un plat",
+      "Choisissez six images",
+      "Comptez la série comme une unité",
+      "Notez minutes et coût du plat",
+      "Saisissez un prix pour la série"
+    ]
+  },
+  "videography": {
+    "first": "un clip terminé de 30 à 60 secondes",
+    "need": [
+      "téléphone ou caméra",
+      "support stable",
+      "application de montage"
+    ],
+    "steps": [
+      "Filmez un court clip",
+      "Montez une version finale",
+      "Comptez-le comme une vidéo",
+      "Notez minutes et coût d’accessoires éventuel",
+      "Saisissez le prix que vous demanderiez"
+    ]
+  },
+  "video-editing": {
+    "first": "un montage vidéo court terminé",
+    "need": [
+      "rushes",
+      "application de montage",
+      "téléphone ou ordinateur"
+    ],
+    "steps": [
+      "Choisissez un court extrait",
+      "Montez et exportez-le",
+      "Comptez-le comme un montage",
+      "Notez minutes et coût d’actifs éventuel",
+      "Saisissez le prix que vous demanderiez"
+    ]
+  },
+  "graphic-design": {
+    "first": "une affiche ou marque simple terminée",
+    "need": [
+      "ordinateur ou tablette",
+      "application de design",
+      "export de fichier"
+    ],
+    "steps": [
+      "Choisissez un petit brief",
+      "Terminez un design",
+      "Exportez un fichier final",
+      "Notez minutes et coût d’actifs éventuel",
+      "Saisissez le prix que vous demanderiez"
+    ]
+  },
+  "web-design": {
+    "first": "une mise en page d’une seule page",
+    "need": [
+      "ordinateur",
+      "outil de design ou code",
+      "brief d’une page"
+    ],
+    "steps": [
+      "Choisissez l’objectif de la page",
+      "Terminez une mise en page",
+      "Comptez-la comme une page",
+      "Notez minutes et coût d’actifs éventuel",
+      "Saisissez un prix pour cette page"
+    ]
+  },
+  "3d-printing": {
+    "first": "une impression 3D terminée",
+    "need": [
+      "accès à une imprimante",
+      "filament",
+      "un fichier modèle"
+    ],
+    "steps": [
+      "Choisissez un petit modèle",
+      "Imprimez un objet",
+      "Comptez l’impression comme une unité",
+      "Notez coût de filament et minutes actives",
+      "Saisissez le prix que vous demanderiez"
+    ]
+  },
+  "content-creation": {
+    "first": "trois publications sur un sujet",
+    "need": [
+      "téléphone ou ordinateur",
+      "un sujet",
+      "application de montage si besoin"
+    ],
+    "steps": [
+      "Choisissez un sujet",
+      "Créez trois publications finies",
+      "Comptez le lot de trois comme une unité",
+      "Notez minutes et coût d’actifs éventuel",
+      "Saisissez un prix pour le lot"
+    ]
+  },
+  "scrapbooking": {
+    "first": "une double page de scrapbooking terminée",
+    "need": [
+      "album ou papier",
+      "photos",
+      "adhésif",
+      "décorations"
+    ],
+    "steps": [
+      "Choisissez un groupe de photos",
+      "Terminez une double page",
+      "Comptez-la comme une unité",
+      "Notez coût matière et minutes",
+      "Saisissez un prix de commande"
+    ]
+  },
+  "thrifting-and-reselling": {
+    "first": "trois articles nettoyés et photographiés pour revente",
+    "need": [
+      "trois articles",
+      "téléphone",
+      "produits de nettoyage",
+      "sacs ou rangement"
+    ],
+    "steps": [
+      "Nettoyez trois articles",
+      "Photographiez-les",
+      "Comptez trois annonces comme trois unités",
+      "Notez coût total et minutes",
+      "Saisissez un prix demandé typique"
+    ]
+  },
+  "vintage-collecting": {
+    "first": "trois pièces vintage documentées",
+    "need": [
+      "trois pièces",
+      "téléphone",
+      "notes"
+    ],
+    "steps": [
+      "Photographiez trois pièces",
+      "Notez le prix payé pour chacune",
+      "Comptez trois pièces",
+      "Notez coût total et minutes",
+      "Saisissez un prix de revente typique"
+    ]
+  },
+  "sneaker-collecting-and-reselling": {
+    "first": "une paire de sneakers nettoyée et photographiée",
+    "need": [
+      "une paire",
+      "nettoyant",
+      "téléphone",
+      "boîte ou sac"
+    ],
+    "steps": [
+      "Nettoyez une paire",
+      "Photographiez-la",
+      "Comptez-la comme une unité",
+      "Notez coût d’achat et minutes",
+      "Saisissez un prix demandé"
+    ]
+  },
+  "gardening": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "home-decorating": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "handyman-skills": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "home-cleaning": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "blogging": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "creative-writing": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "journaling": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "coding": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "ai-assisted-copywriting": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "ai-video-repurposing": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "ai-voiceover-and-dubbing": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "ai-product-photography": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "ai-presentation-design": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "ai-resume-and-portfolio-help": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "ai-email-marketing": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "ai-blog-to-social-repurposing": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "ai-ecommerce-listing-help": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "ai-chatbot-setup": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "no-code-automation": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "ai-workflow-consulting": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "ai-data-cleanup": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "ai-web-analytics": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "ai-research-assistance": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "ai-tutoring-materials": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "ai-travel-itinerary-service": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "ai-interior-design-concepts": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "ai-podcast-clipping": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "ai-short-form-video-editing": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "pet-photography": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "dog-training": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "tutoring-and-teaching": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "taekwondo": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "hiking": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "fishing": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "birdwatching": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  },
+  "guitar": {
+    "first": "un premier projet terminé",
+    "need": [
+      "le minimum d'outils ou de matériel pour ce loisir",
+      "un petit exercice",
+      "un endroit pour noter le coût et le temps"
+    ],
+    "steps": [
+      "Choisissez une petite tâche pour débuter",
+      "Utilisez seulement le minimum nécessaire",
+      "Terminez une version complète",
+      "Notez vos dépenses et le temps utilisé",
+      "Décidez ce que vous changeriez avant d'acheter davantage"
+    ]
+  }
 }
