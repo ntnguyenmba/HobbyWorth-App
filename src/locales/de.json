@@ -124,7 +124,18 @@
     "categoryDigital": "Digital",
     "categoryPhoto": "Foto & Video",
     "categoryResale": "Wiederverkauf",
-    "purchasing": "Kauf wird ausgeführt…"
+    "purchasing": "Kauf wird ausgeführt…",
+    "guide": "Hobby-Leitfaden",
+    "guideCost": "Startpunkt",
+    "guideTime": "Zeit pro Woche",
+    "guideDifficulty": "Schwierigkeit",
+    "guideBefore": "Vor dem Kauf",
+    "guideBeforeBody": "Beginne mit dem ersten Projekt, nutze oder leihe Vorhandenes und kaufe nur, was ein echtes Hindernis beseitigt.",
+    "guideMonth": "Dein erster Monat",
+    "guideMonthBody": "Wiederhole das erste Projekt mindestens zweimal, bevor du Ausrüstung aufrüstest. Notiere Ausgaben, Dauer jedes Versuchs und was du wirklich benutzt.",
+    "guideFit": "Passt das zu dir?",
+    "guideFitBody": "Betrachte Kosten, Zeit und Schwierigkeit zusammen. Wähle etwas, das zu deinem Wochenplan und deinem tatsächlichen Platz passt.",
+    "guidePlan": "Erstes Projekt öffnen"
   },
   "project": {
     "first": "ein erstes {hobby}-Projekt",
