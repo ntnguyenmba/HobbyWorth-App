@@ -124,7 +124,18 @@
     "categoryDigital": "Numérique",
     "categoryPhoto": "Photo et vidéo",
     "categoryResale": "Revente",
-    "purchasing": "Achat en cours…"
+    "purchasing": "Achat en cours…",
+    "guide": "Guide du loisir",
+    "guideCost": "Point de départ",
+    "guideTime": "Temps par semaine",
+    "guideDifficulty": "Difficulté",
+    "guideBefore": "Avant d'acheter",
+    "guideBeforeBody": "Commencez par le premier projet, utilisez ou empruntez ce que vous avez déjà, puis n'achetez que ce qui répond à un besoin réel.",
+    "guideMonth": "Votre premier mois",
+    "guideMonthBody": "Répétez le premier projet au moins deux fois avant d'améliorer votre équipement. Notez vos dépenses, le temps de chaque essai et ce que vous utilisez vraiment.",
+    "guideFit": "Est-ce fait pour vous ?",
+    "guideFitBody": "Considérez ensemble le coût, le temps et la difficulté. Choisissez une activité adaptée à votre emploi du temps et à l'espace dont vous disposez.",
+    "guidePlan": "Ouvrir le premier projet"
   },
   "project": {
     "first": "un premier projet de {hobby}",
