@@ -101,7 +101,6 @@ function LinkButton({text, onPress}: {text: string; onPress: () => void}) {
 }
 
 function Field({label, value, onChange, symbol = ''}: {label: string; value: string; onChange: (value: string) => void; symbol?: string}) {
-  const activeLocaleForField: LocaleCode = deviceLocale();
   return (
     <View style={s.field}>
       <Text style={s.small}>{label}</Text>
@@ -111,7 +110,7 @@ function Field({label, value, onChange, symbol = ''}: {label: string; value: str
           accessibilityLabel={label}
           keyboardType="decimal-pad"
           onChangeText={onChange}
-          placeholder={tr(activeLocaleForField, 'ui.zeroPlaceholder')}
+          placeholder="0"
           placeholderTextColor={C.muted}
           style={s.input}
           value={value}
