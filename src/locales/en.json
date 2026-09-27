@@ -124,7 +124,18 @@
     "categoryDigital": "Digital",
     "categoryPhoto": "Photo & video",
     "categoryResale": "Resale",
-    "purchasing": "Purchasing…"
+    "purchasing": "Purchasing…",
+    "guide": "Hobby guide",
+    "guideCost": "Starting point",
+    "guideTime": "Weekly time",
+    "guideDifficulty": "Difficulty",
+    "guideBefore": "Before you buy",
+    "guideBeforeBody": "Start with the first project, use or borrow what you already have, then buy only what removes a real constraint.",
+    "guideMonth": "Your first month",
+    "guideMonthBody": "Repeat the first project at least twice before upgrading equipment. Track what you spend, how long each attempt takes and what you actually use.",
+    "guideFit": "Is this a fit?",
+    "guideFitBody": "Use cost, time and difficulty together. Pick something that fits both your weekly schedule and the space you actually have.",
+    "guidePlan": "Open first project"
   },
   "project": {
     "first": "one finished {hobby} project",
