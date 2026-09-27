@@ -101,6 +101,7 @@ function LinkButton({text, onPress}: {text: string; onPress: () => void}) {
 }
 
 function Field({label, value, onChange, symbol = ''}: {label: string; value: string; onChange: (value: string) => void; symbol?: string}) {
+  const activeLocaleForField: LocaleCode = deviceLocale();
   return (
     <View style={s.field}>
       <Text style={s.small}>{label}</Text>
@@ -110,7 +111,7 @@ function Field({label, value, onChange, symbol = ''}: {label: string; value: str
           accessibilityLabel={label}
           keyboardType="decimal-pad"
           onChangeText={onChange}
-          placeholder="0"
+          placeholder={tr(activeLocaleForField, 'ui.zeroPlaceholder')}
           placeholderTextColor={C.muted}
           style={s.input}
           value={value}
@@ -305,8 +306,21 @@ export function First({st, setProject, go}: {st: State; setProject: (project: Pr
   return (
     <Page>
       <View style={s.projectHero}><Image source={hobbyVisual(p.hobbyId)} resizeMode="cover" style={s.visualHero} /><View style={s.visualOverlay} /><Text style={s.projectHeroText}>{name}</Text></View>
-      <Text style={s.kicker}>{tr(l, 'ui.first')}</Text>
+      <Text style={s.kicker}>{tr(l, 'ui.guide')}</Text>
       <Heading>{name}</Heading>
+      <View style={s.card}>
+        <Heading level={3}>{tr(l, 'ui.guideBefore')}</Heading>
+        <Text style={s.body}>{tr(l, 'ui.guideBeforeBody')}</Text>
+      </View>
+      <View style={s.pale}>
+        <Heading level={3}>{tr(l, 'ui.guideMonth')}</Heading>
+        <Text style={s.body}>{tr(l, 'ui.guideMonthBody')}</Text>
+      </View>
+      <View style={s.card}>
+        <Heading level={3}>{tr(l, 'ui.guideFit')}</Heading>
+        <Text style={s.body}>{tr(l, 'ui.guideFitBody')}</Text>
+      </View>
+      <Text style={s.kicker}>{tr(l, 'ui.first')}</Text>
       <View style={s.pink}><Text style={s.kicker}>{tr(l, 'ui.make')}</Text><Heading level={2}>{project.first}</Heading></View>
       <View style={s.card}>
         <Heading level={3}>{tr(l, 'ui.need')}</Heading>
