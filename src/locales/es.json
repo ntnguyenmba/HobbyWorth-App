@@ -124,7 +124,18 @@
     "categoryDigital": "Digital",
     "categoryPhoto": "Foto y video",
     "categoryResale": "Reventa",
-    "purchasing": "Comprando…"
+    "purchasing": "Comprando…",
+    "guide": "Guía del hobby",
+    "guideCost": "Punto de partida",
+    "guideTime": "Tiempo semanal",
+    "guideDifficulty": "Dificultad",
+    "guideBefore": "Antes de comprar",
+    "guideBeforeBody": "Empieza con el primer proyecto, usa o pide prestado lo que ya tengas y compra solo lo que resuelva una necesidad real.",
+    "guideMonth": "Tu primer mes",
+    "guideMonthBody": "Repite el primer proyecto al menos dos veces antes de mejorar el equipo. Registra lo que gastas, cuánto tarda cada intento y qué utilizas de verdad.",
+    "guideFit": "¿Es para ti?",
+    "guideFitBody": "Considera juntos el costo, el tiempo y la dificultad. Elige algo que encaje con tu horario semanal y el espacio que realmente tienes.",
+    "guidePlan": "Abrir primer proyecto"
   },
   "project": {
     "first": "un primer proyecto de {hobby}",
