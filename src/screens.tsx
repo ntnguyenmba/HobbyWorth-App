@@ -59,10 +59,10 @@ function Page({children}: {children: React.ReactNode}) {
   return (
     <ScrollView
       keyboardShouldPersistTaps="handled"
-      contentContainerStyle={[s.page, {backgroundColor: colors.surface, paddingHorizontal: type.pagePad, paddingTop: type.gap, paddingBottom: 96}]}
+      contentContainerStyle={[s.page, {backgroundColor: colors.surface, paddingHorizontal: type.pagePad, paddingTop: 8, paddingBottom: 88}]}
       showsVerticalScrollIndicator={false}
     >
-      <View style={[s.pageInner, {maxWidth: type.max, gap: type.gap}]}>{children}</View>
+      <View style={[s.pageInner, {maxWidth: type.max, gap: Math.min(type.gap, 12)}]}>{children}</View>
     </ScrollView>
   );
 }
@@ -130,6 +130,8 @@ export function Home({st, setProject, go, pay}: {st: State; setProject: (project
     return (
       <Page>
         <View accessible={false} importantForAccessibility="no-hide-descendants" style={s.homeHero}>
+          <View style={s.heroCircleLarge} />
+          <View style={s.heroCircleSmall} />
           <Image source={fallbackVisual} resizeMode="cover" style={s.visualHero} />
           <View style={s.visualOverlay} />
           <Text style={s.heroWord}>HobbyWorth</Text>
@@ -233,7 +235,7 @@ export function Pick({st, choose}: {st: State; choose: (hobby: Hobby) => void}) 
           accessibilityRole="button"
           key={hobby.id}
           onPress={() => choose(hobby)}
-          style={({pressed}) => [s.hobby, pressed && s.outlinePressed]}
+          style={({pressed}) => [s.hobby, {backgroundColor: hobby.category === 'food' ? '#FFF0EC' : hobby.category === 'craft' ? '#F8F0E6' : hobby.category === 'art' ? '#F2EEF8' : hobby.category === 'digital' ? '#EDF9FC' : hobby.category === 'photo' ? '#EEF4F8' : hobby.category === 'home' ? '#F3F4EA' : '#FFFFFF'}, pressed && s.outlinePressed]}
         >
           <Image source={hobbyVisual(hobby.id)} resizeMode="cover" style={s.visualCompact} />
           <Text style={[s.h3, {flex: 1}]}>{hobbyName(hobby.id, l)}</Text>
@@ -305,7 +307,7 @@ export function First({st, setProject, go}: {st: State; setProject: (project: Pr
   const done = project.steps.map((_, index) => p.steps[index] || false);
   return (
     <Page>
-      <View style={s.projectHero}><Image source={hobbyVisual(p.hobbyId)} resizeMode="cover" style={s.visualHero} /><View style={s.visualOverlay} /><Text style={s.projectHeroText}>{name}</Text></View>
+      <View style={s.projectHero}><View style={s.heroCircleLarge} /><View style={s.heroCircleSmall} /><Image source={hobbyVisual(p.hobbyId)} resizeMode="cover" style={s.visualHero} /><View style={s.visualOverlay} /><Text style={s.projectHeroText}>{name}</Text></View>
       <Text style={s.kicker}>{tr(l, 'ui.guide')}</Text>
       <Heading>{name}</Heading>
       <View style={s.card}>
