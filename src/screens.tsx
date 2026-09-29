@@ -412,9 +412,9 @@ export function Calculator({st, setProject, finish, pay}: {st: State; setProject
         <Field label={tr(l, 'ui.yield')} value={p.numbers.yield} onChange={(value) => setNumber('yield', value)} />
         <Field label={tr(l, 'ui.price')} value={p.numbers.price} onChange={(value) => setNumber('price', value)} symbol={st.symbol} />
       </View>
-      <View style={[s.verdict, result.leftover > 0 && s.cardShadow]}>
+      <View style={[s.verdict, result.leftover <= 0 && s.verdictLoss, result.leftover > 0 && s.cardShadow]}>
         <Text style={s.small}>{tr(l, 'ui.left')}</Text>
-        <Text style={s.resultValue}>{money(result.leftover, st.symbol)}</Text>
+        <Text style={[s.resultValue, result.leftover <= 0 && s.resultValueLoss]}>{money(result.leftover, st.symbol)}</Text>
         <Text style={s.verdictText}>{verdict}</Text>
       </View>
       <View style={s.grid}>
