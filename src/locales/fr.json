@@ -138,7 +138,10 @@
     "guidePlan": "Ouvrir le premier projet",
     "privacyChoices": "Choix de confidentialité des publicités",
     "privacyChoicesUnavailable": "Les choix de confidentialité des publicités ne sont pas requis dans votre région actuelle.",
-    "privacyChoicesError": "Impossible d’ouvrir les choix de confidentialité des publicités."
+    "privacyChoicesError": "Impossible d’ouvrir les choix de confidentialité des publicités.",
+    "projectSummary": "Résumé du projet",
+    "shareResult": "Partager le résultat",
+    "done": "Terminé"
   },
   "project": {
     "first": "un premier projet de {hobby}",
