@@ -138,7 +138,10 @@
     "guidePlan": "Open first project",
     "privacyChoices": "Ad privacy choices",
     "privacyChoicesUnavailable": "Ad privacy choices are not required for your current region.",
-    "privacyChoicesError": "Ad privacy choices could not be opened."
+    "privacyChoicesError": "Ad privacy choices could not be opened.",
+    "projectSummary": "Project summary",
+    "shareResult": "Share result",
+    "done": "Done"
   },
   "project": {
     "first": "one finished {hobby} project",
