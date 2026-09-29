@@ -179,8 +179,6 @@ export function Home({st, setProject, go, pay}: {st: State; setProject: (project
     return (
       <Page>
         <View accessible={false} importantForAccessibility="no-hide-descendants" style={s.homeHero}>
-          <View style={s.heroCircleLarge} />
-          <View style={s.heroCircleSmall} />
           <Image source={fallbackVisual} resizeMode="cover" style={s.visualHero} />
           <View style={s.visualOverlay} />
           <Text style={s.heroWord}>HobbyWorth</Text>
