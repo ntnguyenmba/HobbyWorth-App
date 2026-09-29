@@ -138,7 +138,10 @@
     "guidePlan": "打开第一个项目",
     "privacyChoices": "广告隐私选项",
     "privacyChoicesUnavailable": "你当前所在地区不需要广告隐私选项。",
-    "privacyChoicesError": "无法打开广告隐私选项。"
+    "privacyChoicesError": "无法打开广告隐私选项。",
+    "projectSummary": "项目总结",
+    "shareResult": "分享结果",
+    "done": "完成"
   },
   "project": {
     "first": "一个 {hobby} 入门项目",
