@@ -4,6 +4,7 @@ import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import {StatusBar} from 'expo-status-bar';
 import {useFonts, Nunito_400Regular, Nunito_700Bold, Nunito_800ExtraBold} from '@expo-google-fonts/nunito';
 import {useIAP} from 'expo-iap';
+import {Ionicons} from '@expo/vector-icons';
 import Constants from 'expo-constants';
 import {deviceLocale, hobbyName, tr} from './src/i18n';
 import {deletePhotos, load, save} from './src/storage';
@@ -234,19 +235,19 @@ function Main() {
       {!st.premium ? <HobbyWorthBanner enabled={adsReady} /> : null}
       <View accessibilityRole="tablist" style={s.bottomNav}>
         <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'home'}} onPress={() => goRoot('home')} style={[s.bottomTab, screen === 'home' && s.bottomTabOn]}>
-          <Text accessible={false} style={[s.bottomTabIcon, screen === 'home' && s.bottomTabIconOn]}>⌂</Text>
+          <Ionicons name={screen === 'home' ? 'home' : 'home-outline'} size={21} color={screen === 'home' ? colors.accent : colors.textMuted} />
           <Text style={[s.bottomTabText, screen === 'home' && s.bottomTabTextOn]}>{tr(l, 'ui.navHome')}</Text>
         </Pressable>
         <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'pick'}} onPress={() => goRoot('pick')} style={[s.bottomTab, screen === 'pick' && s.bottomTabOn]}>
-          <Text accessible={false} style={[s.bottomTabIcon, screen === 'pick' && s.bottomTabIconOn]}>◇</Text>
+          <Ionicons name={screen === 'pick' ? 'compass' : 'compass-outline'} size={22} color={screen === 'pick' ? colors.accent : colors.textMuted} />
           <Text style={[s.bottomTabText, screen === 'pick' && s.bottomTabTextOn]}>{tr(l, 'ui.navExplore')}</Text>
         </Pressable>
         <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'history'}} onPress={goHistory} style={[s.bottomTab, screen === 'history' && s.bottomTabOn]}>
-          <Text accessible={false} style={[s.bottomTabIcon, screen === 'history' && s.bottomTabIconOn]}>◷</Text>
+          <Ionicons name={screen === 'history' ? 'time' : 'time-outline'} size={22} color={screen === 'history' ? colors.accent : colors.textMuted} />
           <Text style={[s.bottomTabText, screen === 'history' && s.bottomTabTextOn]}>{tr(l, 'ui.navHistory')}</Text>
         </Pressable>
         <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'settings'}} onPress={() => goRoot('settings')} style={[s.bottomTab, screen === 'settings' && s.bottomTabOn]}>
-          <Text accessible={false} style={[s.bottomTabIcon, screen === 'settings' && s.bottomTabIconOn]}>≡</Text>
+          <Ionicons name={screen === 'settings' ? 'settings' : 'settings-outline'} size={21} color={screen === 'settings' ? colors.accent : colors.textMuted} />
           <Text style={[s.bottomTabText, screen === 'settings' && s.bottomTabTextOn]}>{tr(l, 'ui.navSettings')}</Text>
         </Pressable>
       </View>
