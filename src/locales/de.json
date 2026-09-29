@@ -138,7 +138,10 @@
     "guidePlan": "Erstes Projekt öffnen",
     "privacyChoices": "Datenschutzoptionen für Werbung",
     "privacyChoicesUnavailable": "Datenschutzoptionen für Werbung sind in deiner aktuellen Region nicht erforderlich.",
-    "privacyChoicesError": "Die Datenschutzoptionen für Werbung konnten nicht geöffnet werden."
+    "privacyChoicesError": "Die Datenschutzoptionen für Werbung konnten nicht geöffnet werden.",
+    "projectSummary": "Projektübersicht",
+    "shareResult": "Ergebnis teilen",
+    "done": "Fertig"
   },
   "project": {
     "first": "ein erstes {hobby}-Projekt",
