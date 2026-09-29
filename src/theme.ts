@@ -1,25 +1,27 @@
 import {useColorScheme, useWindowDimensions} from 'react-native';
 
 export const lightColors = {
-  action: '#FF5548',
-  actionPressed: '#E0483D',
+  action: '#E84A3C',
+  actionPressed: '#D03D30',
   surface: '#FFFDF7',
   surfaceStrong: '#FFFFFF',
-  surfaceSoft: '#EDF9FC',
-  surfaceWarm: '#FFF0EC',
-  text: '#243238',
-  textMuted: '#3E5158',
-  accent: '#1F5F70',
-  accentLine: '#49A7BE',
-  accentSoft: '#83D5F1',
-  line: '#D6CFC4',
-  focus: '#1F5F70',
-  danger: '#A43F38'
+  surfaceSoft: '#F0F7F9',
+  surfaceWarm: '#FFF4F0',
+  text: '#1C2B30',
+  textMuted: '#5A6B72',
+  accent: '#0F5C6B',
+  accentLine: '#2A9BB0',
+  accentSoft: '#B8E4EF',
+  line: '#E2DCD3',
+  focus: '#0F5C6B',
+  danger: '#B83A32',
+  profit: '#0F7A4A',
+  profitSoft: '#E6F5EE'
 };
 
 export const darkColors = {
-  action: '#FF7B70',
-  actionPressed: '#FF958D',
+  action: '#FF7468',
+  actionPressed: '#FF8C83',
   surface: '#152126',
   surfaceStrong: '#1B2A30',
   surfaceSoft: '#1E343C',
@@ -31,7 +33,9 @@ export const darkColors = {
   accentSoft: '#2B5963',
   line: '#405158',
   focus: '#B7E8F2',
-  danger: '#FF9B92'
+  danger: '#FF9B92',
+  profit: '#7DD9A7',
+  profitSoft: '#18392B'
 };
 
 export const C = {
@@ -46,7 +50,9 @@ export const C = {
   tealInk: lightColors.accent,
   teal: lightColors.accentLine,
   sky: lightColors.accentSoft,
-  line: lightColors.line
+  line: lightColors.line,
+  profit: lightColors.profit,
+  profitSoft: lightColors.profitSoft
 };
 
 export function useColors() {
@@ -61,15 +67,16 @@ export function useType() {
   return {
     tablet,
     large,
-    hero: tablet ? (large ? 56 : 44) : 34,
-    h1: tablet ? 34 : 28,
-    h2: tablet ? 26 : 22,
-    h3: tablet ? 20 : 18,
-    body: 17,
+    hero: tablet ? (large ? 48 : 44) : 36,
+    h1: tablet ? 32 : 28,
+    h2: tablet ? 24 : 22,
+    h3: tablet ? 19 : 18,
+    body: 16,
     button: 17,
-    small: 14,
+    small: 13,
+    kicker: 12,
     pagePad: tablet ? 28 : 18,
     max: tablet ? 720 : 560,
-    gap: tablet ? 16 : 14
+    gap: tablet ? 20 : 16
   };
 }
