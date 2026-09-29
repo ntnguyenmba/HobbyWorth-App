@@ -1,6 +1,8 @@
-import React, {useMemo, useState} from 'react';
+import React, {useEffect, useMemo, useRef, useState} from 'react';
 import {
   Alert,
+  Animated,
+  Easing,
   Image,
   Linking,
   Pressable,
@@ -142,6 +144,33 @@ function Field({label, value, onChange, symbol = ''}: {label: string; value: str
 
 function Metric({label, value}: {label: string; value: string}) {
   return <View style={s.metric}><Text style={s.small}>{label}</Text><Text style={s.metricValue}>{value}</Text></View>;
+}
+
+function AnimatedMoney({value, symbol, loss = false}: {value: number; symbol: string; loss?: boolean}) {
+  const progress = useRef(new Animated.Value(0)).current;
+  const scale = useRef(new Animated.Value(0.96)).current;
+  const [display, setDisplay] = useState(0);
+
+  useEffect(() => {
+    progress.stopAnimation();
+    progress.setValue(0);
+    scale.setValue(0.96);
+    const listener = progress.addListener(({value: amount}) => setDisplay(value * amount));
+    Animated.parallel([
+      Animated.timing(progress, {toValue: 1, duration: 520, easing: Easing.out(Easing.cubic), useNativeDriver: false}),
+      Animated.spring(scale, {toValue: 1, friction: 7, tension: 80, useNativeDriver: true})
+    ]).start();
+    return () => progress.removeListener(listener);
+  }, [progress, scale, value]);
+
+  return (
+    <Animated.Text
+      accessibilityLabel={money(value, symbol)}
+      style={[s.resultValue, loss && s.resultValueLoss, {transform: [{scale}]}]}
+    >
+      {money(display, symbol)}
+    </Animated.Text>
+  );
 }
 
 export function Home({st, setProject, go, pay}: {st: State; setProject: (project: Project) => void; go: (screen: Screen) => void; pay: () => void}) {
@@ -414,7 +443,7 @@ export function Calculator({st, setProject, finish, pay}: {st: State; setProject
       </View>
       <View style={[s.verdict, result.leftover <= 0 && s.verdictLoss, result.leftover > 0 && s.cardShadow]}>
         <Text style={s.small}>{tr(l, 'ui.left')}</Text>
-        <Text style={[s.resultValue, result.leftover <= 0 && s.resultValueLoss]}>{money(result.leftover, st.symbol)}</Text>
+        <AnimatedMoney value={result.leftover} symbol={st.symbol} loss={result.leftover <= 0} />
         <Text style={s.verdictText}>{verdict}</Text>
       </View>
       <View style={s.grid}>
