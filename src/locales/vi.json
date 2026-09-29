@@ -138,7 +138,10 @@
     "guidePlan": "Mở dự án đầu tiên",
     "privacyChoices": "Lựa chọn quyền riêng tư quảng cáo",
     "privacyChoicesUnavailable": "Khu vực hiện tại của bạn không yêu cầu lựa chọn quyền riêng tư quảng cáo.",
-    "privacyChoicesError": "Không thể mở lựa chọn quyền riêng tư quảng cáo."
+    "privacyChoicesError": "Không thể mở lựa chọn quyền riêng tư quảng cáo.",
+    "projectSummary": "Tóm tắt dự án",
+    "shareResult": "Chia sẻ kết quả",
+    "done": "Xong"
   },
   "project": {
     "first": "một dự án {hobby} đầu tiên",
