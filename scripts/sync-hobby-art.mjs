@@ -15,6 +15,13 @@ const files = [
   'sewing.PNG',
   'writing.PNG',
   'coding.PNG',
+  'cleaning.PNG',
+  'drinks.PNG',
+  'farmersmarket.PNG',
+  'guitar.PNG',
+  'handyman.PNG',
+  'hobbymakeoney.PNG',
+  'planting.PNG',
 ];
 
 const outDir = fileURLToPath(new URL('../assets/hobbies/', import.meta.url));
