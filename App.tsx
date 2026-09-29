@@ -219,23 +219,35 @@ function Main() {
       {screen !== 'home' && !['pick','history','settings'].includes(screen) ? <View style={s.back}><Pressable accessibilityRole="button" onPress={back} style={s.linkHit}><Text style={s.link}>{tr(l, 'ui.back')}</Text></Pressable></View> : null}
       {!st.premium ? <HobbyWorthBanner enabled={adsReady} /> : null}
       <View accessibilityRole="tablist" style={s.bottomNav}>
-        <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'home'}} onPress={() => goRoot('home')} style={s.bottomTab}>
+        <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'home'}} onPress={() => goRoot('home')} style={[s.bottomTab, screen === 'home' && s.bottomTabOn]}>
+          <Text accessible={false} style={[s.bottomTabIcon, screen === 'home' && s.bottomTabIconOn]}>⌂</Text>
           <Text style={[s.bottomTabText, screen === 'home' && s.bottomTabTextOn]}>{tr(l, 'ui.navHome')}</Text>
         </Pressable>
-        <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'pick'}} onPress={() => goRoot('pick')} style={s.bottomTab}>
+        <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'pick'}} onPress={() => goRoot('pick')} style={[s.bottomTab, screen === 'pick' && s.bottomTabOn]}>
+          <Text accessible={false} style={[s.bottomTabIcon, screen === 'pick' && s.bottomTabIconOn]}>◇</Text>
           <Text style={[s.bottomTabText, screen === 'pick' && s.bottomTabTextOn]}>{tr(l, 'ui.navExplore')}</Text>
         </Pressable>
-        <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'history'}} onPress={goHistory} style={s.bottomTab}>
+        <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'history'}} onPress={goHistory} style={[s.bottomTab, screen === 'history' && s.bottomTabOn]}>
+          <Text accessible={false} style={[s.bottomTabIcon, screen === 'history' && s.bottomTabIconOn]}>◷</Text>
           <Text style={[s.bottomTabText, screen === 'history' && s.bottomTabTextOn]}>{tr(l, 'ui.navHistory')}</Text>
         </Pressable>
-        <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'settings'}} onPress={() => goRoot('settings')} style={s.bottomTab}>
+        <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'settings'}} onPress={() => goRoot('settings')} style={[s.bottomTab, screen === 'settings' && s.bottomTabOn]}>
+          <Text accessible={false} style={[s.bottomTabIcon, screen === 'settings' && s.bottomTabIconOn]}>≡</Text>
           <Text style={[s.bottomTabText, screen === 'settings' && s.bottomTabTextOn]}>{tr(l, 'ui.navSettings')}</Text>
         </Pressable>
       </View>
       <Modal visible={payOpen} transparent animationType="slide" onRequestClose={() => setPayOpen(false)}><View style={s.shade}><View style={s.pay}>
         <Text accessibilityRole="header" style={s.h1}>{tr(l, 'ui.lifetime')}</Text>
         <Text style={s.body}>{tr(l, 'ui.lifetimeBody')}</Text>
-        <Text style={s.helper}>{tr(l, 'ui.oneTime')}</Text>
+        <View style={s.payPreview}>
+          <View style={s.payPreviewCard}><View style={s.payPreviewMark} /><Text style={s.payPreviewText}>{tr(l, 'ui.history')}</Text></View>
+          <View style={s.payPreviewCard}><View style={s.payPreviewMark} /><Text style={s.payPreviewText}>{tr(l, 'ui.compare')}</Text></View>
+          <View style={s.payPreviewCard}><View style={s.payPreviewMark} /><Text style={s.payPreviewText}>{tr(l, 'ui.scenarios')}</Text></View>
+        </View>
+        <View style={s.payTrust}>
+          <Text style={s.small}>{tr(l, 'ui.oneTime')}</Text>
+          <Text style={s.small}>{tr(l, 'ui.noAccount')}</Text>
+        </View>
         <View style={s.payBenefits}>
           <Text style={s.body}>✓ {tr(l, 'ui.unlockProjects')}</Text>
           <Text style={s.body}>✓ {tr(l, 'ui.unlockCompare')}</Text>
