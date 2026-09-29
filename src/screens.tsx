@@ -511,7 +511,7 @@ export function History({st, repeat, exportPdf, exportBackup}: {st: State; repea
           <View style={s.historyBody}>
             <Heading level={2}>{hobbyName(project.hobbyId, l)}</Heading>
             <View style={s.historyMetrics}>
-              <Text style={s.historyMetricStrong}>{money(result.leftover, st.symbol)}</Text>
+              <Text style={[s.historyMetricStrong, result.leftover <= 0 && s.historyMetricLoss]}>{money(result.leftover, st.symbol)}</Text>
               <Text style={s.small}>{tr(l, 'ui.hour')}: {money(result.perHour, st.symbol)}</Text>
             </View>
             <View style={s.historyActions}>
@@ -547,7 +547,7 @@ export function Compare({st}: {st: State}) {
           return <View key={project.id} style={[s.compareCard, s.cardShadow]}>
             <Image source={hobbyVisual(project.hobbyId)} resizeMode="cover" style={s.compareImage} />
             <Heading level={3}>{hobbyName(project.hobbyId, l)}</Heading>
-            <Text style={s.historyMetricStrong}>{money(result.leftover, st.symbol)}</Text>
+            <Text style={[s.historyMetricStrong, result.leftover <= 0 && s.historyMetricLoss]}>{money(result.leftover, st.symbol)}</Text>
             <Text style={s.small}>{tr(l, 'ui.cost')}: {money(result.cost, st.symbol)}</Text>
             <Text style={s.small}>{tr(l, 'ui.unit')}: {money(result.perUnit, st.symbol)}</Text>
             <Text style={s.small}>{tr(l, 'ui.hour')}: {money(result.perHour, st.symbol)}</Text>
