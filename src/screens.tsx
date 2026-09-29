@@ -21,10 +21,30 @@ const visualByHobby: Record<string, any> = {
   knitting: require('../assets/hobbies/knitting.png'),
   sewing: require('../assets/hobbies/sewing.png'),
   writing: require('../assets/hobbies/writing.png'),
-  coding: require('../assets/hobbies/coding.png')
+  'creative-writing': require('../assets/hobbies/writing.png'),
+  coding: require('../assets/hobbies/coding.png'),
+  guitar: require('../assets/hobbies/guitar.png'),
+  gardening: require('../assets/hobbies/planting.png'),
+  'indoor-plants': require('../assets/hobbies/planting.png'),
+  'herb-gardening': require('../assets/hobbies/planting.png'),
+  'home-cleaning': require('../assets/hobbies/cleaning.png'),
+  'handyman-skills': require('../assets/hobbies/handyman.png'),
+  'smoothie-and-juice-making': require('../assets/hobbies/drinks.png')
 };
 const fallbackVisual = require('../assets/hobbies/hero.png');
-const hobbyVisual = (id: string) => visualByHobby[id] || fallbackVisual;
+const categoryVisual: Record<string, any> = {
+  food: require('../assets/hobbies/cooking.png'),
+  craft: require('../assets/hobbies/knitting.png'),
+  art: require('../assets/hobbies/painting.png'),
+  home: require('../assets/hobbies/planting.png'),
+  digital: require('../assets/hobbies/coding.png'),
+  photo: require('../assets/hobbies/photography.png'),
+  resale: require('../assets/hobbies/farmersmarket.png')
+};
+const hobbyVisual = (id: string) => {
+  const hobby = hobbiesJSON.find((item: any) => item.id === id);
+  return visualByHobby[id] || categoryVisual[hobby?.category] || fallbackVisual;
+};
 import {firstProject, hobbyGuide, hobbyName, localeName, locales, tr} from './i18n';
 import {calc, scenarioCalc} from './math';
 import {Fun, Goal, QuizAnswers, Spend, Time, rankHobbies} from './quiz';
@@ -137,6 +157,13 @@ export function Home({st, setProject, go, pay}: {st: State; setProject: (project
           <Text style={s.heroWord}>HobbyWorth</Text>
         </View>
         <HeroHeading>{tr(l, 'ui.tagline')}</HeroHeading>
+        <View style={s.flowRow}>
+          <View style={s.flowStep}><Text style={s.flowNumber}>01</Text><Text style={s.flowText}>{tr(l, 'ui.pick')}</Text></View>
+          <View style={s.flowRule} />
+          <View style={s.flowStep}><Text style={s.flowNumber}>02</Text><Text style={s.flowText}>{tr(l, 'ui.make')}</Text></View>
+          <View style={s.flowRule} />
+          <View style={s.flowStep}><Text style={s.flowNumber}>03</Text><Text style={s.flowText}>{tr(l, 'ui.calculate')}</Text></View>
+        </View>
         <View style={s.card}>
           <Button text={tr(l, 'ui.quiz')} onPress={() => go('quiz')} />
           <LinkButton text={tr(l, 'ui.skip')} onPress={() => go('pick')} />
@@ -157,6 +184,8 @@ export function Home({st, setProject, go, pay}: {st: State; setProject: (project
   const next = done.findIndex((value) => !value);
   const complete = next < 0;
   const index = complete ? Math.max(0, project.steps.length - 1) : next;
+  const completedCount = done.filter(Boolean).length;
+  const activeProgress = project.steps.length ? completedCount / project.steps.length : 0;
   const toggle = () => {
     if (complete || !st.project) return;
     const steps = [...done];
@@ -168,7 +197,8 @@ export function Home({st, setProject, go, pay}: {st: State; setProject: (project
     <Page>
       <Text style={s.kicker}>{tr(l, 'ui.today')}</Text>
       <Heading>{hobbyName(st.project.hobbyId, l)}</Heading>
-      <View style={s.todayCard}>
+      <View style={[s.todayCard, s.cardShadow]}>
+        <View style={s.progressTrack}><View style={[s.progressFill, {width: `${Math.round(activeProgress * 100)}%`}]} /></View>
         <Text style={s.small}>{complete ? tr(l, 'ui.projectComplete') : tr(l, 'ui.stepOf', {current: index + 1, total: project.steps.length})}</Text>
         <Pressable accessibilityRole="checkbox" accessibilityState={{checked: complete}} onPress={toggle} style={s.todayRow}>
           <View style={[s.bigCheck, complete && s.checkOn]}><Text style={s.bigCheckText}>{complete ? '✓' : ''}</Text></View>
@@ -265,10 +295,13 @@ export function Quiz({st, choose}: {st: State; choose: (hobby: Hobby) => void}) 
       <Page>
         <Heading>{tr(l, 'ui.matches')}</Heading>
         {rankHobbies(hobbies, answers).map((hobby, index) => (
-          <Pressable accessibilityRole="button" key={hobby.id} onPress={() => choose(hobby)} style={({pressed}) => [s.card, pressed && s.outlinePressed]}>
-            <Text style={s.kicker}>{String(index + 1).padStart(2, '0')}</Text>
-            <Heading level={2}>{hobbyName(hobby.id, l)}</Heading>
-            <Text style={s.link}>{tr(l, 'ui.start')}</Text>
+          <Pressable accessibilityRole="button" key={hobby.id} onPress={() => choose(hobby)} style={({pressed}) => [s.resultHobbyCard, pressed && s.outlinePressed]}>
+            <Image source={hobbyVisual(hobby.id)} resizeMode="cover" style={s.visualCompact} />
+            <View style={s.resultHobbyBody}>
+              <Text style={s.kicker}>{String(index + 1).padStart(2, '0')}</Text>
+              <Heading level={2}>{hobbyName(hobby.id, l)}</Heading>
+              <Text style={s.link}>{tr(l, 'ui.start')}</Text>
+            </View>
           </Pressable>
         ))}
       </Page>
@@ -444,7 +477,21 @@ export function History({st, repeat, exportPdf, exportBackup}: {st: State; repea
       <Heading>{tr(l, 'ui.history')}</Heading>
       {st.history.length ? st.history.map((project) => {
         const result = calc(project.numbers, project.split);
-        return <View key={project.id} style={s.card}><Heading level={2}>{hobbyName(project.hobbyId, l)}</Heading><Text style={s.body}>{tr(l, 'ui.hour')}: {money(result.perHour, st.symbol)}</Text><LinkButton text={tr(l, 'ui.repeat')} onPress={() => repeat(project)} /><LinkButton text={tr(l, 'ui.exportPdf')} onPress={() => exportPdf(project)} /><LinkButton text={tr(l, 'ui.exportJson')} onPress={() => exportBackup(project)} /></View>;
+        return <View key={project.id} style={[s.historyCard, s.cardShadow]}>
+          <Image source={hobbyVisual(project.hobbyId)} resizeMode="cover" style={s.historyThumb} />
+          <View style={s.historyBody}>
+            <Heading level={2}>{hobbyName(project.hobbyId, l)}</Heading>
+            <View style={s.historyMetrics}>
+              <Text style={s.historyMetricStrong}>{money(result.leftover, st.symbol)}</Text>
+              <Text style={s.small}>{tr(l, 'ui.hour')}: {money(result.perHour, st.symbol)}</Text>
+            </View>
+            <View style={s.historyActions}>
+              <LinkButton text={tr(l, 'ui.repeat')} onPress={() => repeat(project)} />
+              <LinkButton text={tr(l, 'ui.exportPdf')} onPress={() => exportPdf(project)} />
+              <LinkButton text={tr(l, 'ui.exportJson')} onPress={() => exportBackup(project)} />
+            </View>
+          </View>
+        </View>;
       }) : <Text style={s.body}>{tr(l, 'ui.emptyHistory')}</Text>}
     </Page>
   );
@@ -468,7 +515,14 @@ export function Compare({st}: {st: State}) {
       <View style={s.compareGrid}>
         {chosen.map((project) => {
           const result = calc(project.numbers, project.split);
-          return <View key={project.id} style={s.compareCard}><Heading level={3}>{hobbyName(project.hobbyId, l)}</Heading><Text style={s.body}>{tr(l, 'ui.cost')}: {money(result.cost, st.symbol)}</Text><Text style={s.body}>{tr(l, 'ui.unit')}: {money(result.perUnit, st.symbol)}</Text><Text style={s.body}>{tr(l, 'ui.hour')}: {money(result.perHour, st.symbol)}</Text></View>;
+          return <View key={project.id} style={[s.compareCard, s.cardShadow]}>
+            <Image source={hobbyVisual(project.hobbyId)} resizeMode="cover" style={s.compareImage} />
+            <Heading level={3}>{hobbyName(project.hobbyId, l)}</Heading>
+            <Text style={s.historyMetricStrong}>{money(result.leftover, st.symbol)}</Text>
+            <Text style={s.small}>{tr(l, 'ui.cost')}: {money(result.cost, st.symbol)}</Text>
+            <Text style={s.small}>{tr(l, 'ui.unit')}: {money(result.perUnit, st.symbol)}</Text>
+            <Text style={s.small}>{tr(l, 'ui.hour')}: {money(result.perHour, st.symbol)}</Text>
+          </View>;
         })}
       </View>
     </Page>
