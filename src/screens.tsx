@@ -305,6 +305,8 @@ export function First({st, setProject, go}: {st: State; setProject: (project: Pr
   const project = firstProject(l, p.hobbyId);
   const guide = hobbyGuide(l, p.hobbyId);
   const done = project.steps.map((_, index) => p.steps[index] || false);
+  const completedSteps = done.filter(Boolean).length;
+  const progress = project.steps.length ? completedSteps / project.steps.length : 0;
   return (
     <Page>
       <View style={s.projectHero}><View style={s.heroCircleLarge} /><View style={s.heroCircleSmall} /><Image source={hobbyVisual(p.hobbyId)} resizeMode="cover" style={s.visualHero} /><View style={s.visualOverlay} /><Text style={s.projectHeroText}>{name}</Text></View>
@@ -331,6 +333,8 @@ export function First({st, setProject, go}: {st: State; setProject: (project: Pr
       </View>
       <View style={s.card}>
         <Heading level={3}>{tr(l, 'ui.steps')}</Heading>
+        <Text style={s.small}>{completedSteps} / {project.steps.length}</Text>
+        <View style={s.progressTrack}><View style={[s.progressFill, {width: `${Math.round(progress * 100)}%`}]} /></View>
         {project.steps.map((item, index) => (
           <Pressable
             accessibilityRole="checkbox"
@@ -375,7 +379,7 @@ export function Calculator({st, setProject, finish, pay}: {st: State; setProject
         <Field label={tr(l, 'ui.yield')} value={p.numbers.yield} onChange={(value) => setNumber('yield', value)} />
         <Field label={tr(l, 'ui.price')} value={p.numbers.price} onChange={(value) => setNumber('price', value)} symbol={st.symbol} />
       </View>
-      <View style={s.verdict}>
+      <View style={[s.verdict, result.leftover > 0 && s.cardShadow]}>
         <Text style={s.small}>{tr(l, 'ui.left')}</Text>
         <Text style={s.resultValue}>{money(result.leftover, st.symbol)}</Text>
         <Text style={s.verdictText}>{verdict}</Text>
