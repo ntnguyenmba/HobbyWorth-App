@@ -258,9 +258,9 @@ function Main() {
               return <>
                 <Text style={s.kicker}>{tr(l, 'ui.projectSummary')}</Text>
                 <Text accessibilityRole="header" style={s.h1}>{hobbyName(st.project.hobbyId, l)}</Text>
-                <View style={[s.completionCard, s.cardShadow]}>
+                <View style={[s.completionCard, result.leftover <= 0 && s.completionLoss, s.cardShadow]}>
                   <Text style={s.small}>{tr(l, 'ui.left')}</Text>
-                  <Text style={s.completionValue}>{money(result.leftover, st.symbol)}</Text>
+                  <Text style={[s.completionValue, result.leftover <= 0 && s.completionValueLoss]}>{money(result.leftover, st.symbol)}</Text>
                   <View style={s.completionMetrics}>
                     <View style={s.completionMetric}><Text style={s.small}>{tr(l, 'ui.hour')}</Text><Text style={s.metricValue}>{money(result.perHour, st.symbol)}</Text></View>
                     <View style={s.completionMetric}><Text style={s.small}>{tr(l, 'ui.breakEven')}</Text><Text style={s.metricValue}>{result.breakEven}</Text></View>
