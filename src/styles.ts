@@ -106,6 +106,7 @@ export const s = StyleSheet.create({
   historyBody: {flex: 1, gap: 7},
   historyMetrics: {gap: 2},
   historyMetricStrong: {color: C.profit, fontFamily: 'Nunito_800ExtraBold', fontSize: 22, lineHeight: 28},
+  historyMetricLoss: {color: C.coral},
   historyActions: {flexDirection: 'row', flexWrap: 'wrap', columnGap: 14, rowGap: 2},
   compareImage: {width: '100%', height: 88, borderRadius: 12, backgroundColor: C.pale},
   compareGrid: {flexDirection: 'row', gap: 10, flexWrap: 'wrap'},
