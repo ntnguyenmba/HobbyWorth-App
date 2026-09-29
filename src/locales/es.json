@@ -138,7 +138,10 @@
     "guidePlan": "Abrir primer proyecto",
     "privacyChoices": "Opciones de privacidad de anuncios",
     "privacyChoicesUnavailable": "Las opciones de privacidad de anuncios no son necesarias en tu región actual.",
-    "privacyChoicesError": "No se pudieron abrir las opciones de privacidad de anuncios."
+    "privacyChoicesError": "No se pudieron abrir las opciones de privacidad de anuncios.",
+    "projectSummary": "Resumen del proyecto",
+    "shareResult": "Compartir resultado",
+    "done": "Listo"
   },
   "project": {
     "first": "un primer proyecto de {hobby}",
