@@ -1,18 +1,19 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {AccessibilityInfo, Alert, Modal, Platform, Pressable, Text, View} from 'react-native';
+import {AccessibilityInfo, Alert, Modal, Platform, Pressable, Share, Text, View} from 'react-native';
 import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import {StatusBar} from 'expo-status-bar';
 import {useFonts, Nunito_400Regular, Nunito_700Bold, Nunito_800ExtraBold} from '@expo-google-fonts/nunito';
 import {useIAP} from 'expo-iap';
 import Constants from 'expo-constants';
-import {deviceLocale, tr} from './src/i18n';
+import {deviceLocale, hobbyName, tr} from './src/i18n';
 import {deletePhotos, load, save} from './src/storage';
 import {Hobby, Project, State} from './src/types';
 import {s} from './src/styles';
 import {useColors} from './src/theme';
 import {exportProjectBackup, exportProjectPdf} from './src/export';
+import {calc} from './src/math';
 import {HobbyWorthBanner, prepareMobileAds, showPrivacyChoices} from './src/ads';
-import {Home, Quiz, Pick, First, Calculator, History, Compare, Settings, blank, Screen} from './src/screens';
+import {Home, Quiz, Pick, First, Calculator, History, Compare, Settings, blank, money, Screen} from './src/screens';
 
 const CURRENT_PRODUCT = 'com.everittventures.hobbyworth.lifetime';
 const LEGACY_ANDROID_PRODUCT = 'hobbyworth_lifetime';
@@ -47,6 +48,7 @@ function Main() {
   const [ready, setReady] = useState(false);
   const [stack, setStack] = useState<Screen[]>(['home']);
   const [payOpen, setPayOpen] = useState(false);
+  const [completionOpen, setCompletionOpen] = useState(false);
   const [purchasing, setPurchasing] = useState(false);
   const [adsReady, setAdsReady] = useState(false);
   const colors = useColors();
@@ -136,7 +138,12 @@ function Main() {
   const setProject = (project: Project) => setSt((current) => ({...current, project}));
   const finish = () => {
     if (!st.project) return;
+    setCompletionOpen(true);
+  };
+  const finalizeFinish = () => {
+    if (!st.project) return;
     const finished = {...st.project, completedAt: new Date().toISOString()};
+    setCompletionOpen(false);
     if (st.premium) {
       setSt((current) => ({...current, project: null, history: [finished, ...current.history]}));
       setStack(['home', 'history']);
@@ -144,6 +151,13 @@ function Main() {
       setSt((current) => ({...current, project: finished}));
       setStack(['home']);
     }
+  };
+  const shareResult = async () => {
+    if (!st.project) return;
+    const result = calc(st.project.numbers, st.premium ? st.project.split : undefined);
+    await Share.share({
+      message: `${hobbyName(st.project.hobbyId, l)} · ${tr(l, 'ui.left')}: ${money(result.leftover, st.symbol)} · ${tr(l, 'ui.hour')}: ${money(result.perHour, st.symbol)} · HobbyWorth`
+    });
   };
   const repeat = (project: Project) => {
     setSt((current) => ({...current, project: {...project, id: `${Date.now()}`, createdAt: new Date().toISOString(), completedAt: undefined, steps: [], photos: []}}));
@@ -236,6 +250,30 @@ function Main() {
           <Text style={[s.bottomTabText, screen === 'settings' && s.bottomTabTextOn]}>{tr(l, 'ui.navSettings')}</Text>
         </Pressable>
       </View>
+      <Modal visible={completionOpen} transparent animationType="fade" onRequestClose={() => setCompletionOpen(false)}>
+        <View style={s.shade}>
+          <View style={s.completionSheet}>
+            {st.project ? (() => {
+              const result = calc(st.project.numbers, st.premium ? st.project.split : undefined);
+              return <>
+                <Text style={s.kicker}>{tr(l, 'ui.projectSummary')}</Text>
+                <Text accessibilityRole="header" style={s.h1}>{hobbyName(st.project.hobbyId, l)}</Text>
+                <View style={[s.completionCard, s.cardShadow]}>
+                  <Text style={s.small}>{tr(l, 'ui.left')}</Text>
+                  <Text style={s.completionValue}>{money(result.leftover, st.symbol)}</Text>
+                  <View style={s.completionMetrics}>
+                    <View style={s.completionMetric}><Text style={s.small}>{tr(l, 'ui.hour')}</Text><Text style={s.metricValue}>{money(result.perHour, st.symbol)}</Text></View>
+                    <View style={s.completionMetric}><Text style={s.small}>{tr(l, 'ui.breakEven')}</Text><Text style={s.metricValue}>{result.breakEven}</Text></View>
+                  </View>
+                  <Text style={s.completionBrand}>HobbyWorth</Text>
+                </View>
+                <Pressable accessibilityRole="button" onPress={shareResult} style={({pressed}) => [s.btn, pressed && s.btnPressed]}><Text style={s.btnText}>{tr(l, 'ui.shareResult')}</Text></Pressable>
+                <Pressable accessibilityRole="button" onPress={finalizeFinish} style={s.linkHit}><Text style={s.link}>{tr(l, 'ui.done')}</Text></Pressable>
+              </>;
+            })() : null}
+          </View>
+        </View>
+      </Modal>
       <Modal visible={payOpen} transparent animationType="slide" onRequestClose={() => setPayOpen(false)}><View style={s.shade}><View style={s.pay}>
         <Text accessibilityRole="header" style={s.h1}>{tr(l, 'ui.lifetime')}</Text>
         <Text style={s.body}>{tr(l, 'ui.lifetimeBody')}</Text>
