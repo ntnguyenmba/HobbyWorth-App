@@ -155,7 +155,21 @@
     "navProjects": "Projects",
     "verdictProfit": "You cleared {left} after costs. That is about {hour} for every hour of your time.",
     "verdictEven": "This project covered its entered costs exactly.",
-    "verdictLoss": "This project is {left} short of covering the costs you entered."
+    "verdictLoss": "This project is {left} short of covering the costs you entered.",
+    "logBatchStep": "Log the batch",
+    "priceIt": "Price it",
+    "continueToPrice": "Next: price it",
+    "viewPhoto": "View photo",
+    "closePhoto": "Close photo",
+    "lockedPreview": "Lifetime preview",
+    "detailedCostsPreview": "Detailed costs and price scenarios",
+    "unlockDetailedCosts": "Unlock detailed materials, packaging, fees, and side-by-side price scenarios.",
+    "editBatch": "Edit batch details",
+    "saveHistory": "Save to history",
+    "doAnotherBatch": "Do another batch",
+    "tryDifferentProject": "Try a different first project",
+    "saveCompareTeaser": "Save this project and compare future batches",
+    "lockedHistoryPreview": "History and compare are included with Lifetime."
   },
   "project": {
     "first": "one finished {hobby} project",
