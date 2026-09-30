@@ -290,7 +290,7 @@ function Main() {
                   <Text style={s.body}>{tr(l, 'ui.lockedHistoryPreview')}</Text>
                   <Pressable accessibilityRole="button" onPress={() => { setCompletionOpen(false); setPayOpen(true); }} style={({pressed}) => [s.btn, s.outline, pressed && s.outlinePressed]}><Text style={[s.btnText, s.outlineText]}>{tr(l, 'ui.unlockShort')}</Text></Pressable>
                 </View>}
-                <Pressable accessibilityRole="button" onPress={repeatCurrent} style={s.linkHit}><Text style={s.link}>{tr(l, 'ui.doAnotherBatch')}</Text></Pressable>
+                <Pressable accessibilityRole="button" onPress={() => st.premium ? repeatCurrent() : (setCompletionOpen(false), setPayOpen(true))} style={s.linkHit}><Text style={s.link}>{tr(l, 'ui.doAnotherBatch')}</Text></Pressable>
                 <Pressable accessibilityRole="button" onPress={tryDifferentProject} style={s.linkHit}><Text style={s.link}>{tr(l, 'ui.tryDifferentProject')}</Text></Pressable>
                 {!st.premium ? <Pressable accessibilityRole="button" onPress={finalizeFinish} style={s.linkHit}><Text style={s.link}>{tr(l, 'ui.done')}</Text></Pressable> : null}
               </>;
