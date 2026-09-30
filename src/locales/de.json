@@ -141,7 +141,21 @@
     "privacyChoicesError": "Die Datenschutzoptionen für Werbung konnten nicht geöffnet werden.",
     "projectSummary": "Projektübersicht",
     "shareResult": "Ergebnis teilen",
-    "done": "Fertig"
+    "done": "Fertig",
+    "todayPromise": "Mach ein Projekt. Sieh, was nach Kosten und Zeit übrig bleibt.",
+    "todayExample": "Backe ein Brot. Sieh, ob sich das Ergebnis nach Zutaten und Zeit für eine Wiederholung lohnt.",
+    "browseHobbies": "Hobbys entdecken",
+    "popularFirstProjects": "Beliebte erste Projekte",
+    "wantHistoryCompare": "Möchtest du Verlauf und direkten Vergleich?",
+    "logBatchBody": "Trage Ausgaben, Dauer, Menge und den Preis ein, den du verlangen würdest.",
+    "coverPhoto": "Titelbild",
+    "makeCover": "Als Titelbild",
+    "navToday": "Heute",
+    "navStart": "Starten",
+    "navProjects": "Projekte",
+    "verdictProfit": "Nach den Kosten bleiben {left}. Das sind etwa {hour} für jede Stunde deiner Zeit.",
+    "verdictEven": "Dieses Projekt deckt die eingegebenen Kosten genau.",
+    "verdictLoss": "Diesem Projekt fehlen {left}, um die eingegebenen Kosten zu decken."
   },
   "project": {
     "first": "ein erstes {hobby}-Projekt",
