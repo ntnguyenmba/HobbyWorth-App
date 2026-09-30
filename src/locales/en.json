@@ -141,7 +141,21 @@
     "privacyChoicesError": "Ad privacy choices could not be opened.",
     "projectSummary": "Project summary",
     "shareResult": "Share result",
-    "done": "Done"
+    "done": "Done",
+    "todayPromise": "Make one project. See what is left after cost and time.",
+    "todayExample": "Bake one loaf. See whether what is left after ingredients and time feels worth doing again.",
+    "browseHobbies": "Browse hobbies",
+    "popularFirstProjects": "Popular first projects",
+    "wantHistoryCompare": "Want history and side-by-side compare?",
+    "logBatchBody": "Add what you spent, how long it took, how many you made, and the price you would ask.",
+    "coverPhoto": "Cover photo",
+    "makeCover": "Make cover",
+    "navToday": "Today",
+    "navStart": "Start",
+    "navProjects": "Projects",
+    "verdictProfit": "You cleared {left} after costs. That is about {hour} for every hour of your time.",
+    "verdictEven": "This project covered its entered costs exactly.",
+    "verdictLoss": "This project is {left} short of covering the costs you entered."
   },
   "project": {
     "first": "one finished {hobby} project",
