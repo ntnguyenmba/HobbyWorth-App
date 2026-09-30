@@ -69,6 +69,7 @@ export const blank = (hobbyId: string): Project => ({
   split: {materials: '', packaging: '', fees: ''},
   scenarios: ['', '', ''],
   photos: [],
+  coverPhotoIndex: 0,
   note: ''
 });
 
@@ -183,19 +184,27 @@ export function Home({st, setProject, go, pay}: {st: State; setProject: (project
           <View style={s.visualOverlay} />
           <Text style={s.heroWord}>HobbyWorth</Text>
         </View>
-        <HeroHeading>{tr(l, 'ui.tagline')}</HeroHeading>
-        <View style={s.flowRow}>
-          <View style={s.flowStep}><Text style={s.flowNumber}>01</Text><Text style={s.flowText}>{tr(l, 'ui.pick')}</Text></View>
-          <View style={s.flowRule} />
-          <View style={s.flowStep}><Text style={s.flowNumber}>02</Text><Text style={s.flowText}>{tr(l, 'ui.make')}</Text></View>
-          <View style={s.flowRule} />
-          <View style={s.flowStep}><Text style={s.flowNumber}>03</Text><Text style={s.flowText}>{tr(l, 'ui.calculate')}</Text></View>
-        </View>
+        <HeroHeading>{tr(l, 'ui.todayPromise')}</HeroHeading>
+        <Text style={s.body}>{tr(l, 'ui.todayExample')}</Text>
         <View style={s.card}>
           <Button text={tr(l, 'ui.quiz')} onPress={() => go('quiz')} />
-          <LinkButton text={tr(l, 'ui.skip')} onPress={() => go('pick')} />
+          <LinkButton text={tr(l, 'ui.browseHobbies')} onPress={() => go('pick')} />
         </View>
-        {!st.premium ? <View style={s.pale}>
+        <Text style={s.kicker}>{tr(l, 'ui.popularFirstProjects')}</Text>
+        {['baking','photography','knitting'].map((id) => {
+          const hobby = hobbies.find((item) => item.id === id);
+          if (!hobby) return null;
+          const first = firstProject(l, id);
+          return <Pressable key={id} accessibilityRole="button" onPress={() => setProject(blank(id))} style={({pressed}) => [s.resultHobbyCard, pressed && s.outlinePressed]}>
+            <Image source={hobbyVisual(id)} resizeMode="cover" style={s.visualCompact} />
+            <View style={s.resultHobbyBody}><Heading level={3}>{hobbyName(id,l)}</Heading><Text style={s.body} numberOfLines={2}>{first.first}</Text></View>
+            <Text accessible={false} style={s.arrow}>›</Text>
+          </Pressable>;
+        })}
+        <View style={s.card}>
+          <LinkButton text={tr(l, 'ui.wantHistoryCompare')} onPress={pay} />
+        </View>
+        {!st.premium ? null : <View style={s.pale}>
           <Text style={s.kicker}>{tr(l, 'ui.unlockKicker')}</Text>
           <Heading level={3}>{tr(l, 'ui.lifetime')}</Heading>
           <Text style={s.body}>{tr(l, 'ui.unlockHomeBody')}</Text>
@@ -234,7 +243,7 @@ export function Home({st, setProject, go, pay}: {st: State; setProject: (project
       </View>
       <View style={s.pale}>
         <Heading level={3}>{tr(l, 'ui.write')}</Heading>
-        <Text style={s.body}>{`${tr(l, 'ui.cost')} · ${tr(l, 'ui.minutes')} · ${tr(l, 'ui.yield')} · ${tr(l, 'ui.price')}`}</Text>
+        <Text style={s.body}>{tr(l, 'ui.logBatchBody')}</Text>
         <Button text={tr(l, 'ui.logBatch')} onPress={() => go('calc')} />
       </View>
       <LinkButton text={tr(l, 'ui.viewFirstProject')} onPress={() => go('first')} />
@@ -295,7 +304,7 @@ export function Pick({st, choose}: {st: State; choose: (hobby: Hobby) => void}) 
           style={({pressed}) => [s.hobby, {backgroundColor: hobby.category === 'food' ? '#FFF0EC' : hobby.category === 'craft' ? '#F8F0E6' : hobby.category === 'art' ? '#F2EEF8' : hobby.category === 'digital' ? '#EDF9FC' : hobby.category === 'photo' ? '#EEF4F8' : hobby.category === 'home' ? '#F3F4EA' : '#FFFFFF'}, pressed && s.outlinePressed]}
         >
           <Image source={hobbyVisual(hobby.id)} resizeMode="cover" style={s.visualCompact} />
-          <Text style={[s.h3, {flex: 1}]}>{hobbyName(hobby.id, l)}</Text>
+          <View style={{flex: 1}}><Text style={s.h3}>{hobbyName(hobby.id, l)}</Text><Text style={s.small} numberOfLines={2}>{firstProject(l, hobby.id).first}</Text></View>
           <Text accessible={false} style={s.arrow}>›</Text>
         </Pressable>
       )) : <View style={s.card}><Heading level={3}>{tr(l, 'ui.noHobbyResults')}</Heading><Text style={s.body}>{tr(l, 'ui.tryAnotherSearch')}</Text></View>}
@@ -327,6 +336,7 @@ export function Quiz({st, choose}: {st: State; choose: (hobby: Hobby) => void}) 
             <View style={s.resultHobbyBody}>
               <Text style={s.kicker}>{String(index + 1).padStart(2, '0')}</Text>
               <Heading level={2}>{hobbyName(hobby.id, l)}</Heading>
+              <Text style={s.body} numberOfLines={2}>{firstProject(l, hobby.id).first}</Text>
               <Text style={s.link}>{tr(l, 'ui.start')}</Text>
             </View>
           </Pressable>
@@ -452,7 +462,7 @@ export function Calculator({st, setProject, finish, pay}: {st: State; setProject
       <Text style={s.helper}>{tr(l, 'ui.batchDisclaimer')}</Text>
       <View style={s.card}>
         <Heading level={3}>{tr(l, 'ui.photos')}</Heading>
-        <View style={s.photoRow}>{p.photos.map((uri) => <Image key={uri} source={{uri}} style={s.photo} accessibilityLabel={tr(l, 'ui.photos')} />)}</View>
+        <View style={s.photoRow}>{p.photos.map((uri, index) => <Pressable key={uri} accessibilityRole="button" accessibilityLabel={index === (p.coverPhotoIndex || 0) ? tr(l, 'ui.coverPhoto') : tr(l, 'ui.makeCover')} onPress={() => setProject({...p, coverPhotoIndex: index})}><Image source={{uri}} style={[s.photo, index === (p.coverPhotoIndex || 0) && s.photoCover]} /><Text style={s.photoLabel}>{index === (p.coverPhotoIndex || 0) ? tr(l, 'ui.coverPhoto') : tr(l, 'ui.makeCover')}</Text></Pressable>)}</View>
         <LinkButton text={tr(l, 'ui.photos')} onPress={addPhotos} />
       </View>
       {st.premium ? (
@@ -505,7 +515,7 @@ export function History({st, repeat, exportPdf, exportBackup}: {st: State; repea
       {st.history.length ? st.history.map((project) => {
         const result = calc(project.numbers, project.split);
         return <View key={project.id} style={[s.historyCard, s.cardShadow]}>
-          <Image source={hobbyVisual(project.hobbyId)} resizeMode="cover" style={s.historyThumb} />
+          <Image source={project.photos?.length ? {uri: project.photos[Math.min(project.coverPhotoIndex || 0, project.photos.length - 1)]} : hobbyVisual(project.hobbyId)} resizeMode="cover" style={s.historyThumb} />
           <View style={s.historyBody}>
             <Heading level={2}>{hobbyName(project.hobbyId, l)}</Heading>
             <View style={s.historyMetrics}>
