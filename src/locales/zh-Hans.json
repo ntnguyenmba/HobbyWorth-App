@@ -155,7 +155,21 @@
     "navProjects": "项目",
     "verdictProfit": "扣除成本后还剩 {left}，相当于你的时间每小时约 {hour}。",
     "verdictEven": "这个项目刚好覆盖你输入的成本。",
-    "verdictLoss": "这个项目还差 {left} 才能覆盖你输入的成本。"
+    "verdictLoss": "这个项目还差 {left} 才能覆盖你输入的成本。",
+    "logBatchStep": "记录这一批",
+    "priceIt": "定价",
+    "continueToPrice": "下一步：定价",
+    "viewPhoto": "查看照片",
+    "closePhoto": "关闭照片",
+    "lockedPreview": "Lifetime 预览",
+    "detailedCostsPreview": "详细成本和价格方案",
+    "unlockDetailedCosts": "解锁材料、包装、费用和并排价格方案。",
+    "editBatch": "编辑批次数据",
+    "saveHistory": "保存到历史",
+    "doAnotherBatch": "再做一批",
+    "tryDifferentProject": "尝试另一个入门项目",
+    "saveCompareTeaser": "保存这个项目并与未来批次比较",
+    "lockedHistoryPreview": "Lifetime 包含历史和比较功能。"
   },
   "project": {
     "first": "一个 {hobby} 入门项目",
