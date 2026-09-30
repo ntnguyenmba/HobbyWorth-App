@@ -125,6 +125,7 @@ export const s = StyleSheet.create({
   compareGrid: {flexDirection: 'row', gap: 10, flexWrap: 'wrap'},
   compareCard: {flexGrow: 1, flexBasis: '46%', minWidth: 220, backgroundColor: C.white, borderWidth: 1, borderColor: C.line, borderRadius: 16, padding: 16, gap: 10},
   sectionGap: {height: 8},
+  categorySection: {gap: 10, paddingTop: 4},
   payBenefits: {gap: 7, paddingVertical: 4},
   visual: {width: '100%', height: 140, borderRadius: 16, backgroundColor: C.pale},
   visualCompact: {width: 58, height: 58, borderRadius: 12, backgroundColor: C.pale},
