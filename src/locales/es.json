@@ -141,7 +141,21 @@
     "privacyChoicesError": "No se pudieron abrir las opciones de privacidad de anuncios.",
     "projectSummary": "Resumen del proyecto",
     "shareResult": "Compartir resultado",
-    "done": "Listo"
+    "done": "Listo",
+    "todayPromise": "Haz un proyecto. Mira qué queda después del costo y el tiempo.",
+    "todayExample": "Hornea un pan. Mira si lo que queda después de ingredientes y tiempo merece la pena repetirlo.",
+    "browseHobbies": "Explorar hobbies",
+    "popularFirstProjects": "Primeros proyectos populares",
+    "wantHistoryCompare": "¿Quieres historial y comparación lado a lado?",
+    "logBatchBody": "Añade lo que gastaste, cuánto tardaste, cuántos hiciste y el precio que pedirías.",
+    "coverPhoto": "Foto de portada",
+    "makeCover": "Usar de portada",
+    "navToday": "Hoy",
+    "navStart": "Empezar",
+    "navProjects": "Proyectos",
+    "verdictProfit": "Te quedaron {left} después de los costos. Son unos {hour} por cada hora de tu tiempo.",
+    "verdictEven": "Este proyecto cubrió exactamente los costos que ingresaste.",
+    "verdictLoss": "A este proyecto le faltan {left} para cubrir los costos que ingresaste."
   },
   "project": {
     "first": "un primer proyecto de {hobby}",
