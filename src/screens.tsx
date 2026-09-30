@@ -5,6 +5,7 @@ import {
   Easing,
   Image,
   Linking,
+  Modal,
   Pressable,
   ScrollView,
   Text,
@@ -421,6 +422,8 @@ export function First({st, setProject, go}: {st: State; setProject: (project: Pr
 export function Calculator({st, setProject, finish, pay}: {st: State; setProject: (project: Project) => void; finish: () => void; pay: () => void}) {
   const p = st.project!;
   const l = st.locale;
+  const [stage, setStage] = useState<'log' | 'price'>('log');
+  const [viewer, setViewer] = useState<string | null>(null);
   const result = calc(p.numbers, st.premium ? p.split : undefined);
   const verdict = result.leftover <= 0 ? tr(l, 'ui.notYet') : result.breakEven <= Math.max(1, result.yieldCount) ? tr(l, 'ui.yesIf', {n: result.breakEven}) : tr(l, 'ui.maybe');
   const setNumber = (key: keyof Project['numbers'], value: string) => setProject({...p, numbers: {...p.numbers, [key]: value}});
@@ -431,36 +434,40 @@ export function Calculator({st, setProject, finish, pay}: {st: State; setProject
     if (response.canceled) return;
     const saved: string[] = [];
     for (const asset of response.assets) saved.push(await keepPhoto(asset.uri, p.id));
-    setProject({...p, photos: [...p.photos, ...saved].slice(0, 5)});
+    const photos = [...p.photos, ...saved].slice(0, 5);
+    setProject({...p, photos, coverPhotoIndex: Math.min(p.coverPhotoIndex || 0, Math.max(0, photos.length - 1))});
   };
 
   return (
     <Page>
+      <Text style={s.kicker}>{stage === 'log' ? tr(l, 'ui.logBatchStep') : tr(l, 'ui.priceIt')}</Text>
       <Heading>{hobbyName(p.hobbyId, l)}</Heading>
-      <View style={s.grid}>
-        <Field label={tr(l, 'ui.cost')} value={p.numbers.cost} onChange={(value) => setNumber('cost', value)} symbol={st.symbol} />
-        <Field label={tr(l, 'ui.minutes')} value={p.numbers.minutes} onChange={(value) => setNumber('minutes', value)} />
-        <Field label={tr(l, 'ui.yield')} value={p.numbers.yield} onChange={(value) => setNumber('yield', value)} />
-        <Field label={tr(l, 'ui.price')} value={p.numbers.price} onChange={(value) => setNumber('price', value)} symbol={st.symbol} />
-      </View>
-      <View style={[s.verdict, result.leftover <= 0 && s.verdictLoss, result.leftover > 0 && s.cardShadow]}>
-        <Text style={s.small}>{tr(l, 'ui.left')}</Text>
-        <AnimatedMoney value={result.leftover} symbol={st.symbol} loss={result.leftover <= 0} />
-        <Text style={s.verdictText}>{verdict}</Text>
-      </View>
-      <View style={s.grid}>
-        <Metric label={tr(l, 'ui.unit')} value={money(result.perUnit, st.symbol)} />
-        <Metric label={tr(l, 'ui.hour')} value={money(result.perHour, st.symbol)} />
-        <Metric label={tr(l, 'ui.breakEven')} value={String(result.breakEven)} />
-      </View>
-      <Text style={s.helper}>{tr(l, 'ui.batchDisclaimer')}</Text>
-      <View style={s.card}>
-        <Heading level={3}>{tr(l, 'ui.photos')}</Heading>
-        <View style={s.photoRow}>{p.photos.map((uri, index) => <Pressable key={uri} accessibilityRole="button" accessibilityLabel={index === (p.coverPhotoIndex || 0) ? tr(l, 'ui.coverPhoto') : tr(l, 'ui.makeCover')} onPress={() => setProject({...p, coverPhotoIndex: index})}><Image source={{uri}} style={[s.photo, index === (p.coverPhotoIndex || 0) && s.photoCover]} /><Text style={s.photoLabel}>{index === (p.coverPhotoIndex || 0) ? tr(l, 'ui.coverPhoto') : tr(l, 'ui.makeCover')}</Text></Pressable>)}</View>
-        <LinkButton text={tr(l, 'ui.photos')} onPress={addPhotos} />
-      </View>
-      {st.premium ? (
-        <>
+      {stage === 'log' ? <>
+        <View style={s.grid}>
+          <Field label={tr(l, 'ui.cost')} value={p.numbers.cost} onChange={(value) => setNumber('cost', value)} symbol={st.symbol} />
+          <Field label={tr(l, 'ui.minutes')} value={p.numbers.minutes} onChange={(value) => setNumber('minutes', value)} />
+          <Field label={tr(l, 'ui.yield')} value={p.numbers.yield} onChange={(value) => setNumber('yield', value)} />
+        </View>
+        <View style={s.card}>
+          <Heading level={3}>{tr(l, 'ui.photos')}</Heading>
+          <View style={s.photoRow}>{p.photos.map((uri, index) => <View key={uri}>
+            <Pressable accessibilityRole="button" accessibilityLabel={tr(l, 'ui.viewPhoto')} onPress={() => setViewer(uri)}>
+              <Image source={{uri}} style={[s.photo, index === (p.coverPhotoIndex || 0) && s.photoCover]} />
+            </Pressable>
+            <Pressable accessibilityRole="button" onPress={() => setProject({...p, coverPhotoIndex: index})} style={s.photoAction}>
+              <Text style={s.photoLabel}>{index === (p.coverPhotoIndex || 0) ? tr(l, 'ui.coverPhoto') : tr(l, 'ui.makeCover')}</Text>
+            </Pressable>
+          </View>)}</View>
+          <LinkButton text={tr(l, 'ui.photos')} onPress={addPhotos} />
+        </View>
+        <TextInput accessibilityLabel={tr(l, 'ui.notePlaceholder')} multiline onChangeText={(note) => setProject({...p, note})} placeholder={tr(l, 'ui.notePlaceholder')} placeholderTextColor={C.muted} style={s.note} value={p.note} />
+        <Button text={tr(l, 'ui.continueToPrice')} onPress={() => setStage('price')} />
+      </> : <>
+        <View style={s.card}>
+          <Heading level={3}>{tr(l, 'ui.priceIt')}</Heading>
+          <Field label={tr(l, 'ui.price')} value={p.numbers.price} onChange={(value) => setNumber('price', value)} symbol={st.symbol} />
+        </View>
+        {st.premium ? <>
           <View style={s.pale}>
             <Heading level={3}>{tr(l, 'ui.costSplit')}</Heading>
             <View style={s.grid}>
@@ -473,34 +480,43 @@ export function Calculator({st, setProject, finish, pay}: {st: State; setProject
             <Heading level={3}>{tr(l, 'ui.scenarios')}</Heading>
             {p.scenarios.map((value, index) => {
               const scenario = scenarioCalc(p.numbers, value, p.split);
-              return (
-                <View key={index} style={s.scenario}>
-                  <Field label={String(index + 1)} value={value} onChange={(next) => { const scenarios = [...p.scenarios]; scenarios[index] = next; setProject({...p, scenarios}); }} symbol={st.symbol} />
-                  {value ? <View style={s.grid}><Metric label={tr(l, 'ui.unit')} value={money(scenario.perUnit, st.symbol)} /><Metric label={tr(l, 'ui.hour')} value={money(scenario.perHour, st.symbol)} /></View> : null}
-                </View>
-              );
+              return <View key={index} style={s.scenario}>
+                <Field label={String(index + 1)} value={value} onChange={(next) => { const scenarios = [...p.scenarios]; scenarios[index] = next; setProject({...p, scenarios}); }} symbol={st.symbol} />
+                {value ? <View style={s.grid}><Metric label={tr(l, 'ui.unit')} value={money(scenario.perUnit, st.symbol)} /><Metric label={tr(l, 'ui.hour')} value={money(scenario.perHour, st.symbol)} /></View> : null}
+              </View>;
             })}
           </View>
-        </>
-      ) : (
-        <View style={s.pale}>
-          <Text style={s.kicker}>{tr(l, 'ui.unlockKicker')}</Text>
-          <Heading level={3}>{tr(l, 'ui.lifetime')}</Heading>
-          <Text style={s.body}>{tr(l, 'ui.lifetimeBody')}</Text>
-          <Text style={s.body}>✓ {tr(l, 'ui.unlockProjects')}</Text>
-          <Text style={s.body}>✓ {tr(l, 'ui.unlockCompare')}</Text>
-          <Text style={s.body}>✓ {tr(l, 'ui.unlockScenarios')}</Text>
-          <Text style={s.body}>✓ {tr(l, 'ui.unlockExport')}</Text>
-          <Text style={s.body}>✓ {tr(l, 'ui.unlockNoAds')}</Text>
-          <Button text={tr(l, 'ui.buy')} onPress={pay} />
+        </> : <View style={s.lockedPreview}>
+          <Text style={s.kicker}>{tr(l, 'ui.lockedPreview')}</Text>
+          <Heading level={3}>{tr(l, 'ui.detailedCostsPreview')}</Heading>
+          <View style={s.previewBars}><View style={s.previewBarWide} /><View style={s.previewBar} /><View style={s.previewBarShort} /></View>
+          <Text style={s.body}>{tr(l, 'ui.unlockDetailedCosts')}</Text>
+          <Button text={tr(l, 'ui.unlockShort')} onPress={pay} outline />
+        </View>}
+        <View style={[s.verdict, result.leftover <= 0 && s.verdictLoss, result.leftover > 0 && s.cardShadow]}>
+          <Text style={s.small}>{tr(l, 'ui.left')}</Text>
+          <AnimatedMoney value={result.leftover} symbol={st.symbol} loss={result.leftover <= 0} />
+          <Text style={s.verdictText}>{verdict}</Text>
+          <Text style={s.body}>{result.leftover > 0 ? tr(l, 'ui.verdictProfit', {left: money(result.leftover, st.symbol), hour: money(result.perHour, st.symbol)}) : result.leftover === 0 ? tr(l, 'ui.verdictEven') : tr(l, 'ui.verdictLoss', {left: money(Math.abs(result.leftover), st.symbol)})}</Text>
         </View>
-      )}
-      <TextInput accessibilityLabel={tr(l, 'ui.notePlaceholder')} multiline onChangeText={(note) => setProject({...p, note})} placeholder={tr(l, 'ui.notePlaceholder')} placeholderTextColor={C.muted} style={s.note} value={p.note} />
-      <Button text={tr(l, 'ui.finish')} onPress={finish} />
+        <View style={s.grid}>
+          <Metric label={tr(l, 'ui.unit')} value={money(result.perUnit, st.symbol)} />
+          <Metric label={tr(l, 'ui.hour')} value={money(result.perHour, st.symbol)} />
+          <Metric label={tr(l, 'ui.breakEven')} value={String(result.breakEven)} />
+        </View>
+        <Text style={s.helper}>{tr(l, 'ui.batchDisclaimer')}</Text>
+        <Button text={tr(l, 'ui.finish')} onPress={finish} />
+        <LinkButton text={tr(l, 'ui.editBatch')} onPress={() => setStage('log')} />
+      </>}
+      <Modal visible={Boolean(viewer)} transparent animationType="fade" onRequestClose={() => setViewer(null)}>
+        <View style={s.photoViewerShade}>
+          <Pressable accessibilityRole="button" accessibilityLabel={tr(l, 'ui.closePhoto')} onPress={() => setViewer(null)} style={s.photoViewerClose}><Text style={s.photoViewerCloseText}>×</Text></Pressable>
+          {viewer ? <Image source={{uri: viewer}} resizeMode="contain" style={s.photoViewerImage} /> : null}
+        </View>
+      </Modal>
     </Page>
   );
 }
-
 export function History({st, repeat, exportPdf, exportBackup}: {st: State; repeat: (project: Project) => void; exportPdf: (project: Project) => void; exportBackup: (project: Project) => void}) {
   const l = st.locale;
   return (
@@ -547,7 +563,7 @@ export function Compare({st}: {st: State}) {
         {chosen.map((project) => {
           const result = calc(project.numbers, project.split);
           return <View key={project.id} style={[s.compareCard, s.cardShadow]}>
-            <Image source={hobbyVisual(project.hobbyId)} resizeMode="cover" style={s.compareImage} />
+            <Image source={project.photos?.length ? {uri: project.photos[Math.min(project.coverPhotoIndex || 0, project.photos.length - 1)]} : hobbyVisual(project.hobbyId)} resizeMode="cover" style={s.compareImage} />
             <Heading level={3}>{hobbyName(project.hobbyId, l)}</Heading>
             <Text style={[s.historyMetricStrong, result.leftover <= 0 && s.historyMetricLoss]}>{money(result.leftover, st.symbol)}</Text>
             <Text style={s.small}>{tr(l, 'ui.cost')}: {money(result.cost, st.symbol)}</Text>
