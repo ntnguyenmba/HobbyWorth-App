@@ -169,7 +169,10 @@
     "doAnotherBatch": "Refaire un lot",
     "tryDifferentProject": "Essayer un autre premier projet",
     "saveCompareTeaser": "Enregistrez ce projet et comparez les prochains lots",
-    "lockedHistoryPreview": "L’historique et la comparaison sont inclus avec Lifetime."
+    "lockedHistoryPreview": "L’historique et la comparaison sont inclus avec Lifetime.",
+    "matchReasonSell": "Bon choix pour tester si ce que vous fabriquez pourrait se vendre.",
+    "matchReasonRepeat": "Bon choix si vous cherchez quelque chose que vous pouvez répéter.",
+    "matchReasonFinish": "Bon choix pour terminer un premier projet sans trop compliquer les choses."
   },
   "project": {
     "first": "un premier projet de {hobby}",
