@@ -204,12 +204,6 @@ export function Home({st, setProject, go, pay}: {st: State; setProject: (project
         <View style={s.card}>
           <LinkButton text={tr(l, 'ui.wantHistoryCompare')} onPress={pay} />
         </View>
-        {!st.premium ? null : <View style={s.pale}>
-          <Text style={s.kicker}>{tr(l, 'ui.unlockKicker')}</Text>
-          <Heading level={3}>{tr(l, 'ui.lifetime')}</Heading>
-          <Text style={s.body}>{tr(l, 'ui.unlockHomeBody')}</Text>
-          <Button text={tr(l, 'ui.unlockShort')} onPress={pay} />
-        </View> : null}
         <Text style={s.helper}>{tr(l, 'ui.numbersLine')}</Text>
       </Page>
     );
