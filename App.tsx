@@ -156,9 +156,22 @@ function Main() {
   const shareResult = async () => {
     if (!st.project) return;
     const result = calc(st.project.numbers, st.premium ? st.project.split : undefined);
-    await Share.share({
-      message: `${hobbyName(st.project.hobbyId, l)} · ${tr(l, 'ui.left')}: ${money(result.leftover, st.symbol)} · ${tr(l, 'ui.hour')}: ${money(result.perHour, st.symbol)} · HobbyWorth`
-    });
+    const message = `${hobbyName(st.project.hobbyId, l)} · ${tr(l, 'ui.left')}: ${money(result.leftover, st.symbol)} · ${tr(l, 'ui.hour')}: ${money(result.perHour, st.symbol)} · HobbyWorth`;
+    const cover = st.project.photos?.length
+      ? st.project.photos[Math.min(st.project.coverPhotoIndex || 0, st.project.photos.length - 1)]
+      : undefined;
+    await Share.share(Platform.OS === 'ios' && cover ? {message, url: cover} : {message});
+  };
+  const repeatCurrent = () => {
+    if (!st.project) return;
+    const hobbyId = st.project.hobbyId;
+    setCompletionOpen(false);
+    setSt((current) => ({...current, project: blank(hobbyId)}));
+    setStack(['home', 'first']);
+  };
+  const tryDifferentProject = () => {
+    setCompletionOpen(false);
+    setStack(['home', 'pick']);
   };
   const repeat = (project: Project) => {
     setSt((current) => ({...current, project: {...project, id: `${Date.now()}`, createdAt: new Date().toISOString(), completedAt: undefined, steps: [], photos: [], coverPhotoIndex: 0}}));
@@ -271,7 +284,15 @@ function Main() {
                   <Text style={s.completionBrand}>HobbyWorth</Text>
                 </View>
                 <Pressable accessibilityRole="button" onPress={shareResult} style={({pressed}) => [s.btn, pressed && s.btnPressed]}><Text style={s.btnText}>{tr(l, 'ui.shareResult')}</Text></Pressable>
-                <Pressable accessibilityRole="button" onPress={finalizeFinish} style={s.linkHit}><Text style={s.link}>{tr(l, 'ui.done')}</Text></Pressable>
+                {st.premium ? <Pressable accessibilityRole="button" onPress={finalizeFinish} style={({pressed}) => [s.btn, s.outline, pressed && s.outlinePressed]}><Text style={[s.btnText, s.outlineText]}>{tr(l, 'ui.saveHistory')}</Text></Pressable> : <View style={s.lockedPreview}>
+                  <Text style={s.kicker}>{tr(l, 'ui.lockedPreview')}</Text>
+                  <Text style={s.h3}>{tr(l, 'ui.saveCompareTeaser')}</Text>
+                  <Text style={s.body}>{tr(l, 'ui.lockedHistoryPreview')}</Text>
+                  <Pressable accessibilityRole="button" onPress={() => { setCompletionOpen(false); setPayOpen(true); }} style={({pressed}) => [s.btn, s.outline, pressed && s.outlinePressed]}><Text style={[s.btnText, s.outlineText]}>{tr(l, 'ui.unlockShort')}</Text></Pressable>
+                </View>}
+                <Pressable accessibilityRole="button" onPress={repeatCurrent} style={s.linkHit}><Text style={s.link}>{tr(l, 'ui.doAnotherBatch')}</Text></Pressable>
+                <Pressable accessibilityRole="button" onPress={tryDifferentProject} style={s.linkHit}><Text style={s.link}>{tr(l, 'ui.tryDifferentProject')}</Text></Pressable>
+                {!st.premium ? <Pressable accessibilityRole="button" onPress={finalizeFinish} style={s.linkHit}><Text style={s.link}>{tr(l, 'ui.done')}</Text></Pressable> : null}
               </>;
             })() : null}
           </View>
