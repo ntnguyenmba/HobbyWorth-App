@@ -161,7 +161,7 @@ function Main() {
     });
   };
   const repeat = (project: Project) => {
-    setSt((current) => ({...current, project: {...project, id: `${Date.now()}`, createdAt: new Date().toISOString(), completedAt: undefined, steps: [], photos: []}}));
+    setSt((current) => ({...current, project: {...project, id: `${Date.now()}`, createdAt: new Date().toISOString(), completedAt: undefined, steps: [], photos: [], coverPhotoIndex: 0}}));
     setStack(['home', 'first']);
   };
   const restore = async () => {
@@ -231,20 +231,20 @@ function Main() {
         {screen === 'compare' && <Compare st={st} />}
         {screen === 'settings' && <Settings st={st} setSt={setSt} restore={restore} pay={() => setPayOpen(true)} managePrivacy={managePrivacy} />}
       </View>
-      {screen !== 'home' && !['pick','history','settings'].includes(screen) ? <View style={s.back}><Pressable accessibilityRole="button" onPress={back} style={s.linkHit}><Text style={s.link}>{tr(l, 'ui.back')}</Text></Pressable></View> : null}
+      {screen !== 'home' && !['pick','history','settings'].includes(screen) ? <View style={s.back}><Pressable accessibilityRole="button" onPress={back} style={s.linkHit}><Text style={s.link}>‹ {tr(l, 'ui.back')}</Text></Pressable></View> : null}
       {!st.premium ? <HobbyWorthBanner enabled={adsReady} /> : null}
       <View accessibilityRole="tablist" style={s.bottomNav}>
         <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'home'}} onPress={() => goRoot('home')} style={[s.bottomTab, screen === 'home' && s.bottomTabOn]}>
           <Ionicons name={screen === 'home' ? 'home' : 'home-outline'} size={21} color={screen === 'home' ? colors.accent : colors.textMuted} />
-          <Text style={[s.bottomTabText, screen === 'home' && s.bottomTabTextOn]}>{tr(l, 'ui.navHome')}</Text>
+          <Text style={[s.bottomTabText, screen === 'home' && s.bottomTabTextOn]}>{tr(l, 'ui.navToday')}</Text>
         </Pressable>
         <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'pick'}} onPress={() => goRoot('pick')} style={[s.bottomTab, screen === 'pick' && s.bottomTabOn]}>
           <Ionicons name={screen === 'pick' ? 'compass' : 'compass-outline'} size={22} color={screen === 'pick' ? colors.accent : colors.textMuted} />
-          <Text style={[s.bottomTabText, screen === 'pick' && s.bottomTabTextOn]}>{tr(l, 'ui.navExplore')}</Text>
+          <Text style={[s.bottomTabText, screen === 'pick' && s.bottomTabTextOn]}>{tr(l, 'ui.navStart')}</Text>
         </Pressable>
         <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'history'}} onPress={goHistory} style={[s.bottomTab, screen === 'history' && s.bottomTabOn]}>
           <Ionicons name={screen === 'history' ? 'time' : 'time-outline'} size={22} color={screen === 'history' ? colors.accent : colors.textMuted} />
-          <Text style={[s.bottomTabText, screen === 'history' && s.bottomTabTextOn]}>{tr(l, 'ui.navHistory')}</Text>
+          <Text style={[s.bottomTabText, screen === 'history' && s.bottomTabTextOn]}>{tr(l, 'ui.navProjects')}</Text>
         </Pressable>
         <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'settings'}} onPress={() => goRoot('settings')} style={[s.bottomTab, screen === 'settings' && s.bottomTabOn]}>
           <Ionicons name={screen === 'settings' ? 'settings' : 'settings-outline'} size={21} color={screen === 'settings' ? colors.accent : colors.textMuted} />
@@ -260,8 +260,10 @@ function Main() {
                 <Text style={s.kicker}>{tr(l, 'ui.projectSummary')}</Text>
                 <Text accessibilityRole="header" style={s.h1}>{hobbyName(st.project.hobbyId, l)}</Text>
                 <View style={[s.completionCard, result.leftover <= 0 && s.completionLoss, s.cardShadow]}>
+                  {st.project.photos?.length ? <Image source={{uri: st.project.photos[Math.min(st.project.coverPhotoIndex || 0, st.project.photos.length - 1)]}} style={s.visual} resizeMode="cover" /> : null}
                   <Text style={s.small}>{tr(l, 'ui.left')}</Text>
                   <Text style={[s.completionValue, result.leftover <= 0 && s.completionValueLoss]}>{money(result.leftover, st.symbol)}</Text>
+                  <Text style={s.body}>{result.leftover > 0 ? tr(l, 'ui.verdictProfit', {left: money(result.leftover, st.symbol), hour: money(result.perHour, st.symbol)}) : result.leftover === 0 ? tr(l, 'ui.verdictEven') : tr(l, 'ui.verdictLoss', {left: money(Math.abs(result.leftover), st.symbol)})}</Text>
                   <View style={s.completionMetrics}>
                     <View style={s.completionMetric}><Text style={s.small}>{tr(l, 'ui.hour')}</Text><Text style={s.metricValue}>{money(result.perHour, st.symbol)}</Text></View>
                     <View style={s.completionMetric}><Text style={s.small}>{tr(l, 'ui.breakEven')}</Text><Text style={s.metricValue}>{result.breakEven}</Text></View>
