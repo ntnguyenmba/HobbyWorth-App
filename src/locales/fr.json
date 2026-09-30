@@ -155,7 +155,21 @@
     "navProjects": "Projets",
     "verdictProfit": "Il vous reste {left} après les coûts, soit environ {hour} pour chaque heure de votre temps.",
     "verdictEven": "Ce projet couvre exactement les coûts saisis.",
-    "verdictLoss": "Il manque {left} à ce projet pour couvrir les coûts saisis."
+    "verdictLoss": "Il manque {left} à ce projet pour couvrir les coûts saisis.",
+    "logBatchStep": "Noter le lot",
+    "priceIt": "Fixer le prix",
+    "continueToPrice": "Suivant : fixer le prix",
+    "viewPhoto": "Voir la photo",
+    "closePhoto": "Fermer la photo",
+    "lockedPreview": "Aperçu Lifetime",
+    "detailedCostsPreview": "Coûts détaillés et scénarios de prix",
+    "unlockDetailedCosts": "Débloquez matériaux, emballage, frais et scénarios de prix côte à côte.",
+    "editBatch": "Modifier les données du lot",
+    "saveHistory": "Enregistrer dans l’historique",
+    "doAnotherBatch": "Refaire un lot",
+    "tryDifferentProject": "Essayer un autre premier projet",
+    "saveCompareTeaser": "Enregistrez ce projet et comparez les prochains lots",
+    "lockedHistoryPreview": "L’historique et la comparaison sont inclus avec Lifetime."
   },
   "project": {
     "first": "un premier projet de {hobby}",
