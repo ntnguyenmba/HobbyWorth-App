@@ -169,7 +169,10 @@
     "doAnotherBatch": "Noch eine Charge",
     "tryDifferentProject": "Ein anderes erstes Projekt probieren",
     "saveCompareTeaser": "Speichere dieses Projekt und vergleiche spätere Chargen",
-    "lockedHistoryPreview": "Verlauf und Vergleich sind in Lifetime enthalten."
+    "lockedHistoryPreview": "Verlauf und Vergleich sind in Lifetime enthalten.",
+    "matchReasonSell": "Passt gut zu deinem Ziel, zu testen, ob sich etwas Selbstgemachtes verkaufen lässt.",
+    "matchReasonRepeat": "Passt gut zu deinem Ziel, etwas Wiederholbares zu finden.",
+    "matchReasonFinish": "Passt gut dazu, ein erstes Projekt ohne unnötige Komplexität abzuschließen."
   },
   "project": {
     "first": "ein erstes {hobby}-Projekt",
