@@ -202,7 +202,7 @@ export function Home({st, setProject, go, pay}: {st: State; setProject: (project
           const hobby = hobbies.find((item) => item.id === id);
           if (!hobby) return null;
           const first = firstProject(l, id);
-          return <Pressable key={id} accessibilityRole="button" onPress={() => setProject(blank(id))} style={({pressed}) => [s.resultHobbyCard, pressed && s.outlinePressed]}>
+          return <Pressable key={id} accessibilityRole="button" onPress={() => { setProject(blank(id)); go('first'); }} style={({pressed}) => [s.resultHobbyCard, pressed && s.outlinePressed]}>
             <Image source={hobbyVisual(id)} resizeMode="cover" style={s.visualCompact} />
             <View style={s.resultHobbyBody}><Heading level={3}>{hobbyName(id,l)}</Heading><Text style={s.body} numberOfLines={2}>{first.first}</Text></View>
             <Text accessible={false} style={s.arrow}>›</Text>
