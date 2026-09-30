@@ -169,7 +169,10 @@
     "doAnotherBatch": "再做一批",
     "tryDifferentProject": "尝试另一个入门项目",
     "saveCompareTeaser": "保存这个项目并与未来批次比较",
-    "lockedHistoryPreview": "Lifetime 包含历史和比较功能。"
+    "lockedHistoryPreview": "Lifetime 包含历史和比较功能。",
+    "matchReasonSell": "很适合你想测试自己做的东西是否能卖出去的目标。",
+    "matchReasonRepeat": "很适合你想找到可以重复去做的项目。",
+    "matchReasonFinish": "很适合先完成一个不过度复杂的入门项目。"
   },
   "project": {
     "first": "一个 {hobby} 入门项目",
