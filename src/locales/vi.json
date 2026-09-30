@@ -155,7 +155,21 @@
     "navProjects": "Dự án",
     "verdictProfit": "Bạn còn {left} sau chi phí. Tương đương khoảng {hour} cho mỗi giờ của bạn.",
     "verdictEven": "Dự án này vừa đủ bù các chi phí bạn đã nhập.",
-    "verdictLoss": "Dự án này còn thiếu {left} để bù các chi phí bạn đã nhập."
+    "verdictLoss": "Dự án này còn thiếu {left} để bù các chi phí bạn đã nhập.",
+    "logBatchStep": "Ghi lại mẻ này",
+    "priceIt": "Đặt giá",
+    "continueToPrice": "Tiếp: đặt giá",
+    "viewPhoto": "Xem ảnh",
+    "closePhoto": "Đóng ảnh",
+    "lockedPreview": "Xem trước Lifetime",
+    "detailedCostsPreview": "Chi phí chi tiết và kịch bản giá",
+    "unlockDetailedCosts": "Mở khóa nguyên liệu, đóng gói, phí và các kịch bản giá để so sánh.",
+    "editBatch": "Sửa thông tin mẻ",
+    "saveHistory": "Lưu vào lịch sử",
+    "doAnotherBatch": "Làm thêm một mẻ",
+    "tryDifferentProject": "Thử một dự án đầu tiên khác",
+    "saveCompareTeaser": "Lưu dự án này và so sánh các mẻ sau",
+    "lockedHistoryPreview": "Lịch sử và so sánh có trong Lifetime."
   },
   "project": {
     "first": "một dự án {hobby} đầu tiên",
