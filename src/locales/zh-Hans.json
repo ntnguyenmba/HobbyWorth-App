@@ -141,7 +141,21 @@
     "privacyChoicesError": "无法打开广告隐私选项。",
     "projectSummary": "项目总结",
     "shareResult": "分享结果",
-    "done": "完成"
+    "done": "完成",
+    "todayPromise": "做一个项目，看看扣除成本和时间后还剩多少。",
+    "todayExample": "烤一条面包，看看扣除原料和时间后，是否值得再做一次。",
+    "browseHobbies": "浏览爱好",
+    "popularFirstProjects": "热门入门项目",
+    "wantHistoryCompare": "想保存历史并进行并排比较？",
+    "logBatchBody": "填写花费、用时、完成数量以及你会出售的价格。",
+    "coverPhoto": "封面照片",
+    "makeCover": "设为封面",
+    "navToday": "今天",
+    "navStart": "开始",
+    "navProjects": "项目",
+    "verdictProfit": "扣除成本后还剩 {left}，相当于你的时间每小时约 {hour}。",
+    "verdictEven": "这个项目刚好覆盖你输入的成本。",
+    "verdictLoss": "这个项目还差 {left} 才能覆盖你输入的成本。"
   },
   "project": {
     "first": "一个 {hobby} 入门项目",
