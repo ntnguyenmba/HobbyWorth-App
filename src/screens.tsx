@@ -338,6 +338,7 @@ export function Quiz({st, choose}: {st: State; choose: (hobby: Hobby) => void}) 
               <Text style={s.kicker}>{String(index + 1).padStart(2, '0')}</Text>
               <Heading level={2}>{hobbyName(hobby.id, l)}</Heading>
               <Text style={s.body} numberOfLines={2}>{firstProject(l, hobby.id).first}</Text>
+              <Text style={s.small}>{tr(l, answers.goal === 'sell' ? 'ui.matchReasonSell' : answers.goal === 'repeat' ? 'ui.matchReasonRepeat' : 'ui.matchReasonFinish')}</Text>
               <Text style={s.link}>{tr(l, 'ui.start')}</Text>
             </View>
           </Pressable>
@@ -380,7 +381,7 @@ export function First({st, setProject, go}: {st: State; setProject: (project: Pr
   const progress = project.steps.length ? completedSteps / project.steps.length : 0;
   return (
     <Page>
-      <View style={s.projectHero}><View style={s.heroCircleLarge} /><View style={s.heroCircleSmall} /><Image source={hobbyVisual(p.hobbyId)} resizeMode="cover" style={s.visualHero} /><View style={s.visualOverlay} /><Text style={s.projectHeroText}>{name}</Text></View>
+      <View style={s.projectHero}><Image source={hobbyVisual(p.hobbyId)} resizeMode="cover" style={s.visualHero} /><View style={s.visualOverlay} /><Text style={s.projectHeroText}>{name}</Text></View>
       <Text style={s.kicker}>{tr(l, 'ui.guide')}</Text>
       <Heading>{name}</Heading>
       <View style={s.card}>
