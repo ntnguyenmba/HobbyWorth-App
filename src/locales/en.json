@@ -169,7 +169,10 @@
     "doAnotherBatch": "Do another batch",
     "tryDifferentProject": "Try a different first project",
     "saveCompareTeaser": "Save this project and compare future batches",
-    "lockedHistoryPreview": "History and compare are included with Lifetime."
+    "lockedHistoryPreview": "History and compare are included with Lifetime.",
+    "matchReasonSell": "A strong match for your goal of testing whether something you make could sell.",
+    "matchReasonRepeat": "A strong match for your goal of finding something you can repeat.",
+    "matchReasonFinish": "A strong match for finishing a first project without overcomplicating it."
   },
   "project": {
     "first": "one finished {hobby} project",
