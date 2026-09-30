@@ -93,50 +93,55 @@ function Page({children}: {children: React.ReactNode}) {
 
 function Heading({children, level = 1}: {children: React.ReactNode; level?: 1 | 2 | 3}) {
   const type = useType();
+  const colors = useColors();
   const size = level === 1 ? type.h1 : level === 2 ? type.h2 : type.h3;
-  return <Text accessibilityRole="header" style={[level === 1 ? s.h1 : level === 2 ? s.h2 : s.h3, {fontSize: size, lineHeight: size + 7}]}>{children}</Text>;
+  return <Text accessibilityRole="header" style={[level === 1 ? s.h1 : level === 2 ? s.h2 : s.h3, {fontSize: size, lineHeight: size + 7, color: colors.text}]}>{children}</Text>;
 }
 
 function HeroHeading({children}: {children: React.ReactNode}) {
   const type = useType();
-  return <Text accessibilityRole="header" style={[s.h1, {fontSize: type.hero, lineHeight: type.hero + 7}]}>{children}</Text>;
+  const colors = useColors();
+  return <Text accessibilityRole="header" style={[s.h1, {fontSize: type.hero, lineHeight: type.hero + 7, color: colors.text}]}>{children}</Text>;
 }
 
 function Button({text, onPress, outline = false, disabled = false}: {text: string; onPress: () => void; outline?: boolean; disabled?: boolean}) {
+  const colors = useColors();
   return (
     <Pressable
       accessibilityRole="button"
       accessibilityState={{disabled}}
       disabled={disabled}
       onPress={onPress}
-      style={({pressed}) => [s.btn, outline && s.outline, disabled && {opacity: 0.5}, pressed && !disabled && (outline ? s.outlinePressed : s.btnPressed)]}
+      style={({pressed}) => [s.btn, {backgroundColor: outline ? colors.surfaceStrong : colors.action}, outline && [s.outline, {borderColor: colors.accentLine}], disabled && {opacity: 0.5}, pressed && !disabled && {backgroundColor: outline ? colors.surfaceSoft : colors.actionPressed}]}
     >
-      <Text style={[s.btnText, outline && s.outlineText]}>{text}</Text>
+      <Text style={[s.btnText, {color: outline ? colors.accent : colors.surfaceStrong}]}>{text}</Text>
     </Pressable>
   );
 }
 
 function LinkButton({text, onPress}: {text: string; onPress: () => void}) {
+  const colors = useColors();
   return (
     <Pressable accessibilityRole="button" onPress={onPress} style={s.linkHit}>
-      <Text style={s.link}>{text}</Text>
+      <Text style={[s.link, {color: colors.accent}]}>{text}</Text>
     </Pressable>
   );
 }
 
 function Field({label, value, onChange, symbol = ''}: {label: string; value: string; onChange: (value: string) => void; symbol?: string}) {
+  const colors = useColors();
   return (
     <View style={s.field}>
-      <Text style={s.small}>{label}</Text>
-      <View style={s.inputRow}>
-        {symbol ? <Text style={s.symbol}>{symbol}</Text> : null}
+      <Text style={[s.small, {color: colors.textMuted}]}>{label}</Text>
+      <View style={[s.inputRow, {backgroundColor: colors.surfaceStrong, borderColor: colors.line}]}>
+        {symbol ? <Text style={[s.symbol, {color: colors.text}]}>{symbol}</Text> : null}
         <TextInput
           accessibilityLabel={label}
           keyboardType="decimal-pad"
           onChangeText={onChange}
           placeholder="0"
-          placeholderTextColor={C.muted}
-          style={s.input}
+          placeholderTextColor={colors.textMuted}
+          style={[s.input, {color: colors.text}]}
           value={value}
         />
       </View>
@@ -145,7 +150,8 @@ function Field({label, value, onChange, symbol = ''}: {label: string; value: str
 }
 
 function Metric({label, value}: {label: string; value: string}) {
-  return <View style={s.metric}><Text style={s.small}>{label}</Text><Text style={s.metricValue}>{value}</Text></View>;
+  const colors = useColors();
+  return <View style={[s.metric, {backgroundColor: colors.surfaceStrong, borderColor: colors.line}]}><Text style={[s.small, {color: colors.textMuted}]}>{label}</Text><Text style={[s.metricValue, {color: colors.text}]}>{value}</Text></View>;
 }
 
 function AnimatedMoney({value, symbol, loss = false}: {value: number; symbol: string; loss?: boolean}) {
