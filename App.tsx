@@ -242,10 +242,10 @@ function Main() {
           <Ionicons name={screen === 'pick' ? 'compass' : 'compass-outline'} size={22} color={screen === 'pick' ? colors.accent : colors.textMuted} />
           <Text style={[s.bottomTabText, screen === 'pick' && s.bottomTabTextOn]}>{tr(l, 'ui.navStart')}</Text>
         </Pressable>
-        <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'history'}} onPress={goHistory} style={[s.bottomTab, screen === 'history' && s.bottomTabOn]}>
+        {st.premium ? <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'history'}} onPress={goHistory} style={[s.bottomTab, screen === 'history' && s.bottomTabOn]}>
           <Ionicons name={screen === 'history' ? 'time' : 'time-outline'} size={22} color={screen === 'history' ? colors.accent : colors.textMuted} />
           <Text style={[s.bottomTabText, screen === 'history' && s.bottomTabTextOn]}>{tr(l, 'ui.navProjects')}</Text>
-        </Pressable>
+        </Pressable> : null}
         <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'settings'}} onPress={() => goRoot('settings')} style={[s.bottomTab, screen === 'settings' && s.bottomTabOn]}>
           <Ionicons name={screen === 'settings' ? 'settings' : 'settings-outline'} size={21} color={screen === 'settings' ? colors.accent : colors.textMuted} />
           <Text style={[s.bottomTabText, screen === 'settings' && s.bottomTabTextOn]}>{tr(l, 'ui.navSettings')}</Text>
