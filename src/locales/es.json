@@ -169,7 +169,10 @@
     "doAnotherBatch": "Hacer otro lote",
     "tryDifferentProject": "Probar otro primer proyecto",
     "saveCompareTeaser": "Guarda este proyecto y compara lotes futuros",
-    "lockedHistoryPreview": "Historial y comparación están incluidos con Lifetime."
+    "lockedHistoryPreview": "Historial y comparación están incluidos con Lifetime.",
+    "matchReasonSell": "Encaja bien con tu objetivo de probar si algo que haces podría venderse.",
+    "matchReasonRepeat": "Encaja bien con tu objetivo de encontrar algo que puedas repetir.",
+    "matchReasonFinish": "Encaja bien con terminar un primer proyecto sin complicarlo demasiado."
   },
   "project": {
     "first": "un primer proyecto de {hobby}",
