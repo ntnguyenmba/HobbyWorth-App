@@ -154,6 +154,18 @@ function Metric({label, value}: {label: string; value: string}) {
   return <View style={[s.metric, {backgroundColor: colors.surfaceStrong, borderColor: colors.line}]}><Text style={[s.small, {color: colors.textMuted}]}>{label}</Text><Text style={[s.metricValue, {color: colors.text}]}>{value}</Text></View>;
 }
 
+function AnimatedCheck({checked, large = false}: {checked: boolean; large?: boolean}) {
+  const scale = useRef(new Animated.Value(1)).current;
+  useEffect(() => {
+    if (!checked) return;
+    scale.setValue(0.82);
+    Animated.spring(scale, {toValue: 1, friction: 5, tension: 180, useNativeDriver: true}).start();
+  }, [checked, scale]);
+  return <Animated.View style={[large ? s.bigCheck : s.check, checked && s.checkOn, {transform: [{scale}]}]}>
+    <Text style={large ? s.bigCheckText : s.checkMark}>{checked ? '✓' : ''}</Text>
+  </Animated.View>;
+}
+
 function AnimatedMoney({value, symbol, loss = false}: {value: number; symbol: string; loss?: boolean}) {
   const progress = useRef(new Animated.Value(0)).current;
   const scale = useRef(new Animated.Value(0.96)).current;
@@ -238,7 +250,7 @@ export function Home({st, setProject, go, pay}: {st: State; setProject: (project
         <View style={s.progressTrack}><View style={[s.progressFill, {width: `${Math.round(activeProgress * 100)}%`}]} /></View>
         <Text style={s.small}>{complete ? tr(l, 'ui.projectComplete') : tr(l, 'ui.stepOf', {current: index + 1, total: project.steps.length})}</Text>
         <Pressable accessibilityRole="checkbox" accessibilityState={{checked: complete}} onPress={toggle} style={s.todayRow}>
-          <View style={[s.bigCheck, complete && s.checkOn]}><Text style={s.bigCheckText}>{complete ? '✓' : ''}</Text></View>
+          <AnimatedCheck checked={complete} large />
           <Text style={[s.todayText, complete && s.strike]}>{complete ? tr(l, 'ui.projectComplete') : project.steps[index]}</Text>
         </Pressable>
       </View>
@@ -296,19 +308,36 @@ export function Pick({st, choose}: {st: State; choose: (hobby: Hobby) => void}) 
         })}
       </View>
       <Text style={s.helper}>{tr(l, 'ui.resultCount', {n: filtered.length})}</Text>
-      {filtered.length ? filtered.map((hobby) => (
+      {filtered.length ? (category === 'all' ? categories.filter((item) => item !== 'all').map((group) => {
+        const items = filtered.filter((hobby) => hobby.category === group);
+        if (!items.length) return null;
+        return <View key={group} style={s.categorySection}>
+          <Text style={s.kicker}>{tr(l, `ui.${categoryLabel[group]}`)}</Text>
+          {items.map((hobby) => <Pressable
+            accessibilityLabel={hobbyName(hobby.id, l)}
+            accessibilityRole="button"
+            key={hobby.id}
+            onPress={() => choose(hobby)}
+            style={({pressed}) => [s.hobby, pressed && s.outlinePressed]}
+          >
+            <Image source={hobbyVisual(hobby.id)} resizeMode="cover" style={s.visualCompact} />
+            <View style={{flex: 1}}><Text style={s.h3}>{hobbyName(hobby.id, l)}</Text><Text style={s.small} numberOfLines={2}>{firstProject(l, hobby.id).first}</Text></View>
+            <Text accessible={false} style={s.arrow}>›</Text>
+          </Pressable>)}
+        </View>;
+      }) : filtered.map((hobby) => (
         <Pressable
           accessibilityLabel={hobbyName(hobby.id, l)}
           accessibilityRole="button"
           key={hobby.id}
           onPress={() => choose(hobby)}
-          style={({pressed}) => [s.hobby, {backgroundColor: hobby.category === 'food' ? '#FFF0EC' : hobby.category === 'craft' ? '#F8F0E6' : hobby.category === 'art' ? '#F2EEF8' : hobby.category === 'digital' ? '#EDF9FC' : hobby.category === 'photo' ? '#EEF4F8' : hobby.category === 'home' ? '#F3F4EA' : '#FFFFFF'}, pressed && s.outlinePressed]}
+          style={({pressed}) => [s.hobby, pressed && s.outlinePressed]}
         >
           <Image source={hobbyVisual(hobby.id)} resizeMode="cover" style={s.visualCompact} />
           <View style={{flex: 1}}><Text style={s.h3}>{hobbyName(hobby.id, l)}</Text><Text style={s.small} numberOfLines={2}>{firstProject(l, hobby.id).first}</Text></View>
           <Text accessible={false} style={s.arrow}>›</Text>
         </Pressable>
-      )) : <View style={s.card}><Heading level={3}>{tr(l, 'ui.noHobbyResults')}</Heading><Text style={s.body}>{tr(l, 'ui.tryAnotherSearch')}</Text></View>}
+      ))) : <View style={s.card}><Heading level={3}>{tr(l, 'ui.noHobbyResults')}</Heading><Text style={s.body}>{tr(l, 'ui.tryAnotherSearch')}</Text></View>}
     </Page>
   );
 }
@@ -415,7 +444,7 @@ export function First({st, setProject, go}: {st: State; setProject: (project: Pr
             onPress={() => { const steps = [...done]; steps[index] = !steps[index]; setProject({...p, steps}); }}
             style={s.checkRow}
           >
-            <View style={[s.check, done[index] && s.checkOn]}><Text style={s.checkMark}>{done[index] ? '✓' : ''}</Text></View>
+            <AnimatedCheck checked={done[index]} />
             <Text style={[s.body, {flex: 1}, done[index] && s.strike]}>{item}</Text>
           </Pressable>
         ))}
