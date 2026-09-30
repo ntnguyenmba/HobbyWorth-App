@@ -141,7 +141,21 @@
     "privacyChoicesError": "Impossible d’ouvrir les choix de confidentialité des publicités.",
     "projectSummary": "Résumé du projet",
     "shareResult": "Partager le résultat",
-    "done": "Terminé"
+    "done": "Terminé",
+    "todayPromise": "Réalisez un projet. Voyez ce qu’il reste après le coût et le temps.",
+    "todayExample": "Faites un pain. Voyez si ce qu’il reste après les ingrédients et le temps vaut la peine de recommencer.",
+    "browseHobbies": "Parcourir les loisirs",
+    "popularFirstProjects": "Premiers projets populaires",
+    "wantHistoryCompare": "Envie d’un historique et d’une comparaison côte à côte ?",
+    "logBatchBody": "Ajoutez vos dépenses, le temps passé, la quantité produite et le prix que vous demanderiez.",
+    "coverPhoto": "Photo de couverture",
+    "makeCover": "Choisir comme couverture",
+    "navToday": "Aujourd’hui",
+    "navStart": "Commencer",
+    "navProjects": "Projets",
+    "verdictProfit": "Il vous reste {left} après les coûts, soit environ {hour} pour chaque heure de votre temps.",
+    "verdictEven": "Ce projet couvre exactement les coûts saisis.",
+    "verdictLoss": "Il manque {left} à ce projet pour couvrir les coûts saisis."
   },
   "project": {
     "first": "un premier projet de {hobby}",
