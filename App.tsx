@@ -60,6 +60,15 @@ function Main() {
   const goRoot = (next: Screen) => setStack(next === 'home' ? ['home'] : ['home', next]);
   const goHistory = () => st.premium ? goRoot('history') : setPayOpen(true);
   const back = () => setStack((current) => current.length > 1 ? current.slice(0, -1) : ['home']);
+  const secondaryTitle =
+    screen === 'quiz' ? tr(l, 'ui.quiz') :
+    screen === 'pick' ? tr(l, 'ui.pick') :
+    screen === 'first' ? tr(l, 'ui.first') :
+    screen === 'calc' ? tr(l, 'ui.logBatch') :
+    screen === 'history' ? tr(l, 'ui.history') :
+    screen === 'compare' ? tr(l, 'ui.compare') :
+    screen === 'settings' ? tr(l, 'ui.settings') :
+    'HobbyWorth';
   const iap = useIAP({
     onPurchaseSuccess: async (purchase) => {
       if (!acceptedProducts.has(purchase.productId)) return;
@@ -225,14 +234,19 @@ function Main() {
   return (
     <SafeAreaView style={[s.root, {backgroundColor: colors.surface}]}>
       <StatusBar style={colors === undefined ? 'auto' : 'auto'} />
-      <View style={s.header}><View style={s.headerInner}>
-        <Text accessibilityRole="header" style={s.wordmark}>HobbyWorth</Text>
-        <Pressable
+      <View style={[s.header, {backgroundColor: colors.surface, borderBottomColor: colors.line}]}><View style={s.headerInner}>
+        {screen === 'home' ? <Text accessibilityRole="header" style={[s.wordmark, {color: colors.text}]}>HobbyWorth</Text> : <View style={s.headerTitleRow}>
+          <Pressable accessibilityRole="button" accessibilityLabel={tr(l, 'ui.back')} onPress={back} style={s.headerBack}>
+            <Ionicons name="chevron-back" size={24} color={colors.accent} />
+          </Pressable>
+          <Text accessibilityRole="header" numberOfLines={1} style={[s.headerTitle, {color: colors.text}]}>{secondaryTitle}</Text>
+        </View>}
+        {screen === 'home' ? <Pressable
           accessibilityLabel={st.premium ? tr(l, 'ui.settings') : tr(l, 'ui.buy')}
           accessibilityRole="button"
           onPress={() => st.premium ? goRoot('settings') : setPayOpen(true)}
-          style={({pressed}) => [s.settingsBtn, pressed && s.outlinePressed]}
-        ><Text style={s.settingsBtnText}>{st.premium ? tr(l, 'ui.settings') : tr(l, 'ui.unlockShort')}</Text></Pressable>
+          style={({pressed}) => [s.settingsBtn, {backgroundColor: colors.surfaceSoft, borderColor: colors.accentLine}, pressed && {opacity: 0.75}]}
+        ><Text style={[s.settingsBtnText, {color: colors.accent}]}>{st.premium ? tr(l, 'ui.settings') : tr(l, 'ui.unlockShort')}</Text></Pressable> : null}
       </View></View>
       <View style={s.content}>
         {screen === 'home' && <Home st={st} setProject={setProject} go={go} pay={() => setPayOpen(true)} />}
@@ -244,9 +258,8 @@ function Main() {
         {screen === 'compare' && <Compare st={st} />}
         {screen === 'settings' && <Settings st={st} setSt={setSt} restore={restore} pay={() => setPayOpen(true)} managePrivacy={managePrivacy} />}
       </View>
-      {screen !== 'home' && !['pick','history','settings'].includes(screen) ? <View style={s.back}><Pressable accessibilityRole="button" onPress={back} style={s.linkHit}><Text style={s.link}>‹ {tr(l, 'ui.back')}</Text></Pressable></View> : null}
       {!st.premium ? <HobbyWorthBanner enabled={adsReady} /> : null}
-      <View accessibilityRole="tablist" style={s.bottomNav}>
+      <View accessibilityRole="tablist" style={[s.bottomNav, {backgroundColor: colors.surfaceStrong, borderTopColor: colors.line}]}>
         <Pressable accessibilityRole="tab" accessibilityState={{selected: screen === 'home'}} onPress={() => goRoot('home')} style={[s.bottomTab, screen === 'home' && s.bottomTabOn]}>
           <Ionicons name={screen === 'home' ? 'home' : 'home-outline'} size={21} color={screen === 'home' ? colors.accent : colors.textMuted} />
           <Text style={[s.bottomTabText, screen === 'home' && s.bottomTabTextOn]}>{tr(l, 'ui.navToday')}</Text>
