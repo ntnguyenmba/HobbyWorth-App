@@ -141,7 +141,21 @@
     "privacyChoicesError": "Không thể mở lựa chọn quyền riêng tư quảng cáo.",
     "projectSummary": "Tóm tắt dự án",
     "shareResult": "Chia sẻ kết quả",
-    "done": "Xong"
+    "done": "Xong",
+    "todayPromise": "Làm một dự án. Xem còn lại bao nhiêu sau chi phí và thời gian.",
+    "todayExample": "Nướng một ổ bánh. Xem phần còn lại sau nguyên liệu và thời gian có đáng để làm lại không.",
+    "browseHobbies": "Xem các sở thích",
+    "popularFirstProjects": "Dự án đầu tiên phổ biến",
+    "wantHistoryCompare": "Muốn lưu lịch sử và so sánh cạnh nhau?",
+    "logBatchBody": "Nhập số tiền đã chi, thời gian, số lượng làm được và giá bạn sẽ bán.",
+    "coverPhoto": "Ảnh bìa",
+    "makeCover": "Đặt làm ảnh bìa",
+    "navToday": "Hôm nay",
+    "navStart": "Bắt đầu",
+    "navProjects": "Dự án",
+    "verdictProfit": "Bạn còn {left} sau chi phí. Tương đương khoảng {hour} cho mỗi giờ của bạn.",
+    "verdictEven": "Dự án này vừa đủ bù các chi phí bạn đã nhập.",
+    "verdictLoss": "Dự án này còn thiếu {left} để bù các chi phí bạn đã nhập."
   },
   "project": {
     "first": "một dự án {hobby} đầu tiên",
