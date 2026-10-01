@@ -3,7 +3,7 @@ import {AccessibilityInfo, Alert, Modal, Platform, Pressable, Share, Text, View}
 import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import {StatusBar} from 'expo-status-bar';
 import {useFonts, Nunito_400Regular, Nunito_700Bold, Nunito_800ExtraBold} from '@expo-google-fonts/nunito';
-import {useIAP} from 'expo-iap';
+import {getAvailablePurchases, useIAP} from 'expo-iap';
 import {Ionicons} from '@expo/vector-icons';
 import Constants from 'expo-constants';
 import {deviceLocale, hobbyName, tr} from './src/i18n';
@@ -39,7 +39,9 @@ async function verifyAndroidPurchase(purchase: any): Promise<boolean> {
       packageName: 'com.everittventures.hobbyworth'
     })
   });
-  return response.ok;
+  if (!response.ok) return false;
+  const result = await response.json();
+  return result?.verified === true;
 }
 const initial = (): State => ({project: null, history: [], premium: false, locale: deviceLocale(), symbol: ''});
 
@@ -74,6 +76,7 @@ function Main() {
       if (!acceptedProducts.has(purchase.productId)) return;
       const verified = await verifyAndroidPurchase(purchase).catch(() => false);
       if (!verified) {
+        setPurchasing(false);
         Alert.alert(tr(st.locale, 'ui.purchaseError'));
         return;
       }
@@ -187,17 +190,28 @@ function Main() {
     setStack(['home', 'first']);
   };
   const restore = async () => {
+    if (!iap.connected || purchasing) {
+      Alert.alert(tr(l, 'ui.purchaseError'));
+      return;
+    }
+    setPurchasing(true);
     try {
       await iap.restorePurchases?.();
-      await iap.getAvailablePurchases?.();
-      setTimeout(() => {
-        const found = (iapRef.current?.availablePurchases || []).some((purchase: any) => acceptedProducts.has(purchase.productId));
-        if (found) {
-          setSt((current) => ({...current, premium: true}));
-          Alert.alert(tr(l, 'ui.restored'));
-        } else Alert.alert(tr(l, 'ui.notFound'));
-      }, 250);
-    } catch { Alert.alert(tr(l, 'ui.notFound')); }
+      // The root API returns purchases directly; the hook only updates React state.
+      const purchases = await getAvailablePurchases();
+      let found = false;
+      for (const purchase of purchases) {
+        if (!acceptedProducts.has(purchase.productId)) continue;
+        if (!(await verifyAndroidPurchase(purchase))) continue;
+        found = true;
+        try { await iap.finishTransaction({purchase, isConsumable: false}); } catch {}
+      }
+      if (found) {
+        setSt((current) => ({...current, premium: true}));
+        Alert.alert(tr(l, 'ui.restored'));
+      } else Alert.alert(tr(l, 'ui.notFound'));
+    } catch { Alert.alert(tr(l, 'ui.purchaseError')); }
+    finally { setPurchasing(false); }
   };
   const managePrivacy = async () => {
     setAdsReady(false);
@@ -212,6 +226,7 @@ function Main() {
   };
   const product = (iap.products as any[]).find((item) => item.id === PRODUCT || item.productId === PRODUCT);
   const buy = async () => {
+    if (purchasing) return;
     if (!iap.connected) {
       Alert.alert(tr(l, 'ui.purchaseError'));
       return;
