@@ -15,7 +15,7 @@
     "prepare:ios:local": "npm run sync:artwork && expo prebuild --clean --platform ios",
     "open:ios": "open ios/HobbyWorth.xcworkspace",
     "typecheck": "node scripts/check-locales.mjs && node scripts/check-config.mjs && npm test && tsc --noEmit",
-    "test": "node --import tsx --test src/math.test.ts src/quiz.test.ts",
+    "test": "node scripts/check-ad-consent.mjs && node --import tsx --test src/math.test.ts src/quiz.test.ts",
     "sync:artwork": "node scripts/sync-hobby-art.mjs"
   },
   "dependencies": {

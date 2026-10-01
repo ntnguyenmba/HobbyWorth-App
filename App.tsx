@@ -13,7 +13,7 @@ import {s} from './src/styles';
 import {useColors} from './src/theme';
 import {exportProjectBackup, exportProjectPdf} from './src/export';
 import {calc} from './src/math';
-import {HobbyWorthBanner, prepareMobileAds, showPrivacyChoices} from './src/ads';
+import {HobbyWorthBanner, prepareMobileAds, refreshAdPermission, showPrivacyChoices} from './src/ads';
 import {Home, Quiz, Pick, First, Calculator, History, Compare, Settings, blank, money, Screen} from './src/screens';
 
 const CURRENT_PRODUCT = 'com.everittventures.hobbyworth.lifetime';
@@ -200,10 +200,13 @@ function Main() {
     } catch { Alert.alert(tr(l, 'ui.notFound')); }
   };
   const managePrivacy = async () => {
+    setAdsReady(false);
     try {
-      const shown = await showPrivacyChoices();
-      if (!shown) Alert.alert(tr(l, 'ui.privacyChoicesUnavailable'));
+      const result = await showPrivacyChoices();
+      setAdsReady(result.canRequestAds);
+      if (!result.shown) Alert.alert(tr(l, 'ui.privacyChoicesUnavailable'));
     } catch {
+      setAdsReady(await refreshAdPermission().catch(() => false));
       Alert.alert(tr(l, 'ui.privacyChoicesError'));
     }
   };
